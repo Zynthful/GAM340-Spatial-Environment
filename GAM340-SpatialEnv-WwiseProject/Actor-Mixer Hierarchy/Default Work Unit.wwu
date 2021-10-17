@@ -4,7 +4,14 @@
 		<WorkUnit Name="Default Work Unit" ID="{2E2CE7FA-02C6-4C71-AABE-F8140864C57E}" PersistMode="Standalone">
 			<ChildrenList>
 				<Sound Name="Redneck_Rolls_Dice-SoundBible_com-1100715950" ID="{57F113D0-237B-4FCE-ADC5-190579752BD1}" ShortID="95097121">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+					</PropertyList>
 					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="SpatialAudioTest" ID="{7E28C3B6-D318-45B1-8116-1585C6E1390F}" WorkUnitID="{A1BA0ADB-F758-4BAD-B04B-D53467CF759B}"/>
+						</Reference>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62267F72-14C7-4DA9-898E-CD1568645172}"/>
 						</Reference>
