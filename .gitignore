@@ -1,0 +1,7 @@
+# Wwise
+GAM340-SpatialEnv-WwiseProject/.cache
+*.validationcache
+*.wsettings
+SoundbanksInfo.xml
+PluginInfo.xml
+*.akd

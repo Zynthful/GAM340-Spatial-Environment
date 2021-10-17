@@ -1,0 +1,57 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "12",
+  "SoundbankVersion": "140",
+  "RootPaths": {
+   "ProjectRoot": "C:\\Users\\Jamie Carnell\\Desktop\\Projects etc\\Projects\\GAM340 Project\\GAM340-Spatial-Environment\\GAM340-SpatialEnv-WwiseProject\\",
+   "SourceFilesRoot": "C:\\Users\\Jamie Carnell\\Desktop\\Projects etc\\Projects\\GAM340 Project\\GAM340-Spatial-Environment\\GAM340-SpatialEnv-WwiseProject\\.cache\\Windows\\",
+   "SoundBanksRoot": "C:\\Users\\Jamie Carnell\\Desktop\\Projects etc\\Projects\\GAM340 Project\\GAM340-Spatial-Environment\\SpatialEnvUE4\\Content\\WwiseAudio\\Windows\\",
+   "ExternalSourcesInputFile": "",
+   "ExternalSourcesOutputRoot": "C:\\Users\\Jamie Carnell\\Desktop\\Projects etc\\Projects\\GAM340 Project\\GAM340-Spatial-Environment\\GAM340-SpatialEnv-WwiseProject\\GeneratedSoundBanks\\Windows"
+  },
+  "DialogueEvents": [],
+  "StreamedFiles": [],
+  "MediaFilesNotInAnyBank": [],
+  "SoundBanks": [
+   {
+    "Id": "1355168291",
+    "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
+    "Language": "SFX",
+    "Hash": "1958929096",
+    "ObjectPath": "Init",
+    "ShortName": "Init",
+    "Path": "Init.bnk"
+   },
+   {
+    "Id": "4056684167",
+    "GUID": "{F180063F-4304-4E4E-863F-DCFB9544A68C}",
+    "Language": "SFX",
+    "Hash": "2054883616",
+    "ObjectPath": "\\SoundBanks\\Default Work Unit\\Master",
+    "ShortName": "Master",
+    "Path": "Master.bnk",
+    "IncludedEvents": [
+     {
+      "Id": "3981690456",
+      "Name": "Redneck_Rolls_Dice",
+      "ObjectPath": "\\Events\\Default Work Unit\\Debug\\Redneck_Rolls_Dice",
+      "GUID": "{A75B3D78-20D7-4E9B-A339-DC774A124709}",
+      "DurationType": "OneShot",
+      "DurationMin": "2.926531",
+      "DurationMax": "2.926531",
+      "IncludedMemoryFiles": [
+       {
+        "Id": "294457293",
+        "Language": "SFX",
+        "ShortName": "Redneck_Rolls_Dice-SoundBible.com-1100715950.wav",
+        "Path": "SFX\\Redneck_Rolls_Dice-SoundBible.com-1100715950_10C4C929.wem"
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ }
+}

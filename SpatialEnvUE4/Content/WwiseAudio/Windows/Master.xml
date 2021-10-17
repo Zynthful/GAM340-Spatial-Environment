@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="12" SoundbankVersion="140">
+	<RootPaths>
+		<ProjectRoot>C:\Users\Jamie Carnell\Desktop\Projects etc\Projects\GAM340 Project\GAM340-Spatial-Environment\GAM340-SpatialEnv-WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\Jamie Carnell\Desktop\Projects etc\Projects\GAM340 Project\GAM340-Spatial-Environment\GAM340-SpatialEnv-WwiseProject\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Users\Jamie Carnell\Desktop\Projects etc\Projects\GAM340 Project\GAM340-Spatial-Environment\SpatialEnvUE4\Content\WwiseAudio\Windows\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>C:\Users\Jamie Carnell\Desktop\Projects etc\Projects\GAM340 Project\GAM340-Spatial-Environment\GAM340-SpatialEnv-WwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<SoundBanks>
+		<SoundBank Id="4056684167" GUID="{F180063F-4304-4E4E-863F-DCFB9544A68C}" Language="SFX" Hash="2054883616">
+			<ObjectPath>\SoundBanks\Default Work Unit\Master</ObjectPath>
+			<ShortName>Master</ShortName>
+			<Path>Master.bnk</Path>
+			<IncludedEvents>
+				<Event Id="3981690456" Name="Redneck_Rolls_Dice" ObjectPath="\Events\Default Work Unit\Debug\Redneck_Rolls_Dice" GUID="{A75B3D78-20D7-4E9B-A339-DC774A124709}" DurationType="OneShot" DurationMin="2.926531" DurationMax="2.926531">
+					<IncludedMemoryFiles>
+						<File Id="294457293" Language="SFX">
+							<ShortName>Redneck_Rolls_Dice-SoundBible.com-1100715950.wav</ShortName>
+							<Path>SFX\Redneck_Rolls_Dice-SoundBible.com-1100715950_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+			</IncludedEvents>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>

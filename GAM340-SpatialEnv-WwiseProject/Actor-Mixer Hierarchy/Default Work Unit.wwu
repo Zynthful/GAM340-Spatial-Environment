@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{2E2CE7FA-02C6-4C71-AABE-F8140864C57E}" SchemaVersion="103">
+	<AudioObjects>
+		<WorkUnit Name="Default Work Unit" ID="{2E2CE7FA-02C6-4C71-AABE-F8140864C57E}" PersistMode="Standalone">
+			<ChildrenList>
+				<Sound Name="Redneck_Rolls_Dice-SoundBible_com-1100715950" ID="{57F113D0-237B-4FCE-ADC5-190579752BD1}" ShortID="95097121">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62267F72-14C7-4DA9-898E-CD1568645172}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Redneck_Rolls_Dice-SoundBible_com-1100715950" ID="{CF293ADE-E343-4FD6-9A0A-B9F90C421658}">
+							<Language>SFX</Language>
+							<AudioFile>Redneck_Rolls_Dice-SoundBible.com-1100715950.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="294457293"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ObjectLists/>
+					<ActiveSourceList>
+						<ActiveSource Name="Redneck_Rolls_Dice-SoundBible_com-1100715950" ID="{CF293ADE-E343-4FD6-9A0A-B9F90C421658}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>
