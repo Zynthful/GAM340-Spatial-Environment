@@ -16,10 +16,18 @@
     "Id": "1355168291",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "1958929096",
+    "Hash": "2152344112",
     "ObjectPath": "Init",
     "ShortName": "Init",
-    "Path": "Init.bnk"
+    "Path": "Init.bnk",
+    "IncludedAuxBusses": [
+     {
+      "Id": "2212376974",
+      "Name": "Early_Reflection_Aux_Bus",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Early_Reflection_Aux_Bus",
+      "GUID": "{8282F99E-D8F7-4B95-B1EA-B9978394AFAE}"
+     }
+    ]
    }
   ]
  }
