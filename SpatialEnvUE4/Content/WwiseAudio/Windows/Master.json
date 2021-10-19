@@ -16,11 +16,77 @@
     "Id": "4056684167",
     "GUID": "{F180063F-4304-4E4E-863F-DCFB9544A68C}",
     "Language": "SFX",
-    "Hash": "2138773307",
+    "Hash": "1448092411",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Master",
     "ShortName": "Master",
     "Path": "Master.bnk",
     "IncludedEvents": [
+     {
+      "Id": "1866025847",
+      "Name": "Footstep",
+      "ObjectPath": "\\Events\\Default Work Unit\\Debug\\Footstep",
+      "GUID": "{5DDB4280-0F39-46FC-8045-EEC7A97EDBCD}",
+      "MaxAttenuation": "5000.000000",
+      "DurationType": "OneShot",
+      "DurationMin": "0.227330",
+      "DurationMax": "0.637779",
+      "IncludedMemoryFiles": [
+       {
+        "Id": "291280622",
+        "Language": "SFX",
+        "ShortName": "Footsteps_PavementConcrete_Untitled 108.wav",
+        "Path": "SFX\\Footsteps_PavementConcrete_Untitled 108_10C4C929.wem"
+       },
+       {
+        "Id": "327697384",
+        "Language": "SFX",
+        "ShortName": "Footsteps_PavementConcrete_Untitled 114.wav",
+        "Path": "SFX\\Footsteps_PavementConcrete_Untitled 114_10C4C929.wem"
+       },
+       {
+        "Id": "477291348",
+        "Language": "SFX",
+        "ShortName": "Footsteps_PavementConcrete_Untitled 109.wav",
+        "Path": "SFX\\Footsteps_PavementConcrete_Untitled 109_10C4C929.wem"
+       },
+       {
+        "Id": "654259328",
+        "Language": "SFX",
+        "ShortName": "Footsteps_PavementConcrete_Untitled 112.wav",
+        "Path": "SFX\\Footsteps_PavementConcrete_Untitled 112_10C4C929.wem"
+       },
+       {
+        "Id": "674495106",
+        "Language": "SFX",
+        "ShortName": "Footsteps_PavementConcrete_Untitled 110.wav",
+        "Path": "SFX\\Footsteps_PavementConcrete_Untitled 110_10C4C929.wem"
+       },
+       {
+        "Id": "766340509",
+        "Language": "SFX",
+        "ShortName": "Footsteps_PavementConcrete_Untitled 111.wav",
+        "Path": "SFX\\Footsteps_PavementConcrete_Untitled 111_10C4C929.wem"
+       },
+       {
+        "Id": "840542504",
+        "Language": "SFX",
+        "ShortName": "Footsteps_PavementConcrete_Untitled 107.wav",
+        "Path": "SFX\\Footsteps_PavementConcrete_Untitled 107_10C4C929.wem"
+       },
+       {
+        "Id": "966835818",
+        "Language": "SFX",
+        "ShortName": "Footsteps_PavementConcrete_Untitled 106.wav",
+        "Path": "SFX\\Footsteps_PavementConcrete_Untitled 106_10C4C929.wem"
+       },
+       {
+        "Id": "1041888282",
+        "Language": "SFX",
+        "ShortName": "Footsteps_PavementConcrete_Untitled 113.wav",
+        "Path": "SFX\\Footsteps_PavementConcrete_Untitled 113_10C4C929.wem"
+       }
+      ]
+     },
      {
       "Id": "3981690456",
       "Name": "Redneck_Rolls_Dice",

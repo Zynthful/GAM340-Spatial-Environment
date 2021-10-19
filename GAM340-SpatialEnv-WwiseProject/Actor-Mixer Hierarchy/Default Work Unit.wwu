@@ -36,6 +36,264 @@
 						<ActiveSource Name="Redneck_Rolls_Dice-SoundBible_com-1100715950" ID="{CF293ADE-E343-4FD6-9A0A-B9F90C421658}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
+				<RandomSequenceContainer Name="SFX_Footstep_Brick" ID="{26094F30-3DD0-4459-98B6-31F233D57000}" ShortID="306118761">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="1"/>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{C3D1CF8F-6249-4864-9516-1E9845E15A3E}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="250"/>
+											<Property Name="Min" Type="Real64" Value="-250"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>3</Value>
+							</ValueList>
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{19A60A49-6354-4A6C-A985-9C308DD61FFC}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Min" Type="Real64" Value="-2"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="SpatialAudioTest" ID="{7E28C3B6-D318-45B1-8116-1585C6E1390F}" WorkUnitID="{A1BA0ADB-F758-4BAD-B04B-D53467CF759B}"/>
+						</Reference>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62267F72-14C7-4DA9-898E-CD1568645172}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
+						</Reference>
+						<Reference Name="ReflectionsAuxSend">
+							<ObjectRef Name="Early_Reflection_Aux_Bus" ID="{8282F99E-D8F7-4B95-B1EA-B9978394AFAE}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Footsteps_PavementConcrete_Untitled 106" ID="{C2EC5203-675E-4085-AC78-E944C8C89681}" ShortID="284802743">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62267F72-14C7-4DA9-898E-CD1568645172}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Footsteps_PavementConcrete_Untitled 106" ID="{94E141EF-8A05-4C3B-AF56-FF1FE3DE7BFC}">
+									<Language>SFX</Language>
+									<AudioFile>Footsteps_PavementConcrete_Untitled 106.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="966835818"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Footsteps_PavementConcrete_Untitled 106" ID="{94E141EF-8A05-4C3B-AF56-FF1FE3DE7BFC}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Footsteps_PavementConcrete_Untitled 107" ID="{AA68F574-7870-4641-AA1A-F7E4AEEE7128}" ShortID="560126801">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62267F72-14C7-4DA9-898E-CD1568645172}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Footsteps_PavementConcrete_Untitled 107" ID="{1909E6D8-080E-4BC7-8199-F63335BCB9DD}">
+									<Language>SFX</Language>
+									<AudioFile>Footsteps_PavementConcrete_Untitled 107.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="840542504"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Footsteps_PavementConcrete_Untitled 107" ID="{1909E6D8-080E-4BC7-8199-F63335BCB9DD}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Footsteps_PavementConcrete_Untitled 108" ID="{EE2FEDC9-EEED-433A-B912-B52DE62DB099}" ShortID="726340868">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62267F72-14C7-4DA9-898E-CD1568645172}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Footsteps_PavementConcrete_Untitled 108" ID="{2D259F06-C6DB-4A06-BF45-109315C92BFF}">
+									<Language>SFX</Language>
+									<AudioFile>Footsteps_PavementConcrete_Untitled 108.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="291280622"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Footsteps_PavementConcrete_Untitled 108" ID="{2D259F06-C6DB-4A06-BF45-109315C92BFF}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Footsteps_PavementConcrete_Untitled 109" ID="{B49504D6-7396-47A4-A690-AAA5D73C7E47}" ShortID="772583406">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62267F72-14C7-4DA9-898E-CD1568645172}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Footsteps_PavementConcrete_Untitled 109" ID="{EC3FA2B9-B7E3-4F54-A125-2921FB5C8EBA}">
+									<Language>SFX</Language>
+									<AudioFile>Footsteps_PavementConcrete_Untitled 109.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="477291348"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Footsteps_PavementConcrete_Untitled 109" ID="{EC3FA2B9-B7E3-4F54-A125-2921FB5C8EBA}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Footsteps_PavementConcrete_Untitled 110" ID="{0D067A7B-1435-42D0-AFB2-2F1D82C9E8B8}" ShortID="734718751">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62267F72-14C7-4DA9-898E-CD1568645172}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Footsteps_PavementConcrete_Untitled 110" ID="{B9BE89D9-AE39-48D1-B2FB-94A37B39A4B0}">
+									<Language>SFX</Language>
+									<AudioFile>Footsteps_PavementConcrete_Untitled 110.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="674495106"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Footsteps_PavementConcrete_Untitled 110" ID="{B9BE89D9-AE39-48D1-B2FB-94A37B39A4B0}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Footsteps_PavementConcrete_Untitled 111" ID="{26541D82-C744-421F-BE5D-B3250566A2FA}" ShortID="515674697">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62267F72-14C7-4DA9-898E-CD1568645172}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Footsteps_PavementConcrete_Untitled 111" ID="{B3EA17B8-4325-463D-9EC5-248DE0DC272A}">
+									<Language>SFX</Language>
+									<AudioFile>Footsteps_PavementConcrete_Untitled 111.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="766340509"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Footsteps_PavementConcrete_Untitled 111" ID="{B3EA17B8-4325-463D-9EC5-248DE0DC272A}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Footsteps_PavementConcrete_Untitled 112" ID="{51272E20-3D89-4B6C-B23E-8055E2A05361}" ShortID="903670103">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62267F72-14C7-4DA9-898E-CD1568645172}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Footsteps_PavementConcrete_Untitled 112" ID="{BDA9B0B2-2B22-4675-A0A8-B56718FA1905}">
+									<Language>SFX</Language>
+									<AudioFile>Footsteps_PavementConcrete_Untitled 112.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="654259328"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Footsteps_PavementConcrete_Untitled 112" ID="{BDA9B0B2-2B22-4675-A0A8-B56718FA1905}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Footsteps_PavementConcrete_Untitled 113" ID="{680A6077-F762-4C22-AE68-A7B968283BF6}" ShortID="122091143">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62267F72-14C7-4DA9-898E-CD1568645172}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Footsteps_PavementConcrete_Untitled 113" ID="{CBCDB9E5-545E-486C-926A-CB82F93848F0}">
+									<Language>SFX</Language>
+									<AudioFile>Footsteps_PavementConcrete_Untitled 113.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="1041888282"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Footsteps_PavementConcrete_Untitled 113" ID="{CBCDB9E5-545E-486C-926A-CB82F93848F0}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Footsteps_PavementConcrete_Untitled 114" ID="{E955BEE3-7D0A-4D2F-B66B-2FE141AB6FA9}" ShortID="247099214">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62267F72-14C7-4DA9-898E-CD1568645172}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Footsteps_PavementConcrete_Untitled 114" ID="{D466E60C-B9BC-4B5C-ACA2-2507AC4F97D4}">
+									<Language>SFX</Language>
+									<AudioFile>Footsteps_PavementConcrete_Untitled 114.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="327697384"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Footsteps_PavementConcrete_Untitled 114" ID="{D466E60C-B9BC-4B5C-ACA2-2507AC4F97D4}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+					<ObjectLists/>
+				</RandomSequenceContainer>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

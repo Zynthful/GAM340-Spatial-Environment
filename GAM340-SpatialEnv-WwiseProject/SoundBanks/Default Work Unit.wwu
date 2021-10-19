@@ -5,6 +5,7 @@
 			<ChildrenList>
 				<SoundBank Name="Master" ID="{F180063F-4304-4E4E-863F-DCFB9544A68C}">
 					<ObjectInclusionList>
+						<ObjectRef Name="Footstep" ID="{5DDB4280-0F39-46FC-8045-EEC7A97EDBCD}" WorkUnitID="{506EC3FD-D93F-498E-BB2B-FAB626ACF63B}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Redneck_Rolls_Dice" ID="{A75B3D78-20D7-4E9B-A339-DC774A124709}" WorkUnitID="{506EC3FD-D93F-498E-BB2B-FAB626ACF63B}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
