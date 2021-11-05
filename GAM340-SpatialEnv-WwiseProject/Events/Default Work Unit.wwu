@@ -16,6 +16,10 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Movement" ID="{40AE62E6-A615-4984-84CC-634EED2AE881}" ShortID="493608022">
+					<ChildrenList>
 						<Event Name="Footstep" ID="{5DDB4280-0F39-46FC-8045-EEC7A97EDBCD}">
 							<ChildrenList>
 								<Action Name="" ID="{8DA8E406-87FE-4975-A0E1-65745252C1D2}" ShortID="110290249">

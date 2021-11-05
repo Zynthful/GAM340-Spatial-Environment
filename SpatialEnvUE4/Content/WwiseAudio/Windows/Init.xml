@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="12" SoundbankVersion="140">
 	<RootPaths>
-		<ProjectRoot>C:\Users\Jamie Carnell\Desktop\Projects etc\Projects\GAM340 Project\GAM340-Spatial-Environment\GAM340-SpatialEnv-WwiseProject\</ProjectRoot>
-		<SourceFilesRoot>C:\Users\Jamie Carnell\Desktop\Projects etc\Projects\GAM340 Project\GAM340-Spatial-Environment\GAM340-SpatialEnv-WwiseProject\.cache\Windows\</SourceFilesRoot>
-		<SoundBanksRoot>C:\Users\Jamie Carnell\Desktop\Projects etc\Projects\GAM340 Project\GAM340-Spatial-Environment\SpatialEnvUE4\Content\WwiseAudio\Windows\</SoundBanksRoot>
+		<ProjectRoot>D:\jcwksp\GAM340-Spatial-Environment\GAM340-SpatialEnv-WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>D:\jcwksp\GAM340-Spatial-Environment\GAM340-SpatialEnv-WwiseProject\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>D:\jcwksp\GAM340-Spatial-Environment\SpatialEnvUE4\Content\WwiseAudio\Windows\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>C:\Users\Jamie Carnell\Desktop\Projects etc\Projects\GAM340 Project\GAM340-Spatial-Environment\GAM340-SpatialEnv-WwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>D:\jcwksp\GAM340-Spatial-Environment\GAM340-SpatialEnv-WwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<SoundBanks>
-		<SoundBank Id="1355168291" GUID="{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}" Language="SFX" Hash="2152344112">
+		<SoundBank Id="1355168291" GUID="{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}" Language="SFX" Hash="713994106">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<IncludedAuxBusses>
-				<AuxBus Id="2212376974" Name="Early_Reflection_Aux_Bus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Early_Reflection_Aux_Bus" GUID="{8282F99E-D8F7-4B95-B1EA-B9978394AFAE}"/>
+				<AuxBus Id="2212376974" Name="Early_Reflection_Aux_Bus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX\Early_Reflection_Aux_Bus" GUID="{8282F99E-D8F7-4B95-B1EA-B9978394AFAE}"/>
 			</IncludedAuxBusses>
 		</SoundBank>
 	</SoundBanks>

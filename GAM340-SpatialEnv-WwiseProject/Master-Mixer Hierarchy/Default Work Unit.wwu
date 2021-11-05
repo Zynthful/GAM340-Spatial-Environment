@@ -10,24 +10,32 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<AuxBus Name="Early_Reflection_Aux_Bus" ID="{8282F99E-D8F7-4B95-B1EA-B9978394AFAE}">
-							<PropertyList>
-								<Property Name="BusChannelConfig" Type="int32">
-									<ValueList>
-										<Value>16641</Value>
-									</ValueList>
-								</Property>
-								<Property Name="EnableAttenuation" Type="bool" Value="False"/>
-								<Property Name="ListenerRelativeRouting" Type="bool" Value="True"/>
-								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Effect0" PluginName="Wwise Reflect" CompanyID="0" PluginID="171" PluginType="3">
-									<ObjectRef Name="Wwise_Reflect" ID="{37779A87-4754-4420-8175-3236FA46AA12}" WorkUnitID="{923039AD-F8B4-46D4-BDA7-CB5A6EE595E0}"/>
-								</Reference>
-							</ReferenceList>
+						<Bus Name="SFX" ID="{18B976C0-D509-4A4A-B407-A8F6A887E940}">
+							<ChildrenList>
+								<AuxBus Name="Early_Reflection_Aux_Bus" ID="{8282F99E-D8F7-4B95-B1EA-B9978394AFAE}">
+									<PropertyList>
+										<Property Name="BusChannelConfig" Type="int32">
+											<ValueList>
+												<Value>16641</Value>
+											</ValueList>
+										</Property>
+										<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+										<Property Name="ListenerRelativeRouting" Type="bool" Value="True"/>
+										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Effect0" PluginName="Wwise Reflect" CompanyID="0" PluginID="171" PluginType="3">
+											<ObjectRef Name="Wwise_Reflect" ID="{37779A87-4754-4420-8175-3236FA46AA12}" WorkUnitID="{923039AD-F8B4-46D4-BDA7-CB5A6EE595E0}"/>
+										</Reference>
+									</ReferenceList>
+									<ObjectLists/>
+								</AuxBus>
+							</ChildrenList>
 							<ObjectLists/>
-						</AuxBus>
+						</Bus>
+						<Bus Name="Music" ID="{634AB43A-5F23-44BA-AB38-535F5B65E59E}">
+							<ObjectLists/>
+						</Bus>
 					</ChildrenList>
 					<ObjectLists/>
 				</Bus>

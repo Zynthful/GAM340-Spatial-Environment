@@ -5,11 +5,11 @@
   "SchemaVersion": "12",
   "SoundbankVersion": "140",
   "RootPaths": {
-   "ProjectRoot": "C:\\Users\\Jamie Carnell\\Desktop\\Projects etc\\Projects\\GAM340 Project\\GAM340-Spatial-Environment\\GAM340-SpatialEnv-WwiseProject\\",
-   "SourceFilesRoot": "C:\\Users\\Jamie Carnell\\Desktop\\Projects etc\\Projects\\GAM340 Project\\GAM340-Spatial-Environment\\GAM340-SpatialEnv-WwiseProject\\.cache\\Windows\\",
-   "SoundBanksRoot": "C:\\Users\\Jamie Carnell\\Desktop\\Projects etc\\Projects\\GAM340 Project\\GAM340-Spatial-Environment\\GAM340-SpatialEnv-WwiseProject\\GeneratedSoundBanks\\Windows\\",
+   "ProjectRoot": "D:\\jcwksp\\GAM340-Spatial-Environment\\GAM340-SpatialEnv-WwiseProject\\",
+   "SourceFilesRoot": "D:\\jcwksp\\GAM340-Spatial-Environment\\GAM340-SpatialEnv-WwiseProject\\.cache\\Windows\\",
+   "SoundBanksRoot": "D:\\jcwksp\\GAM340-Spatial-Environment\\GAM340-SpatialEnv-WwiseProject\\GeneratedSoundBanks\\Windows\\",
    "ExternalSourcesInputFile": "",
-   "ExternalSourcesOutputRoot": "C:\\Users\\Jamie Carnell\\Desktop\\Projects etc\\Projects\\GAM340 Project\\GAM340-Spatial-Environment\\GAM340-SpatialEnv-WwiseProject\\GeneratedSoundBanks\\Windows"
+   "ExternalSourcesOutputRoot": "D:\\jcwksp\\GAM340-Spatial-Environment\\GAM340-SpatialEnv-WwiseProject\\GeneratedSoundBanks\\Windows"
   },
   "DialogueEvents": [],
   "StreamedFiles": [],
@@ -19,7 +19,7 @@
     "Id": "1355168291",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "2152344112",
+    "Hash": "713994106",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
@@ -27,7 +27,7 @@
      {
       "Id": "2212376974",
       "Name": "Early_Reflection_Aux_Bus",
-      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Early_Reflection_Aux_Bus",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\SFX\\Early_Reflection_Aux_Bus",
       "GUID": "{8282F99E-D8F7-4B95-B1EA-B9978394AFAE}"
      }
     ]
@@ -36,7 +36,7 @@
     "Id": "4056684167",
     "GUID": "{F180063F-4304-4E4E-863F-DCFB9544A68C}",
     "Language": "SFX",
-    "Hash": "1996993856",
+    "Hash": "2950233081",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Master",
     "ShortName": "Master",
     "Path": "Master.bnk",
@@ -44,7 +44,7 @@
      {
       "Id": "1866025847",
       "Name": "Footstep",
-      "ObjectPath": "\\Events\\Default Work Unit\\Debug\\Footstep",
+      "ObjectPath": "\\Events\\Default Work Unit\\Movement\\Footstep",
       "GUID": "{5DDB4280-0F39-46FC-8045-EEC7A97EDBCD}",
       "MaxAttenuation": "5000.000000",
       "DurationType": "OneShot",
@@ -110,7 +110,7 @@
        {
         "Id": "2212376974",
         "Name": "Early_Reflection_Aux_Bus",
-        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Early_Reflection_Aux_Bus",
+        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\SFX\\Early_Reflection_Aux_Bus",
         "GUID": "{8282F99E-D8F7-4B95-B1EA-B9978394AFAE}"
        }
       ]
@@ -136,7 +136,7 @@
        {
         "Id": "2212376974",
         "Name": "Early_Reflection_Aux_Bus",
-        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Early_Reflection_Aux_Bus",
+        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\SFX\\Early_Reflection_Aux_Bus",
         "GUID": "{8282F99E-D8F7-4B95-B1EA-B9978394AFAE}"
        }
       ]
