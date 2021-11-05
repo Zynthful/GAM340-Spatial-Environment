@@ -5,17 +5,7 @@
 			<ChildrenList>
 				<Folder Name="Debug" ID="{72D6B1C6-003E-4213-970F-834B658DF8E4}" ShortID="927666970">
 					<ChildrenList>
-						<Event Name="Redneck_Rolls_Dice" ID="{A75B3D78-20D7-4E9B-A339-DC774A124709}">
-							<ChildrenList>
-								<Action Name="" ID="{98D4DA3C-FFF4-456D-86FF-EC1140F37230}" ShortID="865532892">
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Redneck_Rolls_Dice-SoundBible_com-1100715950" ID="{57F113D0-237B-4FCE-ADC5-190579752BD1}" WorkUnitID="{2E2CE7FA-02C6-4C71-AABE-F8140864C57E}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
+						<Event Name="Redneck_Rolls_Dice" ID="{A75B3D78-20D7-4E9B-A339-DC774A124709}"/>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Movement" ID="{40AE62E6-A615-4984-84CC-634EED2AE881}" ShortID="493608022">
@@ -26,6 +16,21 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="SE_SFX_Footstep" ID="{D1B3D1DE-17FE-4EBD-9144-A84B1CB81E4A}" WorkUnitID="{2E2CE7FA-02C6-4C71-AABE-F8140864C57E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Environment" ID="{BBADEFC3-4A6E-4897-BA78-DD23BDA690BB}" ShortID="215651081">
+					<ChildrenList>
+						<Event Name="Torch_Active_Loop" ID="{510356EA-B57A-4A15-9E2B-E26B35E00D31}">
+							<ChildrenList>
+								<Action Name="" ID="{CB18F0E3-2655-4F8A-B90F-6A19092C5E08}" ShortID="473195089">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Redneck_Rolls_Dice-SoundBible_com-1100715950" ID="{57F113D0-237B-4FCE-ADC5-190579752BD1}" WorkUnitID="{2E2CE7FA-02C6-4C71-AABE-F8140864C57E}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

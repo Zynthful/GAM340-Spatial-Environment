@@ -6,6 +6,7 @@
 				<Sound Name="Redneck_Rolls_Dice-SoundBible_com-1100715950" ID="{57F113D0-237B-4FCE-ADC5-190579752BD1}" ShortID="95097121">
 					<PropertyList>
 						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 					</PropertyList>
 					<ReferenceList>
