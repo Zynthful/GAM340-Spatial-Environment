@@ -25,17 +25,7 @@
 				</Folder>
 				<Folder Name="Environment" ID="{BBADEFC3-4A6E-4897-BA78-DD23BDA690BB}" ShortID="215651081">
 					<ChildrenList>
-						<Event Name="Torch_Active_Loop" ID="{510356EA-B57A-4A15-9E2B-E26B35E00D31}">
-							<ChildrenList>
-								<Action Name="" ID="{CB18F0E3-2655-4F8A-B90F-6A19092C5E08}" ShortID="473195089">
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Redneck_Rolls_Dice-SoundBible_com-1100715950" ID="{57F113D0-237B-4FCE-ADC5-190579752BD1}" WorkUnitID="{2E2CE7FA-02C6-4C71-AABE-F8140864C57E}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
+						<Event Name="Torch_Active_Loop" ID="{510356EA-B57A-4A15-9E2B-E26B35E00D31}"/>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>
