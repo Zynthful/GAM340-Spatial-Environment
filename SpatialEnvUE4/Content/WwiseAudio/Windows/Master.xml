@@ -8,13 +8,21 @@
 		<ExternalSourcesOutputRoot>D:\jcwksp\GAM340-Spatial-Environment\GAM340-SpatialEnv-WwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<SoundBanks>
-		<SoundBank Id="4056684167" GUID="{F180063F-4304-4E4E-863F-DCFB9544A68C}" Language="SFX" Hash="2950233081">
+		<SoundBank Id="4056684167" GUID="{F180063F-4304-4E4E-863F-DCFB9544A68C}" Language="SFX" Hash="2277095048">
 			<ObjectPath>\SoundBanks\Default Work Unit\Master</ObjectPath>
 			<ShortName>Master</ShortName>
 			<Path>Master.bnk</Path>
 			<IncludedEvents>
-				<Event Id="1866025847" Name="Footstep" ObjectPath="\Events\Default Work Unit\Movement\Footstep" GUID="{5DDB4280-0F39-46FC-8045-EEC7A97EDBCD}" MaxAttenuation="5000.000000" DurationType="OneShot" DurationMin="0.227330" DurationMax="0.637779">
+				<Event Id="1866025847" Name="Footstep" ObjectPath="\Events\Default Work Unit\Movement\Footstep" GUID="{5DDB4280-0F39-46FC-8045-EEC7A97EDBCD}" MaxAttenuation="5000.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.584846">
 					<IncludedMemoryFiles>
+						<File Id="93945285" Language="SFX">
+							<ShortName>WoodBridgeStomp_ (6).wav</ShortName>
+							<Path>SFX\WoodBridgeStomp_ (6)_10C4C929.wem</Path>
+						</File>
+						<File Id="170058169" Language="SFX">
+							<ShortName>WoodBridgeStomp_ (8).wav</ShortName>
+							<Path>SFX\WoodBridgeStomp_ (8)_10C4C929.wem</Path>
+						</File>
 						<File Id="291280622" Language="SFX">
 							<ShortName>Footsteps_PavementConcrete_Untitled 108.wav</ShortName>
 							<Path>SFX\Footsteps_PavementConcrete_Untitled 108_10C4C929.wem</Path>
@@ -23,13 +31,33 @@
 							<ShortName>Footsteps_PavementConcrete_Untitled 114.wav</ShortName>
 							<Path>SFX\Footsteps_PavementConcrete_Untitled 114_10C4C929.wem</Path>
 						</File>
+						<File Id="374622565" Language="SFX">
+							<ShortName>WoodBridgeStomp_ (4).wav</ShortName>
+							<Path>SFX\WoodBridgeStomp_ (4)_10C4C929.wem</Path>
+						</File>
+						<File Id="410425004" Language="SFX">
+							<ShortName>WoodBridgeStomp_ (3).wav</ShortName>
+							<Path>SFX\WoodBridgeStomp_ (3)_10C4C929.wem</Path>
+						</File>
 						<File Id="477291348" Language="SFX">
 							<ShortName>Footsteps_PavementConcrete_Untitled 109.wav</ShortName>
 							<Path>SFX\Footsteps_PavementConcrete_Untitled 109_10C4C929.wem</Path>
 						</File>
+						<File Id="495867062" Language="SFX">
+							<ShortName>WoodBridgeStomp_ (2).wav</ShortName>
+							<Path>SFX\WoodBridgeStomp_ (2)_10C4C929.wem</Path>
+						</File>
+						<File Id="557765730" Language="SFX">
+							<ShortName>WoodBridgeStomp_ (7).wav</ShortName>
+							<Path>SFX\WoodBridgeStomp_ (7)_10C4C929.wem</Path>
+						</File>
 						<File Id="654259328" Language="SFX">
 							<ShortName>Footsteps_PavementConcrete_Untitled 112.wav</ShortName>
 							<Path>SFX\Footsteps_PavementConcrete_Untitled 112_10C4C929.wem</Path>
+						</File>
+						<File Id="674449923" Language="SFX">
+							<ShortName>WoodBridgeStomp_ (5).wav</ShortName>
+							<Path>SFX\WoodBridgeStomp_ (5)_10C4C929.wem</Path>
 						</File>
 						<File Id="674495106" Language="SFX">
 							<ShortName>Footsteps_PavementConcrete_Untitled 110.wav</ShortName>
@@ -52,8 +80,35 @@
 							<Path>SFX\Footsteps_PavementConcrete_Untitled 113_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
+					<DefaultSwitchValue>{DDF1D8AA-D5AB-4C83-9511-FB8309A8C953}</DefaultSwitchValue>
+					<SwitchContainers>
+						<SwitchContainer SwitchValue="{DDF1D8AA-D5AB-4C83-9511-FB8309A8C953}">
+							<Media>
+								<File Id="291280622"/>
+								<File Id="327697384"/>
+								<File Id="477291348"/>
+								<File Id="654259328"/>
+								<File Id="674495106"/>
+								<File Id="766340509"/>
+								<File Id="840542504"/>
+								<File Id="966835818"/>
+								<File Id="1041888282"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{B4CB7316-208E-4344-9ABB-68A0F544F0AD}">
+							<Media>
+								<File Id="93945285"/>
+								<File Id="170058169"/>
+								<File Id="374622565"/>
+								<File Id="410425004"/>
+								<File Id="495867062"/>
+								<File Id="557765730"/>
+								<File Id="674449923"/>
+							</Media>
+						</SwitchContainer>
+					</SwitchContainers>
 					<AuxBusSends>
-						<AuxBus Id="2212376974" Name="Early_Reflection_Aux_Bus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX\Early_Reflection_Aux_Bus" GUID="{8282F99E-D8F7-4B95-B1EA-B9978394AFAE}"/>
+						<AuxBus Id="2212376974" Name="Early_Reflection_Aux_Bus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Early_Reflection_Aux_Bus" GUID="{8282F99E-D8F7-4B95-B1EA-B9978394AFAE}"/>
 					</AuxBusSends>
 				</Event>
 				<Event Id="3981690456" Name="Redneck_Rolls_Dice" ObjectPath="\Events\Default Work Unit\Debug\Redneck_Rolls_Dice" GUID="{A75B3D78-20D7-4E9B-A339-DC774A124709}" MaxAttenuation="5000.000000" DurationType="OneShot" DurationMin="2.926531" DurationMax="2.926531">
@@ -64,10 +119,20 @@
 						</File>
 					</IncludedMemoryFiles>
 					<AuxBusSends>
-						<AuxBus Id="2212376974" Name="Early_Reflection_Aux_Bus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX\Early_Reflection_Aux_Bus" GUID="{8282F99E-D8F7-4B95-B1EA-B9978394AFAE}"/>
+						<AuxBus Id="2212376974" Name="Early_Reflection_Aux_Bus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Early_Reflection_Aux_Bus" GUID="{8282F99E-D8F7-4B95-B1EA-B9978394AFAE}"/>
 					</AuxBusSends>
 				</Event>
 			</IncludedEvents>
+			<SwitchGroups>
+				<SwitchGroup Id="3539622648" Name="Ground_Material" ObjectPath="\Switches\Default Work Unit\Ground_Material" GUID="{9002ABE4-AF62-4CA8-A595-E1E92B41B799}">
+					<Switches>
+						<Switch Id="504532776" Name="Brick" ObjectPath="\Switches\Default Work Unit\Ground_Material\Brick" GUID="{DDF1D8AA-D5AB-4C83-9511-FB8309A8C953}"/>
+						<Switch Id="794333671" Name="Wood_Plank" ObjectPath="\Switches\Default Work Unit\Ground_Material\Wood_Plank" GUID="{89B7A936-CD9C-4D16-BE4E-402F5E3E273F}"/>
+						<Switch Id="3422720194" Name="Wood_Metal" ObjectPath="\Switches\Default Work Unit\Ground_Material\Wood_Metal" GUID="{B4CB7316-208E-4344-9ABB-68A0F544F0AD}"/>
+						<Switch Id="3579901731" Name="Dirt_Rock_Ash" ObjectPath="\Switches\Default Work Unit\Ground_Material\Dirt_Rock_Ash" GUID="{0B359D95-DC0B-4246-93E1-9FA71C02425D}"/>
+					</Switches>
+				</SwitchGroup>
+			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
 </SoundBanksInfo>

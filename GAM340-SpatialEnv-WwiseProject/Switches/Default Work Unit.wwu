@@ -4,6 +4,9 @@
 		<WorkUnit Name="Default Work Unit" ID="{4944EBAB-A603-4D27-97FF-CFF285374CA2}" PersistMode="Standalone">
 			<ChildrenList>
 				<SwitchGroup Name="Ground_Material" ID="{9002ABE4-AF62-4CA8-A595-E1E92B41B799}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="22"/>
+					</PropertyList>
 					<ChildrenList>
 						<Switch Name="Brick" ID="{DDF1D8AA-D5AB-4C83-9511-FB8309A8C953}"/>
 						<Switch Name="Wood_Plank" ID="{89B7A936-CD9C-4D16-BE4E-402F5E3E273F}"/>

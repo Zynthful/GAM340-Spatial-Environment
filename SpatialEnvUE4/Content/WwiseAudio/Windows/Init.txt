@@ -21,7 +21,7 @@ Audio Bus	ID	Name			Wwise Object Path	Notes
 	3991942870	Music			\Default Work Unit\Master Audio Bus\Music	
 
 Auxiliary Bus	ID	Name			Wwise Object Path	Notes
-	2212376974	Early_Reflection_Aux_Bus			\Default Work Unit\Master Audio Bus\SFX\Early_Reflection_Aux_Bus	
+	2212376974	Early_Reflection_Aux_Bus			\Default Work Unit\Master Audio Bus\Early_Reflection_Aux_Bus	
 
 Audio Devices	ID	Name	Type				Notes
 	2317455096	No_Output	No Output			
