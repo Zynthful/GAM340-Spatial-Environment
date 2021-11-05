@@ -36,7 +36,7 @@
     "Id": "4056684167",
     "GUID": "{F180063F-4304-4E4E-863F-DCFB9544A68C}",
     "Language": "SFX",
-    "Hash": "2841614339",
+    "Hash": "2277095048",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Master",
     "ShortName": "Master",
     "Path": "Master.bnk",
@@ -48,9 +48,21 @@
       "GUID": "{5DDB4280-0F39-46FC-8045-EEC7A97EDBCD}",
       "MaxAttenuation": "5000.000000",
       "DurationType": "OneShot",
-      "DurationMin": "0.227330",
-      "DurationMax": "0.637779",
+      "DurationMin": "0.000000",
+      "DurationMax": "0.584846",
       "IncludedMemoryFiles": [
+       {
+        "Id": "93945285",
+        "Language": "SFX",
+        "ShortName": "WoodBridgeStomp_ (6).wav",
+        "Path": "SFX\\WoodBridgeStomp_ (6)_10C4C929.wem"
+       },
+       {
+        "Id": "170058169",
+        "Language": "SFX",
+        "ShortName": "WoodBridgeStomp_ (8).wav",
+        "Path": "SFX\\WoodBridgeStomp_ (8)_10C4C929.wem"
+       },
        {
         "Id": "291280622",
         "Language": "SFX",
@@ -64,16 +76,46 @@
         "Path": "SFX\\Footsteps_PavementConcrete_Untitled 114_10C4C929.wem"
        },
        {
+        "Id": "374622565",
+        "Language": "SFX",
+        "ShortName": "WoodBridgeStomp_ (4).wav",
+        "Path": "SFX\\WoodBridgeStomp_ (4)_10C4C929.wem"
+       },
+       {
+        "Id": "410425004",
+        "Language": "SFX",
+        "ShortName": "WoodBridgeStomp_ (3).wav",
+        "Path": "SFX\\WoodBridgeStomp_ (3)_10C4C929.wem"
+       },
+       {
         "Id": "477291348",
         "Language": "SFX",
         "ShortName": "Footsteps_PavementConcrete_Untitled 109.wav",
         "Path": "SFX\\Footsteps_PavementConcrete_Untitled 109_10C4C929.wem"
        },
        {
+        "Id": "495867062",
+        "Language": "SFX",
+        "ShortName": "WoodBridgeStomp_ (2).wav",
+        "Path": "SFX\\WoodBridgeStomp_ (2)_10C4C929.wem"
+       },
+       {
+        "Id": "557765730",
+        "Language": "SFX",
+        "ShortName": "WoodBridgeStomp_ (7).wav",
+        "Path": "SFX\\WoodBridgeStomp_ (7)_10C4C929.wem"
+       },
+       {
         "Id": "654259328",
         "Language": "SFX",
         "ShortName": "Footsteps_PavementConcrete_Untitled 112.wav",
         "Path": "SFX\\Footsteps_PavementConcrete_Untitled 112_10C4C929.wem"
+       },
+       {
+        "Id": "674449923",
+        "Language": "SFX",
+        "ShortName": "WoodBridgeStomp_ (5).wav",
+        "Path": "SFX\\WoodBridgeStomp_ (5)_10C4C929.wem"
        },
        {
         "Id": "674495106",
@@ -104,6 +146,67 @@
         "Language": "SFX",
         "ShortName": "Footsteps_PavementConcrete_Untitled 113.wav",
         "Path": "SFX\\Footsteps_PavementConcrete_Untitled 113_10C4C929.wem"
+       }
+      ],
+      "DefaultSwitchValue": "{DDF1D8AA-D5AB-4C83-9511-FB8309A8C953}",
+      "SwitchContainers": [
+       {
+        "SwitchValue": "{DDF1D8AA-D5AB-4C83-9511-FB8309A8C953}",
+        "Media": [
+         {
+          "Id": "291280622"
+         },
+         {
+          "Id": "327697384"
+         },
+         {
+          "Id": "477291348"
+         },
+         {
+          "Id": "654259328"
+         },
+         {
+          "Id": "674495106"
+         },
+         {
+          "Id": "766340509"
+         },
+         {
+          "Id": "840542504"
+         },
+         {
+          "Id": "966835818"
+         },
+         {
+          "Id": "1041888282"
+         }
+        ]
+       },
+       {
+        "SwitchValue": "{B4CB7316-208E-4344-9ABB-68A0F544F0AD}",
+        "Media": [
+         {
+          "Id": "93945285"
+         },
+         {
+          "Id": "170058169"
+         },
+         {
+          "Id": "374622565"
+         },
+         {
+          "Id": "410425004"
+         },
+         {
+          "Id": "495867062"
+         },
+         {
+          "Id": "557765730"
+         },
+         {
+          "Id": "674449923"
+         }
+        ]
        }
       ],
       "AuxBusSends": [
@@ -138,6 +241,40 @@
         "Name": "Early_Reflection_Aux_Bus",
         "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Early_Reflection_Aux_Bus",
         "GUID": "{8282F99E-D8F7-4B95-B1EA-B9978394AFAE}"
+       }
+      ]
+     }
+    ],
+    "SwitchGroups": [
+     {
+      "Id": "3539622648",
+      "Name": "Ground_Material",
+      "ObjectPath": "\\Switches\\Default Work Unit\\Ground_Material",
+      "GUID": "{9002ABE4-AF62-4CA8-A595-E1E92B41B799}",
+      "Switches": [
+       {
+        "Id": "504532776",
+        "Name": "Brick",
+        "ObjectPath": "\\Switches\\Default Work Unit\\Ground_Material\\Brick",
+        "GUID": "{DDF1D8AA-D5AB-4C83-9511-FB8309A8C953}"
+       },
+       {
+        "Id": "794333671",
+        "Name": "Wood_Plank",
+        "ObjectPath": "\\Switches\\Default Work Unit\\Ground_Material\\Wood_Plank",
+        "GUID": "{89B7A936-CD9C-4D16-BE4E-402F5E3E273F}"
+       },
+       {
+        "Id": "3422720194",
+        "Name": "Wood_Metal",
+        "ObjectPath": "\\Switches\\Default Work Unit\\Ground_Material\\Wood_Metal",
+        "GUID": "{B4CB7316-208E-4344-9ABB-68A0F544F0AD}"
+       },
+       {
+        "Id": "3579901731",
+        "Name": "Dirt_Rock_Ash",
+        "ObjectPath": "\\Switches\\Default Work Unit\\Ground_Material\\Dirt_Rock_Ash",
+        "GUID": "{0B359D95-DC0B-4246-93E1-9FA71C02425D}"
        }
       ]
      }
