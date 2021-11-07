@@ -572,20 +572,20 @@
 						</GroupingBehaviorList>
 						<GroupingList>
 							<Grouping>
-								<SwitchRef Name="Wood_Metal" ID="{B4CB7316-208E-4344-9ABB-68A0F544F0AD}"/>
+								<SwitchRef Name="WoodMetal" ID="{B4CB7316-208E-4344-9ABB-68A0F544F0AD}"/>
 								<ItemList>
 									<ItemRef Name="SE_SFX_Footstep_Metal" ID="{B910FD2C-FF64-4A46-9047-54995162E0C8}"/>
 									<ItemRef Name="SE_SFX_Footstep_Wood_Plank" ID="{D1E844E2-DEC3-46EC-BFA7-A595D3D955EB}"/>
 								</ItemList>
 							</Grouping>
 							<Grouping>
-								<SwitchRef Name="Wood_Plank" ID="{89B7A936-CD9C-4D16-BE4E-402F5E3E273F}"/>
+								<SwitchRef Name="WoodPlank" ID="{89B7A936-CD9C-4D16-BE4E-402F5E3E273F}"/>
 								<ItemList>
 									<ItemRef Name="SE_SFX_Footstep_Wood_Plank" ID="{D1E844E2-DEC3-46EC-BFA7-A595D3D955EB}"/>
 								</ItemList>
 							</Grouping>
 							<Grouping>
-								<SwitchRef Name="Dirt_Rock_Ash" ID="{0B359D95-DC0B-4246-93E1-9FA71C02425D}"/>
+								<SwitchRef Name="DirtRockAsh" ID="{0B359D95-DC0B-4246-93E1-9FA71C02425D}"/>
 								<ItemList>
 									<ItemRef Name="SE_SFX_Footstep_Dirt" ID="{F01E0191-B2EE-4E25-806A-99E6170B8BB3}"/>
 								</ItemList>

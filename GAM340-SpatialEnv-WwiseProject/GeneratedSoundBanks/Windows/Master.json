@@ -16,7 +16,7 @@
     "Id": "4056684167",
     "GUID": "{F180063F-4304-4E4E-863F-DCFB9544A68C}",
     "Language": "SFX",
-    "Hash": "3559352211",
+    "Hash": "3695739875",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Master",
     "ShortName": "Master",
     "Path": "Master.bnk",
@@ -233,21 +233,21 @@
         "GUID": "{DDF1D8AA-D5AB-4C83-9511-FB8309A8C953}"
        },
        {
-        "Id": "794333671",
-        "Name": "Wood_Plank",
-        "ObjectPath": "\\Switches\\Default Work Unit\\Ground_Material\\Wood_Plank",
+        "Id": "3793643790",
+        "Name": "WoodPlank",
+        "ObjectPath": "\\Switches\\Default Work Unit\\Ground_Material\\WoodPlank",
         "GUID": "{89B7A936-CD9C-4D16-BE4E-402F5E3E273F}"
        },
        {
-        "Id": "3422720194",
-        "Name": "Wood_Metal",
-        "ObjectPath": "\\Switches\\Default Work Unit\\Ground_Material\\Wood_Metal",
+        "Id": "3400588079",
+        "Name": "WoodMetal",
+        "ObjectPath": "\\Switches\\Default Work Unit\\Ground_Material\\WoodMetal",
         "GUID": "{B4CB7316-208E-4344-9ABB-68A0F544F0AD}"
        },
        {
-        "Id": "3579901731",
-        "Name": "Dirt_Rock_Ash",
-        "ObjectPath": "\\Switches\\Default Work Unit\\Ground_Material\\Dirt_Rock_Ash",
+        "Id": "2799564571",
+        "Name": "DirtRockAsh",
+        "ObjectPath": "\\Switches\\Default Work Unit\\Ground_Material\\DirtRockAsh",
         "GUID": "{0B359D95-DC0B-4246-93E1-9FA71C02425D}"
        }
       ]

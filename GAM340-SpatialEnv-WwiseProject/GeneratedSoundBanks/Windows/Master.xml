@@ -8,7 +8,7 @@
 		<ExternalSourcesOutputRoot>C:\Users\Jamie Carnell\Desktop\Projects etc\Projects\GAM340 Project\GAM340-Spatial-Environment\GAM340-SpatialEnv-WwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<SoundBanks>
-		<SoundBank Id="4056684167" GUID="{F180063F-4304-4E4E-863F-DCFB9544A68C}" Language="SFX" Hash="3559352211">
+		<SoundBank Id="4056684167" GUID="{F180063F-4304-4E4E-863F-DCFB9544A68C}" Language="SFX" Hash="3695739875">
 			<ObjectPath>\SoundBanks\Default Work Unit\Master</ObjectPath>
 			<ShortName>Master</ShortName>
 			<Path>Master.bnk</Path>
@@ -118,9 +118,9 @@
 				<SwitchGroup Id="3539622648" Name="Ground_Material" ObjectPath="\Switches\Default Work Unit\Ground_Material" GUID="{9002ABE4-AF62-4CA8-A595-E1E92B41B799}">
 					<Switches>
 						<Switch Id="504532776" Name="Brick" ObjectPath="\Switches\Default Work Unit\Ground_Material\Brick" GUID="{DDF1D8AA-D5AB-4C83-9511-FB8309A8C953}"/>
-						<Switch Id="794333671" Name="Wood_Plank" ObjectPath="\Switches\Default Work Unit\Ground_Material\Wood_Plank" GUID="{89B7A936-CD9C-4D16-BE4E-402F5E3E273F}"/>
-						<Switch Id="3422720194" Name="Wood_Metal" ObjectPath="\Switches\Default Work Unit\Ground_Material\Wood_Metal" GUID="{B4CB7316-208E-4344-9ABB-68A0F544F0AD}"/>
-						<Switch Id="3579901731" Name="Dirt_Rock_Ash" ObjectPath="\Switches\Default Work Unit\Ground_Material\Dirt_Rock_Ash" GUID="{0B359D95-DC0B-4246-93E1-9FA71C02425D}"/>
+						<Switch Id="3793643790" Name="WoodPlank" ObjectPath="\Switches\Default Work Unit\Ground_Material\WoodPlank" GUID="{89B7A936-CD9C-4D16-BE4E-402F5E3E273F}"/>
+						<Switch Id="3400588079" Name="WoodMetal" ObjectPath="\Switches\Default Work Unit\Ground_Material\WoodMetal" GUID="{B4CB7316-208E-4344-9ABB-68A0F544F0AD}"/>
+						<Switch Id="2799564571" Name="DirtRockAsh" ObjectPath="\Switches\Default Work Unit\Ground_Material\DirtRockAsh" GUID="{0B359D95-DC0B-4246-93E1-9FA71C02425D}"/>
 					</Switches>
 				</SwitchGroup>
 			</SwitchGroups>

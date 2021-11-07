@@ -8,9 +8,9 @@ Switch Group	ID	Name			Wwise Object Path	Notes
 
 Switch	ID	Name	Switch Group			Notes
 	504532776	Brick	Ground_Material			
-	794333671	Wood_Plank	Ground_Material			
-	3422720194	Wood_Metal	Ground_Material			
-	3579901731	Dirt_Rock_Ash	Ground_Material			
+	2799564571	DirtRockAsh	Ground_Material			
+	3400588079	WoodMetal	Ground_Material			
+	3793643790	WoodPlank	Ground_Material			
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	93945285	WoodBridgeStomp_ (6)	C:\Users\Jamie Carnell\Desktop\Projects etc\Projects\GAM340 Project\GAM340-Spatial-Environment\GAM340-SpatialEnv-WwiseProject\.cache\Windows\SFX\WoodBridgeStomp_ (6)_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SE_SFX_Footstep\SE_SFX_Footstep_Wood_Plank\WoodBridgeStomp_ (6)		27740
