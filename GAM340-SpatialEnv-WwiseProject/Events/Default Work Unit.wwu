@@ -26,6 +26,31 @@
 				<Folder Name="Environment" ID="{BBADEFC3-4A6E-4897-BA78-DD23BDA690BB}" ShortID="215651081">
 					<ChildrenList>
 						<Event Name="Torch_Active_Loop" ID="{510356EA-B57A-4A15-9E2B-E26B35E00D31}"/>
+						<Event Name="Candle_Active_Loop" ID="{3F769192-65A3-4F32-AFD6-940C9399BC2E}">
+							<ChildrenList>
+								<Action Name="" ID="{CA4A9BBB-3FE8-4673-AA58-3B3853217913}" ShortID="694947956">
+									<PropertyList>
+										<Property Name="Delay" Type="Real64">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{51C3C23B-9CBB-4F7E-B4C2-9B5F4651813D}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="1"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SE_Candle_Loop" ID="{B008CBD9-7139-4034-9E59-1048653C7C35}" WorkUnitID="{2E2CE7FA-02C6-4C71-AABE-F8140864C57E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>

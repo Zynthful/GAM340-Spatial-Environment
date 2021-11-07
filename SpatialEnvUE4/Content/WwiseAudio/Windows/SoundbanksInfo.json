@@ -36,11 +36,35 @@
     "Id": "4056684167",
     "GUID": "{F180063F-4304-4E4E-863F-DCFB9544A68C}",
     "Language": "SFX",
-    "Hash": "3695739875",
+    "Hash": "3270933622",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Master",
     "ShortName": "Master",
     "Path": "Master.bnk",
     "IncludedEvents": [
+     {
+      "Id": "1898196184",
+      "Name": "Candle_Active_Loop",
+      "ObjectPath": "\\Events\\Default Work Unit\\Environment\\Candle_Active_Loop",
+      "GUID": "{3F769192-65A3-4F32-AFD6-940C9399BC2E}",
+      "MaxAttenuation": "5000.000000",
+      "DurationType": "Infinite",
+      "IncludedMemoryFiles": [
+       {
+        "Id": "670250149",
+        "Language": "SFX",
+        "ShortName": "SE_Candle_Loop.wav",
+        "Path": "SFX\\SE_Candle_Loop_D79FB2B7.wem"
+       }
+      ],
+      "AuxBusSends": [
+       {
+        "Id": "2212376974",
+        "Name": "Early_Reflection_Aux_Bus",
+        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Early_Reflection_Aux_Bus",
+        "GUID": "{8282F99E-D8F7-4B95-B1EA-B9978394AFAE}"
+       }
+      ]
+     },
      {
       "Id": "1866025847",
       "Name": "Footstep",
@@ -269,6 +293,12 @@
         "Name": "DirtRockAsh",
         "ObjectPath": "\\Switches\\Default Work Unit\\Ground_Material\\DirtRockAsh",
         "GUID": "{0B359D95-DC0B-4246-93E1-9FA71C02425D}"
+       },
+       {
+        "Id": "3235313607",
+        "Name": "BrickStaircase",
+        "ObjectPath": "\\Switches\\Default Work Unit\\Ground_Material\\BrickStaircase",
+        "GUID": "{3ADE9F45-EDD5-4FBE-9AB2-1CFDFF2B12EF}"
        }
       ]
      }

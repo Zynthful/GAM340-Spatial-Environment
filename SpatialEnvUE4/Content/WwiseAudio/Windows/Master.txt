@@ -1,5 +1,6 @@
 Event	ID	Name			Wwise Object Path	Notes
 	1866025847	Footstep			\Default Work Unit\Movement\Footstep	
+	1898196184	Candle_Active_Loop			\Default Work Unit\Environment\Candle_Active_Loop	
 	3008899467	Torch_Active_Loop			\Default Work Unit\Environment\Torch_Active_Loop	
 	3981690456	Redneck_Rolls_Dice			\Default Work Unit\Debug\Redneck_Rolls_Dice	
 
@@ -9,6 +10,7 @@ Switch Group	ID	Name			Wwise Object Path	Notes
 Switch	ID	Name	Switch Group			Notes
 	504532776	Brick	Ground_Material			
 	2799564571	DirtRockAsh	Ground_Material			
+	3235313607	BrickStaircase	Ground_Material			
 	3400588079	WoodMetal	Ground_Material			
 	3793643790	WoodPlank	Ground_Material			
 
@@ -23,6 +25,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	495867062	WoodBridgeStomp_ (2)	C:\Users\Jamie Carnell\Desktop\Projects etc\Projects\GAM340 Project\GAM340-Spatial-Environment\GAM340-SpatialEnv-WwiseProject\.cache\Windows\SFX\WoodBridgeStomp_ (2)_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SE_SFX_Footstep\SE_SFX_Footstep_Wood_Plank\WoodBridgeStomp_ (2)		38464
 	557765730	WoodBridgeStomp_ (7)	C:\Users\Jamie Carnell\Desktop\Projects etc\Projects\GAM340 Project\GAM340-Spatial-Environment\GAM340-SpatialEnv-WwiseProject\.cache\Windows\SFX\WoodBridgeStomp_ (7)_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SE_SFX_Footstep\SE_SFX_Footstep_Wood_Plank\WoodBridgeStomp_ (7)		53736
 	654259328	Footsteps_PavementConcrete_Untitled 112	C:\Users\Jamie Carnell\Desktop\Projects etc\Projects\GAM340 Project\GAM340-Spatial-Environment\GAM340-SpatialEnv-WwiseProject\.cache\Windows\SFX\Footsteps_PavementConcrete_Untitled 112_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SE_SFX_Footstep\SE_SFX_Footstep_Brick\Footsteps_PavementConcrete_Untitled 112		105964
+	670250149	SE_Candle_Loop	C:\Users\Jamie Carnell\Desktop\Projects etc\Projects\GAM340 Project\GAM340-Spatial-Environment\GAM340-SpatialEnv-WwiseProject\.cache\Windows\SFX\SE_Candle_Loop_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\SE_Candle_Loop		2293264
 	674449923	WoodBridgeStomp_ (5)	C:\Users\Jamie Carnell\Desktop\Projects etc\Projects\GAM340 Project\GAM340-Spatial-Environment\GAM340-SpatialEnv-WwiseProject\.cache\Windows\SFX\WoodBridgeStomp_ (5)_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SE_SFX_Footstep\SE_SFX_Footstep_Wood_Plank\WoodBridgeStomp_ (5)		38464
 	674495106	Footsteps_PavementConcrete_Untitled 110	C:\Users\Jamie Carnell\Desktop\Projects etc\Projects\GAM340 Project\GAM340-Spatial-Environment\GAM340-SpatialEnv-WwiseProject\.cache\Windows\SFX\Footsteps_PavementConcrete_Untitled 110_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SE_SFX_Footstep\SE_SFX_Footstep_Brick\Footsteps_PavementConcrete_Untitled 110		106052
 	766340509	Footsteps_PavementConcrete_Untitled 111	C:\Users\Jamie Carnell\Desktop\Projects etc\Projects\GAM340 Project\GAM340-Spatial-Environment\GAM340-SpatialEnv-WwiseProject\.cache\Windows\SFX\Footsteps_PavementConcrete_Untitled 111_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SE_SFX_Footstep\SE_SFX_Footstep_Brick\Footsteps_PavementConcrete_Untitled 111		80344
