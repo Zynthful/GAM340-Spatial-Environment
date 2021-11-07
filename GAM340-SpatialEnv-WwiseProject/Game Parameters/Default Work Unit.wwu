@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{A8FE91FC-4673-44AE-929D-D03CB1F3282A}" SchemaVersion="103">
 	<GameParameters>
-		<WorkUnit Name="Default Work Unit" ID="{A8FE91FC-4673-44AE-929D-D03CB1F3282A}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{A8FE91FC-4673-44AE-929D-D03CB1F3282A}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="Environment" ID="{D5124E8C-8B93-4639-90A4-46C88A3119F4}" ShortID="158703411">
+					<ChildrenList>
+						<GameParameter Name="NumOfCandles" ID="{40B57E9E-FB9C-46E1-B399-8C3A6270DEFD}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="0"/>
+								<Property Name="Max" Type="Real64" Value="5"/>
+							</PropertyList>
+						</GameParameter>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
 	</GameParameters>
 </WwiseDocument>

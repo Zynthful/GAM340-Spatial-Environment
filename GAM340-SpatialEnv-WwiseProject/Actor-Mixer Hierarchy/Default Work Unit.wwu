@@ -607,6 +607,34 @@
 								<Property Name="EnableDiffraction" Type="bool" Value="True"/>
 								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<RTPCList>
+										<RTPC Name="" ID="{30D8A8B1-CBFB-4B26-9052-13A180BB76B3}" ShortID="176674792">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="NumOfCandles" ID="{40B57E9E-FB9C-46E1-B399-8C3A6270DEFD}" WorkUnitID="{A8FE91FC-4673-44AE-929D-D03CB1F3282A}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{CCED5DE2-3CF5-4F26-946E-929FE2B39F7B}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="3"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>-200</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>5</XPos>
+														<YPos>0</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Attenuation">

@@ -51,7 +51,7 @@
 				</Attenuation>
 				<Attenuation Name="Candle" ID="{3C7B9EB4-26BE-4EE6-B485-2B81BDE1E967}" ShortID="582340132">
 					<PropertyList>
-						<Property Name="RadiusMax" Type="Real64" Value="2000"/>
+						<Property Name="RadiusMax" Type="Real64" Value="600"/>
 					</PropertyList>
 					<CurveUsageInfoList>
 						<VolumeDryUsage>
@@ -65,16 +65,10 @@
 											<XPos>0</XPos>
 											<YPos>0</YPos>
 											<Flags>5</Flags>
-											<SegmentShape>Log3</SegmentShape>
+											<SegmentShape>Exp1</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>310.04367</XPos>
-											<YPos>-29.75137</YPos>
-											<Flags>0</Flags>
-											<SegmentShape>Exp3</SegmentShape>
-										</Point>
-										<Point>
-											<XPos>2000</XPos>
+											<XPos>600</XPos>
 											<YPos>-200</YPos>
 											<Flags>37</Flags>
 										</Point>
