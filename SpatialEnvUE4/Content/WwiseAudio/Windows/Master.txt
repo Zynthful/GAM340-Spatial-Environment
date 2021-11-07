@@ -1,7 +1,9 @@
 Event	ID	Name			Wwise Object Path	Notes
+	674522502	Land			\Default Work Unit\Movement\Land	
 	1866025847	Footstep			\Default Work Unit\Movement\Footstep	
 	1898196184	Candle_Active_Loop			\Default Work Unit\Environment\Candle_Active_Loop	
 	3008899467	Torch_Active_Loop			\Default Work Unit\Environment\Torch_Active_Loop	
+	3833651337	Jump			\Default Work Unit\Movement\Jump	
 	3981690456	Redneck_Rolls_Dice			\Default Work Unit\Debug\Redneck_Rolls_Dice	
 
 Switch Group	ID	Name			Wwise Object Path	Notes
