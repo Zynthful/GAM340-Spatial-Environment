@@ -8,7 +8,7 @@
 						<GameParameter Name="NumOfCandles" ID="{40B57E9E-FB9C-46E1-B399-8C3A6270DEFD}">
 							<PropertyList>
 								<Property Name="InitialValue" Type="Real64" Value="0"/>
-								<Property Name="Max" Type="Real64" Value="5"/>
+								<Property Name="Max" Type="Real64" Value="8"/>
 							</PropertyList>
 						</GameParameter>
 					</ChildrenList>
