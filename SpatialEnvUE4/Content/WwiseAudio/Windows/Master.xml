@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="12" SoundbankVersion="140">
 	<RootPaths>
-		<ProjectRoot>C:\Users\Jamie Carnell\Desktop\Projects etc\Projects\GAM340 Project\GAM340-Spatial-Environment\GAM340-SpatialEnv-WwiseProject\</ProjectRoot>
-		<SourceFilesRoot>C:\Users\Jamie Carnell\Desktop\Projects etc\Projects\GAM340 Project\GAM340-Spatial-Environment\GAM340-SpatialEnv-WwiseProject\.cache\Windows\</SourceFilesRoot>
-		<SoundBanksRoot>C:\Users\Jamie Carnell\Desktop\Projects etc\Projects\GAM340 Project\GAM340-Spatial-Environment\SpatialEnvUE4\Content\WwiseAudio\Windows\</SoundBanksRoot>
+		<ProjectRoot>D:\jcwksp\new\GAM340-Spatial-Environment\GAM340-SpatialEnv-WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>D:\jcwksp\new\GAM340-Spatial-Environment\GAM340-SpatialEnv-WwiseProject\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>D:\jcwksp\new\GAM340-Spatial-Environment\SpatialEnvUE4\Content\WwiseAudio\Windows\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>C:\Users\Jamie Carnell\Desktop\Projects etc\Projects\GAM340 Project\GAM340-Spatial-Environment\GAM340-SpatialEnv-WwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>D:\jcwksp\new\GAM340-Spatial-Environment\GAM340-SpatialEnv-WwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<SoundBanks>
-		<SoundBank Id="4056684167" GUID="{F180063F-4304-4E4E-863F-DCFB9544A68C}" Language="SFX" Hash="706803192">
+		<SoundBank Id="4056684167" GUID="{F180063F-4304-4E4E-863F-DCFB9544A68C}" Language="SFX" Hash="1617773967">
 			<ObjectPath>\SoundBanks\Default Work Unit\Master</ObjectPath>
 			<ShortName>Master</ShortName>
 			<Path>Master.bnk</Path>
