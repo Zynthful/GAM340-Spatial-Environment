@@ -21,7 +21,16 @@ Audio Bus	ID	Name			Wwise Object Path	Notes
 	3991942870	Music			\Default Work Unit\Master Audio Bus\Music	
 
 Auxiliary Bus	ID	Name			Wwise Object Path	Notes
+	1557528409	Aux_Room_Medium			\Default Work Unit\Master Audio Bus\SFX\Aux_Room_Medium	
+	1559320942	Aux_Corridor			\Default Work Unit\Master Audio Bus\SFX\Aux_Corridor	
 	2212376974	Early_Reflection_Aux_Bus			\Default Work Unit\Master Audio Bus\Early_Reflection_Aux_Bus	
+	3408535089	Aux_Room_Large			\Default Work Unit\Master Audio Bus\SFX\Aux_Room_Large	
+
+Effect plug-ins	ID	Name	Type				Notes
+	808992315	Hall_Large (Custom)	Wwise RoomVerb			
+	894395628	Medium (Custom)	Wwise RoomVerb			
+	939061740	Church_Small_Wood (Custom)	Wwise RoomVerb			
+	2545004126	Wwise_Reflect	Wwise Reflect			
 
 Audio Devices	ID	Name	Type				Notes
 	2317455096	No_Output	No Output			

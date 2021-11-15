@@ -5,18 +5,18 @@
   "SchemaVersion": "12",
   "SoundbankVersion": "140",
   "RootPaths": {
-   "ProjectRoot": "D:\\jcwksp\\new\\GAM340-Spatial-Environment\\GAM340-SpatialEnv-WwiseProject\\",
-   "SourceFilesRoot": "D:\\jcwksp\\new\\GAM340-Spatial-Environment\\GAM340-SpatialEnv-WwiseProject\\.cache\\Windows\\",
-   "SoundBanksRoot": "D:\\jcwksp\\new\\GAM340-Spatial-Environment\\SpatialEnvUE4\\Content\\WwiseAudio\\Windows\\",
+   "ProjectRoot": "C:\\Users\\Jamie Carnell\\Desktop\\Projects etc\\Projects\\GAM340 Project\\GAM340-Spatial-Environment\\GAM340-SpatialEnv-WwiseProject\\",
+   "SourceFilesRoot": "C:\\Users\\Jamie Carnell\\Desktop\\Projects etc\\Projects\\GAM340 Project\\GAM340-Spatial-Environment\\GAM340-SpatialEnv-WwiseProject\\.cache\\Windows\\",
+   "SoundBanksRoot": "C:\\Users\\Jamie Carnell\\Desktop\\Projects etc\\Projects\\GAM340 Project\\GAM340-Spatial-Environment\\SpatialEnvUE4\\Content\\WwiseAudio\\Windows\\",
    "ExternalSourcesInputFile": "",
-   "ExternalSourcesOutputRoot": "D:\\jcwksp\\new\\GAM340-Spatial-Environment\\GAM340-SpatialEnv-WwiseProject\\GeneratedSoundBanks\\Windows"
+   "ExternalSourcesOutputRoot": "C:\\Users\\Jamie Carnell\\Desktop\\Projects etc\\Projects\\GAM340 Project\\GAM340-Spatial-Environment\\GAM340-SpatialEnv-WwiseProject\\GeneratedSoundBanks\\Windows"
   },
   "SoundBanks": [
    {
     "Id": "4056684167",
     "GUID": "{F180063F-4304-4E4E-863F-DCFB9544A68C}",
     "Language": "SFX",
-    "Hash": "1617773967",
+    "Hash": "2863544492",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Master",
     "ShortName": "Master",
     "Path": "Master.bnk",
@@ -452,13 +452,15 @@
       "ObjectPath": "\\Events\\Default Work Unit\\Debug\\Redneck_Rolls_Dice",
       "GUID": "{A75B3D78-20D7-4E9B-A339-DC774A124709}",
       "MaxAttenuation": "5000.000000",
-      "DurationType": "Infinite",
+      "DurationType": "OneShot",
+      "DurationMin": "2.926531",
+      "DurationMax": "2.926531",
       "IncludedMemoryFiles": [
        {
         "Id": "294457293",
         "Language": "SFX",
         "ShortName": "Redneck_Rolls_Dice-SoundBible.com-1100715950.wav",
-        "Path": "SFX\\Redneck_Rolls_Dice-SoundBible.com-1100715950_D79FB2B7.wem"
+        "Path": "SFX\\Redneck_Rolls_Dice-SoundBible.com-1100715950_10C4C929.wem"
        }
       ],
       "AuxBusSends": [
@@ -479,6 +481,26 @@
       "DurationType": "OneShot",
       "DurationMin": "0.000000",
       "DurationMax": "0.000000"
+     }
+    ],
+    "IncludedAuxBusses": [
+     {
+      "Id": "1557528409",
+      "Name": "Aux_Room_Medium",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\SFX\\Aux_Room_Medium",
+      "GUID": "{6AD13F5D-A5E4-4445-A459-825A4777FF4E}"
+     },
+     {
+      "Id": "1559320942",
+      "Name": "Aux_Corridor",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\SFX\\Aux_Corridor",
+      "GUID": "{0B646697-B542-468D-8ECD-67356B4A71F6}"
+     },
+     {
+      "Id": "3408535089",
+      "Name": "Aux_Room_Large",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\SFX\\Aux_Room_Large",
+      "GUID": "{4AA6DBFC-04A4-45E0-B095-173B7D30EBD7}"
      }
     ],
     "GameParameters": [

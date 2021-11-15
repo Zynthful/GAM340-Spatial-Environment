@@ -11,6 +11,109 @@
 					</ReferenceList>
 					<ChildrenList>
 						<Bus Name="SFX" ID="{18B976C0-D509-4A4A-B407-A8F6A887E940}">
+							<ChildrenList>
+								<AuxBus Name="Aux_Room_Large" ID="{4AA6DBFC-04A4-45E0-B095-173B7D30EBD7}">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+										<Property Name="ListenerRelativeRouting" Type="bool" Value="True"/>
+										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Effect0">
+											<Custom CreatedFrom="{AEB3F175-958B-45F2-A4C2-3FBD4F456568}">
+												<Effect Name="Medium (Custom)" ID="{ADC50937-63C2-4CB9-AF07-B801B9A0A83F}" ShortID="894395628" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+													<PropertyList>
+														<Property Name="DecayTime" Type="Real32" Value="5.8"/>
+														<Property Name="Density" Type="Real32" Value="70"/>
+														<Property Name="ERLevel" Type="Real32" Value="-28"/>
+														<Property Name="ERPattern" Type="int32" Value="9"/>
+														<Property Name="Filter1Freq" Type="Real32" Value="490"/>
+														<Property Name="Filter1Gain" Type="Real32" Value="-2"/>
+														<Property Name="Filter1InsertPos" Type="int32" Value="2"/>
+														<Property Name="Filter2InsertPos" Type="int32" Value="0"/>
+														<Property Name="Filter3Freq" Type="Real32" Value="11000"/>
+														<Property Name="Filter3Gain" Type="Real32" Value="-4.5"/>
+														<Property Name="HFDamping" Type="Real32" Value="5.7"/>
+														<Property Name="PreDelay" Type="Real32" Value="120"/>
+														<Property Name="Quality" Type="int32" Value="14"/>
+														<Property Name="ReverbLevel" Type="Real32" Value="-22"/>
+														<Property Name="RoomSize" Type="Real32" Value="100"/>
+														<Property Name="StereoWidth" Type="Real32" Value="172"/>
+													</PropertyList>
+												</Effect>
+											</Custom>
+										</Reference>
+									</ReferenceList>
+									<ObjectLists/>
+								</AuxBus>
+								<AuxBus Name="Aux_Corridor" ID="{0B646697-B542-468D-8ECD-67356B4A71F6}">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+										<Property Name="ListenerRelativeRouting" Type="bool" Value="True"/>
+										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Effect0">
+											<Custom CreatedFrom="{6D154498-FF6D-4823-96FC-56841B70E079}">
+												<Effect Name="Hall_Large (Custom)" ID="{A8E90292-3285-4C61-BEF9-14F5A4BA2CBE}" ShortID="808992315" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+													<PropertyList>
+														<Property Name="DecayTime" Type="Real32" Value="4.9"/>
+														<Property Name="Density" Type="Real32" Value="70"/>
+														<Property Name="ERLevel" Type="Real32" Value="-23"/>
+														<Property Name="ERPattern" Type="int32" Value="15"/>
+														<Property Name="Filter1Freq" Type="Real32" Value="590"/>
+														<Property Name="Filter1Gain" Type="Real32" Value="3"/>
+														<Property Name="Filter1InsertPos" Type="int32" Value="2"/>
+														<Property Name="HFDamping" Type="Real32" Value="2.35"/>
+														<Property Name="PreDelay" Type="Real32" Value="74"/>
+														<Property Name="Quality" Type="int32" Value="14"/>
+														<Property Name="ReverbLevel" Type="Real32" Value="-23"/>
+														<Property Name="RoomShape" Type="Real32" Value="55"/>
+														<Property Name="RoomSize" Type="Real32" Value="49"/>
+													</PropertyList>
+												</Effect>
+											</Custom>
+										</Reference>
+									</ReferenceList>
+									<ObjectLists/>
+								</AuxBus>
+								<AuxBus Name="Aux_Room_Medium" ID="{6AD13F5D-A5E4-4445-A459-825A4777FF4E}">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+										<Property Name="ListenerRelativeRouting" Type="bool" Value="True"/>
+										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Effect0">
+											<Custom CreatedFrom="{940CCB47-F031-4C6A-B0E6-726CAC418C02}">
+												<Effect Name="Church_Small_Wood (Custom)" ID="{2AAD55B0-C121-4392-A7C7-D6BC59857DD9}" ShortID="939061740" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+													<PropertyList>
+														<Property Name="DecayTime" Type="Real32" Value="1.3"/>
+														<Property Name="Density" Type="Real32" Value="27"/>
+														<Property Name="ERLevel" Type="Real32" Value="-24"/>
+														<Property Name="ERPattern" Type="int32" Value="6"/>
+														<Property Name="Filter1Freq" Type="Real32" Value="490"/>
+														<Property Name="Filter1Gain" Type="Real32" Value="-5.5"/>
+														<Property Name="Filter1InsertPos" Type="int32" Value="2"/>
+														<Property Name="Filter2InsertPos" Type="int32" Value="0"/>
+														<Property Name="Filter3Freq" Type="Real32" Value="11000"/>
+														<Property Name="Filter3Gain" Type="Real32" Value="-7"/>
+														<Property Name="HFDamping" Type="Real32" Value="3.7"/>
+														<Property Name="PreDelay" Type="Real32" Value="18"/>
+														<Property Name="Quality" Type="int32" Value="12"/>
+														<Property Name="ReverbLevel" Type="Real32" Value="-23"/>
+														<Property Name="RoomSize" Type="Real32" Value="20"/>
+													</PropertyList>
+												</Effect>
+											</Custom>
+										</Reference>
+									</ReferenceList>
+									<ObjectLists/>
+								</AuxBus>
+							</ChildrenList>
 							<ObjectLists/>
 						</Bus>
 						<Bus Name="Music" ID="{634AB43A-5F23-44BA-AB38-535F5B65E59E}">
