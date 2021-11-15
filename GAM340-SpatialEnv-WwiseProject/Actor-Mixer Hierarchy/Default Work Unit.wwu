@@ -136,9 +136,6 @@
 										<Reference Name="OutputBus">
 											<ObjectRef Name="SFX" ID="{18B976C0-D509-4A4A-B407-A8F6A887E940}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
 										</Reference>
-										<Reference Name="ReflectionsAuxSend">
-											<ObjectRef Name="Early_Reflection_Aux_Bus" ID="{8282F99E-D8F7-4B95-B1EA-B9978394AFAE}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
-										</Reference>
 										<Reference Name="SwitchGroupOrStateGroup">
 											<ObjectRef Name="Ground_Material" ID="{9002ABE4-AF62-4CA8-A595-E1E92B41B799}" WorkUnitID="{4944EBAB-A603-4D27-97FF-CFF285374CA2}"/>
 										</Reference>
@@ -1857,7 +1854,7 @@
 												</ItemList>
 											</Grouping>
 											<Grouping>
-												<SwitchRef Name="BrickStaircase" ID="{3ADE9F45-EDD5-4FBE-9AB2-1CFDFF2B12EF}"/>
+												<SwitchRef Name="Concrete" ID="{3ADE9F45-EDD5-4FBE-9AB2-1CFDFF2B12EF}"/>
 												<ItemList>
 													<ItemRef Name="SE_SFX_Footstep_Staircase" ID="{F4464BE4-9656-4F36-B879-C430FEB8134E}"/>
 												</ItemList>
@@ -1939,9 +1936,6 @@
 										</Reference>
 										<Reference Name="OutputBus">
 											<ObjectRef Name="SFX" ID="{18B976C0-D509-4A4A-B407-A8F6A887E940}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
-										</Reference>
-										<Reference Name="ReflectionsAuxSend">
-											<ObjectRef Name="Early_Reflection_Aux_Bus" ID="{8282F99E-D8F7-4B95-B1EA-B9978394AFAE}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
 										</Reference>
 										<Reference Name="SwitchGroupOrStateGroup">
 											<ObjectRef Name="Ground_Material" ID="{9002ABE4-AF62-4CA8-A595-E1E92B41B799}" WorkUnitID="{4944EBAB-A603-4D27-97FF-CFF285374CA2}"/>
@@ -2130,6 +2124,68 @@
 													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
 												</Reference>
 											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="SE_SFX_Land_Concrete_1" ID="{59197D80-C589-4641-9B66-056F81D0E583}" ShortID="63115835">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="1"/>
+														<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="SpatialAudioTest" ID="{7E28C3B6-D318-45B1-8116-1585C6E1390F}" WorkUnitID="{A1BA0ADB-F758-4BAD-B04B-D53467CF759B}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Movement" ID="{4C27FC69-5E71-4567-B792-7A143D066898}" WorkUnitID="{62267F72-14C7-4DA9-898E-CD1568645172}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX" ID="{18B976C0-D509-4A4A-B407-A8F6A887E940}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SE_SFX_Land_Concrete_1" ID="{2B2088E6-CC14-4620-9434-EAB4A5076C11}">
+															<Language>SFX</Language>
+															<AudioFile>SE_SFX_Land_Concrete_1.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="28180430"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="SE_SFX_Land_Concrete_1" ID="{2B2088E6-CC14-4620-9434-EAB4A5076C11}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="SE_SFX_Land_Concrete_2" ID="{A6E36522-B482-4909-A151-84F56B81C166}" ShortID="878291189">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="1"/>
+														<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="SpatialAudioTest" ID="{7E28C3B6-D318-45B1-8116-1585C6E1390F}" WorkUnitID="{A1BA0ADB-F758-4BAD-B04B-D53467CF759B}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Movement" ID="{4C27FC69-5E71-4567-B792-7A143D066898}" WorkUnitID="{62267F72-14C7-4DA9-898E-CD1568645172}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX" ID="{18B976C0-D509-4A4A-B407-A8F6A887E940}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SE_SFX_Land_Concrete_2" ID="{8B44B4E9-958E-4100-A38D-606400DBDD2C}">
+															<Language>SFX</Language>
+															<AudioFile>SE_SFX_Land_Concrete_2.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="328918252"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="SE_SFX_Land_Concrete_2" ID="{8B44B4E9-958E-4100-A38D-606400DBDD2C}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
 											<ObjectLists/>
 										</RandomSequenceContainer>
 									</ChildrenList>
@@ -2167,7 +2223,7 @@
 												</ItemList>
 											</Grouping>
 											<Grouping>
-												<SwitchRef Name="BrickStaircase" ID="{3ADE9F45-EDD5-4FBE-9AB2-1CFDFF2B12EF}"/>
+												<SwitchRef Name="Concrete" ID="{3ADE9F45-EDD5-4FBE-9AB2-1CFDFF2B12EF}"/>
 												<ItemList>
 													<ItemRef Name="SE_SFX_Jump_Staircase" ID="{90BCECB6-8E58-40DA-AAE9-66A7008710C7}"/>
 												</ItemList>
@@ -2249,9 +2305,6 @@
 										</Reference>
 										<Reference Name="OutputBus">
 											<ObjectRef Name="SFX" ID="{18B976C0-D509-4A4A-B407-A8F6A887E940}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
-										</Reference>
-										<Reference Name="ReflectionsAuxSend">
-											<ObjectRef Name="Early_Reflection_Aux_Bus" ID="{8282F99E-D8F7-4B95-B1EA-B9978394AFAE}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
 										</Reference>
 										<Reference Name="SwitchGroupOrStateGroup">
 											<ObjectRef Name="Ground_Material" ID="{9002ABE4-AF62-4CA8-A595-E1E92B41B799}" WorkUnitID="{4944EBAB-A603-4D27-97FF-CFF285374CA2}"/>
@@ -2732,7 +2785,7 @@
 												</ItemList>
 											</Grouping>
 											<Grouping>
-												<SwitchRef Name="BrickStaircase" ID="{3ADE9F45-EDD5-4FBE-9AB2-1CFDFF2B12EF}"/>
+												<SwitchRef Name="Concrete" ID="{3ADE9F45-EDD5-4FBE-9AB2-1CFDFF2B12EF}"/>
 												<ItemList>
 													<ItemRef Name="SE_SFX_Land_Staircase" ID="{C8490F49-8598-4ED3-BF96-EA529843F270}"/>
 												</ItemList>
