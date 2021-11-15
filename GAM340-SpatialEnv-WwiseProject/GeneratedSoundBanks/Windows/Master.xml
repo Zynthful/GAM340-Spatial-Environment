@@ -8,7 +8,7 @@
 		<ExternalSourcesOutputRoot>C:\Users\Jamie Carnell\Desktop\Projects etc\Projects\GAM340 Project\GAM340-Spatial-Environment\GAM340-SpatialEnv-WwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<SoundBanks>
-		<SoundBank Id="4056684167" GUID="{F180063F-4304-4E4E-863F-DCFB9544A68C}" Language="SFX" Hash="1619757582">
+		<SoundBank Id="4056684167" GUID="{F180063F-4304-4E4E-863F-DCFB9544A68C}" Language="SFX" Hash="3667090740">
 			<ObjectPath>\SoundBanks\Default Work Unit\Master</ObjectPath>
 			<ShortName>Master</ShortName>
 			<Path>Master.bnk</Path>
@@ -21,97 +21,261 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="1866025847" Name="Footstep" ObjectPath="\Events\Default Work Unit\Movement\Footstep" GUID="{5DDB4280-0F39-46FC-8045-EEC7A97EDBCD}" MaxAttenuation="5000.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.584846">
+				<Event Id="1866025847" Name="Footstep" ObjectPath="\Events\Default Work Unit\Movement\Footstep" GUID="{5DDB4280-0F39-46FC-8045-EEC7A97EDBCD}" MaxAttenuation="5000.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.503565">
 					<IncludedMemoryFiles>
-						<File Id="93945285" Language="SFX">
-							<ShortName>WoodBridgeStomp_ (6).wav</ShortName>
-							<Path>SFX\WoodBridgeStomp_ (6)_10C4C929.wem</Path>
+						<File Id="9063177" Language="SFX">
+							<ShortName>SE_SFX_Footstep_Concrete_17.wav</ShortName>
+							<Path>SFX\SE_SFX_Footstep_Concrete_17_8EE21B35.wem</Path>
 						</File>
-						<File Id="170058169" Language="SFX">
-							<ShortName>WoodBridgeStomp_ (8).wav</ShortName>
-							<Path>SFX\WoodBridgeStomp_ (8)_10C4C929.wem</Path>
+						<File Id="73816241" Language="SFX">
+							<ShortName>SE_SFX_Footstep_Wood_14.wav</ShortName>
+							<Path>SFX\SE_SFX_Footstep_Wood_14_8EE21B35.wem</Path>
 						</File>
-						<File Id="291280622" Language="SFX">
-							<ShortName>Footsteps_PavementConcrete_Untitled 108.wav</ShortName>
-							<Path>SFX\Footsteps_PavementConcrete_Untitled 108_10C4C929.wem</Path>
+						<File Id="106152035" Language="SFX">
+							<ShortName>SE_SFX_Footstep_Brick_9.wav</ShortName>
+							<Path>SFX\SE_SFX_Footstep_Brick_9_8EE21B35.wem</Path>
 						</File>
-						<File Id="327697384" Language="SFX">
-							<ShortName>Footsteps_PavementConcrete_Untitled 114.wav</ShortName>
-							<Path>SFX\Footsteps_PavementConcrete_Untitled 114_10C4C929.wem</Path>
+						<File Id="149555470" Language="SFX">
+							<ShortName>SE_SFX_Footstep_Brick_3.wav</ShortName>
+							<Path>SFX\SE_SFX_Footstep_Brick_3_8EE21B35.wem</Path>
 						</File>
-						<File Id="374622565" Language="SFX">
-							<ShortName>WoodBridgeStomp_ (4).wav</ShortName>
-							<Path>SFX\WoodBridgeStomp_ (4)_10C4C929.wem</Path>
+						<File Id="154167663" Language="SFX">
+							<ShortName>SE_SFX_Footstep_Brick_10.wav</ShortName>
+							<Path>SFX\SE_SFX_Footstep_Brick_10_8EE21B35.wem</Path>
 						</File>
-						<File Id="410425004" Language="SFX">
-							<ShortName>WoodBridgeStomp_ (3).wav</ShortName>
-							<Path>SFX\WoodBridgeStomp_ (3)_10C4C929.wem</Path>
+						<File Id="167422895" Language="SFX">
+							<ShortName>SE_SFX_Footstep_Wood_16.wav</ShortName>
+							<Path>SFX\SE_SFX_Footstep_Wood_16_8EE21B35.wem</Path>
 						</File>
-						<File Id="477291348" Language="SFX">
-							<ShortName>Footsteps_PavementConcrete_Untitled 109.wav</ShortName>
-							<Path>SFX\Footsteps_PavementConcrete_Untitled 109_10C4C929.wem</Path>
+						<File Id="183675266" Language="SFX">
+							<ShortName>SE_SFX_Footstep_Brick_2.wav</ShortName>
+							<Path>SFX\SE_SFX_Footstep_Brick_2_8EE21B35.wem</Path>
 						</File>
-						<File Id="495867062" Language="SFX">
-							<ShortName>WoodBridgeStomp_ (2).wav</ShortName>
-							<Path>SFX\WoodBridgeStomp_ (2)_10C4C929.wem</Path>
+						<File Id="219021047" Language="SFX">
+							<ShortName>SE_SFX_Footstep_Wood_10.wav</ShortName>
+							<Path>SFX\SE_SFX_Footstep_Wood_10_8EE21B35.wem</Path>
 						</File>
-						<File Id="557765730" Language="SFX">
-							<ShortName>WoodBridgeStomp_ (7).wav</ShortName>
-							<Path>SFX\WoodBridgeStomp_ (7)_10C4C929.wem</Path>
+						<File Id="223819212" Language="SFX">
+							<ShortName>SE_SFX_Footstep_Concrete_25.wav</ShortName>
+							<Path>SFX\SE_SFX_Footstep_Concrete_25_8EE21B35.wem</Path>
 						</File>
-						<File Id="654259328" Language="SFX">
-							<ShortName>Footsteps_PavementConcrete_Untitled 112.wav</ShortName>
-							<Path>SFX\Footsteps_PavementConcrete_Untitled 112_10C4C929.wem</Path>
+						<File Id="260755168" Language="SFX">
+							<ShortName>SE_SFX_Footstep_Wood_20.wav</ShortName>
+							<Path>SFX\SE_SFX_Footstep_Wood_20_8EE21B35.wem</Path>
 						</File>
-						<File Id="674449923" Language="SFX">
-							<ShortName>WoodBridgeStomp_ (5).wav</ShortName>
-							<Path>SFX\WoodBridgeStomp_ (5)_10C4C929.wem</Path>
+						<File Id="287736745" Language="SFX">
+							<ShortName>SE_SFX_Footstep_Wood_11.wav</ShortName>
+							<Path>SFX\SE_SFX_Footstep_Wood_11_8EE21B35.wem</Path>
 						</File>
-						<File Id="674495106" Language="SFX">
-							<ShortName>Footsteps_PavementConcrete_Untitled 110.wav</ShortName>
-							<Path>SFX\Footsteps_PavementConcrete_Untitled 110_10C4C929.wem</Path>
+						<File Id="298728433" Language="SFX">
+							<ShortName>SE_SFX_Footstep_Concrete_20.wav</ShortName>
+							<Path>SFX\SE_SFX_Footstep_Concrete_20_8EE21B35.wem</Path>
 						</File>
-						<File Id="766340509" Language="SFX">
-							<ShortName>Footsteps_PavementConcrete_Untitled 111.wav</ShortName>
-							<Path>SFX\Footsteps_PavementConcrete_Untitled 111_10C4C929.wem</Path>
+						<File Id="301987717" Language="SFX">
+							<ShortName>SE_SFX_Footstep_Wood_8.wav</ShortName>
+							<Path>SFX\SE_SFX_Footstep_Wood_8_8EE21B35.wem</Path>
 						</File>
-						<File Id="840542504" Language="SFX">
-							<ShortName>Footsteps_PavementConcrete_Untitled 107.wav</ShortName>
-							<Path>SFX\Footsteps_PavementConcrete_Untitled 107_10C4C929.wem</Path>
+						<File Id="305072942" Language="SFX">
+							<ShortName>SE_SFX_Footstep_Wood_18.wav</ShortName>
+							<Path>SFX\SE_SFX_Footstep_Wood_18_8EE21B35.wem</Path>
 						</File>
-						<File Id="966835818" Language="SFX">
-							<ShortName>Footsteps_PavementConcrete_Untitled 106.wav</ShortName>
-							<Path>SFX\Footsteps_PavementConcrete_Untitled 106_10C4C929.wem</Path>
+						<File Id="312022029" Language="SFX">
+							<ShortName>SE_SFX_Footstep_Brick_17.wav</ShortName>
+							<Path>SFX\SE_SFX_Footstep_Brick_17_8EE21B35.wem</Path>
 						</File>
-						<File Id="1041888282" Language="SFX">
-							<ShortName>Footsteps_PavementConcrete_Untitled 113.wav</ShortName>
-							<Path>SFX\Footsteps_PavementConcrete_Untitled 113_10C4C929.wem</Path>
+						<File Id="323956997" Language="SFX">
+							<ShortName>SE_SFX_Footstep_Wood_3.wav</ShortName>
+							<Path>SFX\SE_SFX_Footstep_Wood_3_8EE21B35.wem</Path>
+						</File>
+						<File Id="351069673" Language="SFX">
+							<ShortName>SE_SFX_Footstep_Wood_7.wav</ShortName>
+							<Path>SFX\SE_SFX_Footstep_Wood_7_8EE21B35.wem</Path>
+						</File>
+						<File Id="355302135" Language="SFX">
+							<ShortName>SE_SFX_Footstep_Brick_11.wav</ShortName>
+							<Path>SFX\SE_SFX_Footstep_Brick_11_8EE21B35.wem</Path>
+						</File>
+						<File Id="366586264" Language="SFX">
+							<ShortName>SE_SFX_Footstep_Brick_4.wav</ShortName>
+							<Path>SFX\SE_SFX_Footstep_Brick_4_8EE21B35.wem</Path>
+						</File>
+						<File Id="444617621" Language="SFX">
+							<ShortName>SE_SFX_Footstep_Concrete_19.wav</ShortName>
+							<Path>SFX\SE_SFX_Footstep_Concrete_19_8EE21B35.wem</Path>
+						</File>
+						<File Id="486533153" Language="SFX">
+							<ShortName>SE_SFX_Footstep_Concrete_21.wav</ShortName>
+							<Path>SFX\SE_SFX_Footstep_Concrete_21_8EE21B35.wem</Path>
+						</File>
+						<File Id="491325595" Language="SFX">
+							<ShortName>SE_SFX_Footstep_Concrete_24.wav</ShortName>
+							<Path>SFX\SE_SFX_Footstep_Concrete_24_8EE21B35.wem</Path>
+						</File>
+						<File Id="533116857" Language="SFX">
+							<ShortName>SE_SFX_Footstep_Brick_16.wav</ShortName>
+							<Path>SFX\SE_SFX_Footstep_Brick_16_8EE21B35.wem</Path>
+						</File>
+						<File Id="565835330" Language="SFX">
+							<ShortName>SE_SFX_Footstep_Wood_6.wav</ShortName>
+							<Path>SFX\SE_SFX_Footstep_Wood_6_8EE21B35.wem</Path>
+						</File>
+						<File Id="569267904" Language="SFX">
+							<ShortName>SE_SFX_Footstep_Brick_15.wav</ShortName>
+							<Path>SFX\SE_SFX_Footstep_Brick_15_8EE21B35.wem</Path>
+						</File>
+						<File Id="605330385" Language="SFX">
+							<ShortName>SE_SFX_Footstep_Wood_1.wav</ShortName>
+							<Path>SFX\SE_SFX_Footstep_Wood_1_8EE21B35.wem</Path>
+						</File>
+						<File Id="620431336" Language="SFX">
+							<ShortName>SE_SFX_Footstep_Wood_12.wav</ShortName>
+							<Path>SFX\SE_SFX_Footstep_Wood_12_8EE21B35.wem</Path>
+						</File>
+						<File Id="627568757" Language="SFX">
+							<ShortName>SE_SFX_Footstep_Brick_13.wav</ShortName>
+							<Path>SFX\SE_SFX_Footstep_Brick_13_8EE21B35.wem</Path>
+						</File>
+						<File Id="712339226" Language="SFX">
+							<ShortName>SE_SFX_Footstep_Wood_2.wav</ShortName>
+							<Path>SFX\SE_SFX_Footstep_Wood_2_8EE21B35.wem</Path>
+						</File>
+						<File Id="731180025" Language="SFX">
+							<ShortName>SE_SFX_Footstep_Wood_4.wav</ShortName>
+							<Path>SFX\SE_SFX_Footstep_Wood_4_8EE21B35.wem</Path>
+						</File>
+						<File Id="736644660" Language="SFX">
+							<ShortName>SE_SFX_Footstep_Brick_12.wav</ShortName>
+							<Path>SFX\SE_SFX_Footstep_Brick_12_8EE21B35.wem</Path>
+						</File>
+						<File Id="758008494" Language="SFX">
+							<ShortName>SE_SFX_Footstep_Brick_18.wav</ShortName>
+							<Path>SFX\SE_SFX_Footstep_Brick_18_8EE21B35.wem</Path>
+						</File>
+						<File Id="759023593" Language="SFX">
+							<ShortName>SE_SFX_Footstep_Concrete_26.wav</ShortName>
+							<Path>SFX\SE_SFX_Footstep_Concrete_26_8EE21B35.wem</Path>
+						</File>
+						<File Id="813709866" Language="SFX">
+							<ShortName>SE_SFX_Footstep_Brick_7.wav</ShortName>
+							<Path>SFX\SE_SFX_Footstep_Brick_7_8EE21B35.wem</Path>
+						</File>
+						<File Id="820499950" Language="SFX">
+							<ShortName>SE_SFX_Footstep_Concrete_18.wav</ShortName>
+							<Path>SFX\SE_SFX_Footstep_Concrete_18_8EE21B35.wem</Path>
+						</File>
+						<File Id="822925497" Language="SFX">
+							<ShortName>SE_SFX_Footstep_Concrete_22.wav</ShortName>
+							<Path>SFX\SE_SFX_Footstep_Concrete_22_8EE21B35.wem</Path>
+						</File>
+						<File Id="829574385" Language="SFX">
+							<ShortName>SE_SFX_Footstep_Brick_14.wav</ShortName>
+							<Path>SFX\SE_SFX_Footstep_Brick_14_8EE21B35.wem</Path>
+						</File>
+						<File Id="861178027" Language="SFX">
+							<ShortName>SE_SFX_Footstep_Brick_8.wav</ShortName>
+							<Path>SFX\SE_SFX_Footstep_Brick_8_8EE21B35.wem</Path>
+						</File>
+						<File Id="889422069" Language="SFX">
+							<ShortName>SE_SFX_Footstep_Wood_5.wav</ShortName>
+							<Path>SFX\SE_SFX_Footstep_Wood_5_8EE21B35.wem</Path>
+						</File>
+						<File Id="937390778" Language="SFX">
+							<ShortName>SE_SFX_Footstep_Wood_19.wav</ShortName>
+							<Path>SFX\SE_SFX_Footstep_Wood_19_8EE21B35.wem</Path>
+						</File>
+						<File Id="970784732" Language="SFX">
+							<ShortName>SE_SFX_Footstep_Concrete_23.wav</ShortName>
+							<Path>SFX\SE_SFX_Footstep_Concrete_23_8EE21B35.wem</Path>
+						</File>
+						<File Id="977924030" Language="SFX">
+							<ShortName>SE_SFX_Footstep_Wood_17.wav</ShortName>
+							<Path>SFX\SE_SFX_Footstep_Wood_17_8EE21B35.wem</Path>
+						</File>
+						<File Id="980450782" Language="SFX">
+							<ShortName>SE_SFX_Footstep_Wood_13.wav</ShortName>
+							<Path>SFX\SE_SFX_Footstep_Wood_13_8EE21B35.wem</Path>
+						</File>
+						<File Id="996722593" Language="SFX">
+							<ShortName>SE_SFX_Footstep_Wood_15.wav</ShortName>
+							<Path>SFX\SE_SFX_Footstep_Wood_15_8EE21B35.wem</Path>
+						</File>
+						<File Id="996894716" Language="SFX">
+							<ShortName>SE_SFX_Footstep_Brick_1.wav</ShortName>
+							<Path>SFX\SE_SFX_Footstep_Brick_1_8EE21B35.wem</Path>
+						</File>
+						<File Id="1010243084" Language="SFX">
+							<ShortName>SE_SFX_Footstep_Wood_9.wav</ShortName>
+							<Path>SFX\SE_SFX_Footstep_Wood_9_8EE21B35.wem</Path>
+						</File>
+						<File Id="1010970117" Language="SFX">
+							<ShortName>SE_SFX_Footstep_Brick_5.wav</ShortName>
+							<Path>SFX\SE_SFX_Footstep_Brick_5_8EE21B35.wem</Path>
+						</File>
+						<File Id="1022129221" Language="SFX">
+							<ShortName>SE_SFX_Footstep_Brick_6.wav</ShortName>
+							<Path>SFX\SE_SFX_Footstep_Brick_6_8EE21B35.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 					<DefaultSwitchValue>{DDF1D8AA-D5AB-4C83-9511-FB8309A8C953}</DefaultSwitchValue>
 					<SwitchContainers>
 						<SwitchContainer SwitchValue="{DDF1D8AA-D5AB-4C83-9511-FB8309A8C953}">
 							<Media>
-								<File Id="291280622"/>
-								<File Id="327697384"/>
-								<File Id="477291348"/>
-								<File Id="654259328"/>
-								<File Id="674495106"/>
-								<File Id="766340509"/>
-								<File Id="840542504"/>
-								<File Id="966835818"/>
-								<File Id="1041888282"/>
+								<File Id="106152035"/>
+								<File Id="149555470"/>
+								<File Id="154167663"/>
+								<File Id="183675266"/>
+								<File Id="312022029"/>
+								<File Id="355302135"/>
+								<File Id="366586264"/>
+								<File Id="533116857"/>
+								<File Id="569267904"/>
+								<File Id="627568757"/>
+								<File Id="736644660"/>
+								<File Id="758008494"/>
+								<File Id="813709866"/>
+								<File Id="829574385"/>
+								<File Id="861178027"/>
+								<File Id="996894716"/>
+								<File Id="1010970117"/>
+								<File Id="1022129221"/>
 							</Media>
 						</SwitchContainer>
 						<SwitchContainer SwitchValue="{B4CB7316-208E-4344-9ABB-68A0F544F0AD}">
 							<Media>
-								<File Id="93945285"/>
-								<File Id="170058169"/>
-								<File Id="374622565"/>
-								<File Id="410425004"/>
-								<File Id="495867062"/>
-								<File Id="557765730"/>
-								<File Id="674449923"/>
+								<File Id="73816241"/>
+								<File Id="167422895"/>
+								<File Id="219021047"/>
+								<File Id="260755168"/>
+								<File Id="287736745"/>
+								<File Id="301987717"/>
+								<File Id="305072942"/>
+								<File Id="323956997"/>
+								<File Id="351069673"/>
+								<File Id="565835330"/>
+								<File Id="605330385"/>
+								<File Id="620431336"/>
+								<File Id="712339226"/>
+								<File Id="731180025"/>
+								<File Id="889422069"/>
+								<File Id="937390778"/>
+								<File Id="977924030"/>
+								<File Id="980450782"/>
+								<File Id="996722593"/>
+								<File Id="1010243084"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{3ADE9F45-EDD5-4FBE-9AB2-1CFDFF2B12EF}">
+							<Media>
+								<File Id="9063177"/>
+								<File Id="223819212"/>
+								<File Id="298728433"/>
+								<File Id="444617621"/>
+								<File Id="486533153"/>
+								<File Id="491325595"/>
+								<File Id="759023593"/>
+								<File Id="820499950"/>
+								<File Id="822925497"/>
+								<File Id="970784732"/>
 							</Media>
 						</SwitchContainer>
 					</SwitchContainers>
@@ -119,144 +283,147 @@
 						<AuxBus Id="2212376974" Name="Early_Reflection_Aux_Bus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Early_Reflection_Aux_Bus" GUID="{8282F99E-D8F7-4B95-B1EA-B9978394AFAE}"/>
 					</AuxBusSends>
 				</Event>
-				<Event Id="3833651337" Name="Jump" ObjectPath="\Events\Default Work Unit\Movement\Jump" GUID="{BF192FBB-F72E-49C0-B0C5-3B302DC178E9}" MaxAttenuation="5000.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.584846">
+				<Event Id="3833651337" Name="Jump" ObjectPath="\Events\Default Work Unit\Movement\Jump" GUID="{BF192FBB-F72E-49C0-B0C5-3B302DC178E9}" MaxAttenuation="5000.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.379884">
 					<IncludedMemoryFiles>
-						<File Id="93945285" Language="SFX">
-							<ShortName>WoodBridgeStomp_ (6).wav</ShortName>
-							<Path>SFX\WoodBridgeStomp_ (6)_10C4C929.wem</Path>
+						<File Id="75750250" Language="SFX">
+							<ShortName>SE_SFX_Jump_Brick_2.wav</ShortName>
+							<Path>SFX\SE_SFX_Jump_Brick_2_8EE21B35.wem</Path>
 						</File>
-						<File Id="170058169" Language="SFX">
-							<ShortName>WoodBridgeStomp_ (8).wav</ShortName>
-							<Path>SFX\WoodBridgeStomp_ (8)_10C4C929.wem</Path>
+						<File Id="441328992" Language="SFX">
+							<ShortName>SE_SFX_Jump_Wood_1.wav</ShortName>
+							<Path>SFX\SE_SFX_Jump_Wood_1_8EE21B35.wem</Path>
 						</File>
-						<File Id="291280622" Language="SFX">
-							<ShortName>Footsteps_PavementConcrete_Untitled 108.wav</ShortName>
-							<Path>SFX\Footsteps_PavementConcrete_Untitled 108_10C4C929.wem</Path>
+						<File Id="786707181" Language="SFX">
+							<ShortName>SE_SFX_Jump_Wood_2.wav</ShortName>
+							<Path>SFX\SE_SFX_Jump_Wood_2_8EE21B35.wem</Path>
 						</File>
-						<File Id="327697384" Language="SFX">
-							<ShortName>Footsteps_PavementConcrete_Untitled 114.wav</ShortName>
-							<Path>SFX\Footsteps_PavementConcrete_Untitled 114_10C4C929.wem</Path>
+						<File Id="840412261" Language="SFX">
+							<ShortName>SE_SFX_Jump_Wood_3.wav</ShortName>
+							<Path>SFX\SE_SFX_Jump_Wood_3_8EE21B35.wem</Path>
 						</File>
-						<File Id="374622565" Language="SFX">
-							<ShortName>WoodBridgeStomp_ (4).wav</ShortName>
-							<Path>SFX\WoodBridgeStomp_ (4)_10C4C929.wem</Path>
-						</File>
-						<File Id="410425004" Language="SFX">
-							<ShortName>WoodBridgeStomp_ (3).wav</ShortName>
-							<Path>SFX\WoodBridgeStomp_ (3)_10C4C929.wem</Path>
-						</File>
-						<File Id="477291348" Language="SFX">
-							<ShortName>Footsteps_PavementConcrete_Untitled 109.wav</ShortName>
-							<Path>SFX\Footsteps_PavementConcrete_Untitled 109_10C4C929.wem</Path>
-						</File>
-						<File Id="495867062" Language="SFX">
-							<ShortName>WoodBridgeStomp_ (2).wav</ShortName>
-							<Path>SFX\WoodBridgeStomp_ (2)_10C4C929.wem</Path>
-						</File>
-						<File Id="557765730" Language="SFX">
-							<ShortName>WoodBridgeStomp_ (7).wav</ShortName>
-							<Path>SFX\WoodBridgeStomp_ (7)_10C4C929.wem</Path>
-						</File>
-						<File Id="654259328" Language="SFX">
-							<ShortName>Footsteps_PavementConcrete_Untitled 112.wav</ShortName>
-							<Path>SFX\Footsteps_PavementConcrete_Untitled 112_10C4C929.wem</Path>
-						</File>
-						<File Id="674449923" Language="SFX">
-							<ShortName>WoodBridgeStomp_ (5).wav</ShortName>
-							<Path>SFX\WoodBridgeStomp_ (5)_10C4C929.wem</Path>
-						</File>
-						<File Id="674495106" Language="SFX">
-							<ShortName>Footsteps_PavementConcrete_Untitled 110.wav</ShortName>
-							<Path>SFX\Footsteps_PavementConcrete_Untitled 110_10C4C929.wem</Path>
-						</File>
-						<File Id="766340509" Language="SFX">
-							<ShortName>Footsteps_PavementConcrete_Untitled 111.wav</ShortName>
-							<Path>SFX\Footsteps_PavementConcrete_Untitled 111_10C4C929.wem</Path>
-						</File>
-						<File Id="840542504" Language="SFX">
-							<ShortName>Footsteps_PavementConcrete_Untitled 107.wav</ShortName>
-							<Path>SFX\Footsteps_PavementConcrete_Untitled 107_10C4C929.wem</Path>
-						</File>
-						<File Id="966835818" Language="SFX">
-							<ShortName>Footsteps_PavementConcrete_Untitled 106.wav</ShortName>
-							<Path>SFX\Footsteps_PavementConcrete_Untitled 106_10C4C929.wem</Path>
-						</File>
-						<File Id="1041888282" Language="SFX">
-							<ShortName>Footsteps_PavementConcrete_Untitled 113.wav</ShortName>
-							<Path>SFX\Footsteps_PavementConcrete_Untitled 113_10C4C929.wem</Path>
+						<File Id="947703164" Language="SFX">
+							<ShortName>SE_SFX_Jump_Brick_1.wav</ShortName>
+							<Path>SFX\SE_SFX_Jump_Brick_1_8EE21B35.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
+					<DefaultSwitchValue>{DDF1D8AA-D5AB-4C83-9511-FB8309A8C953}</DefaultSwitchValue>
+					<SwitchContainers>
+						<SwitchContainer SwitchValue="{DDF1D8AA-D5AB-4C83-9511-FB8309A8C953}">
+							<Media>
+								<File Id="75750250"/>
+								<File Id="947703164"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{B4CB7316-208E-4344-9ABB-68A0F544F0AD}">
+							<Media>
+								<File Id="441328992"/>
+								<File Id="786707181"/>
+								<File Id="840412261"/>
+							</Media>
+						</SwitchContainer>
+					</SwitchContainers>
 					<AuxBusSends>
 						<AuxBus Id="2212376974" Name="Early_Reflection_Aux_Bus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Early_Reflection_Aux_Bus" GUID="{8282F99E-D8F7-4B95-B1EA-B9978394AFAE}"/>
 					</AuxBusSends>
 				</Event>
-				<Event Id="674522502" Name="Land" ObjectPath="\Events\Default Work Unit\Movement\Land" GUID="{D1570720-FD08-4AA5-8DA7-A52FAACA54C4}" MaxAttenuation="5000.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.584846">
+				<Event Id="674522502" Name="Land" ObjectPath="\Events\Default Work Unit\Movement\Land" GUID="{D1570720-FD08-4AA5-8DA7-A52FAACA54C4}" MaxAttenuation="5000.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.473768">
 					<IncludedMemoryFiles>
-						<File Id="93945285" Language="SFX">
-							<ShortName>WoodBridgeStomp_ (6).wav</ShortName>
-							<Path>SFX\WoodBridgeStomp_ (6)_10C4C929.wem</Path>
+						<File Id="28180430" Language="SFX">
+							<ShortName>SE_SFX_Land_Concrete_1.wav</ShortName>
+							<Path>SFX\SE_SFX_Land_Concrete_1_8EE21B35.wem</Path>
 						</File>
-						<File Id="170058169" Language="SFX">
-							<ShortName>WoodBridgeStomp_ (8).wav</ShortName>
-							<Path>SFX\WoodBridgeStomp_ (8)_10C4C929.wem</Path>
+						<File Id="328918252" Language="SFX">
+							<ShortName>SE_SFX_Land_Concrete_2.wav</ShortName>
+							<Path>SFX\SE_SFX_Land_Concrete_2_8EE21B35.wem</Path>
 						</File>
-						<File Id="291280622" Language="SFX">
-							<ShortName>Footsteps_PavementConcrete_Untitled 108.wav</ShortName>
-							<Path>SFX\Footsteps_PavementConcrete_Untitled 108_10C4C929.wem</Path>
+						<File Id="336398330" Language="SFX">
+							<ShortName>SE_SFX_Land_Wood_6.wav</ShortName>
+							<Path>SFX\SE_SFX_Land_Wood_6_8EE21B35.wem</Path>
 						</File>
-						<File Id="327697384" Language="SFX">
-							<ShortName>Footsteps_PavementConcrete_Untitled 114.wav</ShortName>
-							<Path>SFX\Footsteps_PavementConcrete_Untitled 114_10C4C929.wem</Path>
+						<File Id="341645044" Language="SFX">
+							<ShortName>SE_SFX_Land_Brick_4.wav</ShortName>
+							<Path>SFX\SE_SFX_Land_Brick_4_8EE21B35.wem</Path>
 						</File>
-						<File Id="374622565" Language="SFX">
-							<ShortName>WoodBridgeStomp_ (4).wav</ShortName>
-							<Path>SFX\WoodBridgeStomp_ (4)_10C4C929.wem</Path>
+						<File Id="353635050" Language="SFX">
+							<ShortName>SE_SFX_Land_Wood_8.wav</ShortName>
+							<Path>SFX\SE_SFX_Land_Wood_8_8EE21B35.wem</Path>
 						</File>
-						<File Id="410425004" Language="SFX">
-							<ShortName>WoodBridgeStomp_ (3).wav</ShortName>
-							<Path>SFX\WoodBridgeStomp_ (3)_10C4C929.wem</Path>
+						<File Id="370788039" Language="SFX">
+							<ShortName>SE_SFX_Land_Wood_5.wav</ShortName>
+							<Path>SFX\SE_SFX_Land_Wood_5_8EE21B35.wem</Path>
 						</File>
-						<File Id="477291348" Language="SFX">
-							<ShortName>Footsteps_PavementConcrete_Untitled 109.wav</ShortName>
-							<Path>SFX\Footsteps_PavementConcrete_Untitled 109_10C4C929.wem</Path>
+						<File Id="389404580" Language="SFX">
+							<ShortName>SE_SFX_Land_Wood_10.wav</ShortName>
+							<Path>SFX\SE_SFX_Land_Wood_10_8EE21B35.wem</Path>
 						</File>
-						<File Id="495867062" Language="SFX">
-							<ShortName>WoodBridgeStomp_ (2).wav</ShortName>
-							<Path>SFX\WoodBridgeStomp_ (2)_10C4C929.wem</Path>
+						<File Id="392128051" Language="SFX">
+							<ShortName>SE_SFX_Land_Brick_3.wav</ShortName>
+							<Path>SFX\SE_SFX_Land_Brick_3_8EE21B35.wem</Path>
 						</File>
-						<File Id="557765730" Language="SFX">
-							<ShortName>WoodBridgeStomp_ (7).wav</ShortName>
-							<Path>SFX\WoodBridgeStomp_ (7)_10C4C929.wem</Path>
+						<File Id="398462350" Language="SFX">
+							<ShortName>SE_SFX_Land_Wood_11.wav</ShortName>
+							<Path>SFX\SE_SFX_Land_Wood_11_8EE21B35.wem</Path>
 						</File>
-						<File Id="654259328" Language="SFX">
-							<ShortName>Footsteps_PavementConcrete_Untitled 112.wav</ShortName>
-							<Path>SFX\Footsteps_PavementConcrete_Untitled 112_10C4C929.wem</Path>
+						<File Id="471112603" Language="SFX">
+							<ShortName>SE_SFX_Land_Wood_2.wav</ShortName>
+							<Path>SFX\SE_SFX_Land_Wood_2_8EE21B35.wem</Path>
 						</File>
-						<File Id="674449923" Language="SFX">
-							<ShortName>WoodBridgeStomp_ (5).wav</ShortName>
-							<Path>SFX\WoodBridgeStomp_ (5)_10C4C929.wem</Path>
+						<File Id="705154055" Language="SFX">
+							<ShortName>SE_SFX_Land_Concrete_3.wav</ShortName>
+							<Path>SFX\SE_SFX_Land_Concrete_3_8EE21B35.wem</Path>
 						</File>
-						<File Id="674495106" Language="SFX">
-							<ShortName>Footsteps_PavementConcrete_Untitled 110.wav</ShortName>
-							<Path>SFX\Footsteps_PavementConcrete_Untitled 110_10C4C929.wem</Path>
+						<File Id="728259121" Language="SFX">
+							<ShortName>SE_SFX_Land_Wood_3.wav</ShortName>
+							<Path>SFX\SE_SFX_Land_Wood_3_8EE21B35.wem</Path>
 						</File>
-						<File Id="766340509" Language="SFX">
-							<ShortName>Footsteps_PavementConcrete_Untitled 111.wav</ShortName>
-							<Path>SFX\Footsteps_PavementConcrete_Untitled 111_10C4C929.wem</Path>
+						<File Id="832694089" Language="SFX">
+							<ShortName>SE_SFX_Land_Concrete_4.wav</ShortName>
+							<Path>SFX\SE_SFX_Land_Concrete_4_8EE21B35.wem</Path>
 						</File>
-						<File Id="840542504" Language="SFX">
-							<ShortName>Footsteps_PavementConcrete_Untitled 107.wav</ShortName>
-							<Path>SFX\Footsteps_PavementConcrete_Untitled 107_10C4C929.wem</Path>
+						<File Id="834061866" Language="SFX">
+							<ShortName>SE_SFX_Land_Brick_1.wav</ShortName>
+							<Path>SFX\SE_SFX_Land_Brick_1_8EE21B35.wem</Path>
 						</File>
-						<File Id="966835818" Language="SFX">
-							<ShortName>Footsteps_PavementConcrete_Untitled 106.wav</ShortName>
-							<Path>SFX\Footsteps_PavementConcrete_Untitled 106_10C4C929.wem</Path>
+						<File Id="957975165" Language="SFX">
+							<ShortName>SE_SFX_Land_Brick_2.wav</ShortName>
+							<Path>SFX\SE_SFX_Land_Brick_2_8EE21B35.wem</Path>
 						</File>
-						<File Id="1041888282" Language="SFX">
-							<ShortName>Footsteps_PavementConcrete_Untitled 113.wav</ShortName>
-							<Path>SFX\Footsteps_PavementConcrete_Untitled 113_10C4C929.wem</Path>
+						<File Id="1065961823" Language="SFX">
+							<ShortName>SE_SFX_Land_Wood_4.wav</ShortName>
+							<Path>SFX\SE_SFX_Land_Wood_4_8EE21B35.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
+					<DefaultSwitchValue>{DDF1D8AA-D5AB-4C83-9511-FB8309A8C953}</DefaultSwitchValue>
+					<SwitchContainers>
+						<SwitchContainer SwitchValue="{DDF1D8AA-D5AB-4C83-9511-FB8309A8C953}">
+							<Media>
+								<File Id="341645044"/>
+								<File Id="392128051"/>
+								<File Id="834061866"/>
+								<File Id="957975165"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{B4CB7316-208E-4344-9ABB-68A0F544F0AD}">
+							<Media>
+								<File Id="336398330"/>
+								<File Id="353635050"/>
+								<File Id="370788039"/>
+								<File Id="389404580"/>
+								<File Id="398462350"/>
+								<File Id="471112603"/>
+								<File Id="728259121"/>
+								<File Id="1065961823"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{3ADE9F45-EDD5-4FBE-9AB2-1CFDFF2B12EF}">
+							<Media>
+								<File Id="28180430"/>
+								<File Id="328918252"/>
+								<File Id="705154055"/>
+								<File Id="832694089"/>
+							</Media>
+						</SwitchContainer>
+					</SwitchContainers>
 					<AuxBusSends>
 						<AuxBus Id="2212376974" Name="Early_Reflection_Aux_Bus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Early_Reflection_Aux_Bus" GUID="{8282F99E-D8F7-4B95-B1EA-B9978394AFAE}"/>
 					</AuxBusSends>

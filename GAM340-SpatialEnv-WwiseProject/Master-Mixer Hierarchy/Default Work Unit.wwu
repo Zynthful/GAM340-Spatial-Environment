@@ -59,19 +59,19 @@
 											<Custom CreatedFrom="{6D154498-FF6D-4823-96FC-56841B70E079}">
 												<Effect Name="Hall_Large (Custom)" ID="{A8E90292-3285-4C61-BEF9-14F5A4BA2CBE}" ShortID="808992315" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
 													<PropertyList>
-														<Property Name="DecayTime" Type="Real32" Value="4.9"/>
+														<Property Name="DecayTime" Type="Real32" Value="2.6"/>
 														<Property Name="Density" Type="Real32" Value="70"/>
 														<Property Name="ERLevel" Type="Real32" Value="-23"/>
-														<Property Name="ERPattern" Type="int32" Value="15"/>
+														<Property Name="ERPattern" Type="int32" Value="11"/>
 														<Property Name="Filter1Freq" Type="Real32" Value="590"/>
 														<Property Name="Filter1Gain" Type="Real32" Value="3"/>
 														<Property Name="Filter1InsertPos" Type="int32" Value="2"/>
 														<Property Name="HFDamping" Type="Real32" Value="2.35"/>
-														<Property Name="PreDelay" Type="Real32" Value="74"/>
+														<Property Name="PreDelay" Type="Real32" Value="24"/>
 														<Property Name="Quality" Type="int32" Value="14"/>
-														<Property Name="ReverbLevel" Type="Real32" Value="-23"/>
+														<Property Name="ReverbLevel" Type="Real32" Value="-22"/>
 														<Property Name="RoomShape" Type="Real32" Value="55"/>
-														<Property Name="RoomSize" Type="Real32" Value="49"/>
+														<Property Name="RoomSize" Type="Real32" Value="23"/>
 													</PropertyList>
 												</Effect>
 											</Custom>
@@ -91,7 +91,7 @@
 											<Custom CreatedFrom="{940CCB47-F031-4C6A-B0E6-726CAC418C02}">
 												<Effect Name="Church_Small_Wood (Custom)" ID="{2AAD55B0-C121-4392-A7C7-D6BC59857DD9}" ShortID="939061740" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
 													<PropertyList>
-														<Property Name="DecayTime" Type="Real32" Value="1.3"/>
+														<Property Name="DecayTime" Type="Real32" Value="1.6"/>
 														<Property Name="Density" Type="Real32" Value="27"/>
 														<Property Name="ERLevel" Type="Real32" Value="-24"/>
 														<Property Name="ERPattern" Type="int32" Value="6"/>
@@ -102,10 +102,10 @@
 														<Property Name="Filter3Freq" Type="Real32" Value="11000"/>
 														<Property Name="Filter3Gain" Type="Real32" Value="-7"/>
 														<Property Name="HFDamping" Type="Real32" Value="3.7"/>
-														<Property Name="PreDelay" Type="Real32" Value="18"/>
-														<Property Name="Quality" Type="int32" Value="12"/>
-														<Property Name="ReverbLevel" Type="Real32" Value="-23"/>
-														<Property Name="RoomSize" Type="Real32" Value="20"/>
+														<Property Name="PreDelay" Type="Real32" Value="8"/>
+														<Property Name="Quality" Type="int32" Value="16"/>
+														<Property Name="ReverbLevel" Type="Real32" Value="-25"/>
+														<Property Name="RoomSize" Type="Real32" Value="40"/>
 													</PropertyList>
 												</Effect>
 											</Custom>
