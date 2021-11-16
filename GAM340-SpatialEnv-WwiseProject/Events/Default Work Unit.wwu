@@ -83,6 +83,17 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Coffin_Open" ID="{57E00CBB-7623-488B-8F47-E9E7A9ED8B30}">
+							<ChildrenList>
+								<Action Name="" ID="{1CDFCD4C-13AD-4087-B922-37A314D9EFBC}" ShortID="620052260">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SE_SFX_Coffin_Open_Draft_2" ID="{E29F2282-1D8E-44FE-B9E5-1CD8A84D9CC1}" WorkUnitID="{2E2CE7FA-02C6-4C71-AABE-F8140864C57E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>
