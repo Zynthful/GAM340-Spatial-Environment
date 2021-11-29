@@ -147,7 +147,7 @@
 										</Property>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-17</Value>
+												<Value>-5</Value>
 											</ValueList>
 											<ModifierList>
 												<ModifierInfo>
@@ -1948,7 +1948,7 @@
 										</Property>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-17</Value>
+												<Value>-5</Value>
 											</ValueList>
 											<ModifierList>
 												<ModifierInfo>
@@ -2317,7 +2317,7 @@
 										</Property>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-17</Value>
+												<Value>-5</Value>
 											</ValueList>
 											<ModifierList>
 												<ModifierInfo>
@@ -2857,7 +2857,7 @@
 								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-11</Value>
+										<Value>-4</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
