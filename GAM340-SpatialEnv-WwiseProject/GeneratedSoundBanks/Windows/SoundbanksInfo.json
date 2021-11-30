@@ -19,7 +19,7 @@
     "Id": "1355168291",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "1237223872",
+    "Hash": "2360841541",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
@@ -47,6 +47,26 @@
       "Name": "Aux_Room_Large",
       "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\SFX\\Aux_Room_Large",
       "GUID": "{4AA6DBFC-04A4-45E0-B095-173B7D30EBD7}"
+     }
+    ],
+    "GameParameters": [
+     {
+      "Id": "194404061",
+      "Name": "Predelay",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\Reverb\\Predelay",
+      "GUID": "{5C066FCE-91E4-4B86-B23F-248514A4D3DE}"
+     },
+     {
+      "Id": "1299678381",
+      "Name": "Decay",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\Reverb\\Decay",
+      "GUID": "{C13DC209-797B-4D9C-8B32-620C9CF3D9F2}"
+     },
+     {
+      "Id": "2947715227",
+      "Name": "HFDamping",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\Reverb\\HFDamping",
+      "GUID": "{EFACB379-4D0B-440D-B878-6950C616821D}"
      }
     ]
    },

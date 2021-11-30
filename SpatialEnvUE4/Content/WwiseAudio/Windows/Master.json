@@ -16,7 +16,7 @@
     "Id": "4056684167",
     "GUID": "{F180063F-4304-4E4E-863F-DCFB9544A68C}",
     "Language": "SFX",
-    "Hash": "356273149",
+    "Hash": "891559807",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Master",
     "ShortName": "Master",
     "Path": "Master.bnk",
@@ -875,10 +875,28 @@
     ],
     "GameParameters": [
      {
+      "Id": "194404061",
+      "Name": "Predelay",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\Reverb\\Predelay",
+      "GUID": "{5C066FCE-91E4-4B86-B23F-248514A4D3DE}"
+     },
+     {
       "Id": "744829470",
       "Name": "NumOfCandles",
       "ObjectPath": "\\Game Parameters\\Default Work Unit\\Environment\\NumOfCandles",
       "GUID": "{40B57E9E-FB9C-46E1-B399-8C3A6270DEFD}"
+     },
+     {
+      "Id": "1299678381",
+      "Name": "Decay",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\Reverb\\Decay",
+      "GUID": "{C13DC209-797B-4D9C-8B32-620C9CF3D9F2}"
+     },
+     {
+      "Id": "2947715227",
+      "Name": "HFDamping",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\Reverb\\HFDamping",
+      "GUID": "{EFACB379-4D0B-440D-B878-6950C616821D}"
      }
     ],
     "SwitchGroups": [

@@ -8,7 +8,7 @@
 		<ExternalSourcesOutputRoot>C:\Users\Jamie Carnell\Desktop\Projects etc\Projects\GAM340 Project\GAM340-Spatial-Environment\GAM340-SpatialEnv-WwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<SoundBanks>
-		<SoundBank Id="1355168291" GUID="{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}" Language="SFX" Hash="1237223872">
+		<SoundBank Id="1355168291" GUID="{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}" Language="SFX" Hash="2360841541">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
@@ -18,6 +18,11 @@
 				<AuxBus Id="2212376974" Name="Early_Reflection_Aux_Bus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Early_Reflection_Aux_Bus" GUID="{8282F99E-D8F7-4B95-B1EA-B9978394AFAE}"/>
 				<AuxBus Id="3408535089" Name="Aux_Room_Large" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX\Aux_Room_Large" GUID="{4AA6DBFC-04A4-45E0-B095-173B7D30EBD7}"/>
 			</IncludedAuxBusses>
+			<GameParameters>
+				<GameParameter Id="194404061" Name="Predelay" ObjectPath="\Game Parameters\Default Work Unit\Reverb\Predelay" GUID="{5C066FCE-91E4-4B86-B23F-248514A4D3DE}"/>
+				<GameParameter Id="1299678381" Name="Decay" ObjectPath="\Game Parameters\Default Work Unit\Reverb\Decay" GUID="{C13DC209-797B-4D9C-8B32-620C9CF3D9F2}"/>
+				<GameParameter Id="2947715227" Name="HFDamping" ObjectPath="\Game Parameters\Default Work Unit\Reverb\HFDamping" GUID="{EFACB379-4D0B-440D-B878-6950C616821D}"/>
+			</GameParameters>
 		</SoundBank>
 	</SoundBanks>
 </SoundBanksInfo>
