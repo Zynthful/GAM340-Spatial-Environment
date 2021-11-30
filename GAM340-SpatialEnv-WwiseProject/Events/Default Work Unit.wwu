@@ -83,12 +83,34 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="Coffin_Open" ID="{57E00CBB-7623-488B-8F47-E9E7A9ED8B30}">
+						<Event Name="Coffin_Open_Begin" ID="{57E00CBB-7623-488B-8F47-E9E7A9ED8B30}">
 							<ChildrenList>
 								<Action Name="" ID="{1CDFCD4C-13AD-4087-B922-37A314D9EFBC}" ShortID="620052260">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="SE_SFX_Coffin_Open_Draft_2" ID="{E29F2282-1D8E-44FE-B9E5-1CD8A84D9CC1}" WorkUnitID="{2E2CE7FA-02C6-4C71-AABE-F8140864C57E}"/>
+											<ObjectRef Name="Open" ID="{C4DFDD81-AB5A-4EB8-8BF6-9D35EADC4D9A}" WorkUnitID="{2E2CE7FA-02C6-4C71-AABE-F8140864C57E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Coffin_Close_Begin" ID="{08855823-D772-4453-AB77-E21224473A6C}">
+							<ChildrenList>
+								<Action Name="" ID="{CD7EC8A1-3C01-444F-90F2-CF37C8E4949C}" ShortID="134313207">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Close_Anim" ID="{66749DF1-EA5A-4A43-B31B-93B312A06EF7}" WorkUnitID="{2E2CE7FA-02C6-4C71-AABE-F8140864C57E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Coffin_Close_End" ID="{C48EA195-F575-4A51-8AA5-E44EB26BD469}">
+							<ChildrenList>
+								<Action Name="" ID="{90D02761-E884-4EDF-8949-D43B093E9092}" ShortID="812055341">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Close_Lid" ID="{BFE70E06-234E-43F4-9DD3-C7ABBE00F3DD}" WorkUnitID="{2E2CE7FA-02C6-4C71-AABE-F8140864C57E}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

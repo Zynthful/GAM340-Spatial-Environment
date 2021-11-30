@@ -8,7 +8,7 @@
 		<ExternalSourcesOutputRoot>C:\Users\Jamie Carnell\Desktop\Projects etc\Projects\GAM340 Project\GAM340-Spatial-Environment\GAM340-SpatialEnv-WwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<SoundBanks>
-		<SoundBank Id="4056684167" GUID="{F180063F-4304-4E4E-863F-DCFB9544A68C}" Language="SFX" Hash="1565244013">
+		<SoundBank Id="4056684167" GUID="{F180063F-4304-4E4E-863F-DCFB9544A68C}" Language="SFX" Hash="2422613523">
 			<ObjectPath>\SoundBanks\Default Work Unit\Master</ObjectPath>
 			<ShortName>Master</ShortName>
 			<Path>Master.bnk</Path>
@@ -20,12 +20,41 @@
 							<Path>SFX\SE_Candle_Loop_D79FB2B7.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="2212376974" Name="Early_Reflection_Aux_Bus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Early_Reflection_Aux_Bus" GUID="{8282F99E-D8F7-4B95-B1EA-B9978394AFAE}"/>
+					</AuxBusSends>
 				</Event>
-				<Event Id="3684357201" Name="Coffin_Open" ObjectPath="\Events\Default Work Unit\Environment\Coffin_Open" GUID="{57E00CBB-7623-488B-8F47-E9E7A9ED8B30}" MaxAttenuation="5000.000000" DurationType="OneShot" DurationMin="2.190000" DurationMax="2.190000">
+				<Event Id="2697518177" Name="Coffin_Close_Begin" ObjectPath="\Events\Default Work Unit\Environment\Coffin_Close_Begin" GUID="{08855823-D772-4453-AB77-E21224473A6C}" MaxAttenuation="5000.000000" DurationType="OneShot" DurationMin="2.253515" DurationMax="2.253515">
 					<IncludedMemoryFiles>
-						<File Id="935472447" Language="SFX">
-							<ShortName>SE_SFX_Coffin_Open_Draft_2.wav</ShortName>
-							<Path>SFX\SE_SFX_Coffin_Open_Draft_2_10C4C929.wem</Path>
+						<File Id="152626358" Language="SFX">
+							<ShortName>SE_SFX_Coffin_Close_Anim.wav</ShortName>
+							<Path>SFX\SE_SFX_Coffin_Close_Anim_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="2212376974" Name="Early_Reflection_Aux_Bus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Early_Reflection_Aux_Bus" GUID="{8282F99E-D8F7-4B95-B1EA-B9978394AFAE}"/>
+					</AuxBusSends>
+				</Event>
+				<Event Id="2584527849" Name="Coffin_Close_End" ObjectPath="\Events\Default Work Unit\Environment\Coffin_Close_End" GUID="{C48EA195-F575-4A51-8AA5-E44EB26BD469}" MaxAttenuation="5000.000000" DurationType="OneShot" DurationMin="0.301678" DurationMax="0.301678">
+					<IncludedMemoryFiles>
+						<File Id="388348968" Language="SFX">
+							<ShortName>SE_SFX_Coffin_Close_Lid.wav</ShortName>
+							<Path>SFX\SE_SFX_Coffin_Close_Lid_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="2212376974" Name="Early_Reflection_Aux_Bus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Early_Reflection_Aux_Bus" GUID="{8282F99E-D8F7-4B95-B1EA-B9978394AFAE}"/>
+					</AuxBusSends>
+				</Event>
+				<Event Id="714885747" Name="Coffin_Open_Begin" ObjectPath="\Events\Default Work Unit\Environment\Coffin_Open_Begin" GUID="{57E00CBB-7623-488B-8F47-E9E7A9ED8B30}" MaxAttenuation="5000.000000" DurationType="OneShot" DurationMin="2.185896" DurationMax="2.185896">
+					<IncludedMemoryFiles>
+						<File Id="517712963" Language="SFX">
+							<ShortName>SE_SFX_Coffin_Open_Anim.wav</ShortName>
+							<Path>SFX\SE_SFX_Coffin_Open_Anim_10C4C929.wem</Path>
+						</File>
+						<File Id="861816750" Language="SFX">
+							<ShortName>SE_SFX_Coffin_Open_Lid.wav</ShortName>
+							<Path>SFX\SE_SFX_Coffin_Open_Lid_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 					<AuxBusSends>

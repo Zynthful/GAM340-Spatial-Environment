@@ -420,6 +420,12 @@
 																				<XPos>0.2</XPos>
 																				<YPos>0.2</YPos>
 																				<Flags>0</Flags>
+																				<SegmentShape>Log3</SegmentShape>
+																			</Point>
+																			<Point>
+																				<XPos>8.50467</XPos>
+																				<YPos>10</YPos>
+																				<Flags>0</Flags>
 																			</Point>
 																			<Point>
 																				<XPos>10</XPos>
@@ -493,7 +499,7 @@
 															</RTPCList>
 														</Property>
 														<Property Name="Quality" Type="int32" Value="16"/>
-														<Property Name="ReverbLevel" Type="Real32" Value="-22"/>
+														<Property Name="ReverbLevel" Type="Real32" Value="-8"/>
 													</PropertyList>
 												</Effect>
 											</Custom>
