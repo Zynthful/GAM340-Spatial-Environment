@@ -19,7 +19,7 @@
     "Id": "1355168291",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "2360841541",
+    "Hash": "237135859",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
@@ -41,6 +41,12 @@
       "Name": "Early_Reflection_Aux_Bus",
       "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Early_Reflection_Aux_Bus",
       "GUID": "{8282F99E-D8F7-4B95-B1EA-B9978394AFAE}"
+     },
+     {
+      "Id": "3065706299",
+      "Name": "Aux_Dynamic",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\SFX\\Aux_Dynamic",
+      "GUID": "{7541B877-1F05-46FE-A538-82E14F995B03}"
      },
      {
       "Id": "3408535089",
@@ -74,7 +80,7 @@
     "Id": "4056684167",
     "GUID": "{F180063F-4304-4E4E-863F-DCFB9544A68C}",
     "Language": "SFX",
-    "Hash": "281975124",
+    "Hash": "1029465804",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Master",
     "ShortName": "Master",
     "Path": "Master.bnk",

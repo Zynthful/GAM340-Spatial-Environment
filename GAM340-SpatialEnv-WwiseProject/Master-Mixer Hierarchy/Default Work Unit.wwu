@@ -386,6 +386,121 @@
 									</ReferenceList>
 									<ObjectLists/>
 								</AuxBus>
+								<AuxBus Name="Aux_Dynamic" ID="{7541B877-1F05-46FE-A538-82E14F995B03}">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+										<Property Name="ListenerRelativeRouting" Type="bool" Value="True"/>
+										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Effect0">
+											<Custom>
+												<Effect Name="Wwise_RoomVerb_(Custom)" ID="{7AA216DE-03DF-4960-925E-B02640C0A608}" ShortID="101284989" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+													<PropertyList>
+														<Property Name="DecayTime" Type="Real32">
+															<RTPCList>
+																<RTPC Name="" ID="{9CA6B86E-94AA-47A2-88F9-D54D8531AEC2}" ShortID="540498333">
+																	<ReferenceList>
+																		<Reference Name="ControlInput">
+																			<ObjectRef Name="Decay" ID="{C13DC209-797B-4D9C-8B32-620C9CF3D9F2}" WorkUnitID="{A8FE91FC-4673-44AE-929D-D03CB1F3282A}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<Curve Name="" ID="{948240A6-7ECA-4CDB-842A-61D17E4CB247}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="1"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>0.2</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>0.2</XPos>
+																				<YPos>0.2</YPos>
+																				<Flags>0</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>10</XPos>
+																				<YPos>10</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</RTPC>
+															</RTPCList>
+														</Property>
+														<Property Name="HFDamping" Type="Real32">
+															<RTPCList>
+																<RTPC Name="" ID="{E4A43812-E499-4363-B76C-BAF155E161E6}" ShortID="716692760">
+																	<ReferenceList>
+																		<Reference Name="ControlInput">
+																			<ObjectRef Name="HFDamping" ID="{EFACB379-4D0B-440D-B878-6950C616821D}" WorkUnitID="{A8FE91FC-4673-44AE-929D-D03CB1F3282A}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<Curve Name="" ID="{C44CF242-5E5C-4BFF-9447-B127D5BF8590}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="1"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>-1</XPos>
+																				<YPos>0.5</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>1</YPos>
+																				<Flags>0</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>1</XPos>
+																				<YPos>10</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</RTPC>
+															</RTPCList>
+														</Property>
+														<Property Name="PreDelay" Type="Real32">
+															<RTPCList>
+																<RTPC Name="" ID="{691FC7F2-7FB0-4D2D-BDB5-CFFE15A2FA4C}" ShortID="877037192">
+																	<ReferenceList>
+																		<Reference Name="ControlInput">
+																			<ObjectRef Name="Predelay" ID="{5C066FCE-91E4-4B86-B23F-248514A4D3DE}" WorkUnitID="{A8FE91FC-4673-44AE-929D-D03CB1F3282A}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<Curve Name="" ID="{F68D0731-7F6C-4ABC-833F-0A06F6E3677A}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="1"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>0</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>1</XPos>
+																				<YPos>1000</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</RTPC>
+															</RTPCList>
+														</Property>
+														<Property Name="Quality" Type="int32" Value="16"/>
+														<Property Name="ReverbLevel" Type="Real32" Value="-22"/>
+													</PropertyList>
+												</Effect>
+											</Custom>
+										</Reference>
+									</ReferenceList>
+									<ObjectLists/>
+								</AuxBus>
 							</ChildrenList>
 							<ObjectLists/>
 						</Bus>

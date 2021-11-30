@@ -30,16 +30,18 @@ Audio Bus	ID	Name			Wwise Object Path	Notes
 Auxiliary Bus	ID	Name			Wwise Object Path	Notes
 	1557528409	Aux_Room_Medium			\Default Work Unit\Master Audio Bus\SFX\Aux_Room_Medium	
 	1559320942	Aux_Corridor			\Default Work Unit\Master Audio Bus\SFX\Aux_Corridor	
+	3065706299	Aux_Dynamic			\Default Work Unit\Master Audio Bus\SFX\Aux_Dynamic	
 	3408535089	Aux_Room_Large			\Default Work Unit\Master Audio Bus\SFX\Aux_Room_Large	
 
 Effect plug-ins	ID	Name	Type				Notes
+	101284989	Wwise_RoomVerb_(Custom)	Wwise RoomVerb			
 	808992315	Hall_Large (Custom)	Wwise RoomVerb			
 	894395628	Medium (Custom)	Wwise RoomVerb			
 	939061740	Church_Small_Wood (Custom)	Wwise RoomVerb			
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	9063177	SE_SFX_Footstep_Concrete_17	C:\Users\Jamie Carnell\Desktop\Projects etc\Projects\GAM340 Project\GAM340-Spatial-Environment\GAM340-SpatialEnv-WwiseProject\.cache\Windows\SFX\SE_SFX_Footstep_Concrete_17_8EE21B35.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Movement\SE_SFX_Footstep\SE_SFX_Footstep_Staircase\SE_SFX_Footstep_Concrete_17		18778
-	28180430	SE_SFX_Land_Concrete_1	C:\Users\Jamie Carnell\Desktop\Projects etc\Projects\GAM340 Project\GAM340-Spatial-Environment\GAM340-SpatialEnv-WwiseProject\.cache\Windows\SFX\SE_SFX_Land_Concrete_1_8EE21B35.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Movement\SE_SFX_Jump\SE_SFX_Jump_Staircase\SE_SFX_Land_Concrete_1		24742
+	28180430	SE_SFX_Land_Concrete_1	C:\Users\Jamie Carnell\Desktop\Projects etc\Projects\GAM340 Project\GAM340-Spatial-Environment\GAM340-SpatialEnv-WwiseProject\.cache\Windows\SFX\SE_SFX_Land_Concrete_1_8EE21B35.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Movement\SE_SFX_Land\SE_SFX_Land_Staircase\SE_SFX_Land_Concrete_1		24742
 	73816241	SE_SFX_Footstep_Wood_14	C:\Users\Jamie Carnell\Desktop\Projects etc\Projects\GAM340 Project\GAM340-Spatial-Environment\GAM340-SpatialEnv-WwiseProject\.cache\Windows\SFX\SE_SFX_Footstep_Wood_14_8EE21B35.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Movement\SE_SFX_Footstep\SE_SFX_Footstep_Wood\SE_SFX_Footstep_Wood_14		19106
 	75750250	SE_SFX_Jump_Brick_2	C:\Users\Jamie Carnell\Desktop\Projects etc\Projects\GAM340 Project\GAM340-Spatial-Environment\GAM340-SpatialEnv-WwiseProject\.cache\Windows\SFX\SE_SFX_Jump_Brick_2_8EE21B35.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Movement\SE_SFX_Jump\SE_SFX_Jump_Brick\SE_SFX_Jump_Brick_2		16544
 	106152035	SE_SFX_Footstep_Brick_9	C:\Users\Jamie Carnell\Desktop\Projects etc\Projects\GAM340 Project\GAM340-Spatial-Environment\GAM340-SpatialEnv-WwiseProject\.cache\Windows\SFX\SE_SFX_Footstep_Brick_9_8EE21B35.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Movement\SE_SFX_Footstep\SE_SFX_Footstep_Brick\SE_SFX_Footstep_Brick_9		12888
@@ -57,7 +59,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	305072942	SE_SFX_Footstep_Wood_18	C:\Users\Jamie Carnell\Desktop\Projects etc\Projects\GAM340 Project\GAM340-Spatial-Environment\GAM340-SpatialEnv-WwiseProject\.cache\Windows\SFX\SE_SFX_Footstep_Wood_18_8EE21B35.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Movement\SE_SFX_Footstep\SE_SFX_Footstep_Wood\SE_SFX_Footstep_Wood_18		19792
 	312022029	SE_SFX_Footstep_Brick_17	C:\Users\Jamie Carnell\Desktop\Projects etc\Projects\GAM340 Project\GAM340-Spatial-Environment\GAM340-SpatialEnv-WwiseProject\.cache\Windows\SFX\SE_SFX_Footstep_Brick_17_8EE21B35.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Movement\SE_SFX_Footstep\SE_SFX_Footstep_Brick\SE_SFX_Footstep_Brick_17		18276
 	323956997	SE_SFX_Footstep_Wood_3	C:\Users\Jamie Carnell\Desktop\Projects etc\Projects\GAM340 Project\GAM340-Spatial-Environment\GAM340-SpatialEnv-WwiseProject\.cache\Windows\SFX\SE_SFX_Footstep_Wood_3_8EE21B35.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Movement\SE_SFX_Footstep\SE_SFX_Footstep_Wood\SE_SFX_Footstep_Wood_3		16054
-	328918252	SE_SFX_Land_Concrete_2	C:\Users\Jamie Carnell\Desktop\Projects etc\Projects\GAM340 Project\GAM340-Spatial-Environment\GAM340-SpatialEnv-WwiseProject\.cache\Windows\SFX\SE_SFX_Land_Concrete_2_8EE21B35.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Movement\SE_SFX_Jump\SE_SFX_Jump_Staircase\SE_SFX_Land_Concrete_2		43024
+	328918252	SE_SFX_Land_Concrete_2	C:\Users\Jamie Carnell\Desktop\Projects etc\Projects\GAM340 Project\GAM340-Spatial-Environment\GAM340-SpatialEnv-WwiseProject\.cache\Windows\SFX\SE_SFX_Land_Concrete_2_8EE21B35.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Movement\SE_SFX_Land\SE_SFX_Land_Staircase\SE_SFX_Land_Concrete_2		43024
 	336398330	SE_SFX_Land_Wood_6	C:\Users\Jamie Carnell\Desktop\Projects etc\Projects\GAM340 Project\GAM340-Spatial-Environment\GAM340-SpatialEnv-WwiseProject\.cache\Windows\SFX\SE_SFX_Land_Wood_6_8EE21B35.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Movement\SE_SFX_Land\SE_SFX_Land_Wood\SE_SFX_Land_Wood_6		23896
 	341645044	SE_SFX_Land_Brick_4	C:\Users\Jamie Carnell\Desktop\Projects etc\Projects\GAM340 Project\GAM340-Spatial-Environment\GAM340-SpatialEnv-WwiseProject\.cache\Windows\SFX\SE_SFX_Land_Brick_4_8EE21B35.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Movement\SE_SFX_Land\SE_SFX_Land_Brick\SE_SFX_Land_Brick_4		23506
 	351069673	SE_SFX_Footstep_Wood_7	C:\Users\Jamie Carnell\Desktop\Projects etc\Projects\GAM340 Project\GAM340-Spatial-Environment\GAM340-SpatialEnv-WwiseProject\.cache\Windows\SFX\SE_SFX_Footstep_Wood_7_8EE21B35.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Movement\SE_SFX_Footstep\SE_SFX_Footstep_Wood\SE_SFX_Footstep_Wood_7		19224

@@ -175,6 +175,9 @@
 										<Reference Name="OutputBus">
 											<ObjectRef Name="SFX" ID="{18B976C0-D509-4A4A-B407-A8F6A887E940}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
 										</Reference>
+										<Reference Name="ReflectionsAuxSend">
+											<ObjectRef Name="Early_Reflection_Aux_Bus" ID="{8282F99E-D8F7-4B95-B1EA-B9978394AFAE}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
+										</Reference>
 										<Reference Name="SwitchGroupOrStateGroup">
 											<ObjectRef Name="Ground_Material" ID="{9002ABE4-AF62-4CA8-A595-E1E92B41B799}" WorkUnitID="{4944EBAB-A603-4D27-97FF-CFF285374CA2}"/>
 										</Reference>
@@ -1976,6 +1979,9 @@
 										<Reference Name="OutputBus">
 											<ObjectRef Name="SFX" ID="{18B976C0-D509-4A4A-B407-A8F6A887E940}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
 										</Reference>
+										<Reference Name="ReflectionsAuxSend">
+											<ObjectRef Name="Early_Reflection_Aux_Bus" ID="{8282F99E-D8F7-4B95-B1EA-B9978394AFAE}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
+										</Reference>
 										<Reference Name="SwitchGroupOrStateGroup">
 											<ObjectRef Name="Ground_Material" ID="{9002ABE4-AF62-4CA8-A595-E1E92B41B799}" WorkUnitID="{4944EBAB-A603-4D27-97FF-CFF285374CA2}"/>
 										</Reference>
@@ -2344,6 +2350,9 @@
 										</Reference>
 										<Reference Name="OutputBus">
 											<ObjectRef Name="SFX" ID="{18B976C0-D509-4A4A-B407-A8F6A887E940}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
+										</Reference>
+										<Reference Name="ReflectionsAuxSend">
+											<ObjectRef Name="Early_Reflection_Aux_Bus" ID="{8282F99E-D8F7-4B95-B1EA-B9978394AFAE}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
 										</Reference>
 										<Reference Name="SwitchGroupOrStateGroup">
 											<ObjectRef Name="Ground_Material" ID="{9002ABE4-AF62-4CA8-A595-E1E92B41B799}" WorkUnitID="{4944EBAB-A603-4D27-97FF-CFF285374CA2}"/>

@@ -8,7 +8,7 @@
 		<ExternalSourcesOutputRoot>C:\Users\Jamie Carnell\Desktop\Projects etc\Projects\GAM340 Project\GAM340-Spatial-Environment\GAM340-SpatialEnv-WwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<SoundBanks>
-		<SoundBank Id="4056684167" GUID="{F180063F-4304-4E4E-863F-DCFB9544A68C}" Language="SFX" Hash="891559807">
+		<SoundBank Id="4056684167" GUID="{F180063F-4304-4E4E-863F-DCFB9544A68C}" Language="SFX" Hash="1565244013">
 			<ObjectPath>\SoundBanks\Default Work Unit\Master</ObjectPath>
 			<ShortName>Master</ShortName>
 			<Path>Master.bnk</Path>
@@ -469,6 +469,7 @@
 			<IncludedAuxBusses>
 				<AuxBus Id="1557528409" Name="Aux_Room_Medium" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX\Aux_Room_Medium" GUID="{6AD13F5D-A5E4-4445-A459-825A4777FF4E}"/>
 				<AuxBus Id="1559320942" Name="Aux_Corridor" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX\Aux_Corridor" GUID="{0B646697-B542-468D-8ECD-67356B4A71F6}"/>
+				<AuxBus Id="3065706299" Name="Aux_Dynamic" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX\Aux_Dynamic" GUID="{7541B877-1F05-46FE-A538-82E14F995B03}"/>
 				<AuxBus Id="3408535089" Name="Aux_Room_Large" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX\Aux_Room_Large" GUID="{4AA6DBFC-04A4-45E0-B095-173B7D30EBD7}"/>
 			</IncludedAuxBusses>
 			<GameParameters>
