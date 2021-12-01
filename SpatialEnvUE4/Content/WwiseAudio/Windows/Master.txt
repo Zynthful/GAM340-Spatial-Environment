@@ -3,6 +3,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	674522502	Land			\Default Work Unit\Movement\Land	
 	714885747	Coffin_Open_Begin			\Default Work Unit\Environment\Crypt\Coffin\Coffin_Open_Begin	
 	1345353089	Cell_Door_Open_Begin			\Default Work Unit\Environment\Dungeon\Cell_Door_Open_Begin	
+	1397875539	Coffin_Open_End			\Default Work Unit\Environment\Crypt\Coffin\Coffin_Open_End	
 	1748112890	Ambience_Droplet			\Default Work Unit\Environment\Ambience\Ambience_Droplet	
 	1866025847	Footstep			\Default Work Unit\Movement\Footstep	
 	1898196184	Candle_Active_Loop			\Default Work Unit\Environment\Candle_Active_Loop	

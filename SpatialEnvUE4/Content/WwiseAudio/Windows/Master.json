@@ -16,7 +16,7 @@
     "Id": "4056684167",
     "GUID": "{F180063F-4304-4E4E-863F-DCFB9544A68C}",
     "Language": "SFX",
-    "Hash": "2711998872",
+    "Hash": "2337682653",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Master",
     "ShortName": "Master",
     "Path": "Master.bnk",
@@ -258,6 +258,16 @@
         "GUID": "{8282F99E-D8F7-4B95-B1EA-B9978394AFAE}"
        }
       ]
+     },
+     {
+      "Id": "1397875539",
+      "Name": "Coffin_Open_End",
+      "ObjectPath": "\\Events\\Default Work Unit\\Environment\\Crypt\\Coffin\\Coffin_Open_End",
+      "GUID": "{6DC3F0D8-4C9F-4FA4-8639-E710EF4A1831}",
+      "MaxAttenuation": "0.000000",
+      "DurationType": "OneShot",
+      "DurationMin": "0.000000",
+      "DurationMax": "0.000000"
      },
      {
       "Id": "3785983161",

@@ -198,6 +198,7 @@
 												</Action>
 											</ChildrenList>
 										</Event>
+										<Event Name="Coffin_Open_End" ID="{6DC3F0D8-4C9F-4FA4-8639-E710EF4A1831}"/>
 									</ChildrenList>
 								</Folder>
 							</ChildrenList>

@@ -20,6 +20,7 @@
 						<ObjectRef Name="Cell_Door_Open_End" ID="{4CF631E5-4D0B-4E92-8581-23257D32E22F}" WorkUnitID="{506EC3FD-D93F-498E-BB2B-FAB626ACF63B}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Redneck_Rolls_Dice" ID="{A75B3D78-20D7-4E9B-A339-DC774A124709}" WorkUnitID="{506EC3FD-D93F-498E-BB2B-FAB626ACF63B}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Candle_Active_Loop" ID="{3F769192-65A3-4F32-AFD6-940C9399BC2E}" WorkUnitID="{506EC3FD-D93F-498E-BB2B-FAB626ACF63B}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Coffin_Open_End" ID="{6DC3F0D8-4C9F-4FA4-8639-E710EF4A1831}" WorkUnitID="{506EC3FD-D93F-498E-BB2B-FAB626ACF63B}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Cell_Door_Open_Begin" ID="{B6DEA052-9D4C-4FA9-983F-6D2AA1C9FA49}" WorkUnitID="{506EC3FD-D93F-498E-BB2B-FAB626ACF63B}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
