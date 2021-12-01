@@ -83,61 +83,131 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="Coffin_Open_Begin" ID="{57E00CBB-7623-488B-8F47-E9E7A9ED8B30}">
+						<Folder Name="Dungeon" ID="{3A927C41-03E7-4525-8304-8F1E7616A300}" ShortID="322671744">
 							<ChildrenList>
-								<Action Name="" ID="{D757B2F4-0C4A-4F12-8BB0-F1580A6C7C53}" ShortID="140814037">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="2"/>
-										<Property Name="Scope" Type="int16" Value="1"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Shake" ID="{A193E60B-D776-4F79-8091-109D02784FF8}" WorkUnitID="{2E2CE7FA-02C6-4C71-AABE-F8140864C57E}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-								<Action Name="" ID="{1CDFCD4C-13AD-4087-B922-37A314D9EFBC}" ShortID="620052260">
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Open" ID="{C4DFDD81-AB5A-4EB8-8BF6-9D35EADC4D9A}" WorkUnitID="{2E2CE7FA-02C6-4C71-AABE-F8140864C57E}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
+								<Event Name="Cell_Door_Open_Begin" ID="{B6DEA052-9D4C-4FA9-983F-6D2AA1C9FA49}">
+									<ChildrenList>
+										<Action Name="" ID="{C060AF7F-16D2-41D0-9390-5F09284BF59D}" ShortID="81471981">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Cell_Door_Open_Creak" ID="{D6EABBD8-46FA-473A-A074-57FCC025A8AB}" WorkUnitID="{2E2CE7FA-02C6-4C71-AABE-F8140864C57E}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{E7DD4A35-89D9-459D-A0BD-F946B323159A}" ShortID="397620951">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Cell_Door_Open_Handle" ID="{E5CAB5AE-09EB-467D-8555-2D9C9A045F03}" WorkUnitID="{2E2CE7FA-02C6-4C71-AABE-F8140864C57E}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Cell_Door_Close_Begin" ID="{9BAC56F9-91DF-4996-AB81-D046D054F210}">
+									<ChildrenList>
+										<Action Name="" ID="{B31C3877-A942-42F8-873C-EC022B7DFB4E}" ShortID="987821276">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Cell_Door_Close_Creak" ID="{7FCF73CE-C97E-46CC-BCC3-096DF2CDAFAD}" WorkUnitID="{2E2CE7FA-02C6-4C71-AABE-F8140864C57E}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Cell_Door_Close_End" ID="{07B449EE-F428-4CFF-AF06-23F86E23C561}">
+									<ChildrenList>
+										<Action Name="" ID="{BD37D06D-92C4-4BBE-9EBB-1670527C8315}" ShortID="197314348">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Cell_Door_Close_Handle" ID="{E44C51B2-8BA6-4581-BA82-1527497C032F}" WorkUnitID="{2E2CE7FA-02C6-4C71-AABE-F8140864C57E}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{D6CAAE68-DBAC-4DDA-91D5-D8776C3326CA}" ShortID="62797952">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="36"/>
+												<Property Name="SeekPercent" Type="Real64" Value="60"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Cell_Door_Close_Handle" ID="{E44C51B2-8BA6-4581-BA82-1527497C032F}" WorkUnitID="{2E2CE7FA-02C6-4C71-AABE-F8140864C57E}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Cell_Door_Open_End" ID="{4CF631E5-4D0B-4E92-8581-23257D32E22F}"/>
 							</ChildrenList>
-						</Event>
-						<Event Name="Coffin_Close_Begin" ID="{08855823-D772-4453-AB77-E21224473A6C}">
+						</Folder>
+						<Folder Name="Crypt" ID="{ED67F8A7-E5EB-4471-BAF6-3B48A8DE2705}" ShortID="369644999">
 							<ChildrenList>
-								<Action Name="" ID="{CD7EC8A1-3C01-444F-90F2-CF37C8E4949C}" ShortID="134313207">
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Close_Anim" ID="{66749DF1-EA5A-4A43-B31B-93B312A06EF7}" WorkUnitID="{2E2CE7FA-02C6-4C71-AABE-F8140864C57E}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
+								<Folder Name="Coffin" ID="{94EA7AC6-39D7-4F27-9DB7-63518C1B7BA1}" ShortID="164224132">
+									<ChildrenList>
+										<Event Name="Coffin_Close_Begin" ID="{08855823-D772-4453-AB77-E21224473A6C}">
+											<ChildrenList>
+												<Action Name="" ID="{CD7EC8A1-3C01-444F-90F2-CF37C8E4949C}" ShortID="134313207">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Close_Anim" ID="{66749DF1-EA5A-4A43-B31B-93B312A06EF7}" WorkUnitID="{2E2CE7FA-02C6-4C71-AABE-F8140864C57E}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="Coffin_Shake" ID="{4714F94F-306D-4AA2-AD80-D52A5B6B5F96}">
+											<ChildrenList>
+												<Action Name="" ID="{307C8BB9-6324-4A93-8211-506DE459B006}" ShortID="377750066">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Shake" ID="{A193E60B-D776-4F79-8091-109D02784FF8}" WorkUnitID="{2E2CE7FA-02C6-4C71-AABE-F8140864C57E}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="Coffin_Close_End" ID="{C48EA195-F575-4A51-8AA5-E44EB26BD469}">
+											<ChildrenList>
+												<Action Name="" ID="{90D02761-E884-4EDF-8949-D43B093E9092}" ShortID="812055341">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Close_Lid" ID="{BFE70E06-234E-43F4-9DD3-C7ABBE00F3DD}" WorkUnitID="{2E2CE7FA-02C6-4C71-AABE-F8140864C57E}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="Coffin_Open_Begin" ID="{57E00CBB-7623-488B-8F47-E9E7A9ED8B30}">
+											<ChildrenList>
+												<Action Name="" ID="{D757B2F4-0C4A-4F12-8BB0-F1580A6C7C53}" ShortID="140814037">
+													<PropertyList>
+														<Property Name="ActionType" Type="int16" Value="2"/>
+														<Property Name="Scope" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Shake" ID="{A193E60B-D776-4F79-8091-109D02784FF8}" WorkUnitID="{2E2CE7FA-02C6-4C71-AABE-F8140864C57E}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+												<Action Name="" ID="{1CDFCD4C-13AD-4087-B922-37A314D9EFBC}" ShortID="620052260">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Open" ID="{C4DFDD81-AB5A-4EB8-8BF6-9D35EADC4D9A}" WorkUnitID="{2E2CE7FA-02C6-4C71-AABE-F8140864C57E}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+									</ChildrenList>
+								</Folder>
 							</ChildrenList>
-						</Event>
-						<Event Name="Coffin_Close_End" ID="{C48EA195-F575-4A51-8AA5-E44EB26BD469}">
+						</Folder>
+						<Folder Name="Ambience" ID="{84A06BD1-6B5F-4803-A5AE-78E3BB98DFD2}" ShortID="53690004">
 							<ChildrenList>
-								<Action Name="" ID="{90D02761-E884-4EDF-8949-D43B093E9092}" ShortID="812055341">
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Close_Lid" ID="{BFE70E06-234E-43F4-9DD3-C7ABBE00F3DD}" WorkUnitID="{2E2CE7FA-02C6-4C71-AABE-F8140864C57E}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
+								<Event Name="Ambience_Main" ID="{58DDA75E-E621-42B6-8F2B-4A4AA55761CE}"/>
+								<Event Name="Ambience_Droplet" ID="{04CA5452-3CEB-404B-8DB3-326519A2D94D}"/>
 							</ChildrenList>
-						</Event>
-						<Event Name="Coffin_Shake" ID="{4714F94F-306D-4AA2-AD80-D52A5B6B5F96}">
-							<ChildrenList>
-								<Action Name="" ID="{307C8BB9-6324-4A93-8211-506DE459B006}" ShortID="377750066">
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Shake" ID="{A193E60B-D776-4F79-8091-109D02784FF8}" WorkUnitID="{2E2CE7FA-02C6-4C71-AABE-F8140864C57E}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
+						</Folder>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>

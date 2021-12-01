@@ -539,6 +539,9 @@
 						<Bus Name="Music" ID="{634AB43A-5F23-44BA-AB38-535F5B65E59E}">
 							<ObjectLists/>
 						</Bus>
+						<Bus Name="Ambience" ID="{81C19022-0C6E-4BA0-A433-8D16AB5D78BE}">
+							<ObjectLists/>
+						</Bus>
 					</ChildrenList>
 					<ObjectLists/>
 				</Bus>

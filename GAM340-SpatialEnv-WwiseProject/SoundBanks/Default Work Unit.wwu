@@ -5,16 +5,22 @@
 			<ChildrenList>
 				<SoundBank Name="Master" ID="{F180063F-4304-4E4E-863F-DCFB9544A68C}">
 					<ObjectInclusionList>
+						<ObjectRef Name="Ambience_Droplet" ID="{04CA5452-3CEB-404B-8DB3-326519A2D94D}" WorkUnitID="{506EC3FD-D93F-498E-BB2B-FAB626ACF63B}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Ambience_Main" ID="{58DDA75E-E621-42B6-8F2B-4A4AA55761CE}" WorkUnitID="{506EC3FD-D93F-498E-BB2B-FAB626ACF63B}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Coffin_Close_Begin" ID="{08855823-D772-4453-AB77-E21224473A6C}" WorkUnitID="{506EC3FD-D93F-498E-BB2B-FAB626ACF63B}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Footstep" ID="{5DDB4280-0F39-46FC-8045-EEC7A97EDBCD}" WorkUnitID="{506EC3FD-D93F-498E-BB2B-FAB626ACF63B}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Coffin_Open_Begin" ID="{57E00CBB-7623-488B-8F47-E9E7A9ED8B30}" WorkUnitID="{506EC3FD-D93F-498E-BB2B-FAB626ACF63B}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Cell_Door_Close_Begin" ID="{9BAC56F9-91DF-4996-AB81-D046D054F210}" WorkUnitID="{506EC3FD-D93F-498E-BB2B-FAB626ACF63B}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Jump" ID="{BF192FBB-F72E-49C0-B0C5-3B302DC178E9}" WorkUnitID="{506EC3FD-D93F-498E-BB2B-FAB626ACF63B}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Torch_Active_Loop" ID="{510356EA-B57A-4A15-9E2B-E26B35E00D31}" WorkUnitID="{506EC3FD-D93F-498E-BB2B-FAB626ACF63B}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Coffin_Close_End" ID="{C48EA195-F575-4A51-8AA5-E44EB26BD469}" WorkUnitID="{506EC3FD-D93F-498E-BB2B-FAB626ACF63B}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Coffin_Shake" ID="{4714F94F-306D-4AA2-AD80-D52A5B6B5F96}" WorkUnitID="{506EC3FD-D93F-498E-BB2B-FAB626ACF63B}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Land" ID="{D1570720-FD08-4AA5-8DA7-A52FAACA54C4}" WorkUnitID="{506EC3FD-D93F-498E-BB2B-FAB626ACF63B}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Cell_Door_Close_End" ID="{07B449EE-F428-4CFF-AF06-23F86E23C561}" WorkUnitID="{506EC3FD-D93F-498E-BB2B-FAB626ACF63B}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Cell_Door_Open_End" ID="{4CF631E5-4D0B-4E92-8581-23257D32E22F}" WorkUnitID="{506EC3FD-D93F-498E-BB2B-FAB626ACF63B}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Redneck_Rolls_Dice" ID="{A75B3D78-20D7-4E9B-A339-DC774A124709}" WorkUnitID="{506EC3FD-D93F-498E-BB2B-FAB626ACF63B}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Candle_Active_Loop" ID="{3F769192-65A3-4F32-AFD6-940C9399BC2E}" WorkUnitID="{506EC3FD-D93F-498E-BB2B-FAB626ACF63B}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Cell_Door_Open_Begin" ID="{B6DEA052-9D4C-4FA9-983F-6D2AA1C9FA49}" WorkUnitID="{506EC3FD-D93F-498E-BB2B-FAB626ACF63B}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

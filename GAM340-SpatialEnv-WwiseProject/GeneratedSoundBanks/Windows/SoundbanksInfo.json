@@ -19,7 +19,7 @@
     "Id": "1355168291",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "1120398023",
+    "Hash": "902722317",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
@@ -80,11 +80,31 @@
     "Id": "4056684167",
     "GUID": "{F180063F-4304-4E4E-863F-DCFB9544A68C}",
     "Language": "SFX",
-    "Hash": "3214423817",
+    "Hash": "1868682883",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Master",
     "ShortName": "Master",
     "Path": "Master.bnk",
     "IncludedEvents": [
+     {
+      "Id": "1748112890",
+      "Name": "Ambience_Droplet",
+      "ObjectPath": "\\Events\\Default Work Unit\\Environment\\Ambience\\Ambience_Droplet",
+      "GUID": "{04CA5452-3CEB-404B-8DB3-326519A2D94D}",
+      "MaxAttenuation": "0.000000",
+      "DurationType": "OneShot",
+      "DurationMin": "0.000000",
+      "DurationMax": "0.000000"
+     },
+     {
+      "Id": "13542051",
+      "Name": "Ambience_Main",
+      "ObjectPath": "\\Events\\Default Work Unit\\Environment\\Ambience\\Ambience_Main",
+      "GUID": "{58DDA75E-E621-42B6-8F2B-4A4AA55761CE}",
+      "MaxAttenuation": "0.000000",
+      "DurationType": "OneShot",
+      "DurationMin": "0.000000",
+      "DurationMax": "0.000000"
+     },
      {
       "Id": "1898196184",
       "Name": "Candle_Active_Loop",
@@ -102,9 +122,127 @@
       ]
      },
      {
+      "Id": "2488284511",
+      "Name": "Cell_Door_Close_Begin",
+      "ObjectPath": "\\Events\\Default Work Unit\\Environment\\Dungeon\\Cell_Door_Close_Begin",
+      "GUID": "{9BAC56F9-91DF-4996-AB81-D046D054F210}",
+      "MaxAttenuation": "5000.000000",
+      "DurationType": "OneShot",
+      "DurationMin": "1.029773",
+      "DurationMax": "1.443220",
+      "IncludedMemoryFiles": [
+       {
+        "Id": "295258057",
+        "Language": "SFX",
+        "ShortName": "SE_SFX_Dungeon_Cell_Door_Close_Creak_3.wav",
+        "Path": "SFX\\SE_SFX_Dungeon_Cell_Door_Close_Creak_3_10C4C929.wem"
+       },
+       {
+        "Id": "444174309",
+        "Language": "SFX",
+        "ShortName": "SE_SFX_Dungeon_Cell_Door_Close_Creak_2.wav",
+        "Path": "SFX\\SE_SFX_Dungeon_Cell_Door_Close_Creak_2_10C4C929.wem"
+       },
+       {
+        "Id": "660378241",
+        "Language": "SFX",
+        "ShortName": "SE_SFX_Dungeon_Cell_Door_Close_Creak_1.wav",
+        "Path": "SFX\\SE_SFX_Dungeon_Cell_Door_Close_Creak_1_10C4C929.wem"
+       }
+      ],
+      "AuxBusSends": [
+       {
+        "Id": "2212376974",
+        "Name": "Early_Reflection_Aux_Bus",
+        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\SFX\\Early_Reflection_Aux_Bus",
+        "GUID": "{8282F99E-D8F7-4B95-B1EA-B9978394AFAE}"
+       }
+      ]
+     },
+     {
+      "Id": "3805516495",
+      "Name": "Cell_Door_Close_End",
+      "ObjectPath": "\\Events\\Default Work Unit\\Environment\\Dungeon\\Cell_Door_Close_End",
+      "GUID": "{07B449EE-F428-4CFF-AF06-23F86E23C561}",
+      "MaxAttenuation": "5000.000000",
+      "DurationType": "OneShot",
+      "DurationMin": "0.866848",
+      "DurationMax": "0.866848",
+      "IncludedMemoryFiles": [
+       {
+        "Id": "390133582",
+        "Language": "SFX",
+        "ShortName": "SE_SFX_Dungeon_Cell_Door_Close_Handle_1.wav",
+        "Path": "SFX\\SE_SFX_Dungeon_Cell_Door_Close_Handle_1_10C4C929.wem"
+       }
+      ],
+      "AuxBusSends": [
+       {
+        "Id": "2212376974",
+        "Name": "Early_Reflection_Aux_Bus",
+        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\SFX\\Early_Reflection_Aux_Bus",
+        "GUID": "{8282F99E-D8F7-4B95-B1EA-B9978394AFAE}"
+       }
+      ]
+     },
+     {
+      "Id": "1345353089",
+      "Name": "Cell_Door_Open_Begin",
+      "ObjectPath": "\\Events\\Default Work Unit\\Environment\\Dungeon\\Cell_Door_Open_Begin",
+      "GUID": "{B6DEA052-9D4C-4FA9-983F-6D2AA1C9FA49}",
+      "MaxAttenuation": "5000.000000",
+      "DurationType": "OneShot",
+      "DurationMin": "1.383039",
+      "DurationMax": "1.953673",
+      "IncludedMemoryFiles": [
+       {
+        "Id": "489296797",
+        "Language": "SFX",
+        "ShortName": "SE_SFX_Dungeon_Cell_Door_Open_Handle_1.wav",
+        "Path": "SFX\\SE_SFX_Dungeon_Cell_Door_Open_Handle_1_10C4C929.wem"
+       },
+       {
+        "Id": "741010050",
+        "Language": "SFX",
+        "ShortName": "SE_SFX_Dungeon_Cell_Door_Open_Creak_1.wav",
+        "Path": "SFX\\SE_SFX_Dungeon_Cell_Door_Open_Creak_1_10C4C929.wem"
+       },
+       {
+        "Id": "757521177",
+        "Language": "SFX",
+        "ShortName": "SE_SFX_Dungeon_Cell_Door_Open_Creak_2.wav",
+        "Path": "SFX\\SE_SFX_Dungeon_Cell_Door_Open_Creak_2_10C4C929.wem"
+       },
+       {
+        "Id": "1030571561",
+        "Language": "SFX",
+        "ShortName": "SE_SFX_Dungeon_Cell_Door_Open_Creak_3.wav",
+        "Path": "SFX\\SE_SFX_Dungeon_Cell_Door_Open_Creak_3_10C4C929.wem"
+       }
+      ],
+      "AuxBusSends": [
+       {
+        "Id": "2212376974",
+        "Name": "Early_Reflection_Aux_Bus",
+        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\SFX\\Early_Reflection_Aux_Bus",
+        "GUID": "{8282F99E-D8F7-4B95-B1EA-B9978394AFAE}"
+       }
+      ]
+     },
+     {
+      "Id": "4233653001",
+      "Name": "Cell_Door_Open_End",
+      "ObjectPath": "\\Events\\Default Work Unit\\Environment\\Dungeon\\Cell_Door_Open_End",
+      "GUID": "{4CF631E5-4D0B-4E92-8581-23257D32E22F}",
+      "MaxAttenuation": "0.000000",
+      "DurationType": "OneShot",
+      "DurationMin": "0.000000",
+      "DurationMax": "0.000000"
+     },
+     {
       "Id": "2697518177",
       "Name": "Coffin_Close_Begin",
-      "ObjectPath": "\\Events\\Default Work Unit\\Environment\\Coffin_Close_Begin",
+      "ObjectPath": "\\Events\\Default Work Unit\\Environment\\Crypt\\Coffin\\Coffin_Close_Begin",
       "GUID": "{08855823-D772-4453-AB77-E21224473A6C}",
       "MaxAttenuation": "5000.000000",
       "DurationType": "OneShot",
@@ -130,7 +268,7 @@
      {
       "Id": "2584527849",
       "Name": "Coffin_Close_End",
-      "ObjectPath": "\\Events\\Default Work Unit\\Environment\\Coffin_Close_End",
+      "ObjectPath": "\\Events\\Default Work Unit\\Environment\\Crypt\\Coffin\\Coffin_Close_End",
       "GUID": "{C48EA195-F575-4A51-8AA5-E44EB26BD469}",
       "MaxAttenuation": "5000.000000",
       "DurationType": "OneShot",
@@ -156,7 +294,7 @@
      {
       "Id": "714885747",
       "Name": "Coffin_Open_Begin",
-      "ObjectPath": "\\Events\\Default Work Unit\\Environment\\Coffin_Open_Begin",
+      "ObjectPath": "\\Events\\Default Work Unit\\Environment\\Crypt\\Coffin\\Coffin_Open_Begin",
       "GUID": "{57E00CBB-7623-488B-8F47-E9E7A9ED8B30}",
       "MaxAttenuation": "5000.000000",
       "DurationType": "OneShot",
@@ -188,7 +326,7 @@
      {
       "Id": "3785983161",
       "Name": "Coffin_Shake",
-      "ObjectPath": "\\Events\\Default Work Unit\\Environment\\Coffin_Shake",
+      "ObjectPath": "\\Events\\Default Work Unit\\Environment\\Crypt\\Coffin\\Coffin_Shake",
       "GUID": "{4714F94F-306D-4AA2-AD80-D52A5B6B5F96}",
       "MaxAttenuation": "5000.000000",
       "DurationType": "OneShot",
