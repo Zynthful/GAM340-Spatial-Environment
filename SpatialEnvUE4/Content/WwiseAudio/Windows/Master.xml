@@ -8,13 +8,20 @@
 		<ExternalSourcesOutputRoot>C:\Users\Jamie Carnell\Desktop\Projects etc\Projects\GAM340 Project\GAM340-Spatial-Environment\GAM340-SpatialEnv-WwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<SoundBanks>
-		<SoundBank Id="4056684167" GUID="{F180063F-4304-4E4E-863F-DCFB9544A68C}" Language="SFX" Hash="2337682653">
+		<SoundBank Id="4056684167" GUID="{F180063F-4304-4E4E-863F-DCFB9544A68C}" Language="SFX" Hash="673180383">
 			<ObjectPath>\SoundBanks\Default Work Unit\Master</ObjectPath>
 			<ShortName>Master</ShortName>
 			<Path>Master.bnk</Path>
 			<IncludedEvents>
 				<Event Id="1748112890" Name="Ambience_Droplet" ObjectPath="\Events\Default Work Unit\Environment\Ambience\Ambience_Droplet" GUID="{04CA5452-3CEB-404B-8DB3-326519A2D94D}" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
-				<Event Id="13542051" Name="Ambience_Main" ObjectPath="\Events\Default Work Unit\Environment\Ambience\Ambience_Main" GUID="{58DDA75E-E621-42B6-8F2B-4A4AA55761CE}" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="13542051" Name="Ambience_Main" ObjectPath="\Events\Default Work Unit\Environment\Ambience\Ambience_Main" GUID="{58DDA75E-E621-42B6-8F2B-4A4AA55761CE}" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="186390572" Language="SFX">
+							<ShortName>SE_AMB_Room_Crypt_Loop.wav</ShortName>
+							<Path>SFX\SE_AMB_Room_Crypt_Loop_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="1898196184" Name="Candle_Active_Loop" ObjectPath="\Events\Default Work Unit\Environment\Candle_Active_Loop" GUID="{3F769192-65A3-4F32-AFD6-940C9399BC2E}" MaxAttenuation="600.000000" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="670250149" Language="SFX">

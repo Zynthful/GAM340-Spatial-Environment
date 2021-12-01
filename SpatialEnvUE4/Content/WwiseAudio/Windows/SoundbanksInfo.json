@@ -80,7 +80,7 @@
     "Id": "4056684167",
     "GUID": "{F180063F-4304-4E4E-863F-DCFB9544A68C}",
     "Language": "SFX",
-    "Hash": "2337682653",
+    "Hash": "673180383",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Master",
     "ShortName": "Master",
     "Path": "Master.bnk",
@@ -100,10 +100,15 @@
       "Name": "Ambience_Main",
       "ObjectPath": "\\Events\\Default Work Unit\\Environment\\Ambience\\Ambience_Main",
       "GUID": "{58DDA75E-E621-42B6-8F2B-4A4AA55761CE}",
-      "MaxAttenuation": "0.000000",
-      "DurationType": "OneShot",
-      "DurationMin": "0.000000",
-      "DurationMax": "0.000000"
+      "DurationType": "Infinite",
+      "IncludedMemoryFiles": [
+       {
+        "Id": "186390572",
+        "Language": "SFX",
+        "ShortName": "SE_AMB_Room_Crypt_Loop.wav",
+        "Path": "SFX\\SE_AMB_Room_Crypt_Loop_D79FB2B7.wem"
+       }
+      ]
      },
      {
       "Id": "1898196184",

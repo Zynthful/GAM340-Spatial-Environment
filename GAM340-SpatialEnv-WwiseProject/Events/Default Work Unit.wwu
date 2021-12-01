@@ -205,7 +205,44 @@
 						</Folder>
 						<Folder Name="Ambience" ID="{84A06BD1-6B5F-4803-A5AE-78E3BB98DFD2}" ShortID="53690004">
 							<ChildrenList>
-								<Event Name="Ambience_Main" ID="{58DDA75E-E621-42B6-8F2B-4A4AA55761CE}"/>
+								<Event Name="Ambience_Main" ID="{58DDA75E-E621-42B6-8F2B-4A4AA55761CE}">
+									<ChildrenList>
+										<Action Name="" ID="{BF1EA48C-B908-4020-93C9-5628058B4AC5}" ShortID="726021730">
+											<PropertyList>
+												<Property Name="FadeInCurve" Type="int16" Value="1"/>
+												<Property Name="FadeTime" Type="Real64" Value="5"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Ambience_Main" ID="{9D320C36-537C-48D6-93F3-77DAA653B9FE}" WorkUnitID="{2E2CE7FA-02C6-4C71-AABE-F8140864C57E}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{12C66D94-4A77-4EBC-B685-93AC8663FF90}" ShortID="994926382">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="36"/>
+												<Property Name="SeekPercent" Type="Real64" Value="50">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{5AD22546-BBA3-4A04-AD33-396786E0732A}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="50"/>
+																	<Property Name="Min" Type="Real64" Value="-50"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Ambience_Main" ID="{9D320C36-537C-48D6-93F3-77DAA653B9FE}" WorkUnitID="{2E2CE7FA-02C6-4C71-AABE-F8140864C57E}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
 								<Event Name="Ambience_Droplet" ID="{04CA5452-3CEB-404B-8DB3-326519A2D94D}"/>
 							</ChildrenList>
 						</Folder>
