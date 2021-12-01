@@ -11,6 +11,7 @@
 						<ObjectRef Name="Jump" ID="{BF192FBB-F72E-49C0-B0C5-3B302DC178E9}" WorkUnitID="{506EC3FD-D93F-498E-BB2B-FAB626ACF63B}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Torch_Active_Loop" ID="{510356EA-B57A-4A15-9E2B-E26B35E00D31}" WorkUnitID="{506EC3FD-D93F-498E-BB2B-FAB626ACF63B}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Coffin_Close_End" ID="{C48EA195-F575-4A51-8AA5-E44EB26BD469}" WorkUnitID="{506EC3FD-D93F-498E-BB2B-FAB626ACF63B}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Coffin_Shake" ID="{4714F94F-306D-4AA2-AD80-D52A5B6B5F96}" WorkUnitID="{506EC3FD-D93F-498E-BB2B-FAB626ACF63B}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Land" ID="{D1570720-FD08-4AA5-8DA7-A52FAACA54C4}" WorkUnitID="{506EC3FD-D93F-498E-BB2B-FAB626ACF63B}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Redneck_Rolls_Dice" ID="{A75B3D78-20D7-4E9B-A339-DC774A124709}" WorkUnitID="{506EC3FD-D93F-498E-BB2B-FAB626ACF63B}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Candle_Active_Loop" ID="{3F769192-65A3-4F32-AFD6-940C9399BC2E}" WorkUnitID="{506EC3FD-D93F-498E-BB2B-FAB626ACF63B}" Origin="Manual" Filter="7"/>
