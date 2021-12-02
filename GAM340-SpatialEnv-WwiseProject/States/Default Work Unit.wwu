@@ -1,6 +1,88 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{41F48ABA-050A-488A-81BF-7640528CA121}" SchemaVersion="103">
 	<States>
-		<WorkUnit Name="Default Work Unit" ID="{41F48ABA-050A-488A-81BF-7640528CA121}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{41F48ABA-050A-488A-81BF-7640528CA121}" PersistMode="Standalone">
+			<ChildrenList>
+				<StateGroup Name="Player_Location" ID="{7C0CB3F3-D512-4215-A667-7043B531E8FB}">
+					<PropertyList>
+						<Property Name="DefaultTransitionTime" Type="Real64" Value="2.5"/>
+					</PropertyList>
+					<ChildrenList>
+						<State Name="None" ID="{4CE9CCDB-73B1-4524-82F5-F5FE62BC32EA}"/>
+						<State Name="Dungeon" ID="{ED62CB76-3183-4DD8-A659-B6285EB4D628}"/>
+						<State Name="Crypt" ID="{5770EA5F-1A52-48FB-B438-59657A13B8FF}"/>
+						<State Name="Crypt_Coffin_Chamber" ID="{B2F9A9E7-70C8-405F-9C4B-9F3B99181D6D}"/>
+					</ChildrenList>
+					<TransitionList>
+						<Transition>
+							<StartState Name="Crypt" ID="{5770EA5F-1A52-48FB-B438-59657A13B8FF}"/>
+							<EndState Name="None" ID="{4CE9CCDB-73B1-4524-82F5-F5FE62BC32EA}"/>
+							<Time>1</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="Crypt" ID="{5770EA5F-1A52-48FB-B438-59657A13B8FF}"/>
+							<EndState Name="Crypt_Coffin_Chamber" ID="{B2F9A9E7-70C8-405F-9C4B-9F3B99181D6D}"/>
+							<Time>2.5</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="Crypt" ID="{5770EA5F-1A52-48FB-B438-59657A13B8FF}"/>
+							<EndState Name="Dungeon" ID="{ED62CB76-3183-4DD8-A659-B6285EB4D628}"/>
+							<Time>2.5</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="Dungeon" ID="{ED62CB76-3183-4DD8-A659-B6285EB4D628}"/>
+							<EndState Name="Crypt" ID="{5770EA5F-1A52-48FB-B438-59657A13B8FF}"/>
+							<Time>2.5</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="Dungeon" ID="{ED62CB76-3183-4DD8-A659-B6285EB4D628}"/>
+							<EndState Name="None" ID="{4CE9CCDB-73B1-4524-82F5-F5FE62BC32EA}"/>
+							<Time>2.5</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="None" ID="{4CE9CCDB-73B1-4524-82F5-F5FE62BC32EA}"/>
+							<EndState Name="Dungeon" ID="{ED62CB76-3183-4DD8-A659-B6285EB4D628}"/>
+							<Time>5</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="None" ID="{4CE9CCDB-73B1-4524-82F5-F5FE62BC32EA}"/>
+							<EndState Name="Crypt" ID="{5770EA5F-1A52-48FB-B438-59657A13B8FF}"/>
+							<Time>5</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="None" ID="{4CE9CCDB-73B1-4524-82F5-F5FE62BC32EA}"/>
+							<EndState Name="Crypt_Coffin_Chamber" ID="{B2F9A9E7-70C8-405F-9C4B-9F3B99181D6D}"/>
+							<Time>5</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="Dungeon" ID="{ED62CB76-3183-4DD8-A659-B6285EB4D628}"/>
+							<EndState Name="Crypt_Coffin_Chamber" ID="{B2F9A9E7-70C8-405F-9C4B-9F3B99181D6D}"/>
+							<Time>2.5</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="Crypt_Coffin_Chamber" ID="{B2F9A9E7-70C8-405F-9C4B-9F3B99181D6D}"/>
+							<EndState Name="None" ID="{4CE9CCDB-73B1-4524-82F5-F5FE62BC32EA}"/>
+							<Time>2.5</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="Crypt_Coffin_Chamber" ID="{B2F9A9E7-70C8-405F-9C4B-9F3B99181D6D}"/>
+							<EndState Name="Dungeon" ID="{ED62CB76-3183-4DD8-A659-B6285EB4D628}"/>
+							<Time>2.5</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+					</TransitionList>
+				</StateGroup>
+			</ChildrenList>
+		</WorkUnit>
 	</States>
 </WwiseDocument>

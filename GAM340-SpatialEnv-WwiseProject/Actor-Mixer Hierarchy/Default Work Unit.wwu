@@ -63,6 +63,31 @@
 									</MediaIDList>
 								</AudioFileSource>
 							</ChildrenList>
+							<StateInfo>
+								<StateGroupList>
+									<StateGroupInfo>
+										<StateGroupRef Name="Player_Location" ID="{7C0CB3F3-D512-4215-A667-7043B531E8FB}"/>
+									</StateGroupInfo>
+								</StateGroupList>
+								<CustomStateList>
+									<CustomState>
+										<StateRef Name="Crypt_Coffin_Chamber" ID="{B2F9A9E7-70C8-405F-9C4B-9F3B99181D6D}"/>
+										<CustomState Name="" ID="{5D39F384-862A-4284-B7B3-ECFB2A61B7ED}" ShortID="992383729">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-6"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Crypt" ID="{5770EA5F-1A52-48FB-B438-59657A13B8FF}"/>
+										<CustomState Name="" ID="{7EB3CE6D-2FFA-4502-AE39-A7AE45FAEA1C}" ShortID="363375827"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Dungeon" ID="{ED62CB76-3183-4DD8-A659-B6285EB4D628}"/>
+										<CustomState Name="" ID="{1A5CCA46-E343-472D-B53E-3635675C63F8}" ShortID="615011941"/>
+									</CustomState>
+								</CustomStateList>
+							</StateInfo>
 							<ObjectLists/>
 							<ActiveSourceList>
 								<ActiveSource Name="SE_Candle_Loop" ID="{455A67E8-6CA2-45E5-B014-817EA976AC4E}" Platform="Linked"/>
@@ -136,6 +161,35 @@
 													</ActiveSourceList>
 												</Sound>
 											</ChildrenList>
+											<StateInfo>
+												<StateGroupList>
+													<StateGroupInfo>
+														<StateGroupRef Name="Player_Location" ID="{7C0CB3F3-D512-4215-A667-7043B531E8FB}"/>
+													</StateGroupInfo>
+												</StateGroupList>
+												<CustomStateList>
+													<CustomState>
+														<StateRef Name="Crypt_Coffin_Chamber" ID="{B2F9A9E7-70C8-405F-9C4B-9F3B99181D6D}"/>
+														<CustomState Name="" ID="{C0386169-E452-48AA-BC62-CA3B4F331A57}" ShortID="395308541">
+															<PropertyList>
+																<Property Name="Volume" Type="Real64" Value="-108"/>
+															</PropertyList>
+														</CustomState>
+													</CustomState>
+													<CustomState>
+														<StateRef Name="Crypt" ID="{5770EA5F-1A52-48FB-B438-59657A13B8FF}"/>
+														<CustomState Name="" ID="{280A44B4-2CD5-4125-B32B-4F2B1A846877}" ShortID="238359292"/>
+													</CustomState>
+													<CustomState>
+														<StateRef Name="Dungeon" ID="{ED62CB76-3183-4DD8-A659-B6285EB4D628}"/>
+														<CustomState Name="" ID="{B238F3A4-46E9-4849-9BAC-C9FE78151FDE}" ShortID="447711054">
+															<PropertyList>
+																<Property Name="Volume" Type="Real64" Value="-108"/>
+															</PropertyList>
+														</CustomState>
+													</CustomState>
+												</CustomStateList>
+											</StateInfo>
 											<ObjectLists/>
 										</BlendContainer>
 										<BlendContainer Name="Ambience_Dungeon" ID="{EB067C9F-638D-4B04-B26E-4BA1EFD8DE98}" ShortID="831390594">
@@ -147,6 +201,35 @@
 													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
 												</Reference>
 											</ReferenceList>
+											<StateInfo>
+												<StateGroupList>
+													<StateGroupInfo>
+														<StateGroupRef Name="Player_Location" ID="{7C0CB3F3-D512-4215-A667-7043B531E8FB}"/>
+													</StateGroupInfo>
+												</StateGroupList>
+												<CustomStateList>
+													<CustomState>
+														<StateRef Name="Crypt_Coffin_Chamber" ID="{B2F9A9E7-70C8-405F-9C4B-9F3B99181D6D}"/>
+														<CustomState Name="" ID="{C00E1E30-1FB7-446B-908D-B86A78CD6422}" ShortID="869343801">
+															<PropertyList>
+																<Property Name="Volume" Type="Real64" Value="-108"/>
+															</PropertyList>
+														</CustomState>
+													</CustomState>
+													<CustomState>
+														<StateRef Name="Crypt" ID="{5770EA5F-1A52-48FB-B438-59657A13B8FF}"/>
+														<CustomState Name="" ID="{322147DA-C0CA-455F-A853-5C2B28D7AC37}" ShortID="711183181">
+															<PropertyList>
+																<Property Name="Volume" Type="Real64" Value="-108"/>
+															</PropertyList>
+														</CustomState>
+													</CustomState>
+													<CustomState>
+														<StateRef Name="Dungeon" ID="{ED62CB76-3183-4DD8-A659-B6285EB4D628}"/>
+														<CustomState Name="" ID="{E77567E6-C9E0-4C39-896D-8E2C715C4162}" ShortID="975384188"/>
+													</CustomState>
+												</CustomStateList>
+											</StateInfo>
 											<ObjectLists/>
 										</BlendContainer>
 									</ChildrenList>

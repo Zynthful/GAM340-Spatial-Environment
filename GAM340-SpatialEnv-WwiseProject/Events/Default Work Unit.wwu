@@ -210,7 +210,7 @@
 										<Action Name="" ID="{BF1EA48C-B908-4020-93C9-5628058B4AC5}" ShortID="726021730">
 											<PropertyList>
 												<Property Name="FadeInCurve" Type="int16" Value="1"/>
-												<Property Name="FadeTime" Type="Real64" Value="5"/>
+												<Property Name="FadeTime" Type="Real64" Value="9"/>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Target">
