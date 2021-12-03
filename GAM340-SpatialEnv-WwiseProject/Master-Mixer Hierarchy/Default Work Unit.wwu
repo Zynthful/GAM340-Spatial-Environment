@@ -540,6 +540,31 @@
 							<ObjectLists/>
 						</Bus>
 						<Bus Name="Ambience" ID="{81C19022-0C6E-4BA0-A433-8D16AB5D78BE}">
+							<StateInfo>
+								<StateGroupList>
+									<StateGroupInfo>
+										<StateGroupRef Name="Player_Location" ID="{7C0CB3F3-D512-4215-A667-7043B531E8FB}"/>
+									</StateGroupInfo>
+								</StateGroupList>
+								<CustomStateList>
+									<CustomState>
+										<StateRef Name="Crypt_Coffin_Chamber" ID="{B2F9A9E7-70C8-405F-9C4B-9F3B99181D6D}"/>
+										<CustomState Name="" ID="{1D971622-5184-4D32-91F8-D4836EEF7216}" ShortID="515872218">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Crypt" ID="{5770EA5F-1A52-48FB-B438-59657A13B8FF}"/>
+										<CustomState Name="" ID="{6DF5F4C1-CAD6-4D54-B18F-FB188F5515C0}" ShortID="367661239"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Dungeon" ID="{ED62CB76-3183-4DD8-A659-B6285EB4D628}"/>
+										<CustomState Name="" ID="{B52F95BB-E171-4207-9CC3-61639E141A89}" ShortID="527990275"/>
+									</CustomState>
+								</CustomStateList>
+							</StateInfo>
 							<ObjectLists/>
 						</Bus>
 					</ChildrenList>

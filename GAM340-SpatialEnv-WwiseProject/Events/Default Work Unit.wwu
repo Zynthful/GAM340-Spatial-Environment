@@ -57,7 +57,17 @@
 				</Folder>
 				<Folder Name="Environment" ID="{BBADEFC3-4A6E-4897-BA78-DD23BDA690BB}" ShortID="215651081">
 					<ChildrenList>
-						<Event Name="Torch_Active_Loop" ID="{510356EA-B57A-4A15-9E2B-E26B35E00D31}"/>
+						<Event Name="Torch_Active_Loop" ID="{510356EA-B57A-4A15-9E2B-E26B35E00D31}">
+							<ChildrenList>
+								<Action Name="" ID="{6AF49B94-5423-437B-8DBB-D8FF467261FB}" ShortID="623285138">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Torch Loop" ID="{D4365FDA-6D84-44E6-B12B-09FF16735172}" WorkUnitID="{2E2CE7FA-02C6-4C71-AABE-F8140864C57E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 						<Event Name="Candle_Active_Loop" ID="{3F769192-65A3-4F32-AFD6-940C9399BC2E}">
 							<ChildrenList>
 								<Action Name="" ID="{CA4A9BBB-3FE8-4673-AA58-3B3853217913}" ShortID="694947956">
@@ -210,7 +220,7 @@
 										<Action Name="" ID="{BF1EA48C-B908-4020-93C9-5628058B4AC5}" ShortID="726021730">
 											<PropertyList>
 												<Property Name="FadeInCurve" Type="int16" Value="1"/>
-												<Property Name="FadeTime" Type="Real64" Value="5"/>
+												<Property Name="FadeTime" Type="Real64" Value="9"/>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Target">

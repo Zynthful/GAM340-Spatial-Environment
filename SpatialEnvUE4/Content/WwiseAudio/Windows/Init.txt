@@ -1,3 +1,15 @@
+State Group	ID	Name			Wwise Object Path	Notes
+	3238956108	Player_Location			\Default Work Unit\Player_Location	
+
+State	ID	Name	State Group			Notes
+	608898761	Dungeon	Player_Location			
+	748895195	None	Player_Location			
+	1755593458	Crypt_Coffin_Chamber	Player_Location			
+	2761606855	Crypt	Player_Location			
+
+Custom State	ID	Name	State Group	Owner		Notes
+	515872218	Crypt_Coffin_Chamber	Player_Location	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Ambience		
+
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	194404061	Predelay			\Default Work Unit\Reverb\Predelay	
 	504532776	Brick			\Factory Acoustic Textures\Textures\Brick	

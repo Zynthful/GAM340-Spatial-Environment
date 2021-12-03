@@ -63,6 +63,31 @@
 									</MediaIDList>
 								</AudioFileSource>
 							</ChildrenList>
+							<StateInfo>
+								<StateGroupList>
+									<StateGroupInfo>
+										<StateGroupRef Name="Player_Location" ID="{7C0CB3F3-D512-4215-A667-7043B531E8FB}"/>
+									</StateGroupInfo>
+								</StateGroupList>
+								<CustomStateList>
+									<CustomState>
+										<StateRef Name="Crypt_Coffin_Chamber" ID="{B2F9A9E7-70C8-405F-9C4B-9F3B99181D6D}"/>
+										<CustomState Name="" ID="{5D39F384-862A-4284-B7B3-ECFB2A61B7ED}" ShortID="992383729">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-6"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Crypt" ID="{5770EA5F-1A52-48FB-B438-59657A13B8FF}"/>
+										<CustomState Name="" ID="{7EB3CE6D-2FFA-4502-AE39-A7AE45FAEA1C}" ShortID="363375827"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Dungeon" ID="{ED62CB76-3183-4DD8-A659-B6285EB4D628}"/>
+										<CustomState Name="" ID="{1A5CCA46-E343-472D-B53E-3635675C63F8}" ShortID="615011941"/>
+									</CustomState>
+								</CustomStateList>
+							</StateInfo>
 							<ObjectLists/>
 							<ActiveSourceList>
 								<ActiveSource Name="SE_Candle_Loop" ID="{455A67E8-6CA2-45E5-B014-817EA976AC4E}" Platform="Linked"/>
@@ -136,6 +161,35 @@
 													</ActiveSourceList>
 												</Sound>
 											</ChildrenList>
+											<StateInfo>
+												<StateGroupList>
+													<StateGroupInfo>
+														<StateGroupRef Name="Player_Location" ID="{7C0CB3F3-D512-4215-A667-7043B531E8FB}"/>
+													</StateGroupInfo>
+												</StateGroupList>
+												<CustomStateList>
+													<CustomState>
+														<StateRef Name="Crypt_Coffin_Chamber" ID="{B2F9A9E7-70C8-405F-9C4B-9F3B99181D6D}"/>
+														<CustomState Name="" ID="{C0386169-E452-48AA-BC62-CA3B4F331A57}" ShortID="395308541">
+															<PropertyList>
+																<Property Name="Volume" Type="Real64" Value="-108"/>
+															</PropertyList>
+														</CustomState>
+													</CustomState>
+													<CustomState>
+														<StateRef Name="Crypt" ID="{5770EA5F-1A52-48FB-B438-59657A13B8FF}"/>
+														<CustomState Name="" ID="{280A44B4-2CD5-4125-B32B-4F2B1A846877}" ShortID="238359292"/>
+													</CustomState>
+													<CustomState>
+														<StateRef Name="Dungeon" ID="{ED62CB76-3183-4DD8-A659-B6285EB4D628}"/>
+														<CustomState Name="" ID="{B238F3A4-46E9-4849-9BAC-C9FE78151FDE}" ShortID="447711054">
+															<PropertyList>
+																<Property Name="Volume" Type="Real64" Value="-108"/>
+															</PropertyList>
+														</CustomState>
+													</CustomState>
+												</CustomStateList>
+											</StateInfo>
 											<ObjectLists/>
 										</BlendContainer>
 										<BlendContainer Name="Ambience_Dungeon" ID="{EB067C9F-638D-4B04-B26E-4BA1EFD8DE98}" ShortID="831390594">
@@ -147,6 +201,35 @@
 													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
 												</Reference>
 											</ReferenceList>
+											<StateInfo>
+												<StateGroupList>
+													<StateGroupInfo>
+														<StateGroupRef Name="Player_Location" ID="{7C0CB3F3-D512-4215-A667-7043B531E8FB}"/>
+													</StateGroupInfo>
+												</StateGroupList>
+												<CustomStateList>
+													<CustomState>
+														<StateRef Name="Crypt_Coffin_Chamber" ID="{B2F9A9E7-70C8-405F-9C4B-9F3B99181D6D}"/>
+														<CustomState Name="" ID="{C00E1E30-1FB7-446B-908D-B86A78CD6422}" ShortID="869343801">
+															<PropertyList>
+																<Property Name="Volume" Type="Real64" Value="-108"/>
+															</PropertyList>
+														</CustomState>
+													</CustomState>
+													<CustomState>
+														<StateRef Name="Crypt" ID="{5770EA5F-1A52-48FB-B438-59657A13B8FF}"/>
+														<CustomState Name="" ID="{322147DA-C0CA-455F-A853-5C2B28D7AC37}" ShortID="711183181">
+															<PropertyList>
+																<Property Name="Volume" Type="Real64" Value="-108"/>
+															</PropertyList>
+														</CustomState>
+													</CustomState>
+													<CustomState>
+														<StateRef Name="Dungeon" ID="{ED62CB76-3183-4DD8-A659-B6285EB4D628}"/>
+														<CustomState Name="" ID="{E77567E6-C9E0-4C39-896D-8E2C715C4162}" ShortID="975384188"/>
+													</CustomState>
+												</CustomStateList>
+											</StateInfo>
 											<ObjectLists/>
 										</BlendContainer>
 									</ChildrenList>
@@ -838,6 +921,108 @@
 								</Folder>
 							</ChildrenList>
 						</Folder>
+						<BlendContainer Name="Torch Loop" ID="{D4365FDA-6D84-44E6-B12B-09FF16735172}" ShortID="969460639">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="1"/>
+								<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{FE1D3673-5BAF-42FA-911A-27F0865FBD2E}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="200"/>
+													<Property Name="Min" Type="Real64" Value="-200"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{CBD0BC23-F085-4642-8D4A-0B75673C9E23}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Min" Type="Real64" Value="-2"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="Torch" ID="{53813407-BDE7-4BE8-A67F-8B07C8E96313}" WorkUnitID="{A1BA0ADB-F758-4BAD-B04B-D53467CF759B}"/>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62267F72-14C7-4DA9-898E-CD1568645172}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="SFX" ID="{18B976C0-D509-4A4A-B407-A8F6A887E940}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="SE_SFX_Torch_Ambient_Loop" ID="{CE828717-6C44-4C6F-8C03-6D6601B73270}" ShortID="285446759">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-16</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62267F72-14C7-4DA9-898E-CD1568645172}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SE_SFX_Torch_Ambient_Loop" ID="{880AD04D-0CE9-4024-88A7-811DAE25E60A}">
+											<Language>SFX</Language>
+											<AudioFile>SE_SFX_Torch_Ambient_Loop.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="883913235"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="SE_SFX_Torch_Ambient_Loop" ID="{880AD04D-0CE9-4024-88A7-811DAE25E60A}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<StateInfo>
+								<StateGroupList>
+									<StateGroupInfo>
+										<StateGroupRef Name="Player_Location" ID="{7C0CB3F3-D512-4215-A667-7043B531E8FB}"/>
+									</StateGroupInfo>
+								</StateGroupList>
+								<CustomStateList>
+									<CustomState>
+										<StateRef Name="Crypt_Coffin_Chamber" ID="{B2F9A9E7-70C8-405F-9C4B-9F3B99181D6D}"/>
+										<CustomState Name="" ID="{DFF83132-60BC-479C-9249-7F9C436A7692}" ShortID="156545532">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-12"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Crypt" ID="{5770EA5F-1A52-48FB-B438-59657A13B8FF}"/>
+										<CustomState Name="" ID="{75D4C914-33DF-4DF8-9A18-A5DBF81D9AEE}" ShortID="755591408"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Dungeon" ID="{ED62CB76-3183-4DD8-A659-B6285EB4D628}"/>
+										<CustomState Name="" ID="{46FE6C27-C978-41D2-B0B8-6F407A9F2040}" ShortID="733300583"/>
+									</CustomState>
+								</CustomStateList>
+							</StateInfo>
+							<ObjectLists/>
+						</BlendContainer>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Player" ID="{6DACDFD5-97E0-4BD1-A110-713522AE160C}" ShortID="221230855">
