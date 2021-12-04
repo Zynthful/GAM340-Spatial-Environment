@@ -224,7 +224,7 @@
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Target">
-													<ObjectRef Name="Ambience_Main" ID="{9D320C36-537C-48D6-93F3-77DAA653B9FE}" WorkUnitID="{2E2CE7FA-02C6-4C71-AABE-F8140864C57E}"/>
+													<ObjectRef Name="Ambience_Main" ID="{4662929D-FC8D-4C21-A324-A67FC04E90AB}" WorkUnitID="{DA6ABAD8-DBB3-42EC-9FEB-3C0BB3DDE88B}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
@@ -247,7 +247,7 @@
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Target">
-													<ObjectRef Name="Ambience_Main" ID="{9D320C36-537C-48D6-93F3-77DAA653B9FE}" WorkUnitID="{2E2CE7FA-02C6-4C71-AABE-F8140864C57E}"/>
+													<ObjectRef Name="Ambience_Main" ID="{4662929D-FC8D-4C21-A324-A67FC04E90AB}" WorkUnitID="{DA6ABAD8-DBB3-42EC-9FEB-3C0BB3DDE88B}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>

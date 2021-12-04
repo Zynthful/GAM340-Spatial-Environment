@@ -8,7 +8,7 @@
 		<ExternalSourcesOutputRoot>C:\Users\Jamie Carnell\Desktop\Projects etc\Projects\GAM340 Project\GAM340-Spatial-Environment\GAM340-SpatialEnv-WwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<SoundBanks>
-		<SoundBank Id="4056684167" GUID="{F180063F-4304-4E4E-863F-DCFB9544A68C}" Language="SFX" Hash="3802943267">
+		<SoundBank Id="4056684167" GUID="{F180063F-4304-4E4E-863F-DCFB9544A68C}" Language="SFX" Hash="798751534">
 			<ObjectPath>\SoundBanks\Default Work Unit\Master</ObjectPath>
 			<ShortName>Master</ShortName>
 			<Path>Master.bnk</Path>
@@ -20,7 +20,23 @@
 							<ShortName>SE_AMB_Room_Crypt_Loop.wav</ShortName>
 							<Path>SFX\SE_AMB_Room_Crypt_Loop_D79FB2B7.wem</Path>
 						</File>
+						<File Id="1031862452" Language="SFX">
+							<ShortName>SE_AMB_Dungeon_Loop.wav</ShortName>
+							<Path>SFX\SE_AMB_Dungeon_Loop_D79FB2B7.wem</Path>
+						</File>
 					</IncludedMemoryFiles>
+					<SwitchContainers>
+						<SwitchContainer SwitchValue="{5770EA5F-1A52-48FB-B438-59657A13B8FF}">
+							<Media>
+								<File Id="186390572"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{ED62CB76-3183-4DD8-A659-B6285EB4D628}">
+							<Media>
+								<File Id="1031862452"/>
+							</Media>
+						</SwitchContainer>
+					</SwitchContainers>
 				</Event>
 				<Event Id="1898196184" Name="Candle_Active_Loop" ObjectPath="\Events\Default Work Unit\Environment\Candle_Active_Loop" GUID="{3F769192-65A3-4F32-AFD6-940C9399BC2E}" MaxAttenuation="600.000000" DurationType="Infinite">
 					<IncludedMemoryFiles>
@@ -598,6 +614,16 @@
 				<GameParameter Id="1299678381" Name="Decay" ObjectPath="\Game Parameters\Default Work Unit\Reverb\Decay" GUID="{C13DC209-797B-4D9C-8B32-620C9CF3D9F2}"/>
 				<GameParameter Id="2947715227" Name="HFDamping" ObjectPath="\Game Parameters\Default Work Unit\Reverb\HFDamping" GUID="{EFACB379-4D0B-440D-B878-6950C616821D}"/>
 			</GameParameters>
+			<StateGroups>
+				<StateGroup Id="3238956108" Name="Player_Location" ObjectPath="\States\Default Work Unit\Player_Location" GUID="{7C0CB3F3-D512-4215-A667-7043B531E8FB}">
+					<States>
+						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\Player_Location\None" GUID="{4CE9CCDB-73B1-4524-82F5-F5FE62BC32EA}"/>
+						<State Id="608898761" Name="Dungeon" ObjectPath="\States\Default Work Unit\Player_Location\Dungeon" GUID="{ED62CB76-3183-4DD8-A659-B6285EB4D628}"/>
+						<State Id="2761606855" Name="Crypt" ObjectPath="\States\Default Work Unit\Player_Location\Crypt" GUID="{5770EA5F-1A52-48FB-B438-59657A13B8FF}"/>
+						<State Id="1755593458" Name="Crypt_Coffin_Chamber" ObjectPath="\States\Default Work Unit\Player_Location\Crypt_Coffin_Chamber" GUID="{B2F9A9E7-70C8-405F-9C4B-9F3B99181D6D}"/>
+					</States>
+				</StateGroup>
+			</StateGroups>
 			<SwitchGroups>
 				<SwitchGroup Id="3539622648" Name="Ground_Material" ObjectPath="\Switches\Default Work Unit\Ground_Material" GUID="{9002ABE4-AF62-4CA8-A595-E1E92B41B799}">
 					<Switches>

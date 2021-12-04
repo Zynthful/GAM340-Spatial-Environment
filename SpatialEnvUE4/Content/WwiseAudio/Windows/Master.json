@@ -16,7 +16,7 @@
     "Id": "4056684167",
     "GUID": "{F180063F-4304-4E4E-863F-DCFB9544A68C}",
     "Language": "SFX",
-    "Hash": "3802943267",
+    "Hash": "798751534",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Master",
     "ShortName": "Master",
     "Path": "Master.bnk",
@@ -43,6 +43,30 @@
         "Language": "SFX",
         "ShortName": "SE_AMB_Room_Crypt_Loop.wav",
         "Path": "SFX\\SE_AMB_Room_Crypt_Loop_D79FB2B7.wem"
+       },
+       {
+        "Id": "1031862452",
+        "Language": "SFX",
+        "ShortName": "SE_AMB_Dungeon_Loop.wav",
+        "Path": "SFX\\SE_AMB_Dungeon_Loop_D79FB2B7.wem"
+       }
+      ],
+      "SwitchContainers": [
+       {
+        "SwitchValue": "{5770EA5F-1A52-48FB-B438-59657A13B8FF}",
+        "Media": [
+         {
+          "Id": "186390572"
+         }
+        ]
+       },
+       {
+        "SwitchValue": "{ED62CB76-3183-4DD8-A659-B6285EB4D628}",
+        "Media": [
+         {
+          "Id": "1031862452"
+         }
+        ]
        }
       ]
      },
@@ -1164,6 +1188,40 @@
       "Name": "HFDamping",
       "ObjectPath": "\\Game Parameters\\Default Work Unit\\Reverb\\HFDamping",
       "GUID": "{EFACB379-4D0B-440D-B878-6950C616821D}"
+     }
+    ],
+    "StateGroups": [
+     {
+      "Id": "3238956108",
+      "Name": "Player_Location",
+      "ObjectPath": "\\States\\Default Work Unit\\Player_Location",
+      "GUID": "{7C0CB3F3-D512-4215-A667-7043B531E8FB}",
+      "States": [
+       {
+        "Id": "748895195",
+        "Name": "None",
+        "ObjectPath": "\\States\\Default Work Unit\\Player_Location\\None",
+        "GUID": "{4CE9CCDB-73B1-4524-82F5-F5FE62BC32EA}"
+       },
+       {
+        "Id": "608898761",
+        "Name": "Dungeon",
+        "ObjectPath": "\\States\\Default Work Unit\\Player_Location\\Dungeon",
+        "GUID": "{ED62CB76-3183-4DD8-A659-B6285EB4D628}"
+       },
+       {
+        "Id": "2761606855",
+        "Name": "Crypt",
+        "ObjectPath": "\\States\\Default Work Unit\\Player_Location\\Crypt",
+        "GUID": "{5770EA5F-1A52-48FB-B438-59657A13B8FF}"
+       },
+       {
+        "Id": "1755593458",
+        "Name": "Crypt_Coffin_Chamber",
+        "ObjectPath": "\\States\\Default Work Unit\\Player_Location\\Crypt_Coffin_Chamber",
+        "GUID": "{B2F9A9E7-70C8-405F-9C4B-9F3B99181D6D}"
+       }
+      ]
      }
     ],
     "SwitchGroups": [
