@@ -781,7 +781,7 @@
 								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-8</Value>
+										<Value>-16</Value>
 									</ValueList>
 									<ModifierList>
 										<ModifierInfo>
@@ -807,14 +807,9 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<Sound Name="SE_SFX_Torch_Ambient_Loop" ID="{CE828717-6C44-4C6F-8C03-6D6601B73270}" ShortID="285446759">
+								<Sound Name="SE_SFX_Torch_Active_Loop_Draft_2" ID="{83B105CB-12D9-48DE-BA25-5A61E02B3679}" ShortID="392687518">
 									<PropertyList>
 										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-16</Value>
-											</ValueList>
-										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -825,17 +820,17 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="SE_SFX_Torch_Ambient_Loop" ID="{880AD04D-0CE9-4024-88A7-811DAE25E60A}">
+										<AudioFileSource Name="SE_SFX_Torch_Active_Loop_Draft_2" ID="{6F142C19-46FC-434A-84FD-11CC6C5C2A7F}">
 											<Language>SFX</Language>
-											<AudioFile>SE_SFX_Torch_Ambient_Loop.wav</AudioFile>
+											<AudioFile>SE_SFX_Torch_Active_Loop_Draft_2.wav</AudioFile>
 											<MediaIDList>
-												<MediaID ID="883913235"/>
+												<MediaID ID="789175696"/>
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<ObjectLists/>
 									<ActiveSourceList>
-										<ActiveSource Name="SE_SFX_Torch_Ambient_Loop" ID="{880AD04D-0CE9-4024-88A7-811DAE25E60A}" Platform="Linked"/>
+										<ActiveSource Name="SE_SFX_Torch_Active_Loop_Draft_2" ID="{6F142C19-46FC-434A-84FD-11CC6C5C2A7F}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>
@@ -888,7 +883,7 @@
 								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-11</Value>
+										<Value>-22</Value>
 									</ValueList>
 									<ModifierList>
 										<ModifierInfo>
