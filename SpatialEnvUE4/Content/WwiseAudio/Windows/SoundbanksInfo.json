@@ -114,7 +114,7 @@
     "Id": "4056684167",
     "GUID": "{F180063F-4304-4E4E-863F-DCFB9544A68C}",
     "Language": "SFX",
-    "Hash": "4012339318",
+    "Hash": "2050026278",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Master",
     "ShortName": "Master",
     "Path": "Master.bnk",
@@ -427,6 +427,22 @@
         "Name": "Early_Reflection_Aux_Bus",
         "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\SFX\\Early_Reflection_Aux_Bus",
         "GUID": "{8282F99E-D8F7-4B95-B1EA-B9978394AFAE}"
+       }
+      ]
+     },
+     {
+      "Id": "3565464523",
+      "Name": "Fire_Active_Loop",
+      "ObjectPath": "\\Events\\Default Work Unit\\Environment\\Fire_Active_Loop",
+      "GUID": "{F606FDEF-CBE7-4445-A405-1384C85C39F0}",
+      "MaxAttenuation": "1500.000000",
+      "DurationType": "Infinite",
+      "IncludedMemoryFiles": [
+       {
+        "Id": "790727453",
+        "Language": "SFX",
+        "ShortName": "SE_SFX_Fire_Active_Loop.wav",
+        "Path": "SFX\\SE_SFX_Fire_Active_Loop_D79FB2B7.wem"
        }
       ]
      },
@@ -1214,7 +1230,7 @@
       "Name": "Torch_Active_Loop",
       "ObjectPath": "\\Events\\Default Work Unit\\Environment\\Torch_Active_Loop",
       "GUID": "{510356EA-B57A-4A15-9E2B-E26B35E00D31}",
-      "MaxAttenuation": "950.000000",
+      "MaxAttenuation": "1500.000000",
       "DurationType": "Infinite",
       "IncludedMemoryFiles": [
        {

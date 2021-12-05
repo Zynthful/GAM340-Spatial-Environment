@@ -11,6 +11,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	2697518177	Coffin_Close_Begin			\Default Work Unit\Environment\Crypt\Coffin\Coffin_Close_Begin	
 	3008899467	Torch_Active_Loop			\Default Work Unit\Environment\Torch_Active_Loop	
 	3297270897	Water_Droplet			\Default Work Unit\Environment\Ambience\Water_Droplet	
+	3565464523	Fire_Active_Loop			\Default Work Unit\Environment\Fire_Active_Loop	
 	3785983161	Coffin_Shake			\Default Work Unit\Environment\Crypt\Coffin\Coffin_Shake	
 	3805516495	Cell_Door_Close_End			\Default Work Unit\Environment\Dungeon\Cell_Door_Close_End	
 	3833651337	Jump			\Default Work Unit\Movement\Jump	
@@ -120,6 +121,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	759023593	SE_SFX_Footstep_Concrete_26	C:\Users\Jamie Carnell\Desktop\Projects etc\Projects\GAM340 Project\GAM340-Spatial-Environment\GAM340-SpatialEnv-WwiseProject\.cache\Windows\SFX\SE_SFX_Footstep_Concrete_26_8EE21B35.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Movement\SE_SFX_Footstep\SE_SFX_Footstep_Staircase\SE_SFX_Footstep_Concrete_26		13470
 	786707181	SE_SFX_Jump_Wood_2	C:\Users\Jamie Carnell\Desktop\Projects etc\Projects\GAM340 Project\GAM340-Spatial-Environment\GAM340-SpatialEnv-WwiseProject\.cache\Windows\SFX\SE_SFX_Jump_Wood_2_8EE21B35.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Movement\SE_SFX_Jump\SE_SFX_Jump_Wood\SE_SFX_Jump_Wood_2		23212
 	789175696	SE_SFX_Torch_Active_Loop_Draft_2	C:\Users\Jamie Carnell\Desktop\Projects etc\Projects\GAM340 Project\GAM340-Spatial-Environment\GAM340-SpatialEnv-WwiseProject\.cache\Windows\SFX\SE_SFX_Torch_Active_Loop_Draft_2_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Torch Loop\SE_SFX_Torch_Active_Loop_Draft_2		1225804
+	790727453	SE_SFX_Fire_Active_Loop	C:\Users\Jamie Carnell\Desktop\Projects etc\Projects\GAM340 Project\GAM340-Spatial-Environment\GAM340-SpatialEnv-WwiseProject\.cache\Windows\SFX\SE_SFX_Fire_Active_Loop_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Fire Loop\SE_SFX_Fire_Active_Loop		4127088
 	792340380	SE_SFX_Water_Drip_2	C:\Users\Jamie Carnell\Desktop\Projects etc\Projects\GAM340 Project\GAM340-Spatial-Environment\GAM340-SpatialEnv-WwiseProject\.cache\Windows\SFX\SE_SFX_Water_Drip_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Water_Droplet\SE_SFX_Water_Drip_2		68380
 	813709866	SE_SFX_Footstep_Brick_7	C:\Users\Jamie Carnell\Desktop\Projects etc\Projects\GAM340 Project\GAM340-Spatial-Environment\GAM340-SpatialEnv-WwiseProject\.cache\Windows\SFX\SE_SFX_Footstep_Brick_7_8EE21B35.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Movement\SE_SFX_Footstep\SE_SFX_Footstep_Brick\SE_SFX_Footstep_Brick_7		22606
 	820499950	SE_SFX_Footstep_Concrete_18	C:\Users\Jamie Carnell\Desktop\Projects etc\Projects\GAM340 Project\GAM340-Spatial-Environment\GAM340-SpatialEnv-WwiseProject\.cache\Windows\SFX\SE_SFX_Footstep_Concrete_18_8EE21B35.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Movement\SE_SFX_Footstep\SE_SFX_Footstep_Staircase\SE_SFX_Footstep_Concrete_18		13834

@@ -781,7 +781,7 @@
 								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-16</Value>
+										<Value>-24</Value>
 									</ValueList>
 									<ModifierList>
 										<ModifierInfo>
@@ -845,7 +845,7 @@
 										<StateRef Name="Crypt_Coffin_Chamber" ID="{B2F9A9E7-70C8-405F-9C4B-9F3B99181D6D}"/>
 										<CustomState Name="" ID="{DFF83132-60BC-479C-9249-7F9C436A7692}" ShortID="156545532">
 											<PropertyList>
-												<Property Name="Volume" Type="Real64" Value="-12"/>
+												<Property Name="Volume" Type="Real64" Value="-5"/>
 											</PropertyList>
 										</CustomState>
 									</CustomState>
@@ -1214,6 +1214,76 @@
 							</ChildrenList>
 							<ObjectLists/>
 						</RandomSequenceContainer>
+						<BlendContainer Name="Fire Loop" ID="{08F379F6-8CCB-4075-A2B4-4A4A8971DB41}" ShortID="949686648">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="1"/>
+								<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{51D59B93-854F-441B-AB55-53762EC4E6FA}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="100"/>
+													<Property Name="Min" Type="Real64" Value="-100"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-14</Value>
+									</ValueList>
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{05E44E39-EE18-4B35-93AA-F762BED2A5D3}"/>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="Fire" ID="{D5801EC3-0E52-4B2B-917C-BDE5D6B84100}" WorkUnitID="{A1BA0ADB-F758-4BAD-B04B-D53467CF759B}"/>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62267F72-14C7-4DA9-898E-CD1568645172}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="SFX" ID="{18B976C0-D509-4A4A-B407-A8F6A887E940}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="SE_SFX_Fire_Active_Loop" ID="{B24445A8-91CB-4D16-AAC6-60C1BCFBA9BD}" ShortID="609376473">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62267F72-14C7-4DA9-898E-CD1568645172}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SE_SFX_Fire_Active_Loop" ID="{DA73C983-AC8F-4586-BAFF-C72C443F1126}">
+											<Language>SFX</Language>
+											<AudioFile>SE_SFX_Fire_Active_Loop.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="790727453"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="SE_SFX_Fire_Active_Loop" ID="{DA73C983-AC8F-4586-BAFF-C72C443F1126}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<ObjectLists/>
+						</BlendContainer>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Player" ID="{6DACDFD5-97E0-4BD1-A110-713522AE160C}" ShortID="221230855">

@@ -266,6 +266,17 @@
 								</Event>
 							</ChildrenList>
 						</Folder>
+						<Event Name="Fire_Active_Loop" ID="{F606FDEF-CBE7-4445-A405-1384C85C39F0}">
+							<ChildrenList>
+								<Action Name="" ID="{63B338A8-91ED-4EA0-B4FA-8BAF538591D1}" ShortID="720625637">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Fire Loop" ID="{08F379F6-8CCB-4075-A2B4-4A4A8971DB41}" WorkUnitID="{2E2CE7FA-02C6-4C71-AABE-F8140864C57E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>
