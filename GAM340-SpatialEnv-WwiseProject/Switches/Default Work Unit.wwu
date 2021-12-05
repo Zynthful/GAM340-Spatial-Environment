@@ -10,9 +10,9 @@
 					<ChildrenList>
 						<Switch Name="Brick" ID="{DDF1D8AA-D5AB-4C83-9511-FB8309A8C953}"/>
 						<Switch Name="WoodPlank" ID="{89B7A936-CD9C-4D16-BE4E-402F5E3E273F}"/>
-						<Switch Name="WoodMetal" ID="{B4CB7316-208E-4344-9ABB-68A0F544F0AD}"/>
 						<Switch Name="DirtRockAsh" ID="{0B359D95-DC0B-4246-93E1-9FA71C02425D}"/>
 						<Switch Name="Concrete" ID="{3ADE9F45-EDD5-4FBE-9AB2-1CFDFF2B12EF}"/>
+						<Switch Name="WoodMetal" ID="{CFE4B7ED-75C1-44AB-B36B-1BBD6C72EEFB}"/>
 					</ChildrenList>
 				</SwitchGroup>
 			</ChildrenList>

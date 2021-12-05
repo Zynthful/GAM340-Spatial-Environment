@@ -297,7 +297,7 @@
 				</Attenuation>
 				<Attenuation Name="Fire" ID="{D5801EC3-0E52-4B2B-917C-BDE5D6B84100}" ShortID="751798446">
 					<PropertyList>
-						<Property Name="RadiusMax" Type="Real64" Value="1500"/>
+						<Property Name="RadiusMax" Type="Real64" Value="2000"/>
 					</PropertyList>
 					<CurveUsageInfoList>
 						<VolumeDryUsage>
@@ -314,7 +314,7 @@
 											<SegmentShape>Log2</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>1500</XPos>
+											<XPos>2000</XPos>
 											<YPos>-200</YPos>
 											<Flags>37</Flags>
 										</Point>

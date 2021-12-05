@@ -1234,7 +1234,7 @@
 								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-14</Value>
+										<Value>-10</Value>
 									</ValueList>
 									<ModifierList>
 										<ModifierInfo>
@@ -1290,7 +1290,7 @@
 					<ChildrenList>
 						<Folder Name="Movement" ID="{3BBBC534-DCAA-48A3-8900-B0B165F7CE80}" ShortID="83299021">
 							<ChildrenList>
-								<SwitchContainer Name="SE_SFX_Footstep" ID="{D1B3D1DE-17FE-4EBD-9144-A84B1CB81E4A}" ShortID="1042434478">
+								<SwitchContainer Name="Player_Footstep" ID="{3C8B7BB2-5251-40AD-AD90-712DB4DAFC30}" ShortID="265920570">
 									<PropertyList>
 										<Property Name="3DSpatialization" Type="int16" Value="1"/>
 										<Property Name="EnableDiffraction" Type="bool" Value="True"/>
@@ -1299,15 +1299,10 @@
 												<Value>30</Value>
 											</ValueList>
 										</Property>
-										<Property Name="MaxSoundPerInstance" Type="int16">
-											<ValueList>
-												<Value>1</Value>
-											</ValueList>
-										</Property>
 										<Property Name="Pitch" Type="int32">
 											<ModifierList>
 												<ModifierInfo>
-													<Modifier Name="" ID="{962658D6-0682-4243-9398-6C95270DD41D}">
+													<Modifier Name="" ID="{B32BDBCF-6638-4EBB-A649-6EA1DACEC6EB}">
 														<PropertyList>
 															<Property Name="Enabled" Type="bool" Value="True"/>
 															<Property Name="Max" Type="Real64" Value="100"/>
@@ -1318,22 +1313,16 @@
 											</ModifierList>
 										</Property>
 										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
-										<Property Name="UseMaxSoundPerInstance" Type="bool">
-											<ValueList>
-												<Value>True</Value>
-											</ValueList>
-										</Property>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-20</Value>
+												<Value>-19</Value>
 											</ValueList>
 											<ModifierList>
 												<ModifierInfo>
-													<Modifier Name="" ID="{0E120E71-B3CC-4584-A3E8-0AC73B1CBA92}">
+													<Modifier Name="" ID="{2CEA5E2A-FB6B-47A1-B602-EC95998BC4E7}">
 														<PropertyList>
 															<Property Name="Enabled" Type="bool" Value="True"/>
-															<Property Name="Max" Type="Real64" Value="1"/>
-															<Property Name="Min" Type="Real64" Value="-1"/>
+															<Property Name="Min" Type="Real64" Value="-2"/>
 														</PropertyList>
 													</Modifier>
 												</ModifierInfo>
@@ -1345,7 +1334,7 @@
 											<ObjectRef Name="SpatialAudioTest" ID="{7E28C3B6-D318-45B1-8116-1585C6E1390F}" WorkUnitID="{A1BA0ADB-F758-4BAD-B04B-D53467CF759B}"/>
 										</Reference>
 										<Reference Name="Conversion">
-											<ObjectRef Name="Movement" ID="{4C27FC69-5E71-4567-B792-7A143D066898}" WorkUnitID="{62267F72-14C7-4DA9-898E-CD1568645172}"/>
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62267F72-14C7-4DA9-898E-CD1568645172}"/>
 										</Reference>
 										<Reference Name="DefaultSwitchOrState">
 											<ObjectRef Name="Brick" ID="{DDF1D8AA-D5AB-4C83-9511-FB8309A8C953}" WorkUnitID="{4944EBAB-A603-4D27-97FF-CFF285374CA2}"/>
@@ -1361,7 +1350,281 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<RandomSequenceContainer Name="SE_SFX_Footstep_Brick" ID="{26094F30-3DD0-4459-98B6-31F233D57000}" ShortID="306118761">
+										<RandomSequenceContainer Name="Player_Footstep_Concrete" ID="{F4464BE4-9656-4F36-B879-C430FEB8134E}" ShortID="838786026">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="1"/>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="SpatialAudioTest" ID="{7E28C3B6-D318-45B1-8116-1585C6E1390F}" WorkUnitID="{A1BA0ADB-F758-4BAD-B04B-D53467CF759B}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Movement" ID="{4C27FC69-5E71-4567-B792-7A143D066898}" WorkUnitID="{62267F72-14C7-4DA9-898E-CD1568645172}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="SFX" ID="{18B976C0-D509-4A4A-B407-A8F6A887E940}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
+												</Reference>
+												<Reference Name="ReflectionsAuxSend">
+													<ObjectRef Name="Early_Reflection_Aux_Bus" ID="{8282F99E-D8F7-4B95-B1EA-B9978394AFAE}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="SE_SFX_Footstep_Concrete_17" ID="{3ABEED5E-C41B-4EBC-9F1E-A43163307428}" ShortID="740539922">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62267F72-14C7-4DA9-898E-CD1568645172}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SE_SFX_Footstep_Concrete_17" ID="{CB35763A-9074-42DD-ACE6-FE313D1F3CDC}">
+															<Language>SFX</Language>
+															<AudioFile>SE_SFX_Footstep_Concrete_17.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="9063177"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="SE_SFX_Footstep_Concrete_17" ID="{CB35763A-9074-42DD-ACE6-FE313D1F3CDC}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="SE_SFX_Footstep_Concrete_18" ID="{E46311D3-14AC-4083-8CDB-06F3085241CC}" ShortID="861353013">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62267F72-14C7-4DA9-898E-CD1568645172}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SE_SFX_Footstep_Concrete_18" ID="{4FF60666-6CA6-4151-A4D3-99D155991E60}">
+															<Language>SFX</Language>
+															<AudioFile>SE_SFX_Footstep_Concrete_18.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="820499950"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="SE_SFX_Footstep_Concrete_18" ID="{4FF60666-6CA6-4151-A4D3-99D155991E60}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="SE_SFX_Footstep_Concrete_19" ID="{4FF3F1E3-A88D-4D5A-B23F-9DACDF045A94}" ShortID="1052148484">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62267F72-14C7-4DA9-898E-CD1568645172}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SE_SFX_Footstep_Concrete_19" ID="{9C92336D-6D14-4B4E-870C-B297BCBAE2D6}">
+															<Language>SFX</Language>
+															<AudioFile>SE_SFX_Footstep_Concrete_19.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="444617621"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="SE_SFX_Footstep_Concrete_19" ID="{9C92336D-6D14-4B4E-870C-B297BCBAE2D6}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="SE_SFX_Footstep_Concrete_20" ID="{712BB11C-6B78-406D-8AB4-DBF485A5DCBE}" ShortID="740786399">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62267F72-14C7-4DA9-898E-CD1568645172}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SE_SFX_Footstep_Concrete_20" ID="{A3B65316-E111-4D27-BEE1-8BC373526311}">
+															<Language>SFX</Language>
+															<AudioFile>SE_SFX_Footstep_Concrete_20.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="298728433"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="SE_SFX_Footstep_Concrete_20" ID="{A3B65316-E111-4D27-BEE1-8BC373526311}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="SE_SFX_Footstep_Concrete_21" ID="{BA032A58-F3A7-4F2E-AC51-04A5B7D498AF}" ShortID="824695782">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62267F72-14C7-4DA9-898E-CD1568645172}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SE_SFX_Footstep_Concrete_21" ID="{D41F9C78-221D-49BF-9F23-DE0459B4289E}">
+															<Language>SFX</Language>
+															<AudioFile>SE_SFX_Footstep_Concrete_21.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="486533153"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="SE_SFX_Footstep_Concrete_21" ID="{D41F9C78-221D-49BF-9F23-DE0459B4289E}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="SE_SFX_Footstep_Concrete_22" ID="{1FB73902-3CB3-499B-8EE5-C3AC7B5E13A0}" ShortID="295961983">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62267F72-14C7-4DA9-898E-CD1568645172}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SE_SFX_Footstep_Concrete_22" ID="{0E136D7D-A9EB-40A7-B8C0-BF624161B200}">
+															<Language>SFX</Language>
+															<AudioFile>SE_SFX_Footstep_Concrete_22.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="822925497"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="SE_SFX_Footstep_Concrete_22" ID="{0E136D7D-A9EB-40A7-B8C0-BF624161B200}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="SE_SFX_Footstep_Concrete_23" ID="{535F7E6F-AEEA-43FB-8A87-F116740A2516}" ShortID="30456486">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62267F72-14C7-4DA9-898E-CD1568645172}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SE_SFX_Footstep_Concrete_23" ID="{9D095A00-AE3F-44A0-9DAE-EEA1F804953B}">
+															<Language>SFX</Language>
+															<AudioFile>SE_SFX_Footstep_Concrete_23.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="970784732"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="SE_SFX_Footstep_Concrete_23" ID="{9D095A00-AE3F-44A0-9DAE-EEA1F804953B}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="SE_SFX_Footstep_Concrete_24" ID="{7370F22B-C4D3-4087-8C0B-0C9D66E546D1}" ShortID="408347971">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62267F72-14C7-4DA9-898E-CD1568645172}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SE_SFX_Footstep_Concrete_24" ID="{6DF3ED5C-9362-4291-B836-9C55D9F9C527}">
+															<Language>SFX</Language>
+															<AudioFile>SE_SFX_Footstep_Concrete_24.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="491325595"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="SE_SFX_Footstep_Concrete_24" ID="{6DF3ED5C-9362-4291-B836-9C55D9F9C527}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="SE_SFX_Footstep_Concrete_25" ID="{F4BE26DA-04F0-4895-911E-4E9FA6406FCD}" ShortID="50508171">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62267F72-14C7-4DA9-898E-CD1568645172}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SE_SFX_Footstep_Concrete_25" ID="{946709DF-5E4D-4863-9A38-647B92D4E118}">
+															<Language>SFX</Language>
+															<AudioFile>SE_SFX_Footstep_Concrete_25.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="223819212"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="SE_SFX_Footstep_Concrete_25" ID="{946709DF-5E4D-4863-9A38-647B92D4E118}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="SE_SFX_Footstep_Concrete_26" ID="{196112ED-7721-4912-B879-E31BD523E641}" ShortID="459699579">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62267F72-14C7-4DA9-898E-CD1568645172}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SE_SFX_Footstep_Concrete_26" ID="{4F2FD93F-CA89-40C3-A930-3F449A5DC98C}">
+															<Language>SFX</Language>
+															<AudioFile>SE_SFX_Footstep_Concrete_26.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="759023593"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="SE_SFX_Footstep_Concrete_26" ID="{4F2FD93F-CA89-40C3-A930-3F449A5DC98C}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+											<ObjectLists/>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="Player_Footstep_Dirt" ID="{F01E0191-B2EE-4E25-806A-99E6170B8BB3}" ShortID="875503070">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="1"/>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="SpatialAudioTest" ID="{7E28C3B6-D318-45B1-8116-1585C6E1390F}" WorkUnitID="{A1BA0ADB-F758-4BAD-B04B-D53467CF759B}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Movement" ID="{4C27FC69-5E71-4567-B792-7A143D066898}" WorkUnitID="{62267F72-14C7-4DA9-898E-CD1568645172}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="SFX" ID="{18B976C0-D509-4A4A-B407-A8F6A887E940}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
+												</Reference>
+												<Reference Name="ReflectionsAuxSend">
+													<ObjectRef Name="Early_Reflection_Aux_Bus" ID="{8282F99E-D8F7-4B95-B1EA-B9978394AFAE}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
+												</Reference>
+											</ReferenceList>
+											<ObjectLists/>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="Player_Footstep_Brick" ID="{26094F30-3DD0-4459-98B6-31F233D57000}" ShortID="306118761">
 											<PropertyList>
 												<Property Name="3DSpatialization" Type="int16" Value="1"/>
 												<Property Name="Pitch" Type="int32">
@@ -1394,7 +1657,7 @@
 													<ObjectRef Name="SpatialAudioTest" ID="{7E28C3B6-D318-45B1-8116-1585C6E1390F}" WorkUnitID="{A1BA0ADB-F758-4BAD-B04B-D53467CF759B}"/>
 												</Reference>
 												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62267F72-14C7-4DA9-898E-CD1568645172}"/>
+													<ObjectRef Name="Movement" ID="{4C27FC69-5E71-4567-B792-7A143D066898}" WorkUnitID="{62267F72-14C7-4DA9-898E-CD1568645172}"/>
 												</Reference>
 												<Reference Name="OutputBus">
 													<ObjectRef Name="SFX" ID="{18B976C0-D509-4A4A-B407-A8F6A887E940}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
@@ -2091,13 +2354,23 @@
 											</ChildrenList>
 											<ObjectLists/>
 										</RandomSequenceContainer>
-										<RandomSequenceContainer Name="SE_SFX_Footstep_Wood" ID="{D1E844E2-DEC3-46EC-BFA7-A595D3D955EB}" ShortID="48881640">
+										<RandomSequenceContainer Name="Player_Footstep_Wood" ID="{D1E844E2-DEC3-46EC-BFA7-A595D3D955EB}" ShortID="48881640">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="1"/>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+											</PropertyList>
 											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="SpatialAudioTest" ID="{7E28C3B6-D318-45B1-8116-1585C6E1390F}" WorkUnitID="{A1BA0ADB-F758-4BAD-B04B-D53467CF759B}"/>
+												</Reference>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62267F72-14C7-4DA9-898E-CD1568645172}"/>
 												</Reference>
 												<Reference Name="OutputBus">
 													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
+												</Reference>
+												<Reference Name="ReflectionsAuxSend">
+													<ObjectRef Name="Early_Reflection_Aux_Bus" ID="{8282F99E-D8F7-4B95-B1EA-B9978394AFAE}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
@@ -2774,39 +3047,67 @@
 											</ChildrenList>
 											<ObjectLists/>
 										</RandomSequenceContainer>
-										<RandomSequenceContainer Name="SE_SFX_Footstep_Metal" ID="{B910FD2C-FF64-4A46-9047-54995162E0C8}" ShortID="1042856830">
+										<RandomSequenceContainer Name="Player_Footstep_Wood_Creak" ID="{A261B7B6-CAAC-4D64-88AA-9F3B481FFD5E}" ShortID="1045571542">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="1"/>
+												<Property Name="InitialDelay" Type="Real64">
+													<ValueList>
+														<Value>0.1</Value>
+													</ValueList>
+												</Property>
+												<Property Name="OverrideEffect" Type="bool" Value="True"/>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{23F873A2-1F9B-413F-8EBB-3F7979A3A7A8}">
+																<PropertyList>
+																	<Property Name="Max" Type="Real64" Value="50"/>
+																	<Property Name="Min" Type="Real64" Value="-100"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-10</Value>
+													</ValueList>
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{9122F627-5B3F-48AE-98B7-C552B5F557E6}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Min" Type="Real64" Value="-3"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="SpatialAudioTest" ID="{7E28C3B6-D318-45B1-8116-1585C6E1390F}" WorkUnitID="{A1BA0ADB-F758-4BAD-B04B-D53467CF759B}"/>
+												</Reference>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62267F72-14C7-4DA9-898E-CD1568645172}"/>
 												</Reference>
 												<Reference Name="OutputBus">
 													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
 												</Reference>
-											</ReferenceList>
-											<ObjectLists/>
-										</RandomSequenceContainer>
-										<RandomSequenceContainer Name="SE_SFX_Footstep_Dirt" ID="{F01E0191-B2EE-4E25-806A-99E6170B8BB3}" ShortID="875503070">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62267F72-14C7-4DA9-898E-CD1568645172}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
-												</Reference>
-											</ReferenceList>
-											<ObjectLists/>
-										</RandomSequenceContainer>
-										<RandomSequenceContainer Name="SE_SFX_Footstep_Staircase" ID="{F4464BE4-9656-4F36-B879-C430FEB8134E}" ShortID="838786026">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62267F72-14C7-4DA9-898E-CD1568645172}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
+												<Reference Name="ReflectionsAuxSend">
+													<ObjectRef Name="Early_Reflection_Aux_Bus" ID="{8282F99E-D8F7-4B95-B1EA-B9978394AFAE}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<Sound Name="SE_SFX_Footstep_Concrete_17" ID="{3ABEED5E-C41B-4EBC-9F1E-A43163307428}" ShortID="740539922">
+												<Sound Name="Chair_Creak_Quick_1" ID="{4AF28A25-B6D1-4AE6-A324-999ED1D41434}" ShortID="1008148067">
+													<PropertyList>
+														<Property Name="Weight" Type="Real64">
+															<ValueList>
+																<Value>15</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62267F72-14C7-4DA9-898E-CD1568645172}"/>
@@ -2816,20 +3117,27 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="SE_SFX_Footstep_Concrete_17" ID="{CB35763A-9074-42DD-ACE6-FE313D1F3CDC}">
+														<AudioFileSource Name="Chair_Creak_Quick_1" ID="{9984F75A-FD1F-4EDC-BB6F-3195B76D75AA}">
 															<Language>SFX</Language>
-															<AudioFile>SE_SFX_Footstep_Concrete_17.wav</AudioFile>
+															<AudioFile>Chair_Creak_Quick_1.wav</AudioFile>
 															<MediaIDList>
-																<MediaID ID="9063177"/>
+																<MediaID ID="392462191"/>
 															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
 													<ObjectLists/>
 													<ActiveSourceList>
-														<ActiveSource Name="SE_SFX_Footstep_Concrete_17" ID="{CB35763A-9074-42DD-ACE6-FE313D1F3CDC}" Platform="Linked"/>
+														<ActiveSource Name="Chair_Creak_Quick_1" ID="{9984F75A-FD1F-4EDC-BB6F-3195B76D75AA}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
-												<Sound Name="SE_SFX_Footstep_Concrete_18" ID="{E46311D3-14AC-4083-8CDB-06F3085241CC}" ShortID="861353013">
+												<Sound Name="Chair_Creak_Quick_2" ID="{E6A4BB6A-4FE6-4BA3-B282-E9B81156E1D5}" ShortID="892360028">
+													<PropertyList>
+														<Property Name="Weight" Type="Real64">
+															<ValueList>
+																<Value>15</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62267F72-14C7-4DA9-898E-CD1568645172}"/>
@@ -2839,20 +3147,27 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="SE_SFX_Footstep_Concrete_18" ID="{4FF60666-6CA6-4151-A4D3-99D155991E60}">
+														<AudioFileSource Name="Chair_Creak_Quick_2" ID="{73CA0474-8BD2-4792-A40A-602DED9FA566}">
 															<Language>SFX</Language>
-															<AudioFile>SE_SFX_Footstep_Concrete_18.wav</AudioFile>
+															<AudioFile>Chair_Creak_Quick_2.wav</AudioFile>
 															<MediaIDList>
-																<MediaID ID="820499950"/>
+																<MediaID ID="853936358"/>
 															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
 													<ObjectLists/>
 													<ActiveSourceList>
-														<ActiveSource Name="SE_SFX_Footstep_Concrete_18" ID="{4FF60666-6CA6-4151-A4D3-99D155991E60}" Platform="Linked"/>
+														<ActiveSource Name="Chair_Creak_Quick_2" ID="{73CA0474-8BD2-4792-A40A-602DED9FA566}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
-												<Sound Name="SE_SFX_Footstep_Concrete_19" ID="{4FF3F1E3-A88D-4D5A-B23F-9DACDF045A94}" ShortID="1052148484">
+												<Sound Name="Chair_Creak_Quick_3" ID="{18D71FBB-CE20-4CD4-9784-0B919C88EAD8}" ShortID="899073360">
+													<PropertyList>
+														<Property Name="Weight" Type="Real64">
+															<ValueList>
+																<Value>15</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62267F72-14C7-4DA9-898E-CD1568645172}"/>
@@ -2862,20 +3177,27 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="SE_SFX_Footstep_Concrete_19" ID="{9C92336D-6D14-4B4E-870C-B297BCBAE2D6}">
+														<AudioFileSource Name="Chair_Creak_Quick_3" ID="{A7803F5D-D2BF-4E38-B5DD-7B6AD3C1AFE5}">
 															<Language>SFX</Language>
-															<AudioFile>SE_SFX_Footstep_Concrete_19.wav</AudioFile>
+															<AudioFile>Chair_Creak_Quick_3.wav</AudioFile>
 															<MediaIDList>
-																<MediaID ID="444617621"/>
+																<MediaID ID="624785403"/>
 															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
 													<ObjectLists/>
 													<ActiveSourceList>
-														<ActiveSource Name="SE_SFX_Footstep_Concrete_19" ID="{9C92336D-6D14-4B4E-870C-B297BCBAE2D6}" Platform="Linked"/>
+														<ActiveSource Name="Chair_Creak_Quick_3" ID="{A7803F5D-D2BF-4E38-B5DD-7B6AD3C1AFE5}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
-												<Sound Name="SE_SFX_Footstep_Concrete_20" ID="{712BB11C-6B78-406D-8AB4-DBF485A5DCBE}" ShortID="740786399">
+												<Sound Name="Chair_Creak_Quick_4" ID="{A1ABFF39-C3D5-4A47-956B-7DACEC2F577D}" ShortID="930647313">
+													<PropertyList>
+														<Property Name="Weight" Type="Real64">
+															<ValueList>
+																<Value>15</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62267F72-14C7-4DA9-898E-CD1568645172}"/>
@@ -2885,20 +3207,27 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="SE_SFX_Footstep_Concrete_20" ID="{A3B65316-E111-4D27-BEE1-8BC373526311}">
+														<AudioFileSource Name="Chair_Creak_Quick_4" ID="{82640D04-E653-42A8-A560-63FC14745A78}">
 															<Language>SFX</Language>
-															<AudioFile>SE_SFX_Footstep_Concrete_20.wav</AudioFile>
+															<AudioFile>Chair_Creak_Quick_4.wav</AudioFile>
 															<MediaIDList>
-																<MediaID ID="298728433"/>
+																<MediaID ID="268032443"/>
 															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
 													<ObjectLists/>
 													<ActiveSourceList>
-														<ActiveSource Name="SE_SFX_Footstep_Concrete_20" ID="{A3B65316-E111-4D27-BEE1-8BC373526311}" Platform="Linked"/>
+														<ActiveSource Name="Chair_Creak_Quick_4" ID="{82640D04-E653-42A8-A560-63FC14745A78}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
-												<Sound Name="SE_SFX_Footstep_Concrete_21" ID="{BA032A58-F3A7-4F2E-AC51-04A5B7D498AF}" ShortID="824695782">
+												<Sound Name="Chair_Creak_Quick_5" ID="{76209861-2060-4C10-A0DD-3AA570D78CD7}" ShortID="574951764">
+													<PropertyList>
+														<Property Name="Weight" Type="Real64">
+															<ValueList>
+																<Value>15</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62267F72-14C7-4DA9-898E-CD1568645172}"/>
@@ -2908,20 +3237,27 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="SE_SFX_Footstep_Concrete_21" ID="{D41F9C78-221D-49BF-9F23-DE0459B4289E}">
+														<AudioFileSource Name="Chair_Creak_Quick_5" ID="{148C4663-A26A-440C-A3CB-E3E1C33E8D61}">
 															<Language>SFX</Language>
-															<AudioFile>SE_SFX_Footstep_Concrete_21.wav</AudioFile>
+															<AudioFile>Chair_Creak_Quick_5.wav</AudioFile>
 															<MediaIDList>
-																<MediaID ID="486533153"/>
+																<MediaID ID="867425961"/>
 															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
 													<ObjectLists/>
 													<ActiveSourceList>
-														<ActiveSource Name="SE_SFX_Footstep_Concrete_21" ID="{D41F9C78-221D-49BF-9F23-DE0459B4289E}" Platform="Linked"/>
+														<ActiveSource Name="Chair_Creak_Quick_5" ID="{148C4663-A26A-440C-A3CB-E3E1C33E8D61}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
-												<Sound Name="SE_SFX_Footstep_Concrete_22" ID="{1FB73902-3CB3-499B-8EE5-C3AC7B5E13A0}" ShortID="295961983">
+												<Sound Name="Chair_Creak_Quick_6" ID="{2D69286C-4DA8-442E-9CEC-8239E50F4CAC}" ShortID="530831350">
+													<PropertyList>
+														<Property Name="Weight" Type="Real64">
+															<ValueList>
+																<Value>15</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62267F72-14C7-4DA9-898E-CD1568645172}"/>
@@ -2931,20 +3267,27 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="SE_SFX_Footstep_Concrete_22" ID="{0E136D7D-A9EB-40A7-B8C0-BF624161B200}">
+														<AudioFileSource Name="Chair_Creak_Quick_6" ID="{3D01CCD9-28D5-49DB-BD08-46695B8F3282}">
 															<Language>SFX</Language>
-															<AudioFile>SE_SFX_Footstep_Concrete_22.wav</AudioFile>
+															<AudioFile>Chair_Creak_Quick_6.wav</AudioFile>
 															<MediaIDList>
-																<MediaID ID="822925497"/>
+																<MediaID ID="84725971"/>
 															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
 													<ObjectLists/>
 													<ActiveSourceList>
-														<ActiveSource Name="SE_SFX_Footstep_Concrete_22" ID="{0E136D7D-A9EB-40A7-B8C0-BF624161B200}" Platform="Linked"/>
+														<ActiveSource Name="Chair_Creak_Quick_6" ID="{3D01CCD9-28D5-49DB-BD08-46695B8F3282}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
-												<Sound Name="SE_SFX_Footstep_Concrete_23" ID="{535F7E6F-AEEA-43FB-8A87-F116740A2516}" ShortID="30456486">
+												<Sound Name="Chair_Creak_Quick_7" ID="{09391E83-AB48-4DC1-85E8-5BD225FEC59C}" ShortID="513320658">
+													<PropertyList>
+														<Property Name="Weight" Type="Real64">
+															<ValueList>
+																<Value>15</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62267F72-14C7-4DA9-898E-CD1568645172}"/>
@@ -2954,20 +3297,27 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="SE_SFX_Footstep_Concrete_23" ID="{9D095A00-AE3F-44A0-9DAE-EEA1F804953B}">
+														<AudioFileSource Name="Chair_Creak_Quick_7" ID="{47971747-43B1-4AED-842B-C99386B00862}">
 															<Language>SFX</Language>
-															<AudioFile>SE_SFX_Footstep_Concrete_23.wav</AudioFile>
+															<AudioFile>Chair_Creak_Quick_7.wav</AudioFile>
 															<MediaIDList>
-																<MediaID ID="970784732"/>
+																<MediaID ID="12844012"/>
 															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
 													<ObjectLists/>
 													<ActiveSourceList>
-														<ActiveSource Name="SE_SFX_Footstep_Concrete_23" ID="{9D095A00-AE3F-44A0-9DAE-EEA1F804953B}" Platform="Linked"/>
+														<ActiveSource Name="Chair_Creak_Quick_7" ID="{47971747-43B1-4AED-842B-C99386B00862}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
-												<Sound Name="SE_SFX_Footstep_Concrete_24" ID="{7370F22B-C4D3-4087-8C0B-0C9D66E546D1}" ShortID="408347971">
+												<Sound Name="Chair_Creak_Quick_8" ID="{7FC9053C-6E71-421F-AACE-32449C94380D}" ShortID="418586006">
+													<PropertyList>
+														<Property Name="Weight" Type="Real64">
+															<ValueList>
+																<Value>15</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62267F72-14C7-4DA9-898E-CD1568645172}"/>
@@ -2977,20 +3327,27 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="SE_SFX_Footstep_Concrete_24" ID="{6DF3ED5C-9362-4291-B836-9C55D9F9C527}">
+														<AudioFileSource Name="Chair_Creak_Quick_8" ID="{616FA285-AB7A-4832-87B8-D1CAF40B7745}">
 															<Language>SFX</Language>
-															<AudioFile>SE_SFX_Footstep_Concrete_24.wav</AudioFile>
+															<AudioFile>Chair_Creak_Quick_8.wav</AudioFile>
 															<MediaIDList>
-																<MediaID ID="491325595"/>
+																<MediaID ID="192995292"/>
 															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
 													<ObjectLists/>
 													<ActiveSourceList>
-														<ActiveSource Name="SE_SFX_Footstep_Concrete_24" ID="{6DF3ED5C-9362-4291-B836-9C55D9F9C527}" Platform="Linked"/>
+														<ActiveSource Name="Chair_Creak_Quick_8" ID="{616FA285-AB7A-4832-87B8-D1CAF40B7745}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
-												<Sound Name="SE_SFX_Footstep_Concrete_25" ID="{F4BE26DA-04F0-4895-911E-4E9FA6406FCD}" ShortID="50508171">
+												<Sound Name="Chair_Creak_Quick_9" ID="{9C413B21-F15B-43F8-85DF-3EE3B6E5C2FF}" ShortID="921103942">
+													<PropertyList>
+														<Property Name="Weight" Type="Real64">
+															<ValueList>
+																<Value>15</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62267F72-14C7-4DA9-898E-CD1568645172}"/>
@@ -3000,20 +3357,27 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="SE_SFX_Footstep_Concrete_25" ID="{946709DF-5E4D-4863-9A38-647B92D4E118}">
+														<AudioFileSource Name="Chair_Creak_Quick_9" ID="{0753EBD1-1728-4ABB-8C7D-2D5762ABAA9C}">
 															<Language>SFX</Language>
-															<AudioFile>SE_SFX_Footstep_Concrete_25.wav</AudioFile>
+															<AudioFile>Chair_Creak_Quick_9.wav</AudioFile>
 															<MediaIDList>
-																<MediaID ID="223819212"/>
+																<MediaID ID="501821063"/>
 															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
 													<ObjectLists/>
 													<ActiveSourceList>
-														<ActiveSource Name="SE_SFX_Footstep_Concrete_25" ID="{946709DF-5E4D-4863-9A38-647B92D4E118}" Platform="Linked"/>
+														<ActiveSource Name="Chair_Creak_Quick_9" ID="{0753EBD1-1728-4ABB-8C7D-2D5762ABAA9C}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
-												<Sound Name="SE_SFX_Footstep_Concrete_26" ID="{196112ED-7721-4912-B879-E31BD523E641}" ShortID="459699579">
+												<Sound Name="Silence" ID="{C9104A10-0E9D-45AB-AC60-40ABB592468B}" ShortID="81894791">
+													<PropertyList>
+														<Property Name="Weight" Type="Real64">
+															<ValueList>
+																<Value>100</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62267F72-14C7-4DA9-898E-CD1568645172}"/>
@@ -3023,20 +3387,40 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="SE_SFX_Footstep_Concrete_26" ID="{4F2FD93F-CA89-40C3-A930-3F449A5DC98C}">
+														<SourcePlugin Name="Wwise Silence" ID="{37AEEBAA-33F1-44FE-B315-4A13FD37D03F}" ShortID="31877821" PluginName="Wwise Silence" CompanyID="0" PluginID="101">
+															<PropertyList>
+																<Property Name="Length" Type="Real32" Value="2"/>
+															</PropertyList>
 															<Language>SFX</Language>
-															<AudioFile>SE_SFX_Footstep_Concrete_26.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="759023593"/>
-															</MediaIDList>
-														</AudioFileSource>
+														</SourcePlugin>
 													</ChildrenList>
 													<ObjectLists/>
 													<ActiveSourceList>
-														<ActiveSource Name="SE_SFX_Footstep_Concrete_26" ID="{4F2FD93F-CA89-40C3-A930-3F449A5DC98C}" Platform="Linked"/>
+														<ActiveSource Name="Wwise Silence" ID="{37AEEBAA-33F1-44FE-B315-4A13FD37D03F}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
 											</ChildrenList>
+											<ObjectLists/>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="Player_Footstep_Metal" ID="{D5EFAA0A-A39D-4738-B85E-46A4C895AC99}" ShortID="812825970">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="1"/>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="SpatialAudioTest" ID="{7E28C3B6-D318-45B1-8116-1585C6E1390F}" WorkUnitID="{A1BA0ADB-F758-4BAD-B04B-D53467CF759B}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Movement" ID="{4C27FC69-5E71-4567-B792-7A143D066898}" WorkUnitID="{62267F72-14C7-4DA9-898E-CD1568645172}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="SFX" ID="{18B976C0-D509-4A4A-B407-A8F6A887E940}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
+												</Reference>
+												<Reference Name="ReflectionsAuxSend">
+													<ObjectRef Name="Early_Reflection_Aux_Bus" ID="{8282F99E-D8F7-4B95-B1EA-B9978394AFAE}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
+												</Reference>
+											</ReferenceList>
 											<ObjectLists/>
 										</RandomSequenceContainer>
 									</ChildrenList>
@@ -3044,57 +3428,61 @@
 									<GroupingInfo>
 										<GroupingBehaviorList>
 											<GroupingBehavior>
-												<ItemRef Name="SE_SFX_Footstep_Metal" ID="{B910FD2C-FF64-4A46-9047-54995162E0C8}"/>
+												<ItemRef Name="Player_Footstep_Metal" ID="{D5EFAA0A-A39D-4738-B85E-46A4C895AC99}"/>
 											</GroupingBehavior>
 											<GroupingBehavior>
-												<ItemRef Name="SE_SFX_Footstep_Brick" ID="{26094F30-3DD0-4459-98B6-31F233D57000}"/>
+												<ItemRef Name="Player_Footstep_Brick" ID="{26094F30-3DD0-4459-98B6-31F233D57000}"/>
 											</GroupingBehavior>
 											<GroupingBehavior>
-												<ItemRef Name="SE_SFX_Footstep_Dirt" ID="{F01E0191-B2EE-4E25-806A-99E6170B8BB3}"/>
+												<ItemRef Name="Player_Footstep_Dirt" ID="{F01E0191-B2EE-4E25-806A-99E6170B8BB3}"/>
 											</GroupingBehavior>
 											<GroupingBehavior>
-												<ItemRef Name="SE_SFX_Footstep_Wood" ID="{D1E844E2-DEC3-46EC-BFA7-A595D3D955EB}"/>
+												<ItemRef Name="Player_Footstep_Wood_Creak" ID="{A261B7B6-CAAC-4D64-88AA-9F3B481FFD5E}"/>
 											</GroupingBehavior>
 											<GroupingBehavior>
-												<ItemRef Name="SE_SFX_Footstep_Staircase" ID="{F4464BE4-9656-4F36-B879-C430FEB8134E}"/>
+												<ItemRef Name="Player_Footstep_Wood" ID="{D1E844E2-DEC3-46EC-BFA7-A595D3D955EB}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="Player_Footstep_Concrete" ID="{F4464BE4-9656-4F36-B879-C430FEB8134E}"/>
 											</GroupingBehavior>
 										</GroupingBehaviorList>
 										<GroupingList>
 											<Grouping>
-												<SwitchRef Name="WoodMetal" ID="{B4CB7316-208E-4344-9ABB-68A0F544F0AD}"/>
-												<ItemList>
-													<ItemRef Name="SE_SFX_Footstep_Metal" ID="{B910FD2C-FF64-4A46-9047-54995162E0C8}"/>
-													<ItemRef Name="SE_SFX_Footstep_Wood" ID="{D1E844E2-DEC3-46EC-BFA7-A595D3D955EB}"/>
-												</ItemList>
-											</Grouping>
-											<Grouping>
 												<SwitchRef Name="WoodPlank" ID="{89B7A936-CD9C-4D16-BE4E-402F5E3E273F}"/>
 												<ItemList>
-													<ItemRef Name="SE_SFX_Footstep_Wood" ID="{D1E844E2-DEC3-46EC-BFA7-A595D3D955EB}"/>
+													<ItemRef Name="Player_Footstep_Wood_Creak" ID="{A261B7B6-CAAC-4D64-88AA-9F3B481FFD5E}"/>
+													<ItemRef Name="Player_Footstep_Wood" ID="{D1E844E2-DEC3-46EC-BFA7-A595D3D955EB}"/>
 												</ItemList>
 											</Grouping>
 											<Grouping>
 												<SwitchRef Name="Concrete" ID="{3ADE9F45-EDD5-4FBE-9AB2-1CFDFF2B12EF}"/>
 												<ItemList>
-													<ItemRef Name="SE_SFX_Footstep_Staircase" ID="{F4464BE4-9656-4F36-B879-C430FEB8134E}"/>
+													<ItemRef Name="Player_Footstep_Concrete" ID="{F4464BE4-9656-4F36-B879-C430FEB8134E}"/>
 												</ItemList>
 											</Grouping>
 											<Grouping>
 												<SwitchRef Name="DirtRockAsh" ID="{0B359D95-DC0B-4246-93E1-9FA71C02425D}"/>
 												<ItemList>
-													<ItemRef Name="SE_SFX_Footstep_Dirt" ID="{F01E0191-B2EE-4E25-806A-99E6170B8BB3}"/>
+													<ItemRef Name="Player_Footstep_Dirt" ID="{F01E0191-B2EE-4E25-806A-99E6170B8BB3}"/>
 												</ItemList>
 											</Grouping>
 											<Grouping>
 												<SwitchRef Name="Brick" ID="{DDF1D8AA-D5AB-4C83-9511-FB8309A8C953}"/>
 												<ItemList>
-													<ItemRef Name="SE_SFX_Footstep_Brick" ID="{26094F30-3DD0-4459-98B6-31F233D57000}"/>
+													<ItemRef Name="Player_Footstep_Brick" ID="{26094F30-3DD0-4459-98B6-31F233D57000}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="WoodMetal" ID="{CFE4B7ED-75C1-44AB-B36B-1BBD6C72EEFB}"/>
+												<ItemList>
+													<ItemRef Name="Player_Footstep_Wood" ID="{D1E844E2-DEC3-46EC-BFA7-A595D3D955EB}"/>
+													<ItemRef Name="Player_Footstep_Metal" ID="{D5EFAA0A-A39D-4738-B85E-46A4C895AC99}"/>
 												</ItemList>
 											</Grouping>
 										</GroupingList>
 									</GroupingInfo>
 								</SwitchContainer>
-								<SwitchContainer Name="SE_SFX_Jump" ID="{CE078606-EFE4-499D-A52B-3AA07A4F7BE7}" ShortID="902971449">
+								<SwitchContainer Name="Player_Jump" ID="{D7DD59C7-5743-41D8-9A1C-14202AED0421}" ShortID="174900145">
 									<PropertyList>
 										<Property Name="3DSpatialization" Type="int16" Value="1"/>
 										<Property Name="EnableDiffraction" Type="bool" Value="True"/>
@@ -3103,15 +3491,10 @@
 												<Value>30</Value>
 											</ValueList>
 										</Property>
-										<Property Name="MaxSoundPerInstance" Type="int16">
-											<ValueList>
-												<Value>1</Value>
-											</ValueList>
-										</Property>
 										<Property Name="Pitch" Type="int32">
 											<ModifierList>
 												<ModifierInfo>
-													<Modifier Name="" ID="{0E5BA7FB-CB61-4496-A640-0C1E8CCD7F6A}">
+													<Modifier Name="" ID="{9A8F22F0-AA16-4D60-916E-BBA106BC92A9}">
 														<PropertyList>
 															<Property Name="Enabled" Type="bool" Value="True"/>
 															<Property Name="Max" Type="Real64" Value="100"/>
@@ -3122,22 +3505,16 @@
 											</ModifierList>
 										</Property>
 										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
-										<Property Name="UseMaxSoundPerInstance" Type="bool">
-											<ValueList>
-												<Value>True</Value>
-											</ValueList>
-										</Property>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-20</Value>
+												<Value>-19</Value>
 											</ValueList>
 											<ModifierList>
 												<ModifierInfo>
-													<Modifier Name="" ID="{47904142-526A-43B3-941D-7E61813C5045}">
+													<Modifier Name="" ID="{CD274458-0312-42E0-A74B-4541A47A3B76}">
 														<PropertyList>
 															<Property Name="Enabled" Type="bool" Value="True"/>
-															<Property Name="Max" Type="Real64" Value="1"/>
-															<Property Name="Min" Type="Real64" Value="-1"/>
+															<Property Name="Min" Type="Real64" Value="-2"/>
 														</PropertyList>
 													</Modifier>
 												</ModifierInfo>
@@ -3149,7 +3526,7 @@
 											<ObjectRef Name="SpatialAudioTest" ID="{7E28C3B6-D318-45B1-8116-1585C6E1390F}" WorkUnitID="{A1BA0ADB-F758-4BAD-B04B-D53467CF759B}"/>
 										</Reference>
 										<Reference Name="Conversion">
-											<ObjectRef Name="Movement" ID="{4C27FC69-5E71-4567-B792-7A143D066898}" WorkUnitID="{62267F72-14C7-4DA9-898E-CD1568645172}"/>
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62267F72-14C7-4DA9-898E-CD1568645172}"/>
 										</Reference>
 										<Reference Name="DefaultSwitchOrState">
 											<ObjectRef Name="Brick" ID="{DDF1D8AA-D5AB-4C83-9511-FB8309A8C953}" WorkUnitID="{4944EBAB-A603-4D27-97FF-CFF285374CA2}"/>
@@ -3165,379 +3542,86 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<RandomSequenceContainer Name="SE_SFX_Jump_Brick" ID="{E4C2ACE2-D186-4464-8740-6C7079276B93}" ShortID="997146220">
-											<PropertyList>
-												<Property Name="3DSpatialization" Type="int16" Value="1"/>
-												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
-											</PropertyList>
+										<RandomSequenceContainer Name="Player_Jump_Brick" ID="{DE9A7C8C-F494-4590-80A5-5BE1805A9781}" ShortID="96740539">
 											<ReferenceList>
-												<Reference Name="Attenuation">
-													<ObjectRef Name="SpatialAudioTest" ID="{7E28C3B6-D318-45B1-8116-1585C6E1390F}" WorkUnitID="{A1BA0ADB-F758-4BAD-B04B-D53467CF759B}"/>
-												</Reference>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62267F72-14C7-4DA9-898E-CD1568645172}"/>
 												</Reference>
 												<Reference Name="OutputBus">
-													<ObjectRef Name="SFX" ID="{18B976C0-D509-4A4A-B407-A8F6A887E940}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
-												</Reference>
-												<Reference Name="ReflectionsAuxSend">
-													<ObjectRef Name="Early_Reflection_Aux_Bus" ID="{8282F99E-D8F7-4B95-B1EA-B9978394AFAE}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<Sound Name="SE_SFX_Jump_Brick_1" ID="{90D669B0-8177-4EAC-804B-6A1EA9F315DB}" ShortID="963453556">
+												<Sound Name="SE_SFX_Jump_Brick_1" ID="{8A9A8AC1-426F-4E1F-8D22-D88FD907065C}" ShortID="81162360">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="1"/>
+														<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+													</PropertyList>
 													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="SpatialAudioTest" ID="{7E28C3B6-D318-45B1-8116-1585C6E1390F}" WorkUnitID="{A1BA0ADB-F758-4BAD-B04B-D53467CF759B}"/>
+														</Reference>
 														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62267F72-14C7-4DA9-898E-CD1568645172}"/>
+															<ObjectRef Name="Movement" ID="{4C27FC69-5E71-4567-B792-7A143D066898}" WorkUnitID="{62267F72-14C7-4DA9-898E-CD1568645172}"/>
 														</Reference>
 														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
+															<ObjectRef Name="SFX" ID="{18B976C0-D509-4A4A-B407-A8F6A887E940}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
+														</Reference>
+														<Reference Name="ReflectionsAuxSend">
+															<ObjectRef Name="Early_Reflection_Aux_Bus" ID="{8282F99E-D8F7-4B95-B1EA-B9978394AFAE}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="SE_SFX_Jump_Brick_1" ID="{8F53DBFF-E4A9-41DD-9544-13139799133E}">
+														<AudioFileSource Name="SE_SFX_Jump_Brick_1" ID="{72DDE619-EB00-4E11-BA02-63AC0A73BDF7}">
 															<Language>SFX</Language>
 															<AudioFile>SE_SFX_Jump_Brick_1.wav</AudioFile>
 															<MediaIDList>
-																<MediaID ID="947703164"/>
+																<MediaID ID="904189933"/>
 															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
 													<ObjectLists/>
 													<ActiveSourceList>
-														<ActiveSource Name="SE_SFX_Jump_Brick_1" ID="{8F53DBFF-E4A9-41DD-9544-13139799133E}" Platform="Linked"/>
+														<ActiveSource Name="SE_SFX_Jump_Brick_1" ID="{72DDE619-EB00-4E11-BA02-63AC0A73BDF7}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
-												<Sound Name="SE_SFX_Jump_Brick_2" ID="{C4EADA30-F4BC-414C-92E0-D5560AFEEDDD}" ShortID="622513800">
+												<Sound Name="SE_SFX_Jump_Brick_2" ID="{C4CE1441-919B-4A4D-B211-CB1D69202C30}" ShortID="1000317981">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="1"/>
+														<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+													</PropertyList>
 													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="SpatialAudioTest" ID="{7E28C3B6-D318-45B1-8116-1585C6E1390F}" WorkUnitID="{A1BA0ADB-F758-4BAD-B04B-D53467CF759B}"/>
+														</Reference>
 														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62267F72-14C7-4DA9-898E-CD1568645172}"/>
+															<ObjectRef Name="Movement" ID="{4C27FC69-5E71-4567-B792-7A143D066898}" WorkUnitID="{62267F72-14C7-4DA9-898E-CD1568645172}"/>
 														</Reference>
 														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
+															<ObjectRef Name="SFX" ID="{18B976C0-D509-4A4A-B407-A8F6A887E940}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
+														</Reference>
+														<Reference Name="ReflectionsAuxSend">
+															<ObjectRef Name="Early_Reflection_Aux_Bus" ID="{8282F99E-D8F7-4B95-B1EA-B9978394AFAE}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="SE_SFX_Jump_Brick_2" ID="{07026B3D-40F2-4906-BA95-10A49B0CED00}">
+														<AudioFileSource Name="SE_SFX_Jump_Brick_2" ID="{5126D354-0CD0-4C96-AD0C-D387115836A5}">
 															<Language>SFX</Language>
 															<AudioFile>SE_SFX_Jump_Brick_2.wav</AudioFile>
 															<MediaIDList>
-																<MediaID ID="75750250"/>
+																<MediaID ID="626388223"/>
 															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
 													<ObjectLists/>
 													<ActiveSourceList>
-														<ActiveSource Name="SE_SFX_Jump_Brick_2" ID="{07026B3D-40F2-4906-BA95-10A49B0CED00}" Platform="Linked"/>
+														<ActiveSource Name="SE_SFX_Jump_Brick_2" ID="{5126D354-0CD0-4C96-AD0C-D387115836A5}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
 											</ChildrenList>
 											<ObjectLists/>
 										</RandomSequenceContainer>
-										<RandomSequenceContainer Name="SE_SFX_Jump_Wood" ID="{57D2D7CB-E184-4F97-A3EC-BF1342C3E724}" ShortID="501532868">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62267F72-14C7-4DA9-898E-CD1568645172}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<Sound Name="SE_SFX_Jump_Wood_1" ID="{BBD6FCC0-1084-4786-83E7-71C8BDB30EE9}" ShortID="898401734">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62267F72-14C7-4DA9-898E-CD1568645172}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="SE_SFX_Jump_Wood_1" ID="{B329951D-5684-49B4-9A19-32309BB30ECE}">
-															<Language>SFX</Language>
-															<AudioFile>SE_SFX_Jump_Wood_1.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="441328992"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ObjectLists/>
-													<ActiveSourceList>
-														<ActiveSource Name="SE_SFX_Jump_Wood_1" ID="{B329951D-5684-49B4-9A19-32309BB30ECE}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="SE_SFX_Jump_Wood_2" ID="{B140DCD3-5A8F-4524-8B75-9ABA67E95E03}" ShortID="695664658">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62267F72-14C7-4DA9-898E-CD1568645172}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="SE_SFX_Jump_Wood_2" ID="{3514BFAB-2521-491B-804F-88B02C320461}">
-															<Language>SFX</Language>
-															<AudioFile>SE_SFX_Jump_Wood_2.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="786707181"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ObjectLists/>
-													<ActiveSourceList>
-														<ActiveSource Name="SE_SFX_Jump_Wood_2" ID="{3514BFAB-2521-491B-804F-88B02C320461}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="SE_SFX_Jump_Wood_3" ID="{69F86B34-0F24-4BF5-BA13-4A0C2BC3A663}" ShortID="805140887">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62267F72-14C7-4DA9-898E-CD1568645172}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="SE_SFX_Jump_Wood_3" ID="{403C6BD9-92CC-4749-BE04-7364F4F9744E}">
-															<Language>SFX</Language>
-															<AudioFile>SE_SFX_Jump_Wood_3.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="840412261"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ObjectLists/>
-													<ActiveSourceList>
-														<ActiveSource Name="SE_SFX_Jump_Wood_3" ID="{403C6BD9-92CC-4749-BE04-7364F4F9744E}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-											</ChildrenList>
-											<ObjectLists/>
-										</RandomSequenceContainer>
-										<RandomSequenceContainer Name="SE_SFX_Jump_Metal" ID="{FA61C367-7BC6-4037-B54E-C1312053C649}" ShortID="223283869">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62267F72-14C7-4DA9-898E-CD1568645172}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
-												</Reference>
-											</ReferenceList>
-											<ObjectLists/>
-										</RandomSequenceContainer>
-										<RandomSequenceContainer Name="SE_SFX_Jump_Dirt" ID="{6E60F331-994C-4A3A-B9B7-E58BB4C162EF}" ShortID="581787959">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62267F72-14C7-4DA9-898E-CD1568645172}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
-												</Reference>
-											</ReferenceList>
-											<ObjectLists/>
-										</RandomSequenceContainer>
-										<RandomSequenceContainer Name="SE_SFX_Jump_Staircase" ID="{90BCECB6-8E58-40DA-AAE9-66A7008710C7}" ShortID="544013736">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62267F72-14C7-4DA9-898E-CD1568645172}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<Sound Name="SE_SFX_Land_Concrete_1" ID="{59197D80-C589-4641-9B66-056F81D0E583}" ShortID="63115835">
-													<PropertyList>
-														<Property Name="3DSpatialization" Type="int16" Value="1"/>
-														<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
-													</PropertyList>
-													<ReferenceList>
-														<Reference Name="Attenuation">
-															<ObjectRef Name="SpatialAudioTest" ID="{7E28C3B6-D318-45B1-8116-1585C6E1390F}" WorkUnitID="{A1BA0ADB-F758-4BAD-B04B-D53467CF759B}"/>
-														</Reference>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Movement" ID="{4C27FC69-5E71-4567-B792-7A143D066898}" WorkUnitID="{62267F72-14C7-4DA9-898E-CD1568645172}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="SFX" ID="{18B976C0-D509-4A4A-B407-A8F6A887E940}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="SE_SFX_Land_Concrete_1" ID="{2B2088E6-CC14-4620-9434-EAB4A5076C11}">
-															<Language>SFX</Language>
-															<AudioFile>SE_SFX_Land_Concrete_1.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="28180430"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ObjectLists/>
-													<ActiveSourceList>
-														<ActiveSource Name="SE_SFX_Land_Concrete_1" ID="{2B2088E6-CC14-4620-9434-EAB4A5076C11}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="SE_SFX_Land_Concrete_2" ID="{A6E36522-B482-4909-A151-84F56B81C166}" ShortID="878291189">
-													<PropertyList>
-														<Property Name="3DSpatialization" Type="int16" Value="1"/>
-														<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
-													</PropertyList>
-													<ReferenceList>
-														<Reference Name="Attenuation">
-															<ObjectRef Name="SpatialAudioTest" ID="{7E28C3B6-D318-45B1-8116-1585C6E1390F}" WorkUnitID="{A1BA0ADB-F758-4BAD-B04B-D53467CF759B}"/>
-														</Reference>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Movement" ID="{4C27FC69-5E71-4567-B792-7A143D066898}" WorkUnitID="{62267F72-14C7-4DA9-898E-CD1568645172}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="SFX" ID="{18B976C0-D509-4A4A-B407-A8F6A887E940}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="SE_SFX_Land_Concrete_2" ID="{8B44B4E9-958E-4100-A38D-606400DBDD2C}">
-															<Language>SFX</Language>
-															<AudioFile>SE_SFX_Land_Concrete_2.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="328918252"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ObjectLists/>
-													<ActiveSourceList>
-														<ActiveSource Name="SE_SFX_Land_Concrete_2" ID="{8B44B4E9-958E-4100-A38D-606400DBDD2C}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-											</ChildrenList>
-											<ObjectLists/>
-										</RandomSequenceContainer>
-									</ChildrenList>
-									<ObjectLists/>
-									<GroupingInfo>
-										<GroupingBehaviorList>
-											<GroupingBehavior>
-												<ItemRef Name="SE_SFX_Jump_Dirt" ID="{6E60F331-994C-4A3A-B9B7-E58BB4C162EF}"/>
-											</GroupingBehavior>
-											<GroupingBehavior>
-												<ItemRef Name="SE_SFX_Jump_Metal" ID="{FA61C367-7BC6-4037-B54E-C1312053C649}"/>
-											</GroupingBehavior>
-											<GroupingBehavior>
-												<ItemRef Name="SE_SFX_Jump_Staircase" ID="{90BCECB6-8E58-40DA-AAE9-66A7008710C7}"/>
-											</GroupingBehavior>
-											<GroupingBehavior>
-												<ItemRef Name="SE_SFX_Jump_Wood" ID="{57D2D7CB-E184-4F97-A3EC-BF1342C3E724}"/>
-											</GroupingBehavior>
-											<GroupingBehavior>
-												<ItemRef Name="SE_SFX_Jump_Brick" ID="{E4C2ACE2-D186-4464-8740-6C7079276B93}"/>
-											</GroupingBehavior>
-										</GroupingBehaviorList>
-										<GroupingList>
-											<Grouping>
-												<SwitchRef Name="WoodMetal" ID="{B4CB7316-208E-4344-9ABB-68A0F544F0AD}"/>
-												<ItemList>
-													<ItemRef Name="SE_SFX_Jump_Metal" ID="{FA61C367-7BC6-4037-B54E-C1312053C649}"/>
-													<ItemRef Name="SE_SFX_Jump_Wood" ID="{57D2D7CB-E184-4F97-A3EC-BF1342C3E724}"/>
-												</ItemList>
-											</Grouping>
-											<Grouping>
-												<SwitchRef Name="WoodPlank" ID="{89B7A936-CD9C-4D16-BE4E-402F5E3E273F}"/>
-												<ItemList>
-													<ItemRef Name="SE_SFX_Jump_Wood" ID="{57D2D7CB-E184-4F97-A3EC-BF1342C3E724}"/>
-												</ItemList>
-											</Grouping>
-											<Grouping>
-												<SwitchRef Name="Concrete" ID="{3ADE9F45-EDD5-4FBE-9AB2-1CFDFF2B12EF}"/>
-												<ItemList>
-													<ItemRef Name="SE_SFX_Jump_Staircase" ID="{90BCECB6-8E58-40DA-AAE9-66A7008710C7}"/>
-												</ItemList>
-											</Grouping>
-											<Grouping>
-												<SwitchRef Name="DirtRockAsh" ID="{0B359D95-DC0B-4246-93E1-9FA71C02425D}"/>
-												<ItemList>
-													<ItemRef Name="SE_SFX_Jump_Dirt" ID="{6E60F331-994C-4A3A-B9B7-E58BB4C162EF}"/>
-												</ItemList>
-											</Grouping>
-											<Grouping>
-												<SwitchRef Name="Brick" ID="{DDF1D8AA-D5AB-4C83-9511-FB8309A8C953}"/>
-												<ItemList>
-													<ItemRef Name="SE_SFX_Jump_Brick" ID="{E4C2ACE2-D186-4464-8740-6C7079276B93}"/>
-												</ItemList>
-											</Grouping>
-										</GroupingList>
-									</GroupingInfo>
-								</SwitchContainer>
-								<SwitchContainer Name="SE_SFX_Land" ID="{09679FF1-7A70-4C07-B397-5E25409A3A09}" ShortID="507675216">
-									<PropertyList>
-										<Property Name="3DSpatialization" Type="int16" Value="1"/>
-										<Property Name="EnableDiffraction" Type="bool" Value="True"/>
-										<Property Name="Highpass" Type="int16">
-											<ValueList>
-												<Value>30</Value>
-											</ValueList>
-										</Property>
-										<Property Name="MaxSoundPerInstance" Type="int16">
-											<ValueList>
-												<Value>1</Value>
-											</ValueList>
-										</Property>
-										<Property Name="Pitch" Type="int32">
-											<ModifierList>
-												<ModifierInfo>
-													<Modifier Name="" ID="{D97512CA-08DD-4A79-826F-1B3D3D34B0CC}">
-														<PropertyList>
-															<Property Name="Enabled" Type="bool" Value="True"/>
-															<Property Name="Max" Type="Real64" Value="100"/>
-															<Property Name="Min" Type="Real64" Value="-100"/>
-														</PropertyList>
-													</Modifier>
-												</ModifierInfo>
-											</ModifierList>
-										</Property>
-										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
-										<Property Name="UseMaxSoundPerInstance" Type="bool">
-											<ValueList>
-												<Value>True</Value>
-											</ValueList>
-										</Property>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-20</Value>
-											</ValueList>
-											<ModifierList>
-												<ModifierInfo>
-													<Modifier Name="" ID="{518C4158-51A0-4795-9E21-BED7ECE20C04}">
-														<PropertyList>
-															<Property Name="Enabled" Type="bool" Value="True"/>
-															<Property Name="Max" Type="Real64" Value="1"/>
-															<Property Name="Min" Type="Real64" Value="-1"/>
-														</PropertyList>
-													</Modifier>
-												</ModifierInfo>
-											</ModifierList>
-										</Property>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Attenuation">
-											<ObjectRef Name="SpatialAudioTest" ID="{7E28C3B6-D318-45B1-8116-1585C6E1390F}" WorkUnitID="{A1BA0ADB-F758-4BAD-B04B-D53467CF759B}"/>
-										</Reference>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Movement" ID="{4C27FC69-5E71-4567-B792-7A143D066898}" WorkUnitID="{62267F72-14C7-4DA9-898E-CD1568645172}"/>
-										</Reference>
-										<Reference Name="DefaultSwitchOrState">
-											<ObjectRef Name="Brick" ID="{DDF1D8AA-D5AB-4C83-9511-FB8309A8C953}" WorkUnitID="{4944EBAB-A603-4D27-97FF-CFF285374CA2}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="SFX" ID="{18B976C0-D509-4A4A-B407-A8F6A887E940}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
-										</Reference>
-										<Reference Name="ReflectionsAuxSend">
-											<ObjectRef Name="Early_Reflection_Aux_Bus" ID="{8282F99E-D8F7-4B95-B1EA-B9978394AFAE}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
-										</Reference>
-										<Reference Name="SwitchGroupOrStateGroup">
-											<ObjectRef Name="Ground_Material" ID="{9002ABE4-AF62-4CA8-A595-E1E92B41B799}" WorkUnitID="{4944EBAB-A603-4D27-97FF-CFF285374CA2}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<RandomSequenceContainer Name="SE_SFX_Land_Brick" ID="{1836ECE1-2235-4AFA-91A0-3EAEB0F80CFE}" ShortID="1029964922">
+										<RandomSequenceContainer Name="Player_Jump_Concrete" ID="{4A4EC9F1-285F-49EC-8186-C97266F21180}" ShortID="680421045">
 											<PropertyList>
 												<Property Name="3DSpatialization" Type="int16" Value="1"/>
 												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
@@ -3557,420 +3641,1389 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<Sound Name="SE_SFX_Land_Brick_1" ID="{C6DBC089-6B05-4B6B-B6C9-C30C78B1FD35}" ShortID="949369720">
+												<Sound Name="SE_SFX_Land_Concrete_2" ID="{9F7FA28F-2B48-45F2-BA0D-94EF47D13F8C}" ShortID="706101260">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="1"/>
+														<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+													</PropertyList>
 													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="SpatialAudioTest" ID="{7E28C3B6-D318-45B1-8116-1585C6E1390F}" WorkUnitID="{A1BA0ADB-F758-4BAD-B04B-D53467CF759B}"/>
+														</Reference>
 														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62267F72-14C7-4DA9-898E-CD1568645172}"/>
+															<ObjectRef Name="Movement" ID="{4C27FC69-5E71-4567-B792-7A143D066898}" WorkUnitID="{62267F72-14C7-4DA9-898E-CD1568645172}"/>
 														</Reference>
 														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
+															<ObjectRef Name="SFX" ID="{18B976C0-D509-4A4A-B407-A8F6A887E940}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
+														</Reference>
+														<Reference Name="ReflectionsAuxSend">
+															<ObjectRef Name="Early_Reflection_Aux_Bus" ID="{8282F99E-D8F7-4B95-B1EA-B9978394AFAE}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="SE_SFX_Land_Brick_1" ID="{6FA4BED8-4C2C-4925-BF00-001B33181EC2}">
-															<Language>SFX</Language>
-															<AudioFile>SE_SFX_Land_Brick_1.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="834061866"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ObjectLists/>
-													<ActiveSourceList>
-														<ActiveSource Name="SE_SFX_Land_Brick_1" ID="{6FA4BED8-4C2C-4925-BF00-001B33181EC2}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="SE_SFX_Land_Brick_2" ID="{00D9CB12-B494-4480-A372-9B0DD2B96B3E}" ShortID="43242582">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62267F72-14C7-4DA9-898E-CD1568645172}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="SE_SFX_Land_Brick_2" ID="{15FD7F07-DC21-4EBF-9F37-13CC6D1ABE93}">
-															<Language>SFX</Language>
-															<AudioFile>SE_SFX_Land_Brick_2.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="957975165"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ObjectLists/>
-													<ActiveSourceList>
-														<ActiveSource Name="SE_SFX_Land_Brick_2" ID="{15FD7F07-DC21-4EBF-9F37-13CC6D1ABE93}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="SE_SFX_Land_Brick_3" ID="{F15AF2AB-05A6-460D-AAC2-A08422A0F13D}" ShortID="917539952">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62267F72-14C7-4DA9-898E-CD1568645172}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="SE_SFX_Land_Brick_3" ID="{465C0A14-EB7A-40D5-984D-810E4306B765}">
-															<Language>SFX</Language>
-															<AudioFile>SE_SFX_Land_Brick_3.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="392128051"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ObjectLists/>
-													<ActiveSourceList>
-														<ActiveSource Name="SE_SFX_Land_Brick_3" ID="{465C0A14-EB7A-40D5-984D-810E4306B765}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="SE_SFX_Land_Brick_4" ID="{C13EAF11-85BF-433A-95AC-03EAE9A4C3F3}" ShortID="243251686">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62267F72-14C7-4DA9-898E-CD1568645172}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="SE_SFX_Land_Brick_4" ID="{EA3C746B-4EEC-4060-A711-B6E41B178812}">
-															<Language>SFX</Language>
-															<AudioFile>SE_SFX_Land_Brick_4.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="341645044"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ObjectLists/>
-													<ActiveSourceList>
-														<ActiveSource Name="SE_SFX_Land_Brick_4" ID="{EA3C746B-4EEC-4060-A711-B6E41B178812}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-											</ChildrenList>
-											<ObjectLists/>
-										</RandomSequenceContainer>
-										<RandomSequenceContainer Name="SE_SFX_Land_Wood" ID="{B1F73A3B-2F3C-4456-BFD2-5CBA67E77CE5}" ShortID="936374052">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62267F72-14C7-4DA9-898E-CD1568645172}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<Sound Name="SE_SFX_Land_Wood_2" ID="{B00B87A2-47D3-4BC3-8A6C-86070D9C66CA}" ShortID="372708340">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62267F72-14C7-4DA9-898E-CD1568645172}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="SE_SFX_Land_Wood_2" ID="{E5C6E10A-B375-4A62-90D2-0EE11D8AD9EE}">
-															<Language>SFX</Language>
-															<AudioFile>SE_SFX_Land_Wood_2.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="471112603"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ObjectLists/>
-													<ActiveSourceList>
-														<ActiveSource Name="SE_SFX_Land_Wood_2" ID="{E5C6E10A-B375-4A62-90D2-0EE11D8AD9EE}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="SE_SFX_Land_Wood_3" ID="{F2DF8D6B-E5C3-4AB0-9BBF-8005BCF23FD6}" ShortID="15223434">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62267F72-14C7-4DA9-898E-CD1568645172}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="SE_SFX_Land_Wood_3" ID="{9C31E82C-0931-409D-9E0A-82EB6A73D4FC}">
-															<Language>SFX</Language>
-															<AudioFile>SE_SFX_Land_Wood_3.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="728259121"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ObjectLists/>
-													<ActiveSourceList>
-														<ActiveSource Name="SE_SFX_Land_Wood_3" ID="{9C31E82C-0931-409D-9E0A-82EB6A73D4FC}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="SE_SFX_Land_Wood_4" ID="{60C980D6-B05B-414C-8C99-4D0A15BC508F}" ShortID="731743135">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62267F72-14C7-4DA9-898E-CD1568645172}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="SE_SFX_Land_Wood_4" ID="{25FEA0CD-7E7A-4AE4-925C-5FA6B8A129D2}">
-															<Language>SFX</Language>
-															<AudioFile>SE_SFX_Land_Wood_4.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="1065961823"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ObjectLists/>
-													<ActiveSourceList>
-														<ActiveSource Name="SE_SFX_Land_Wood_4" ID="{25FEA0CD-7E7A-4AE4-925C-5FA6B8A129D2}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="SE_SFX_Land_Wood_5" ID="{B70DE9F7-9BCC-45D1-8FB4-BC8BB5F40E45}" ShortID="695978225">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62267F72-14C7-4DA9-898E-CD1568645172}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="SE_SFX_Land_Wood_5" ID="{F9C5486D-CC33-4A5F-87A3-036B3904CA68}">
-															<Language>SFX</Language>
-															<AudioFile>SE_SFX_Land_Wood_5.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="370788039"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ObjectLists/>
-													<ActiveSourceList>
-														<ActiveSource Name="SE_SFX_Land_Wood_5" ID="{F9C5486D-CC33-4A5F-87A3-036B3904CA68}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="SE_SFX_Land_Wood_6" ID="{16F6B224-06FA-48A4-BC7A-BA52A4BACA46}" ShortID="691189957">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62267F72-14C7-4DA9-898E-CD1568645172}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="SE_SFX_Land_Wood_6" ID="{4B40B3DC-8C02-4575-B33A-C25164F07E7B}">
-															<Language>SFX</Language>
-															<AudioFile>SE_SFX_Land_Wood_6.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="336398330"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ObjectLists/>
-													<ActiveSourceList>
-														<ActiveSource Name="SE_SFX_Land_Wood_6" ID="{4B40B3DC-8C02-4575-B33A-C25164F07E7B}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="SE_SFX_Land_Wood_8" ID="{49EDC9C8-BF4D-4E8E-A7E3-F669D3B6792F}" ShortID="742793478">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62267F72-14C7-4DA9-898E-CD1568645172}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="SE_SFX_Land_Wood_8" ID="{F8F98571-31A4-4A79-B362-D30E414B3D8B}">
-															<Language>SFX</Language>
-															<AudioFile>SE_SFX_Land_Wood_8.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="353635050"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ObjectLists/>
-													<ActiveSourceList>
-														<ActiveSource Name="SE_SFX_Land_Wood_8" ID="{F8F98571-31A4-4A79-B362-D30E414B3D8B}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="SE_SFX_Land_Wood_10" ID="{B4735155-5D5B-45EF-AA92-430E0C49263D}" ShortID="282414527">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62267F72-14C7-4DA9-898E-CD1568645172}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="SE_SFX_Land_Wood_10" ID="{E4FCC80D-12AE-488C-96A8-4808A58E3CB2}">
-															<Language>SFX</Language>
-															<AudioFile>SE_SFX_Land_Wood_10.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="389404580"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ObjectLists/>
-													<ActiveSourceList>
-														<ActiveSource Name="SE_SFX_Land_Wood_10" ID="{E4FCC80D-12AE-488C-96A8-4808A58E3CB2}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="SE_SFX_Land_Wood_11" ID="{99E4F27A-0DE9-4E11-B278-35046294B5EF}" ShortID="869317704">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62267F72-14C7-4DA9-898E-CD1568645172}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="SE_SFX_Land_Wood_11" ID="{1A64A3EA-DB8D-4F49-89ED-43AF96A9B4CD}">
-															<Language>SFX</Language>
-															<AudioFile>SE_SFX_Land_Wood_11.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="398462350"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ObjectLists/>
-													<ActiveSourceList>
-														<ActiveSource Name="SE_SFX_Land_Wood_11" ID="{1A64A3EA-DB8D-4F49-89ED-43AF96A9B4CD}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-											</ChildrenList>
-											<ObjectLists/>
-										</RandomSequenceContainer>
-										<RandomSequenceContainer Name="SE_SFX_Land_Metal" ID="{63F27187-ACF5-4C6A-9EC1-D3D0EA786395}" ShortID="789434899">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62267F72-14C7-4DA9-898E-CD1568645172}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
-												</Reference>
-											</ReferenceList>
-											<ObjectLists/>
-										</RandomSequenceContainer>
-										<RandomSequenceContainer Name="SE_SFX_Land_Dirt" ID="{75DDDAC6-E1F8-404C-9D36-207C51AD21E8}" ShortID="94791137">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62267F72-14C7-4DA9-898E-CD1568645172}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
-												</Reference>
-											</ReferenceList>
-											<ObjectLists/>
-										</RandomSequenceContainer>
-										<RandomSequenceContainer Name="SE_SFX_Land_Staircase" ID="{C8490F49-8598-4ED3-BF96-EA529843F270}" ShortID="718026105">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62267F72-14C7-4DA9-898E-CD1568645172}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<Sound Name="SE_SFX_Land_Concrete_1" ID="{3BB6A90E-8BE8-4770-B51A-403C7ED86170}" ShortID="393485589">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62267F72-14C7-4DA9-898E-CD1568645172}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="SE_SFX_Land_Concrete_1" ID="{71A6CDA9-8148-4DA1-83B5-3D87797EEEF3}">
-															<Language>SFX</Language>
-															<AudioFile>SE_SFX_Land_Concrete_1.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="28180430"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ObjectLists/>
-													<ActiveSourceList>
-														<ActiveSource Name="SE_SFX_Land_Concrete_1" ID="{71A6CDA9-8148-4DA1-83B5-3D87797EEEF3}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="SE_SFX_Land_Concrete_2" ID="{F2ECC3A4-F3EE-45B4-AF58-C457675374B5}" ShortID="498057411">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62267F72-14C7-4DA9-898E-CD1568645172}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="SE_SFX_Land_Concrete_2" ID="{8982ABC1-FB22-46F9-BF31-1AEE4AAE0BCB}">
+														<AudioFileSource Name="SE_SFX_Land_Concrete_2" ID="{F63D038B-6A09-4D0A-9D86-9C0398813C2C}">
 															<Language>SFX</Language>
 															<AudioFile>SE_SFX_Land_Concrete_2.wav</AudioFile>
 															<MediaIDList>
-																<MediaID ID="328918252"/>
+																<MediaID ID="909324958"/>
 															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
 													<ObjectLists/>
 													<ActiveSourceList>
-														<ActiveSource Name="SE_SFX_Land_Concrete_2" ID="{8982ABC1-FB22-46F9-BF31-1AEE4AAE0BCB}" Platform="Linked"/>
+														<ActiveSource Name="SE_SFX_Land_Concrete_2" ID="{F63D038B-6A09-4D0A-9D86-9C0398813C2C}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
-												<Sound Name="SE_SFX_Land_Concrete_3" ID="{34F03B09-06E0-454E-8D98-16539EC42DEC}" ShortID="278878812">
+												<Sound Name="SE_SFX_Land_Concrete_1" ID="{25D292CB-318F-4C87-B450-A61544C5C7A1}" ShortID="516111737">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="1"/>
+														<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+													</PropertyList>
 													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="SpatialAudioTest" ID="{7E28C3B6-D318-45B1-8116-1585C6E1390F}" WorkUnitID="{A1BA0ADB-F758-4BAD-B04B-D53467CF759B}"/>
+														</Reference>
 														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62267F72-14C7-4DA9-898E-CD1568645172}"/>
+															<ObjectRef Name="Movement" ID="{4C27FC69-5E71-4567-B792-7A143D066898}" WorkUnitID="{62267F72-14C7-4DA9-898E-CD1568645172}"/>
 														</Reference>
 														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
+															<ObjectRef Name="SFX" ID="{18B976C0-D509-4A4A-B407-A8F6A887E940}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
+														</Reference>
+														<Reference Name="ReflectionsAuxSend">
+															<ObjectRef Name="Early_Reflection_Aux_Bus" ID="{8282F99E-D8F7-4B95-B1EA-B9978394AFAE}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="SE_SFX_Land_Concrete_3" ID="{CFD44B77-5B65-4ED4-A7E7-95D82BE6D267}">
+														<AudioFileSource Name="SE_SFX_Land_Concrete_1" ID="{09DEB610-F7BE-413F-A4BF-47A5165C04A1}">
+															<Language>SFX</Language>
+															<AudioFile>SE_SFX_Land_Concrete_1.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="539018577"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="SE_SFX_Land_Concrete_1" ID="{09DEB610-F7BE-413F-A4BF-47A5165C04A1}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+											<ObjectLists/>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="Player_Jump_Metal" ID="{272AA5B9-B54D-4FDD-8E37-136BB994A669}" ShortID="1073076925">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="1"/>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="SpatialAudioTest" ID="{7E28C3B6-D318-45B1-8116-1585C6E1390F}" WorkUnitID="{A1BA0ADB-F758-4BAD-B04B-D53467CF759B}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62267F72-14C7-4DA9-898E-CD1568645172}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="SFX" ID="{18B976C0-D509-4A4A-B407-A8F6A887E940}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
+												</Reference>
+												<Reference Name="ReflectionsAuxSend">
+													<ObjectRef Name="Early_Reflection_Aux_Bus" ID="{8282F99E-D8F7-4B95-B1EA-B9978394AFAE}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
+												</Reference>
+											</ReferenceList>
+											<ObjectLists/>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="Player_Jump_Wood" ID="{2968CBD4-D25B-47AA-8504-37B8F4CD2DF5}" ShortID="334517700">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="1"/>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="SpatialAudioTest" ID="{7E28C3B6-D318-45B1-8116-1585C6E1390F}" WorkUnitID="{A1BA0ADB-F758-4BAD-B04B-D53467CF759B}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62267F72-14C7-4DA9-898E-CD1568645172}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="SFX" ID="{18B976C0-D509-4A4A-B407-A8F6A887E940}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
+												</Reference>
+												<Reference Name="ReflectionsAuxSend">
+													<ObjectRef Name="Early_Reflection_Aux_Bus" ID="{8282F99E-D8F7-4B95-B1EA-B9978394AFAE}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="SE_SFX_Jump_Wood_1" ID="{D8256CB9-1882-4B65-831F-1975EA44853B}" ShortID="569769093">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="1"/>
+														<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="SpatialAudioTest" ID="{7E28C3B6-D318-45B1-8116-1585C6E1390F}" WorkUnitID="{A1BA0ADB-F758-4BAD-B04B-D53467CF759B}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Movement" ID="{4C27FC69-5E71-4567-B792-7A143D066898}" WorkUnitID="{62267F72-14C7-4DA9-898E-CD1568645172}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX" ID="{18B976C0-D509-4A4A-B407-A8F6A887E940}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
+														</Reference>
+														<Reference Name="ReflectionsAuxSend">
+															<ObjectRef Name="Early_Reflection_Aux_Bus" ID="{8282F99E-D8F7-4B95-B1EA-B9978394AFAE}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SE_SFX_Jump_Wood_1" ID="{675942C3-EF35-425B-AEC9-21097F1F266B}">
+															<Language>SFX</Language>
+															<AudioFile>SE_SFX_Jump_Wood_1.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="274441949"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="SE_SFX_Jump_Wood_1" ID="{675942C3-EF35-425B-AEC9-21097F1F266B}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="SE_SFX_Jump_Wood_2" ID="{5711763D-9D4E-4BDE-97F2-B648A927376E}" ShortID="268035971">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="1"/>
+														<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="SpatialAudioTest" ID="{7E28C3B6-D318-45B1-8116-1585C6E1390F}" WorkUnitID="{A1BA0ADB-F758-4BAD-B04B-D53467CF759B}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Movement" ID="{4C27FC69-5E71-4567-B792-7A143D066898}" WorkUnitID="{62267F72-14C7-4DA9-898E-CD1568645172}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX" ID="{18B976C0-D509-4A4A-B407-A8F6A887E940}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
+														</Reference>
+														<Reference Name="ReflectionsAuxSend">
+															<ObjectRef Name="Early_Reflection_Aux_Bus" ID="{8282F99E-D8F7-4B95-B1EA-B9978394AFAE}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SE_SFX_Jump_Wood_2" ID="{9E7ECDD3-0146-468B-BEF2-8EB7D49E7B4E}">
+															<Language>SFX</Language>
+															<AudioFile>SE_SFX_Jump_Wood_2.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="286781176"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="SE_SFX_Jump_Wood_2" ID="{9E7ECDD3-0146-468B-BEF2-8EB7D49E7B4E}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="SE_SFX_Jump_Wood_3" ID="{E8AE4FD1-102E-469B-A50C-0E9CBA9C2E0C}" ShortID="286789264">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="1"/>
+														<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="SpatialAudioTest" ID="{7E28C3B6-D318-45B1-8116-1585C6E1390F}" WorkUnitID="{A1BA0ADB-F758-4BAD-B04B-D53467CF759B}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Movement" ID="{4C27FC69-5E71-4567-B792-7A143D066898}" WorkUnitID="{62267F72-14C7-4DA9-898E-CD1568645172}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX" ID="{18B976C0-D509-4A4A-B407-A8F6A887E940}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
+														</Reference>
+														<Reference Name="ReflectionsAuxSend">
+															<ObjectRef Name="Early_Reflection_Aux_Bus" ID="{8282F99E-D8F7-4B95-B1EA-B9978394AFAE}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SE_SFX_Jump_Wood_3" ID="{6DF9312B-EA6E-4B04-BC30-572ECF6C0B09}">
+															<Language>SFX</Language>
+															<AudioFile>SE_SFX_Jump_Wood_3.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="488628065"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="SE_SFX_Jump_Wood_3" ID="{6DF9312B-EA6E-4B04-BC30-572ECF6C0B09}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+											<ObjectLists/>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="Player_Jump_Wood_Creak" ID="{645F1ABA-16FC-4898-9D30-E99F29990277}" ShortID="903239966">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="1"/>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-7</Value>
+													</ValueList>
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{2E936098-CD97-4E9B-93EA-B25E584C29F6}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Min" Type="Real64" Value="-2"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="SpatialAudioTest" ID="{7E28C3B6-D318-45B1-8116-1585C6E1390F}" WorkUnitID="{A1BA0ADB-F758-4BAD-B04B-D53467CF759B}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62267F72-14C7-4DA9-898E-CD1568645172}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="SFX" ID="{18B976C0-D509-4A4A-B407-A8F6A887E940}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
+												</Reference>
+												<Reference Name="ReflectionsAuxSend">
+													<ObjectRef Name="Early_Reflection_Aux_Bus" ID="{8282F99E-D8F7-4B95-B1EA-B9978394AFAE}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Chair_Creak_Quick_9" ID="{926EC53C-3FAD-46F2-AFD8-E07D0EFD1AB8}" ShortID="418425683">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="1"/>
+														<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+														<Property Name="Weight" Type="Real64">
+															<ValueList>
+																<Value>15</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="SpatialAudioTest" ID="{7E28C3B6-D318-45B1-8116-1585C6E1390F}" WorkUnitID="{A1BA0ADB-F758-4BAD-B04B-D53467CF759B}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Movement" ID="{4C27FC69-5E71-4567-B792-7A143D066898}" WorkUnitID="{62267F72-14C7-4DA9-898E-CD1568645172}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX" ID="{18B976C0-D509-4A4A-B407-A8F6A887E940}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
+														</Reference>
+														<Reference Name="ReflectionsAuxSend">
+															<ObjectRef Name="Early_Reflection_Aux_Bus" ID="{8282F99E-D8F7-4B95-B1EA-B9978394AFAE}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Chair_Creak_Quick_9" ID="{9DCFDD0C-F093-4159-8A30-1899072337AD}">
+															<Language>SFX</Language>
+															<AudioFile>Chair_Creak_Quick_9.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="501821063"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="Chair_Creak_Quick_9" ID="{9DCFDD0C-F093-4159-8A30-1899072337AD}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Chair_Creak_Quick_3" ID="{18388E43-FF54-4E59-ACB8-9DEA027A8E0F}" ShortID="979943585">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="1"/>
+														<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+														<Property Name="Weight" Type="Real64">
+															<ValueList>
+																<Value>15</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="SpatialAudioTest" ID="{7E28C3B6-D318-45B1-8116-1585C6E1390F}" WorkUnitID="{A1BA0ADB-F758-4BAD-B04B-D53467CF759B}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Movement" ID="{4C27FC69-5E71-4567-B792-7A143D066898}" WorkUnitID="{62267F72-14C7-4DA9-898E-CD1568645172}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX" ID="{18B976C0-D509-4A4A-B407-A8F6A887E940}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
+														</Reference>
+														<Reference Name="ReflectionsAuxSend">
+															<ObjectRef Name="Early_Reflection_Aux_Bus" ID="{8282F99E-D8F7-4B95-B1EA-B9978394AFAE}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Chair_Creak_Quick_3" ID="{81683383-D6EE-4D6D-989A-A33CF11D23F5}">
+															<Language>SFX</Language>
+															<AudioFile>Chair_Creak_Quick_3.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="624785403"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="Chair_Creak_Quick_3" ID="{81683383-D6EE-4D6D-989A-A33CF11D23F5}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Chair_Creak_Quick_1" ID="{1095DDA9-C1C6-42E0-8B27-4096721A81E5}" ShortID="896643465">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="1"/>
+														<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+														<Property Name="Weight" Type="Real64">
+															<ValueList>
+																<Value>15</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="SpatialAudioTest" ID="{7E28C3B6-D318-45B1-8116-1585C6E1390F}" WorkUnitID="{A1BA0ADB-F758-4BAD-B04B-D53467CF759B}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Movement" ID="{4C27FC69-5E71-4567-B792-7A143D066898}" WorkUnitID="{62267F72-14C7-4DA9-898E-CD1568645172}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX" ID="{18B976C0-D509-4A4A-B407-A8F6A887E940}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
+														</Reference>
+														<Reference Name="ReflectionsAuxSend">
+															<ObjectRef Name="Early_Reflection_Aux_Bus" ID="{8282F99E-D8F7-4B95-B1EA-B9978394AFAE}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Chair_Creak_Quick_1" ID="{631A4FCC-EF20-4270-BFC0-3C8AA2DD0BA5}">
+															<Language>SFX</Language>
+															<AudioFile>Chair_Creak_Quick_1.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="392462191"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="Chair_Creak_Quick_1" ID="{631A4FCC-EF20-4270-BFC0-3C8AA2DD0BA5}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Chair_Creak_Quick_4" ID="{EE4E3FEB-A5FC-4FBF-B183-A496CEFCEB8D}" ShortID="194684575">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="1"/>
+														<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+														<Property Name="Weight" Type="Real64">
+															<ValueList>
+																<Value>15</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="SpatialAudioTest" ID="{7E28C3B6-D318-45B1-8116-1585C6E1390F}" WorkUnitID="{A1BA0ADB-F758-4BAD-B04B-D53467CF759B}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Movement" ID="{4C27FC69-5E71-4567-B792-7A143D066898}" WorkUnitID="{62267F72-14C7-4DA9-898E-CD1568645172}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX" ID="{18B976C0-D509-4A4A-B407-A8F6A887E940}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
+														</Reference>
+														<Reference Name="ReflectionsAuxSend">
+															<ObjectRef Name="Early_Reflection_Aux_Bus" ID="{8282F99E-D8F7-4B95-B1EA-B9978394AFAE}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Chair_Creak_Quick_4" ID="{EC406616-AFCE-4A8C-A4E7-3AB08B5D5A34}">
+															<Language>SFX</Language>
+															<AudioFile>Chair_Creak_Quick_4.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="268032443"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="Chair_Creak_Quick_4" ID="{EC406616-AFCE-4A8C-A4E7-3AB08B5D5A34}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Silence" ID="{AC9F260C-B482-4451-A376-AA70C23512D5}" ShortID="726143036">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="1"/>
+														<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+														<Property Name="Weight" Type="Real64">
+															<ValueList>
+																<Value>100</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="SpatialAudioTest" ID="{7E28C3B6-D318-45B1-8116-1585C6E1390F}" WorkUnitID="{A1BA0ADB-F758-4BAD-B04B-D53467CF759B}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Movement" ID="{4C27FC69-5E71-4567-B792-7A143D066898}" WorkUnitID="{62267F72-14C7-4DA9-898E-CD1568645172}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX" ID="{18B976C0-D509-4A4A-B407-A8F6A887E940}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
+														</Reference>
+														<Reference Name="ReflectionsAuxSend">
+															<ObjectRef Name="Early_Reflection_Aux_Bus" ID="{8282F99E-D8F7-4B95-B1EA-B9978394AFAE}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<SourcePlugin Name="Wwise Silence" ID="{E92643AC-F178-4231-AE1A-658D68D887FF}" ShortID="74169894" PluginName="Wwise Silence" CompanyID="0" PluginID="101">
+															<PropertyList>
+																<Property Name="Length" Type="Real32" Value="2"/>
+															</PropertyList>
+															<Language>SFX</Language>
+														</SourcePlugin>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="Wwise Silence" ID="{E92643AC-F178-4231-AE1A-658D68D887FF}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Chair_Creak_Quick_6" ID="{2CC7017B-E840-4A54-8D18-E44A365AF0BA}" ShortID="279155810">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="1"/>
+														<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+														<Property Name="Weight" Type="Real64">
+															<ValueList>
+																<Value>15</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="SpatialAudioTest" ID="{7E28C3B6-D318-45B1-8116-1585C6E1390F}" WorkUnitID="{A1BA0ADB-F758-4BAD-B04B-D53467CF759B}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Movement" ID="{4C27FC69-5E71-4567-B792-7A143D066898}" WorkUnitID="{62267F72-14C7-4DA9-898E-CD1568645172}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX" ID="{18B976C0-D509-4A4A-B407-A8F6A887E940}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
+														</Reference>
+														<Reference Name="ReflectionsAuxSend">
+															<ObjectRef Name="Early_Reflection_Aux_Bus" ID="{8282F99E-D8F7-4B95-B1EA-B9978394AFAE}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Chair_Creak_Quick_6" ID="{ECCFFF1D-5A52-4561-911C-A79441FBE8DD}">
+															<Language>SFX</Language>
+															<AudioFile>Chair_Creak_Quick_6.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="84725971"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="Chair_Creak_Quick_6" ID="{ECCFFF1D-5A52-4561-911C-A79441FBE8DD}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Chair_Creak_Quick_5" ID="{DCE0DFD6-64AC-4573-BD8E-51662AA8976D}" ShortID="806922244">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="1"/>
+														<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+														<Property Name="Weight" Type="Real64">
+															<ValueList>
+																<Value>15</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="SpatialAudioTest" ID="{7E28C3B6-D318-45B1-8116-1585C6E1390F}" WorkUnitID="{A1BA0ADB-F758-4BAD-B04B-D53467CF759B}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Movement" ID="{4C27FC69-5E71-4567-B792-7A143D066898}" WorkUnitID="{62267F72-14C7-4DA9-898E-CD1568645172}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX" ID="{18B976C0-D509-4A4A-B407-A8F6A887E940}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
+														</Reference>
+														<Reference Name="ReflectionsAuxSend">
+															<ObjectRef Name="Early_Reflection_Aux_Bus" ID="{8282F99E-D8F7-4B95-B1EA-B9978394AFAE}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Chair_Creak_Quick_5" ID="{0539DCB3-AC1A-4DE0-8F29-545C7111800C}">
+															<Language>SFX</Language>
+															<AudioFile>Chair_Creak_Quick_5.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="867425961"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="Chair_Creak_Quick_5" ID="{0539DCB3-AC1A-4DE0-8F29-545C7111800C}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Chair_Creak_Quick_8" ID="{FA8CBA74-85AB-4259-9A67-3CC627616F08}" ShortID="483293156">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="1"/>
+														<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+														<Property Name="Weight" Type="Real64">
+															<ValueList>
+																<Value>15</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="SpatialAudioTest" ID="{7E28C3B6-D318-45B1-8116-1585C6E1390F}" WorkUnitID="{A1BA0ADB-F758-4BAD-B04B-D53467CF759B}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Movement" ID="{4C27FC69-5E71-4567-B792-7A143D066898}" WorkUnitID="{62267F72-14C7-4DA9-898E-CD1568645172}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX" ID="{18B976C0-D509-4A4A-B407-A8F6A887E940}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
+														</Reference>
+														<Reference Name="ReflectionsAuxSend">
+															<ObjectRef Name="Early_Reflection_Aux_Bus" ID="{8282F99E-D8F7-4B95-B1EA-B9978394AFAE}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Chair_Creak_Quick_8" ID="{941B2BD2-D793-4228-BA27-6F3349CEC724}">
+															<Language>SFX</Language>
+															<AudioFile>Chair_Creak_Quick_8.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="192995292"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="Chair_Creak_Quick_8" ID="{941B2BD2-D793-4228-BA27-6F3349CEC724}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Chair_Creak_Quick_2" ID="{609A4844-5935-4E0C-B852-31FF472BBC78}" ShortID="432032653">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="1"/>
+														<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+														<Property Name="Weight" Type="Real64">
+															<ValueList>
+																<Value>15</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="SpatialAudioTest" ID="{7E28C3B6-D318-45B1-8116-1585C6E1390F}" WorkUnitID="{A1BA0ADB-F758-4BAD-B04B-D53467CF759B}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Movement" ID="{4C27FC69-5E71-4567-B792-7A143D066898}" WorkUnitID="{62267F72-14C7-4DA9-898E-CD1568645172}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX" ID="{18B976C0-D509-4A4A-B407-A8F6A887E940}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
+														</Reference>
+														<Reference Name="ReflectionsAuxSend">
+															<ObjectRef Name="Early_Reflection_Aux_Bus" ID="{8282F99E-D8F7-4B95-B1EA-B9978394AFAE}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Chair_Creak_Quick_2" ID="{0C41B950-0520-4AF6-903F-4C043FF17BE1}">
+															<Language>SFX</Language>
+															<AudioFile>Chair_Creak_Quick_2.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="853936358"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="Chair_Creak_Quick_2" ID="{0C41B950-0520-4AF6-903F-4C043FF17BE1}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Chair_Creak_Quick_7" ID="{E987A9C1-68D8-4942-9FB6-29D292A0594A}" ShortID="1013329463">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="1"/>
+														<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+														<Property Name="Weight" Type="Real64">
+															<ValueList>
+																<Value>15</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="SpatialAudioTest" ID="{7E28C3B6-D318-45B1-8116-1585C6E1390F}" WorkUnitID="{A1BA0ADB-F758-4BAD-B04B-D53467CF759B}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Movement" ID="{4C27FC69-5E71-4567-B792-7A143D066898}" WorkUnitID="{62267F72-14C7-4DA9-898E-CD1568645172}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX" ID="{18B976C0-D509-4A4A-B407-A8F6A887E940}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
+														</Reference>
+														<Reference Name="ReflectionsAuxSend">
+															<ObjectRef Name="Early_Reflection_Aux_Bus" ID="{8282F99E-D8F7-4B95-B1EA-B9978394AFAE}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Chair_Creak_Quick_7" ID="{AD296898-93F1-4725-8FC2-8DC4DD876522}">
+															<Language>SFX</Language>
+															<AudioFile>Chair_Creak_Quick_7.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="12844012"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="Chair_Creak_Quick_7" ID="{AD296898-93F1-4725-8FC2-8DC4DD876522}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+											<ObjectLists/>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="Player_Jump_Dirt" ID="{65170094-9357-4D31-BC2E-BFE74D9E339B}" ShortID="696933002">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="1"/>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="SpatialAudioTest" ID="{7E28C3B6-D318-45B1-8116-1585C6E1390F}" WorkUnitID="{A1BA0ADB-F758-4BAD-B04B-D53467CF759B}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62267F72-14C7-4DA9-898E-CD1568645172}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="SFX" ID="{18B976C0-D509-4A4A-B407-A8F6A887E940}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
+												</Reference>
+												<Reference Name="ReflectionsAuxSend">
+													<ObjectRef Name="Early_Reflection_Aux_Bus" ID="{8282F99E-D8F7-4B95-B1EA-B9978394AFAE}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
+												</Reference>
+											</ReferenceList>
+											<ObjectLists/>
+										</RandomSequenceContainer>
+									</ChildrenList>
+									<ObjectLists/>
+									<GroupingInfo>
+										<GroupingBehaviorList>
+											<GroupingBehavior>
+												<ItemRef Name="Player_Jump_Brick" ID="{DE9A7C8C-F494-4590-80A5-5BE1805A9781}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="Player_Jump_Dirt" ID="{65170094-9357-4D31-BC2E-BFE74D9E339B}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="Player_Jump_Metal" ID="{272AA5B9-B54D-4FDD-8E37-136BB994A669}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="Player_Jump_Wood_Creak" ID="{645F1ABA-16FC-4898-9D30-E99F29990277}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="Player_Jump_Wood" ID="{2968CBD4-D25B-47AA-8504-37B8F4CD2DF5}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="Player_Jump_Concrete" ID="{4A4EC9F1-285F-49EC-8186-C97266F21180}"/>
+											</GroupingBehavior>
+										</GroupingBehaviorList>
+										<GroupingList>
+											<Grouping>
+												<SwitchRef Name="WoodPlank" ID="{89B7A936-CD9C-4D16-BE4E-402F5E3E273F}"/>
+												<ItemList>
+													<ItemRef Name="Player_Jump_Wood_Creak" ID="{645F1ABA-16FC-4898-9D30-E99F29990277}"/>
+													<ItemRef Name="Player_Jump_Wood" ID="{2968CBD4-D25B-47AA-8504-37B8F4CD2DF5}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="Concrete" ID="{3ADE9F45-EDD5-4FBE-9AB2-1CFDFF2B12EF}"/>
+												<ItemList>
+													<ItemRef Name="Player_Jump_Concrete" ID="{4A4EC9F1-285F-49EC-8186-C97266F21180}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="DirtRockAsh" ID="{0B359D95-DC0B-4246-93E1-9FA71C02425D}"/>
+												<ItemList>
+													<ItemRef Name="Player_Jump_Dirt" ID="{65170094-9357-4D31-BC2E-BFE74D9E339B}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="Brick" ID="{DDF1D8AA-D5AB-4C83-9511-FB8309A8C953}"/>
+												<ItemList>
+													<ItemRef Name="Player_Jump_Brick" ID="{DE9A7C8C-F494-4590-80A5-5BE1805A9781}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="WoodMetal" ID="{CFE4B7ED-75C1-44AB-B36B-1BBD6C72EEFB}"/>
+												<ItemList>
+													<ItemRef Name="Player_Jump_Metal" ID="{272AA5B9-B54D-4FDD-8E37-136BB994A669}"/>
+													<ItemRef Name="Player_Jump_Wood" ID="{2968CBD4-D25B-47AA-8504-37B8F4CD2DF5}"/>
+												</ItemList>
+											</Grouping>
+										</GroupingList>
+									</GroupingInfo>
+								</SwitchContainer>
+								<SwitchContainer Name="Player_Land" ID="{DB921473-185B-4EBC-902F-13280ECDD334}" ShortID="562038295">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="1"/>
+										<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+										<Property Name="Highpass" Type="int16">
+											<ValueList>
+												<Value>30</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{A85F8766-998B-4F61-96CD-5459E10A70CD}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="100"/>
+															<Property Name="Min" Type="Real64" Value="-100"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-19</Value>
+											</ValueList>
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{1F522CE6-E87F-4737-82DF-D58EF401C27B}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Min" Type="Real64" Value="-2"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="SpatialAudioTest" ID="{7E28C3B6-D318-45B1-8116-1585C6E1390F}" WorkUnitID="{A1BA0ADB-F758-4BAD-B04B-D53467CF759B}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62267F72-14C7-4DA9-898E-CD1568645172}"/>
+										</Reference>
+										<Reference Name="DefaultSwitchOrState">
+											<ObjectRef Name="Brick" ID="{DDF1D8AA-D5AB-4C83-9511-FB8309A8C953}" WorkUnitID="{4944EBAB-A603-4D27-97FF-CFF285374CA2}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="SFX" ID="{18B976C0-D509-4A4A-B407-A8F6A887E940}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
+										</Reference>
+										<Reference Name="ReflectionsAuxSend">
+											<ObjectRef Name="Early_Reflection_Aux_Bus" ID="{8282F99E-D8F7-4B95-B1EA-B9978394AFAE}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
+										</Reference>
+										<Reference Name="SwitchGroupOrStateGroup">
+											<ObjectRef Name="Ground_Material" ID="{9002ABE4-AF62-4CA8-A595-E1E92B41B799}" WorkUnitID="{4944EBAB-A603-4D27-97FF-CFF285374CA2}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<RandomSequenceContainer Name="Player_Land_Brick" ID="{FC849B36-2FF6-4F47-BCDC-E3B315C47CAB}" ShortID="140836873">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62267F72-14C7-4DA9-898E-CD1568645172}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="SE_SFX_Land_Brick_1" ID="{B22BACEA-94A8-4906-B0AB-98EED0B944FB}" ShortID="288741843">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="1"/>
+														<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="SpatialAudioTest" ID="{7E28C3B6-D318-45B1-8116-1585C6E1390F}" WorkUnitID="{A1BA0ADB-F758-4BAD-B04B-D53467CF759B}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Movement" ID="{4C27FC69-5E71-4567-B792-7A143D066898}" WorkUnitID="{62267F72-14C7-4DA9-898E-CD1568645172}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX" ID="{18B976C0-D509-4A4A-B407-A8F6A887E940}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
+														</Reference>
+														<Reference Name="ReflectionsAuxSend">
+															<ObjectRef Name="Early_Reflection_Aux_Bus" ID="{8282F99E-D8F7-4B95-B1EA-B9978394AFAE}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SE_SFX_Land_Brick_1" ID="{B1553915-F705-48B2-AA5E-FD68B0E7BC29}">
+															<Language>SFX</Language>
+															<AudioFile>SE_SFX_Land_Brick_1.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="242488717"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="SE_SFX_Land_Brick_1" ID="{B1553915-F705-48B2-AA5E-FD68B0E7BC29}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="SE_SFX_Land_Brick_2" ID="{1A8BC849-484E-422E-9FFE-54E4FEF844CE}" ShortID="45031977">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="1"/>
+														<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="SpatialAudioTest" ID="{7E28C3B6-D318-45B1-8116-1585C6E1390F}" WorkUnitID="{A1BA0ADB-F758-4BAD-B04B-D53467CF759B}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Movement" ID="{4C27FC69-5E71-4567-B792-7A143D066898}" WorkUnitID="{62267F72-14C7-4DA9-898E-CD1568645172}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX" ID="{18B976C0-D509-4A4A-B407-A8F6A887E940}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
+														</Reference>
+														<Reference Name="ReflectionsAuxSend">
+															<ObjectRef Name="Early_Reflection_Aux_Bus" ID="{8282F99E-D8F7-4B95-B1EA-B9978394AFAE}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SE_SFX_Land_Brick_2" ID="{E19B955B-3392-4AF7-8434-254D66D39414}">
+															<Language>SFX</Language>
+															<AudioFile>SE_SFX_Land_Brick_2.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="797002785"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="SE_SFX_Land_Brick_2" ID="{E19B955B-3392-4AF7-8434-254D66D39414}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="SE_SFX_Land_Brick_3" ID="{5F394878-2B00-4BF1-914D-9BFAA17838D5}" ShortID="1047107388">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="1"/>
+														<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="SpatialAudioTest" ID="{7E28C3B6-D318-45B1-8116-1585C6E1390F}" WorkUnitID="{A1BA0ADB-F758-4BAD-B04B-D53467CF759B}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Movement" ID="{4C27FC69-5E71-4567-B792-7A143D066898}" WorkUnitID="{62267F72-14C7-4DA9-898E-CD1568645172}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX" ID="{18B976C0-D509-4A4A-B407-A8F6A887E940}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
+														</Reference>
+														<Reference Name="ReflectionsAuxSend">
+															<ObjectRef Name="Early_Reflection_Aux_Bus" ID="{8282F99E-D8F7-4B95-B1EA-B9978394AFAE}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SE_SFX_Land_Brick_3" ID="{85046E19-D3A8-49B8-8B14-06C245226806}">
+															<Language>SFX</Language>
+															<AudioFile>SE_SFX_Land_Brick_3.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="93058130"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="SE_SFX_Land_Brick_3" ID="{85046E19-D3A8-49B8-8B14-06C245226806}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="SE_SFX_Land_Brick_4" ID="{96F2C842-A50B-444C-BCBE-B3B939F7DE13}" ShortID="150053846">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="1"/>
+														<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="SpatialAudioTest" ID="{7E28C3B6-D318-45B1-8116-1585C6E1390F}" WorkUnitID="{A1BA0ADB-F758-4BAD-B04B-D53467CF759B}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Movement" ID="{4C27FC69-5E71-4567-B792-7A143D066898}" WorkUnitID="{62267F72-14C7-4DA9-898E-CD1568645172}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX" ID="{18B976C0-D509-4A4A-B407-A8F6A887E940}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
+														</Reference>
+														<Reference Name="ReflectionsAuxSend">
+															<ObjectRef Name="Early_Reflection_Aux_Bus" ID="{8282F99E-D8F7-4B95-B1EA-B9978394AFAE}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SE_SFX_Land_Brick_4" ID="{2EFC7BD9-5EB4-4C90-B1FA-8B5B37F9C4F9}">
+															<Language>SFX</Language>
+															<AudioFile>SE_SFX_Land_Brick_4.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="356562556"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="SE_SFX_Land_Brick_4" ID="{2EFC7BD9-5EB4-4C90-B1FA-8B5B37F9C4F9}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+											<ObjectLists/>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="Player_Land_Concrete" ID="{73D16437-DC1F-4EB2-8A70-09A1DDBA225E}" ShortID="808155809">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62267F72-14C7-4DA9-898E-CD1568645172}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="SE_SFX_Land_Concrete_1" ID="{1C628C14-28E1-45BC-9FD2-C2B4E01AB537}" ShortID="922301960">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="1"/>
+														<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="SpatialAudioTest" ID="{7E28C3B6-D318-45B1-8116-1585C6E1390F}" WorkUnitID="{A1BA0ADB-F758-4BAD-B04B-D53467CF759B}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Movement" ID="{4C27FC69-5E71-4567-B792-7A143D066898}" WorkUnitID="{62267F72-14C7-4DA9-898E-CD1568645172}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX" ID="{18B976C0-D509-4A4A-B407-A8F6A887E940}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
+														</Reference>
+														<Reference Name="ReflectionsAuxSend">
+															<ObjectRef Name="Early_Reflection_Aux_Bus" ID="{8282F99E-D8F7-4B95-B1EA-B9978394AFAE}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SE_SFX_Land_Concrete_1" ID="{60E11B7E-44A7-41AD-99D8-860D10394FE4}">
+															<Language>SFX</Language>
+															<AudioFile>SE_SFX_Land_Concrete_1.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="539018577"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="SE_SFX_Land_Concrete_1" ID="{60E11B7E-44A7-41AD-99D8-860D10394FE4}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="SE_SFX_Land_Concrete_2" ID="{A05CF71C-ABAE-4372-9870-371076260CB0}" ShortID="793595660">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="1"/>
+														<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="SpatialAudioTest" ID="{7E28C3B6-D318-45B1-8116-1585C6E1390F}" WorkUnitID="{A1BA0ADB-F758-4BAD-B04B-D53467CF759B}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Movement" ID="{4C27FC69-5E71-4567-B792-7A143D066898}" WorkUnitID="{62267F72-14C7-4DA9-898E-CD1568645172}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX" ID="{18B976C0-D509-4A4A-B407-A8F6A887E940}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
+														</Reference>
+														<Reference Name="ReflectionsAuxSend">
+															<ObjectRef Name="Early_Reflection_Aux_Bus" ID="{8282F99E-D8F7-4B95-B1EA-B9978394AFAE}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SE_SFX_Land_Concrete_2" ID="{58CB5F0D-362C-402F-9632-F5B489B6802E}">
+															<Language>SFX</Language>
+															<AudioFile>SE_SFX_Land_Concrete_2.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="909324958"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="SE_SFX_Land_Concrete_2" ID="{58CB5F0D-362C-402F-9632-F5B489B6802E}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="SE_SFX_Land_Concrete_3" ID="{15A0816D-8D21-4B49-A3EC-97CBA7067777}" ShortID="622586012">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="1"/>
+														<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="SpatialAudioTest" ID="{7E28C3B6-D318-45B1-8116-1585C6E1390F}" WorkUnitID="{A1BA0ADB-F758-4BAD-B04B-D53467CF759B}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Movement" ID="{4C27FC69-5E71-4567-B792-7A143D066898}" WorkUnitID="{62267F72-14C7-4DA9-898E-CD1568645172}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX" ID="{18B976C0-D509-4A4A-B407-A8F6A887E940}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
+														</Reference>
+														<Reference Name="ReflectionsAuxSend">
+															<ObjectRef Name="Early_Reflection_Aux_Bus" ID="{8282F99E-D8F7-4B95-B1EA-B9978394AFAE}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SE_SFX_Land_Concrete_3" ID="{FD0BF6BD-ED0E-4962-BBD8-4945DDEB9771}">
 															<Language>SFX</Language>
 															<AudioFile>SE_SFX_Land_Concrete_3.wav</AudioFile>
 															<MediaIDList>
-																<MediaID ID="705154055"/>
+																<MediaID ID="102816207"/>
 															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
 													<ObjectLists/>
 													<ActiveSourceList>
-														<ActiveSource Name="SE_SFX_Land_Concrete_3" ID="{CFD44B77-5B65-4ED4-A7E7-95D82BE6D267}" Platform="Linked"/>
+														<ActiveSource Name="SE_SFX_Land_Concrete_3" ID="{FD0BF6BD-ED0E-4962-BBD8-4945DDEB9771}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
-												<Sound Name="SE_SFX_Land_Concrete_4" ID="{A79469EC-61C9-4598-A671-15E507181495}" ShortID="193286921">
+												<Sound Name="SE_SFX_Land_Concrete_4" ID="{57DA2D17-06A5-42A0-A760-5DD7F55EF938}" ShortID="662762962">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="1"/>
+														<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+													</PropertyList>
 													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="SpatialAudioTest" ID="{7E28C3B6-D318-45B1-8116-1585C6E1390F}" WorkUnitID="{A1BA0ADB-F758-4BAD-B04B-D53467CF759B}"/>
+														</Reference>
 														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62267F72-14C7-4DA9-898E-CD1568645172}"/>
+															<ObjectRef Name="Movement" ID="{4C27FC69-5E71-4567-B792-7A143D066898}" WorkUnitID="{62267F72-14C7-4DA9-898E-CD1568645172}"/>
 														</Reference>
 														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
+															<ObjectRef Name="SFX" ID="{18B976C0-D509-4A4A-B407-A8F6A887E940}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
+														</Reference>
+														<Reference Name="ReflectionsAuxSend">
+															<ObjectRef Name="Early_Reflection_Aux_Bus" ID="{8282F99E-D8F7-4B95-B1EA-B9978394AFAE}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="SE_SFX_Land_Concrete_4" ID="{B3BC8314-42E6-4F96-A4AC-2BD391AE114B}">
+														<AudioFileSource Name="SE_SFX_Land_Concrete_4" ID="{9CEC8C8B-43AE-4269-B90D-AD2D8638DD24}">
 															<Language>SFX</Language>
 															<AudioFile>SE_SFX_Land_Concrete_4.wav</AudioFile>
 															<MediaIDList>
-																<MediaID ID="832694089"/>
+																<MediaID ID="228606426"/>
 															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
 													<ObjectLists/>
 													<ActiveSourceList>
-														<ActiveSource Name="SE_SFX_Land_Concrete_4" ID="{B3BC8314-42E6-4F96-A4AC-2BD391AE114B}" Platform="Linked"/>
+														<ActiveSource Name="SE_SFX_Land_Concrete_4" ID="{9CEC8C8B-43AE-4269-B90D-AD2D8638DD24}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+											<ObjectLists/>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="Player_Land_Dirt" ID="{6679FCB9-4197-4235-ACE8-409250A674BF}" ShortID="5288704">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="1"/>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="SpatialAudioTest" ID="{7E28C3B6-D318-45B1-8116-1585C6E1390F}" WorkUnitID="{A1BA0ADB-F758-4BAD-B04B-D53467CF759B}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62267F72-14C7-4DA9-898E-CD1568645172}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="SFX" ID="{18B976C0-D509-4A4A-B407-A8F6A887E940}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
+												</Reference>
+												<Reference Name="ReflectionsAuxSend">
+													<ObjectRef Name="Early_Reflection_Aux_Bus" ID="{8282F99E-D8F7-4B95-B1EA-B9978394AFAE}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
+												</Reference>
+											</ReferenceList>
+											<ObjectLists/>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="Player_Land_Metal" ID="{3975EEEA-9F62-4CF2-A364-5701BFA10D97}" ShortID="799187495">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="1"/>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="SpatialAudioTest" ID="{7E28C3B6-D318-45B1-8116-1585C6E1390F}" WorkUnitID="{A1BA0ADB-F758-4BAD-B04B-D53467CF759B}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62267F72-14C7-4DA9-898E-CD1568645172}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="SFX" ID="{18B976C0-D509-4A4A-B407-A8F6A887E940}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
+												</Reference>
+												<Reference Name="ReflectionsAuxSend">
+													<ObjectRef Name="Early_Reflection_Aux_Bus" ID="{8282F99E-D8F7-4B95-B1EA-B9978394AFAE}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
+												</Reference>
+											</ReferenceList>
+											<ObjectLists/>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="Player_Land_Wood" ID="{7B61D880-C039-4D53-9D00-18983D5634B5}" ShortID="1073416057">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="1"/>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="SpatialAudioTest" ID="{7E28C3B6-D318-45B1-8116-1585C6E1390F}" WorkUnitID="{A1BA0ADB-F758-4BAD-B04B-D53467CF759B}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62267F72-14C7-4DA9-898E-CD1568645172}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="SFX" ID="{18B976C0-D509-4A4A-B407-A8F6A887E940}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
+												</Reference>
+												<Reference Name="ReflectionsAuxSend">
+													<ObjectRef Name="Early_Reflection_Aux_Bus" ID="{8282F99E-D8F7-4B95-B1EA-B9978394AFAE}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="SE_SFX_Land_Wood_8" ID="{16601A49-E51E-4F91-81C6-DB9F4C8F3249}" ShortID="310104854">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="1"/>
+														<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="SpatialAudioTest" ID="{7E28C3B6-D318-45B1-8116-1585C6E1390F}" WorkUnitID="{A1BA0ADB-F758-4BAD-B04B-D53467CF759B}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Movement" ID="{4C27FC69-5E71-4567-B792-7A143D066898}" WorkUnitID="{62267F72-14C7-4DA9-898E-CD1568645172}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX" ID="{18B976C0-D509-4A4A-B407-A8F6A887E940}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
+														</Reference>
+														<Reference Name="ReflectionsAuxSend">
+															<ObjectRef Name="Early_Reflection_Aux_Bus" ID="{8282F99E-D8F7-4B95-B1EA-B9978394AFAE}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SE_SFX_Land_Wood_8" ID="{F455615D-7D8A-4323-AD49-5E5F0B89EF59}">
+															<Language>SFX</Language>
+															<AudioFile>SE_SFX_Land_Wood_8.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="673249814"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="SE_SFX_Land_Wood_8" ID="{F455615D-7D8A-4323-AD49-5E5F0B89EF59}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="SE_SFX_Land_Wood_2" ID="{BC34A7C0-9453-4FD7-85BE-E5E899DC21E6}" ShortID="490676260">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="1"/>
+														<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="SpatialAudioTest" ID="{7E28C3B6-D318-45B1-8116-1585C6E1390F}" WorkUnitID="{A1BA0ADB-F758-4BAD-B04B-D53467CF759B}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Movement" ID="{4C27FC69-5E71-4567-B792-7A143D066898}" WorkUnitID="{62267F72-14C7-4DA9-898E-CD1568645172}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX" ID="{18B976C0-D509-4A4A-B407-A8F6A887E940}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
+														</Reference>
+														<Reference Name="ReflectionsAuxSend">
+															<ObjectRef Name="Early_Reflection_Aux_Bus" ID="{8282F99E-D8F7-4B95-B1EA-B9978394AFAE}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SE_SFX_Land_Wood_2" ID="{FE428920-9D64-4095-A7BA-9E4B575AE6A9}">
+															<Language>SFX</Language>
+															<AudioFile>SE_SFX_Land_Wood_2.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="289936296"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="SE_SFX_Land_Wood_2" ID="{FE428920-9D64-4095-A7BA-9E4B575AE6A9}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="SE_SFX_Land_Wood_6" ID="{E4823623-BCCD-4808-9304-6DB7D850FD30}" ShortID="654408310">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="1"/>
+														<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="SpatialAudioTest" ID="{7E28C3B6-D318-45B1-8116-1585C6E1390F}" WorkUnitID="{A1BA0ADB-F758-4BAD-B04B-D53467CF759B}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Movement" ID="{4C27FC69-5E71-4567-B792-7A143D066898}" WorkUnitID="{62267F72-14C7-4DA9-898E-CD1568645172}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX" ID="{18B976C0-D509-4A4A-B407-A8F6A887E940}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
+														</Reference>
+														<Reference Name="ReflectionsAuxSend">
+															<ObjectRef Name="Early_Reflection_Aux_Bus" ID="{8282F99E-D8F7-4B95-B1EA-B9978394AFAE}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SE_SFX_Land_Wood_6" ID="{9B9AC46E-92A5-4854-AFB1-8F2B8EEB8F04}">
+															<Language>SFX</Language>
+															<AudioFile>SE_SFX_Land_Wood_6.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="220601687"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="SE_SFX_Land_Wood_6" ID="{9B9AC46E-92A5-4854-AFB1-8F2B8EEB8F04}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="SE_SFX_Land_Wood_11" ID="{A3AF264E-5EA4-4B9C-A523-A6DDB43574E7}" ShortID="74242786">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="1"/>
+														<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="SpatialAudioTest" ID="{7E28C3B6-D318-45B1-8116-1585C6E1390F}" WorkUnitID="{A1BA0ADB-F758-4BAD-B04B-D53467CF759B}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Movement" ID="{4C27FC69-5E71-4567-B792-7A143D066898}" WorkUnitID="{62267F72-14C7-4DA9-898E-CD1568645172}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX" ID="{18B976C0-D509-4A4A-B407-A8F6A887E940}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
+														</Reference>
+														<Reference Name="ReflectionsAuxSend">
+															<ObjectRef Name="Early_Reflection_Aux_Bus" ID="{8282F99E-D8F7-4B95-B1EA-B9978394AFAE}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SE_SFX_Land_Wood_11" ID="{304C02F5-6776-4B9A-ABCD-1B91E892011B}">
+															<Language>SFX</Language>
+															<AudioFile>SE_SFX_Land_Wood_11.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="220010548"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="SE_SFX_Land_Wood_11" ID="{304C02F5-6776-4B9A-ABCD-1B91E892011B}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="SE_SFX_Land_Wood_5" ID="{1F390E1C-8050-4AAD-B6CA-A5F8444B7C01}" ShortID="236161022">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="1"/>
+														<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="SpatialAudioTest" ID="{7E28C3B6-D318-45B1-8116-1585C6E1390F}" WorkUnitID="{A1BA0ADB-F758-4BAD-B04B-D53467CF759B}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Movement" ID="{4C27FC69-5E71-4567-B792-7A143D066898}" WorkUnitID="{62267F72-14C7-4DA9-898E-CD1568645172}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX" ID="{18B976C0-D509-4A4A-B407-A8F6A887E940}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
+														</Reference>
+														<Reference Name="ReflectionsAuxSend">
+															<ObjectRef Name="Early_Reflection_Aux_Bus" ID="{8282F99E-D8F7-4B95-B1EA-B9978394AFAE}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SE_SFX_Land_Wood_5" ID="{458BF48F-53FC-4794-9FDB-16C6F4DA4C46}">
+															<Language>SFX</Language>
+															<AudioFile>SE_SFX_Land_Wood_5.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="644623128"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="SE_SFX_Land_Wood_5" ID="{458BF48F-53FC-4794-9FDB-16C6F4DA4C46}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="SE_SFX_Land_Wood_10" ID="{D318BE17-D377-4E0F-A1EA-597736D0BB14}" ShortID="584263035">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="1"/>
+														<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="SpatialAudioTest" ID="{7E28C3B6-D318-45B1-8116-1585C6E1390F}" WorkUnitID="{A1BA0ADB-F758-4BAD-B04B-D53467CF759B}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Movement" ID="{4C27FC69-5E71-4567-B792-7A143D066898}" WorkUnitID="{62267F72-14C7-4DA9-898E-CD1568645172}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX" ID="{18B976C0-D509-4A4A-B407-A8F6A887E940}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
+														</Reference>
+														<Reference Name="ReflectionsAuxSend">
+															<ObjectRef Name="Early_Reflection_Aux_Bus" ID="{8282F99E-D8F7-4B95-B1EA-B9978394AFAE}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SE_SFX_Land_Wood_10" ID="{EC6835BB-1D0E-43BB-B998-1F23F261F80A}">
+															<Language>SFX</Language>
+															<AudioFile>SE_SFX_Land_Wood_10.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="1030246594"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="SE_SFX_Land_Wood_10" ID="{EC6835BB-1D0E-43BB-B998-1F23F261F80A}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="SE_SFX_Land_Wood_4" ID="{9AF17878-95A7-49B9-88F2-E5EEDF5765AF}" ShortID="604764793">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="1"/>
+														<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="SpatialAudioTest" ID="{7E28C3B6-D318-45B1-8116-1585C6E1390F}" WorkUnitID="{A1BA0ADB-F758-4BAD-B04B-D53467CF759B}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Movement" ID="{4C27FC69-5E71-4567-B792-7A143D066898}" WorkUnitID="{62267F72-14C7-4DA9-898E-CD1568645172}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX" ID="{18B976C0-D509-4A4A-B407-A8F6A887E940}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
+														</Reference>
+														<Reference Name="ReflectionsAuxSend">
+															<ObjectRef Name="Early_Reflection_Aux_Bus" ID="{8282F99E-D8F7-4B95-B1EA-B9978394AFAE}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SE_SFX_Land_Wood_4" ID="{82F073EF-1956-4AD7-9CF9-1D5FB4AFF977}">
+															<Language>SFX</Language>
+															<AudioFile>SE_SFX_Land_Wood_4.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="278778620"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="SE_SFX_Land_Wood_4" ID="{82F073EF-1956-4AD7-9CF9-1D5FB4AFF977}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="SE_SFX_Land_Wood_3" ID="{74B84187-4E62-4C7A-AD98-A5B452F40888}" ShortID="926036597">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="1"/>
+														<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="SpatialAudioTest" ID="{7E28C3B6-D318-45B1-8116-1585C6E1390F}" WorkUnitID="{A1BA0ADB-F758-4BAD-B04B-D53467CF759B}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Movement" ID="{4C27FC69-5E71-4567-B792-7A143D066898}" WorkUnitID="{62267F72-14C7-4DA9-898E-CD1568645172}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX" ID="{18B976C0-D509-4A4A-B407-A8F6A887E940}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
+														</Reference>
+														<Reference Name="ReflectionsAuxSend">
+															<ObjectRef Name="Early_Reflection_Aux_Bus" ID="{8282F99E-D8F7-4B95-B1EA-B9978394AFAE}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SE_SFX_Land_Wood_3" ID="{19895F5B-D9FA-4E6A-9473-C8C407AB4D0F}">
+															<Language>SFX</Language>
+															<AudioFile>SE_SFX_Land_Wood_3.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="249650757"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="SE_SFX_Land_Wood_3" ID="{19895F5B-D9FA-4E6A-9473-C8C407AB4D0F}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
 											</ChildrenList>
@@ -3981,51 +5034,51 @@
 									<GroupingInfo>
 										<GroupingBehaviorList>
 											<GroupingBehavior>
-												<ItemRef Name="SE_SFX_Land_Wood" ID="{B1F73A3B-2F3C-4456-BFD2-5CBA67E77CE5}"/>
+												<ItemRef Name="Player_Land_Brick" ID="{FC849B36-2FF6-4F47-BCDC-E3B315C47CAB}"/>
 											</GroupingBehavior>
 											<GroupingBehavior>
-												<ItemRef Name="SE_SFX_Land_Staircase" ID="{C8490F49-8598-4ED3-BF96-EA529843F270}"/>
+												<ItemRef Name="Player_Land_Concrete" ID="{73D16437-DC1F-4EB2-8A70-09A1DDBA225E}"/>
 											</GroupingBehavior>
 											<GroupingBehavior>
-												<ItemRef Name="SE_SFX_Land_Metal" ID="{63F27187-ACF5-4C6A-9EC1-D3D0EA786395}"/>
+												<ItemRef Name="Player_Land_Wood" ID="{7B61D880-C039-4D53-9D00-18983D5634B5}"/>
 											</GroupingBehavior>
 											<GroupingBehavior>
-												<ItemRef Name="SE_SFX_Land_Dirt" ID="{75DDDAC6-E1F8-404C-9D36-207C51AD21E8}"/>
+												<ItemRef Name="Player_Land_Dirt" ID="{6679FCB9-4197-4235-ACE8-409250A674BF}"/>
 											</GroupingBehavior>
 											<GroupingBehavior>
-												<ItemRef Name="SE_SFX_Land_Brick" ID="{1836ECE1-2235-4AFA-91A0-3EAEB0F80CFE}"/>
+												<ItemRef Name="Player_Land_Metal" ID="{3975EEEA-9F62-4CF2-A364-5701BFA10D97}"/>
 											</GroupingBehavior>
 										</GroupingBehaviorList>
 										<GroupingList>
 											<Grouping>
-												<SwitchRef Name="WoodMetal" ID="{B4CB7316-208E-4344-9ABB-68A0F544F0AD}"/>
-												<ItemList>
-													<ItemRef Name="SE_SFX_Land_Metal" ID="{63F27187-ACF5-4C6A-9EC1-D3D0EA786395}"/>
-													<ItemRef Name="SE_SFX_Land_Wood" ID="{B1F73A3B-2F3C-4456-BFD2-5CBA67E77CE5}"/>
-												</ItemList>
-											</Grouping>
-											<Grouping>
 												<SwitchRef Name="WoodPlank" ID="{89B7A936-CD9C-4D16-BE4E-402F5E3E273F}"/>
 												<ItemList>
-													<ItemRef Name="SE_SFX_Land_Wood" ID="{B1F73A3B-2F3C-4456-BFD2-5CBA67E77CE5}"/>
+													<ItemRef Name="Player_Land_Wood" ID="{7B61D880-C039-4D53-9D00-18983D5634B5}"/>
 												</ItemList>
 											</Grouping>
 											<Grouping>
 												<SwitchRef Name="Concrete" ID="{3ADE9F45-EDD5-4FBE-9AB2-1CFDFF2B12EF}"/>
 												<ItemList>
-													<ItemRef Name="SE_SFX_Land_Staircase" ID="{C8490F49-8598-4ED3-BF96-EA529843F270}"/>
+													<ItemRef Name="Player_Land_Concrete" ID="{73D16437-DC1F-4EB2-8A70-09A1DDBA225E}"/>
 												</ItemList>
 											</Grouping>
 											<Grouping>
 												<SwitchRef Name="DirtRockAsh" ID="{0B359D95-DC0B-4246-93E1-9FA71C02425D}"/>
 												<ItemList>
-													<ItemRef Name="SE_SFX_Land_Dirt" ID="{75DDDAC6-E1F8-404C-9D36-207C51AD21E8}"/>
+													<ItemRef Name="Player_Land_Dirt" ID="{6679FCB9-4197-4235-ACE8-409250A674BF}"/>
 												</ItemList>
 											</Grouping>
 											<Grouping>
 												<SwitchRef Name="Brick" ID="{DDF1D8AA-D5AB-4C83-9511-FB8309A8C953}"/>
 												<ItemList>
-													<ItemRef Name="SE_SFX_Land_Brick" ID="{1836ECE1-2235-4AFA-91A0-3EAEB0F80CFE}"/>
+													<ItemRef Name="Player_Land_Brick" ID="{FC849B36-2FF6-4F47-BCDC-E3B315C47CAB}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="WoodMetal" ID="{CFE4B7ED-75C1-44AB-B36B-1BBD6C72EEFB}"/>
+												<ItemList>
+													<ItemRef Name="Player_Land_Metal" ID="{3975EEEA-9F62-4CF2-A364-5701BFA10D97}"/>
+													<ItemRef Name="Player_Land_Wood" ID="{7B61D880-C039-4D53-9D00-18983D5634B5}"/>
 												</ItemList>
 											</Grouping>
 										</GroupingList>

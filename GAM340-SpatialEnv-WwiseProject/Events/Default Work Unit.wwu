@@ -25,7 +25,7 @@
 								<Action Name="" ID="{8DA8E406-87FE-4975-A0E1-65745252C1D2}" ShortID="110290249">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="SE_SFX_Footstep" ID="{D1B3D1DE-17FE-4EBD-9144-A84B1CB81E4A}" WorkUnitID="{2E2CE7FA-02C6-4C71-AABE-F8140864C57E}"/>
+											<ObjectRef Name="Player_Footstep" ID="{3C8B7BB2-5251-40AD-AD90-712DB4DAFC30}" WorkUnitID="{2E2CE7FA-02C6-4C71-AABE-F8140864C57E}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -36,7 +36,7 @@
 								<Action Name="" ID="{929DDA5D-1A7A-4531-95E5-D69D0F4F9893}" ShortID="275973239">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="SE_SFX_Jump" ID="{CE078606-EFE4-499D-A52B-3AA07A4F7BE7}" WorkUnitID="{2E2CE7FA-02C6-4C71-AABE-F8140864C57E}"/>
+											<ObjectRef Name="Player_Jump" ID="{D7DD59C7-5743-41D8-9A1C-14202AED0421}" WorkUnitID="{2E2CE7FA-02C6-4C71-AABE-F8140864C57E}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -47,7 +47,7 @@
 								<Action Name="" ID="{535C41E7-79CD-4E54-8E11-0D3AD1587268}" ShortID="717350013">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="SE_SFX_Land" ID="{09679FF1-7A70-4C07-B397-5E25409A3A09}" WorkUnitID="{2E2CE7FA-02C6-4C71-AABE-F8140864C57E}"/>
+											<ObjectRef Name="Player_Land" ID="{DB921473-185B-4EBC-902F-13280ECDD334}" WorkUnitID="{2E2CE7FA-02C6-4C71-AABE-F8140864C57E}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
