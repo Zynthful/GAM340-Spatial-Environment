@@ -3856,6 +3856,11 @@
 										<RandomSequenceContainer Name="Player_Jump_Wood_Creak" ID="{645F1ABA-16FC-4898-9D30-E99F29990277}" ShortID="903239966">
 											<PropertyList>
 												<Property Name="3DSpatialization" Type="int16" Value="1"/>
+												<Property Name="Pitch" Type="int32">
+													<ValueList>
+														<Value>450</Value>
+													</ValueList>
+												</Property>
 												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
