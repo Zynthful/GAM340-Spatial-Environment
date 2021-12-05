@@ -16,21 +16,11 @@
     "Id": "4056684167",
     "GUID": "{F180063F-4304-4E4E-863F-DCFB9544A68C}",
     "Language": "SFX",
-    "Hash": "315715050",
+    "Hash": "2495428987",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Master",
     "ShortName": "Master",
     "Path": "Master.bnk",
     "IncludedEvents": [
-     {
-      "Id": "1748112890",
-      "Name": "Ambience_Droplet",
-      "ObjectPath": "\\Events\\Default Work Unit\\Environment\\Ambience\\Ambience_Droplet",
-      "GUID": "{04CA5452-3CEB-404B-8DB3-326519A2D94D}",
-      "MaxAttenuation": "0.000000",
-      "DurationType": "OneShot",
-      "DurationMin": "0.000000",
-      "DurationMax": "0.000000"
-     },
      {
       "Id": "13542051",
       "Name": "Ambience_Main",
@@ -1134,6 +1124,104 @@
         "Language": "SFX",
         "ShortName": "SE_SFX_Torch_Ambient_Loop.wav",
         "Path": "SFX\\SE_SFX_Torch_Ambient_Loop_D79FB2B7.wem"
+       }
+      ]
+     },
+     {
+      "Id": "3297270897",
+      "Name": "Water_Droplet",
+      "ObjectPath": "\\Events\\Default Work Unit\\Environment\\Ambience\\Water_Droplet",
+      "GUID": "{04CA5452-3CEB-404B-8DB3-326519A2D94D}",
+      "MaxAttenuation": "5000.000000",
+      "DurationType": "OneShot",
+      "DurationMin": "0.245538",
+      "DurationMax": "1.274150",
+      "IncludedMemoryFiles": [
+       {
+        "Id": "27929397",
+        "Language": "SFX",
+        "ShortName": "SE_SFX_Water_Drip_11.wav",
+        "Path": "SFX\\SE_SFX_Water_Drip_11_10C4C929.wem"
+       },
+       {
+        "Id": "140853293",
+        "Language": "SFX",
+        "ShortName": "SE_SFX_Water_Drip_12.wav",
+        "Path": "SFX\\SE_SFX_Water_Drip_12_10C4C929.wem"
+       },
+       {
+        "Id": "150910668",
+        "Language": "SFX",
+        "ShortName": "SE_SFX_Water_Drip_13.wav",
+        "Path": "SFX\\SE_SFX_Water_Drip_13_10C4C929.wem"
+       },
+       {
+        "Id": "175025347",
+        "Language": "SFX",
+        "ShortName": "SE_SFX_Water_Drip_5.wav",
+        "Path": "SFX\\SE_SFX_Water_Drip_5_10C4C929.wem"
+       },
+       {
+        "Id": "248510524",
+        "Language": "SFX",
+        "ShortName": "SE_SFX_Water_Drip_8.wav",
+        "Path": "SFX\\SE_SFX_Water_Drip_8_10C4C929.wem"
+       },
+       {
+        "Id": "365652493",
+        "Language": "SFX",
+        "ShortName": "SE_SFX_Water_Drip_10.wav",
+        "Path": "SFX\\SE_SFX_Water_Drip_10_10C4C929.wem"
+       },
+       {
+        "Id": "395330269",
+        "Language": "SFX",
+        "ShortName": "SE_SFX_Water_Drip_3.wav",
+        "Path": "SFX\\SE_SFX_Water_Drip_3_10C4C929.wem"
+       },
+       {
+        "Id": "464984020",
+        "Language": "SFX",
+        "ShortName": "SE_SFX_Water_Drip_1.wav",
+        "Path": "SFX\\SE_SFX_Water_Drip_1_10C4C929.wem"
+       },
+       {
+        "Id": "648145686",
+        "Language": "SFX",
+        "ShortName": "SE_SFX_Water_Drip_6.wav",
+        "Path": "SFX\\SE_SFX_Water_Drip_6_10C4C929.wem"
+       },
+       {
+        "Id": "649482985",
+        "Language": "SFX",
+        "ShortName": "SE_SFX_Water_Drip_9.wav",
+        "Path": "SFX\\SE_SFX_Water_Drip_9_10C4C929.wem"
+       },
+       {
+        "Id": "792340380",
+        "Language": "SFX",
+        "ShortName": "SE_SFX_Water_Drip_2.wav",
+        "Path": "SFX\\SE_SFX_Water_Drip_2_10C4C929.wem"
+       },
+       {
+        "Id": "871575180",
+        "Language": "SFX",
+        "ShortName": "SE_SFX_Water_Drip_4.wav",
+        "Path": "SFX\\SE_SFX_Water_Drip_4_10C4C929.wem"
+       },
+       {
+        "Id": "1072910573",
+        "Language": "SFX",
+        "ShortName": "SE_SFX_Water_Drip_7.wav",
+        "Path": "SFX\\SE_SFX_Water_Drip_7_10C4C929.wem"
+       }
+      ],
+      "AuxBusSends": [
+       {
+        "Id": "2212376974",
+        "Name": "Early_Reflection_Aux_Bus",
+        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\SFX\\Early_Reflection_Aux_Bus",
+        "GUID": "{8282F99E-D8F7-4B95-B1EA-B9978394AFAE}"
        }
       ]
      }

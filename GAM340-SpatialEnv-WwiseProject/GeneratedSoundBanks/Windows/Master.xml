@@ -8,12 +8,11 @@
 		<ExternalSourcesOutputRoot>C:\Users\Jamie Carnell\Desktop\Projects etc\Projects\GAM340 Project\GAM340-Spatial-Environment\GAM340-SpatialEnv-WwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<SoundBanks>
-		<SoundBank Id="4056684167" GUID="{F180063F-4304-4E4E-863F-DCFB9544A68C}" Language="SFX" Hash="315715050">
+		<SoundBank Id="4056684167" GUID="{F180063F-4304-4E4E-863F-DCFB9544A68C}" Language="SFX" Hash="2495428987">
 			<ObjectPath>\SoundBanks\Default Work Unit\Master</ObjectPath>
 			<ShortName>Master</ShortName>
 			<Path>Master.bnk</Path>
 			<IncludedEvents>
-				<Event Id="1748112890" Name="Ambience_Droplet" ObjectPath="\Events\Default Work Unit\Environment\Ambience\Ambience_Droplet" GUID="{04CA5452-3CEB-404B-8DB3-326519A2D94D}" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="13542051" Name="Ambience_Main" ObjectPath="\Events\Default Work Unit\Environment\Ambience\Ambience_Main" GUID="{58DDA75E-E621-42B6-8F2B-4A4AA55761CE}" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="186390572" Language="SFX">
@@ -600,6 +599,65 @@
 							<Path>SFX\SE_SFX_Torch_Ambient_Loop_D79FB2B7.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3297270897" Name="Water_Droplet" ObjectPath="\Events\Default Work Unit\Environment\Ambience\Water_Droplet" GUID="{04CA5452-3CEB-404B-8DB3-326519A2D94D}" MaxAttenuation="5000.000000" DurationType="OneShot" DurationMin="0.245538" DurationMax="1.274150">
+					<IncludedMemoryFiles>
+						<File Id="27929397" Language="SFX">
+							<ShortName>SE_SFX_Water_Drip_11.wav</ShortName>
+							<Path>SFX\SE_SFX_Water_Drip_11_10C4C929.wem</Path>
+						</File>
+						<File Id="140853293" Language="SFX">
+							<ShortName>SE_SFX_Water_Drip_12.wav</ShortName>
+							<Path>SFX\SE_SFX_Water_Drip_12_10C4C929.wem</Path>
+						</File>
+						<File Id="150910668" Language="SFX">
+							<ShortName>SE_SFX_Water_Drip_13.wav</ShortName>
+							<Path>SFX\SE_SFX_Water_Drip_13_10C4C929.wem</Path>
+						</File>
+						<File Id="175025347" Language="SFX">
+							<ShortName>SE_SFX_Water_Drip_5.wav</ShortName>
+							<Path>SFX\SE_SFX_Water_Drip_5_10C4C929.wem</Path>
+						</File>
+						<File Id="248510524" Language="SFX">
+							<ShortName>SE_SFX_Water_Drip_8.wav</ShortName>
+							<Path>SFX\SE_SFX_Water_Drip_8_10C4C929.wem</Path>
+						</File>
+						<File Id="365652493" Language="SFX">
+							<ShortName>SE_SFX_Water_Drip_10.wav</ShortName>
+							<Path>SFX\SE_SFX_Water_Drip_10_10C4C929.wem</Path>
+						</File>
+						<File Id="395330269" Language="SFX">
+							<ShortName>SE_SFX_Water_Drip_3.wav</ShortName>
+							<Path>SFX\SE_SFX_Water_Drip_3_10C4C929.wem</Path>
+						</File>
+						<File Id="464984020" Language="SFX">
+							<ShortName>SE_SFX_Water_Drip_1.wav</ShortName>
+							<Path>SFX\SE_SFX_Water_Drip_1_10C4C929.wem</Path>
+						</File>
+						<File Id="648145686" Language="SFX">
+							<ShortName>SE_SFX_Water_Drip_6.wav</ShortName>
+							<Path>SFX\SE_SFX_Water_Drip_6_10C4C929.wem</Path>
+						</File>
+						<File Id="649482985" Language="SFX">
+							<ShortName>SE_SFX_Water_Drip_9.wav</ShortName>
+							<Path>SFX\SE_SFX_Water_Drip_9_10C4C929.wem</Path>
+						</File>
+						<File Id="792340380" Language="SFX">
+							<ShortName>SE_SFX_Water_Drip_2.wav</ShortName>
+							<Path>SFX\SE_SFX_Water_Drip_2_10C4C929.wem</Path>
+						</File>
+						<File Id="871575180" Language="SFX">
+							<ShortName>SE_SFX_Water_Drip_4.wav</ShortName>
+							<Path>SFX\SE_SFX_Water_Drip_4_10C4C929.wem</Path>
+						</File>
+						<File Id="1072910573" Language="SFX">
+							<ShortName>SE_SFX_Water_Drip_7.wav</ShortName>
+							<Path>SFX\SE_SFX_Water_Drip_7_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="2212376974" Name="Early_Reflection_Aux_Bus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX\Early_Reflection_Aux_Bus" GUID="{8282F99E-D8F7-4B95-B1EA-B9978394AFAE}"/>
+					</AuxBusSends>
 				</Event>
 			</IncludedEvents>
 			<GameParameters>

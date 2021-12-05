@@ -253,7 +253,17 @@
 										</Action>
 									</ChildrenList>
 								</Event>
-								<Event Name="Ambience_Droplet" ID="{04CA5452-3CEB-404B-8DB3-326519A2D94D}"/>
+								<Event Name="Water_Droplet" ID="{04CA5452-3CEB-404B-8DB3-326519A2D94D}">
+									<ChildrenList>
+										<Action Name="" ID="{4FFA50C0-2155-46B0-AA11-F5DDF0729FAE}" ShortID="531374042">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Water_Droplet" ID="{CBA92D2B-381D-41ED-B090-9F10828D51E0}" WorkUnitID="{2E2CE7FA-02C6-4C71-AABE-F8140864C57E}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
 							</ChildrenList>
 						</Folder>
 					</ChildrenList>
