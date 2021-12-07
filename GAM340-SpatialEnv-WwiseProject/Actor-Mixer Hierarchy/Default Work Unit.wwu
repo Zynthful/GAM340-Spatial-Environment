@@ -883,7 +883,7 @@
 								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-22</Value>
+										<Value>-20</Value>
 									</ValueList>
 									<ModifierList>
 										<ModifierInfo>
@@ -1284,6 +1284,570 @@
 							</ChildrenList>
 							<ObjectLists/>
 						</BlendContainer>
+						<RandomSequenceContainer Name="Chain Rattling" ID="{C2044F84-50C7-4A71-99EF-E5EE6FAE5120}" ShortID="243123673">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="1"/>
+								<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{AFE32002-543C-46EF-97E5-069B1B5F7EF8}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="200"/>
+													<Property Name="Min" Type="Real64" Value="-200"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-14</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="SpatialAudioTest" ID="{7E28C3B6-D318-45B1-8116-1585C6E1390F}" WorkUnitID="{A1BA0ADB-F758-4BAD-B04B-D53467CF759B}"/>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62267F72-14C7-4DA9-898E-CD1568645172}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="SFX" ID="{18B976C0-D509-4A4A-B407-A8F6A887E940}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
+								</Reference>
+								<Reference Name="ReflectionsAuxSend">
+									<ObjectRef Name="Early_Reflection_Aux_Bus" ID="{8282F99E-D8F7-4B95-B1EA-B9978394AFAE}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="SE_SFX_Chains_Rattle_1" ID="{63AE9965-539A-4B35-8C33-F8E8EFB7FE65}" ShortID="136165322">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62267F72-14C7-4DA9-898E-CD1568645172}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SE_SFX_Chains_Rattle_1" ID="{94285E2B-7181-477A-BFBB-DA36821F2A6A}">
+											<Language>SFX</Language>
+											<AudioFile>SE_SFX_Chains_Rattle_1.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="463690672"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="SE_SFX_Chains_Rattle_1" ID="{94285E2B-7181-477A-BFBB-DA36821F2A6A}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="SE_SFX_Chains_Rattle_2" ID="{360FB17C-3D27-4F8E-BD66-710CE56B163F}" ShortID="598632975">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62267F72-14C7-4DA9-898E-CD1568645172}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SE_SFX_Chains_Rattle_2" ID="{663C156B-1237-40A7-9A87-4D4315B714D2}">
+											<Language>SFX</Language>
+											<AudioFile>SE_SFX_Chains_Rattle_2.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="722907361"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="SE_SFX_Chains_Rattle_2" ID="{663C156B-1237-40A7-9A87-4D4315B714D2}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="SE_SFX_Chains_Rattle_3" ID="{F08137BE-7E08-4088-A423-B01F5DA6DB81}" ShortID="994985501">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62267F72-14C7-4DA9-898E-CD1568645172}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SE_SFX_Chains_Rattle_3" ID="{8F90952B-EA4E-4636-8CED-591C19566E9B}">
+											<Language>SFX</Language>
+											<AudioFile>SE_SFX_Chains_Rattle_3.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="371495"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="SE_SFX_Chains_Rattle_3" ID="{8F90952B-EA4E-4636-8CED-591C19566E9B}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="SE_SFX_Chains_Rattle_4" ID="{A3CCD185-568B-4697-95FA-26D0401D90F5}" ShortID="258411033">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62267F72-14C7-4DA9-898E-CD1568645172}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SE_SFX_Chains_Rattle_4" ID="{521F5DCB-9683-4BC6-8A0B-1C08C3A3AFF1}">
+											<Language>SFX</Language>
+											<AudioFile>SE_SFX_Chains_Rattle_4.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="936813681"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="SE_SFX_Chains_Rattle_4" ID="{521F5DCB-9683-4BC6-8A0B-1C08C3A3AFF1}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<ObjectLists/>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="Crow Whistles" ID="{CAB8E9A6-6F99-4E24-B4FE-CCDFDA6ADE89}" ShortID="190643209">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="1"/>
+								<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{51D05418-6246-47E1-BE3F-E3379282020D}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="200"/>
+													<Property Name="Min" Type="Real64" Value="-200"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-23</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="SpatialAudioTest" ID="{7E28C3B6-D318-45B1-8116-1585C6E1390F}" WorkUnitID="{A1BA0ADB-F758-4BAD-B04B-D53467CF759B}"/>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62267F72-14C7-4DA9-898E-CD1568645172}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="SFX" ID="{18B976C0-D509-4A4A-B407-A8F6A887E940}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
+								</Reference>
+								<Reference Name="ReflectionsAuxSend">
+									<ObjectRef Name="Early_Reflection_Aux_Bus" ID="{8282F99E-D8F7-4B95-B1EA-B9978394AFAE}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="SE_SFX_Crows_Whistle_1" ID="{CC5A3212-4FD5-4AB1-87C4-555D72F44A74}" ShortID="210483069">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62267F72-14C7-4DA9-898E-CD1568645172}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SE_SFX_Crows_Whistle_1" ID="{D1B74B46-4BE5-40BA-BB18-9F415B70EEBA}">
+											<Language>SFX</Language>
+											<AudioFile>SE_SFX_Crows_Whistle_1.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="239628023"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="SE_SFX_Crows_Whistle_1" ID="{D1B74B46-4BE5-40BA-BB18-9F415B70EEBA}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="SE_SFX_Crows_Whistle_2" ID="{A180EAE9-9C6F-4414-87D0-A31EAB49CDB5}" ShortID="1029624466">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62267F72-14C7-4DA9-898E-CD1568645172}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SE_SFX_Crows_Whistle_2" ID="{BDF46522-742D-4ACC-98F0-42024AD9FDE7}">
+											<Language>SFX</Language>
+											<AudioFile>SE_SFX_Crows_Whistle_2.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="1045625624"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="SE_SFX_Crows_Whistle_2" ID="{BDF46522-742D-4ACC-98F0-42024AD9FDE7}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="SE_SFX_Crows_Whistle_3" ID="{9649A636-A365-481C-AC23-7660826945BA}" ShortID="444983445">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62267F72-14C7-4DA9-898E-CD1568645172}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SE_SFX_Crows_Whistle_3" ID="{1479CC53-AD56-474C-BCE7-89860926C7A7}">
+											<Language>SFX</Language>
+											<AudioFile>SE_SFX_Crows_Whistle_3.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="315767625"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="SE_SFX_Crows_Whistle_3" ID="{1479CC53-AD56-474C-BCE7-89860926C7A7}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<ObjectLists/>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="Fox Cries" ID="{80E1AF52-AEEA-472A-A783-6D41A1B1AC50}" ShortID="480315052">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="1"/>
+								<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{59DE7255-16FE-4E4B-8324-7FE1C838729D}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="200"/>
+													<Property Name="Min" Type="Real64" Value="-200"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-17</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="SpatialAudioTest" ID="{7E28C3B6-D318-45B1-8116-1585C6E1390F}" WorkUnitID="{A1BA0ADB-F758-4BAD-B04B-D53467CF759B}"/>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62267F72-14C7-4DA9-898E-CD1568645172}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="SFX" ID="{18B976C0-D509-4A4A-B407-A8F6A887E940}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
+								</Reference>
+								<Reference Name="ReflectionsAuxSend">
+									<ObjectRef Name="Early_Reflection_Aux_Bus" ID="{8282F99E-D8F7-4B95-B1EA-B9978394AFAE}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="SE_SFX_Fox_Cry_1" ID="{E24F6451-FCD7-4598-9603-C8D69AD10458}" ShortID="869478889">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62267F72-14C7-4DA9-898E-CD1568645172}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SE_SFX_Fox_Cry_1" ID="{DF10AF0A-8241-46B7-926C-F42ABF097C82}">
+											<Language>SFX</Language>
+											<AudioFile>SE_SFX_Fox_Cry_1.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="916496347"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="SE_SFX_Fox_Cry_1" ID="{DF10AF0A-8241-46B7-926C-F42ABF097C82}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="SE_SFX_Fox_Cry_2" ID="{D89B184D-A19F-48A1-9DB8-A470DC167F37}" ShortID="737353513">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62267F72-14C7-4DA9-898E-CD1568645172}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SE_SFX_Fox_Cry_2" ID="{7E9368D6-7D05-4513-A8A7-2D1C33510AD3}">
+											<Language>SFX</Language>
+											<AudioFile>SE_SFX_Fox_Cry_2.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="223665498"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="SE_SFX_Fox_Cry_2" ID="{7E9368D6-7D05-4513-A8A7-2D1C33510AD3}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="SE_SFX_Fox_Cry_3" ID="{F8C17F62-042A-4402-AB62-21F2FDE8080F}" ShortID="200645187">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62267F72-14C7-4DA9-898E-CD1568645172}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SE_SFX_Fox_Cry_3" ID="{6C64496F-C982-4E01-80BB-558CA457A9B6}">
+											<Language>SFX</Language>
+											<AudioFile>SE_SFX_Fox_Cry_3.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="747741101"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="SE_SFX_Fox_Cry_3" ID="{6C64496F-C982-4E01-80BB-558CA457A9B6}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<ObjectLists/>
+						</RandomSequenceContainer>
+						<Sound Name="SE_SFX_Metal_Creaks_1" ID="{43521A5E-0208-4BDC-914A-EE0B9F8CFA59}" ShortID="539504126">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="1"/>
+								<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{AA877055-D8E0-44D3-BE11-E7B1B657D407}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="200"/>
+													<Property Name="Min" Type="Real64" Value="-200"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-29</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="SpatialAudioTest" ID="{7E28C3B6-D318-45B1-8116-1585C6E1390F}" WorkUnitID="{A1BA0ADB-F758-4BAD-B04B-D53467CF759B}"/>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62267F72-14C7-4DA9-898E-CD1568645172}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="SFX" ID="{18B976C0-D509-4A4A-B407-A8F6A887E940}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
+								</Reference>
+								<Reference Name="ReflectionsAuxSend">
+									<ObjectRef Name="Early_Reflection_Aux_Bus" ID="{8282F99E-D8F7-4B95-B1EA-B9978394AFAE}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="SE_SFX_Metal_Creaks_1" ID="{5B0F50B5-17FE-4891-B1E0-AA5EEB23E868}">
+									<Language>SFX</Language>
+									<AudioFile>SE_SFX_Metal_Creaks_1.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="57027797"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="SE_SFX_Metal_Creaks_1" ID="{5B0F50B5-17FE-4891-B1E0-AA5EEB23E868}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="SE_SFX_RailcartDelay_1" ID="{55FEDC73-60FE-47FB-9A2D-ED02C81B9A45}" ShortID="113737103">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="1"/>
+								<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{30D3C317-2712-4151-831C-E3E70CD5ED82}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="200"/>
+													<Property Name="Min" Type="Real64" Value="-200"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-9</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="SpatialAudioTest" ID="{7E28C3B6-D318-45B1-8116-1585C6E1390F}" WorkUnitID="{A1BA0ADB-F758-4BAD-B04B-D53467CF759B}"/>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62267F72-14C7-4DA9-898E-CD1568645172}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="SFX" ID="{18B976C0-D509-4A4A-B407-A8F6A887E940}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
+								</Reference>
+								<Reference Name="ReflectionsAuxSend">
+									<ObjectRef Name="Early_Reflection_Aux_Bus" ID="{8282F99E-D8F7-4B95-B1EA-B9978394AFAE}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="SE_SFX_RailcartDelay_1" ID="{5E43B7CB-268C-4FB9-A379-496F81E62467}">
+									<Language>SFX</Language>
+									<AudioFile>SE_SFX_RailcartDelay_1.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="986390317"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="SE_SFX_RailcartDelay_1" ID="{5E43B7CB-268C-4FB9-A379-496F81E62467}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="SE_SFX_ResonantNoise_1" ID="{54F8EA45-900D-4641-80F8-68B497576CC3}" ShortID="713718991">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="1"/>
+								<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{5F414B8C-0793-4DEA-8C8F-3490282CD9EA}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="200"/>
+													<Property Name="Min" Type="Real64" Value="-200"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-12</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="SpatialAudioTest" ID="{7E28C3B6-D318-45B1-8116-1585C6E1390F}" WorkUnitID="{A1BA0ADB-F758-4BAD-B04B-D53467CF759B}"/>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62267F72-14C7-4DA9-898E-CD1568645172}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="SFX" ID="{18B976C0-D509-4A4A-B407-A8F6A887E940}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
+								</Reference>
+								<Reference Name="ReflectionsAuxSend">
+									<ObjectRef Name="Early_Reflection_Aux_Bus" ID="{8282F99E-D8F7-4B95-B1EA-B9978394AFAE}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="SE_SFX_ResonantNoise_1" ID="{B3213C44-5A98-4B27-AF18-A7756C5E8E5E}">
+									<Language>SFX</Language>
+									<AudioFile>SE_SFX_ResonantNoise_1.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="810303216"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="SE_SFX_ResonantNoise_1" ID="{B3213C44-5A98-4B27-AF18-A7756C5E8E5E}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="SE_SFX_Creature_Howl_1" ID="{08EAFD22-89E6-44F3-907B-E72C3A9B5185}" ShortID="617583922">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="1"/>
+								<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{C16176BB-9288-4738-906C-1B2D8EA6CBB8}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="300"/>
+													<Property Name="Min" Type="Real64" Value="-600"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-17</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="SpatialAudioTest" ID="{7E28C3B6-D318-45B1-8116-1585C6E1390F}" WorkUnitID="{A1BA0ADB-F758-4BAD-B04B-D53467CF759B}"/>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62267F72-14C7-4DA9-898E-CD1568645172}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
+								</Reference>
+								<Reference Name="ReflectionsAuxSend">
+									<ObjectRef Name="Early_Reflection_Aux_Bus" ID="{8282F99E-D8F7-4B95-B1EA-B9978394AFAE}" WorkUnitID="{83C3CFB3-D87D-4C31-BC2A-124354C2ECA0}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="SE_SFX_Creature_Howl_1" ID="{EEAEB22E-AEC8-4FFA-B7EC-A44F29B53774}">
+									<Language>SFX</Language>
+									<AudioFile>SE_SFX_Creature_Howl_1.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="483096911"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="SE_SFX_Creature_Howl_1" ID="{EEAEB22E-AEC8-4FFA-B7EC-A44F29B53774}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Player" ID="{6DACDFD5-97E0-4BD1-A110-713522AE160C}" ShortID="221230855">

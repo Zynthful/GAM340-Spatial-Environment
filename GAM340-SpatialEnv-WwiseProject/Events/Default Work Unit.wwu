@@ -264,6 +264,83 @@
 										</Action>
 									</ChildrenList>
 								</Event>
+								<Event Name="Crow_Whistle" ID="{1336BE68-73FA-47C3-9352-275C3C131BC3}">
+									<ChildrenList>
+										<Action Name="" ID="{7F35DD70-B6A7-42A5-A9C9-7F7646A55A06}" ShortID="123902626">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Crow Whistles" ID="{CAB8E9A6-6F99-4E24-B4FE-CCDFDA6ADE89}" WorkUnitID="{2E2CE7FA-02C6-4C71-AABE-F8140864C57E}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Chain_Rattle" ID="{2DFBD7D8-0D58-499C-ACCB-E92D78699842}">
+									<ChildrenList>
+										<Action Name="" ID="{B35B7ACC-68FE-4B6E-99C4-9FB6BE4E0DFE}" ShortID="441605639">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Chain Rattling" ID="{C2044F84-50C7-4A71-99EF-E5EE6FAE5120}" WorkUnitID="{2E2CE7FA-02C6-4C71-AABE-F8140864C57E}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Door_Creak" ID="{844E2400-4BC4-4F6C-9E34-40B4E95889E0}">
+									<ChildrenList>
+										<Action Name="" ID="{0AC52E3C-9B28-48E8-9874-EEDC88C38E6D}" ShortID="442170962">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SE_SFX_Metal_Creaks_1" ID="{43521A5E-0208-4BDC-914A-EE0B9F8CFA59}" WorkUnitID="{2E2CE7FA-02C6-4C71-AABE-F8140864C57E}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Railcart" ID="{DAE7FE86-0CE4-4A82-85C7-72E0BC295F62}">
+									<ChildrenList>
+										<Action Name="" ID="{0B905F4C-3792-4731-8CB9-0B684D479887}" ShortID="805844076">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SE_SFX_RailcartDelay_1" ID="{55FEDC73-60FE-47FB-9A2D-ED02C81B9A45}" WorkUnitID="{2E2CE7FA-02C6-4C71-AABE-F8140864C57E}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="ResonantNoise" ID="{DC3929E0-3A2F-4866-9C96-1E0469563AC8}">
+									<ChildrenList>
+										<Action Name="" ID="{45C7AEC9-27FF-4E8E-A948-3015F67AC004}" ShortID="393705535">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SE_SFX_ResonantNoise_1" ID="{54F8EA45-900D-4641-80F8-68B497576CC3}" WorkUnitID="{2E2CE7FA-02C6-4C71-AABE-F8140864C57E}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Fox_Cry" ID="{DE6A775A-F829-427B-93DB-7AE2F54669AE}">
+									<ChildrenList>
+										<Action Name="" ID="{5F5F4B2A-8572-4B21-846F-C0353AD64854}" ShortID="508783286">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Fox Cries" ID="{80E1AF52-AEEA-472A-A783-6D41A1B1AC50}" WorkUnitID="{2E2CE7FA-02C6-4C71-AABE-F8140864C57E}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Creature_Howl" ID="{B2EABDC8-6B1D-4249-B323-945F1D10616A}">
+									<ChildrenList>
+										<Action Name="" ID="{12F5ACF7-51F1-4DA0-AC1C-217E1ADC0FA3}" ShortID="627634080">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SE_SFX_Creature_Howl_1" ID="{08EAFD22-89E6-44F3-907B-E72C3A9B5185}" WorkUnitID="{2E2CE7FA-02C6-4C71-AABE-F8140864C57E}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
 							</ChildrenList>
 						</Folder>
 						<Event Name="Fire_Active_Loop" ID="{F606FDEF-CBE7-4445-A405-1384C85C39F0}">

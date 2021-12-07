@@ -16,7 +16,7 @@
     "Id": "4056684167",
     "GUID": "{F180063F-4304-4E4E-863F-DCFB9544A68C}",
     "Language": "SFX",
-    "Hash": "3736224282",
+    "Hash": "3296794870",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Master",
     "ShortName": "Master",
     "Path": "Master.bnk",
@@ -195,6 +195,50 @@
       "DurationMax": "0.000000"
      },
      {
+      "Id": "3640754177",
+      "Name": "Chain_Rattle",
+      "ObjectPath": "\\Events\\Default Work Unit\\Environment\\Ambience\\Chain_Rattle",
+      "GUID": "{2DFBD7D8-0D58-499C-ACCB-E92D78699842}",
+      "MaxAttenuation": "5000.000000",
+      "DurationType": "OneShot",
+      "DurationMin": "1.325379",
+      "DurationMax": "2.100455",
+      "IncludedMemoryFiles": [
+       {
+        "Id": "371495",
+        "Language": "SFX",
+        "ShortName": "SE_SFX_Chains_Rattle_3.wav",
+        "Path": "SFX\\SE_SFX_Chains_Rattle_3_10C4C929.wem"
+       },
+       {
+        "Id": "463690672",
+        "Language": "SFX",
+        "ShortName": "SE_SFX_Chains_Rattle_1.wav",
+        "Path": "SFX\\SE_SFX_Chains_Rattle_1_10C4C929.wem"
+       },
+       {
+        "Id": "722907361",
+        "Language": "SFX",
+        "ShortName": "SE_SFX_Chains_Rattle_2.wav",
+        "Path": "SFX\\SE_SFX_Chains_Rattle_2_10C4C929.wem"
+       },
+       {
+        "Id": "936813681",
+        "Language": "SFX",
+        "ShortName": "SE_SFX_Chains_Rattle_4.wav",
+        "Path": "SFX\\SE_SFX_Chains_Rattle_4_10C4C929.wem"
+       }
+      ],
+      "AuxBusSends": [
+       {
+        "Id": "2212376974",
+        "Name": "Early_Reflection_Aux_Bus",
+        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\SFX\\Early_Reflection_Aux_Bus",
+        "GUID": "{8282F99E-D8F7-4B95-B1EA-B9978394AFAE}"
+       }
+      ]
+     },
+     {
       "Id": "2697518177",
       "Name": "Coffin_Close_Begin",
       "ObjectPath": "\\Events\\Default Work Unit\\Environment\\Crypt\\Coffin\\Coffin_Close_Begin",
@@ -321,6 +365,96 @@
         "Language": "SFX",
         "ShortName": "SE_SFX_Coffin_Rattle_Bones_1.wav",
         "Path": "SFX\\SE_SFX_Coffin_Rattle_Bones_1_10C4C929.wem"
+       }
+      ],
+      "AuxBusSends": [
+       {
+        "Id": "2212376974",
+        "Name": "Early_Reflection_Aux_Bus",
+        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\SFX\\Early_Reflection_Aux_Bus",
+        "GUID": "{8282F99E-D8F7-4B95-B1EA-B9978394AFAE}"
+       }
+      ]
+     },
+     {
+      "Id": "3918292795",
+      "Name": "Creature_Howl",
+      "ObjectPath": "\\Events\\Default Work Unit\\Environment\\Ambience\\Creature_Howl",
+      "GUID": "{B2EABDC8-6B1D-4249-B323-945F1D10616A}",
+      "MaxAttenuation": "5000.000000",
+      "DurationType": "OneShot",
+      "DurationMin": "14.953046",
+      "DurationMax": "25.147924",
+      "IncludedMemoryFiles": [
+       {
+        "Id": "483096911",
+        "Language": "SFX",
+        "ShortName": "SE_SFX_Creature_Howl_1.wav",
+        "Path": "SFX\\SE_SFX_Creature_Howl_1_10C4C929.wem"
+       }
+      ],
+      "AuxBusSends": [
+       {
+        "Id": "2212376974",
+        "Name": "Early_Reflection_Aux_Bus",
+        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\SFX\\Early_Reflection_Aux_Bus",
+        "GUID": "{8282F99E-D8F7-4B95-B1EA-B9978394AFAE}"
+       }
+      ]
+     },
+     {
+      "Id": "2893969227",
+      "Name": "Crow_Whistle",
+      "ObjectPath": "\\Events\\Default Work Unit\\Environment\\Ambience\\Crow_Whistle",
+      "GUID": "{1336BE68-73FA-47C3-9352-275C3C131BC3}",
+      "MaxAttenuation": "5000.000000",
+      "DurationType": "OneShot",
+      "DurationMin": "1.716990",
+      "DurationMax": "5.922120",
+      "IncludedMemoryFiles": [
+       {
+        "Id": "239628023",
+        "Language": "SFX",
+        "ShortName": "SE_SFX_Crows_Whistle_1.wav",
+        "Path": "SFX\\SE_SFX_Crows_Whistle_1_10C4C929.wem"
+       },
+       {
+        "Id": "315767625",
+        "Language": "SFX",
+        "ShortName": "SE_SFX_Crows_Whistle_3.wav",
+        "Path": "SFX\\SE_SFX_Crows_Whistle_3_10C4C929.wem"
+       },
+       {
+        "Id": "1045625624",
+        "Language": "SFX",
+        "ShortName": "SE_SFX_Crows_Whistle_2.wav",
+        "Path": "SFX\\SE_SFX_Crows_Whistle_2_10C4C929.wem"
+       }
+      ],
+      "AuxBusSends": [
+       {
+        "Id": "2212376974",
+        "Name": "Early_Reflection_Aux_Bus",
+        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\SFX\\Early_Reflection_Aux_Bus",
+        "GUID": "{8282F99E-D8F7-4B95-B1EA-B9978394AFAE}"
+       }
+      ]
+     },
+     {
+      "Id": "2065126100",
+      "Name": "Door_Creak",
+      "ObjectPath": "\\Events\\Default Work Unit\\Environment\\Ambience\\Door_Creak",
+      "GUID": "{844E2400-4BC4-4F6C-9E34-40B4E95889E0}",
+      "MaxAttenuation": "5000.000000",
+      "DurationType": "OneShot",
+      "DurationMin": "4.311586",
+      "DurationMax": "5.432258",
+      "IncludedMemoryFiles": [
+       {
+        "Id": "57027797",
+        "Language": "SFX",
+        "ShortName": "SE_SFX_Metal_Creaks_1.wav",
+        "Path": "SFX\\SE_SFX_Metal_Creaks_1_10C4C929.wem"
        }
       ],
       "AuxBusSends": [
@@ -905,6 +1039,44 @@
       ]
      },
      {
+      "Id": "3960403933",
+      "Name": "Fox_Cry",
+      "ObjectPath": "\\Events\\Default Work Unit\\Environment\\Ambience\\Fox_Cry",
+      "GUID": "{DE6A775A-F829-427B-93DB-7AE2F54669AE}",
+      "MaxAttenuation": "5000.000000",
+      "DurationType": "OneShot",
+      "DurationMin": "1.064008",
+      "DurationMax": "2.808115",
+      "IncludedMemoryFiles": [
+       {
+        "Id": "223665498",
+        "Language": "SFX",
+        "ShortName": "SE_SFX_Fox_Cry_2.wav",
+        "Path": "SFX\\SE_SFX_Fox_Cry_2_10C4C929.wem"
+       },
+       {
+        "Id": "747741101",
+        "Language": "SFX",
+        "ShortName": "SE_SFX_Fox_Cry_3.wav",
+        "Path": "SFX\\SE_SFX_Fox_Cry_3_10C4C929.wem"
+       },
+       {
+        "Id": "916496347",
+        "Language": "SFX",
+        "ShortName": "SE_SFX_Fox_Cry_1.wav",
+        "Path": "SFX\\SE_SFX_Fox_Cry_1_10C4C929.wem"
+       }
+      ],
+      "AuxBusSends": [
+       {
+        "Id": "2212376974",
+        "Name": "Early_Reflection_Aux_Bus",
+        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\SFX\\Early_Reflection_Aux_Bus",
+        "GUID": "{8282F99E-D8F7-4B95-B1EA-B9978394AFAE}"
+       }
+      ]
+     },
+     {
       "Id": "3833651337",
       "Name": "Jump",
       "ObjectPath": "\\Events\\Default Work Unit\\Movement\\Jump",
@@ -1274,6 +1446,32 @@
       ]
      },
      {
+      "Id": "2161752139",
+      "Name": "Railcart",
+      "ObjectPath": "\\Events\\Default Work Unit\\Environment\\Ambience\\Railcart",
+      "GUID": "{DAE7FE86-0CE4-4A82-85C7-72E0BC295F62}",
+      "MaxAttenuation": "5000.000000",
+      "DurationType": "OneShot",
+      "DurationMin": "5.146890",
+      "DurationMax": "6.484674",
+      "IncludedMemoryFiles": [
+       {
+        "Id": "986390317",
+        "Language": "SFX",
+        "ShortName": "SE_SFX_RailcartDelay_1.wav",
+        "Path": "SFX\\SE_SFX_RailcartDelay_1_10C4C929.wem"
+       }
+      ],
+      "AuxBusSends": [
+       {
+        "Id": "2212376974",
+        "Name": "Early_Reflection_Aux_Bus",
+        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\SFX\\Early_Reflection_Aux_Bus",
+        "GUID": "{8282F99E-D8F7-4B95-B1EA-B9978394AFAE}"
+       }
+      ]
+     },
+     {
       "Id": "3981690456",
       "Name": "Redneck_Rolls_Dice",
       "ObjectPath": "\\Events\\Default Work Unit\\Debug\\Redneck_Rolls_Dice",
@@ -1288,6 +1486,32 @@
         "Language": "SFX",
         "ShortName": "Redneck_Rolls_Dice-SoundBible.com-1100715950.wav",
         "Path": "SFX\\Redneck_Rolls_Dice-SoundBible.com-1100715950_10C4C929.wem"
+       }
+      ],
+      "AuxBusSends": [
+       {
+        "Id": "2212376974",
+        "Name": "Early_Reflection_Aux_Bus",
+        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\SFX\\Early_Reflection_Aux_Bus",
+        "GUID": "{8282F99E-D8F7-4B95-B1EA-B9978394AFAE}"
+       }
+      ]
+     },
+     {
+      "Id": "939659677",
+      "Name": "ResonantNoise",
+      "ObjectPath": "\\Events\\Default Work Unit\\Environment\\Ambience\\ResonantNoise",
+      "GUID": "{DC3929E0-3A2F-4866-9C96-1E0469563AC8}",
+      "MaxAttenuation": "5000.000000",
+      "DurationType": "OneShot",
+      "DurationMin": "8.100572",
+      "DurationMax": "10.206081",
+      "IncludedMemoryFiles": [
+       {
+        "Id": "810303216",
+        "Language": "SFX",
+        "ShortName": "SE_SFX_ResonantNoise_1.wav",
+        "Path": "SFX\\SE_SFX_ResonantNoise_1_10C4C929.wem"
        }
       ],
       "AuxBusSends": [
