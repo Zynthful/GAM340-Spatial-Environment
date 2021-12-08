@@ -16,7 +16,7 @@
     "Id": "4056684167",
     "GUID": "{F180063F-4304-4E4E-863F-DCFB9544A68C}",
     "Language": "SFX",
-    "Hash": "1044300791",
+    "Hash": "2306235956",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Master",
     "ShortName": "Master",
     "Path": "Master.bnk",
@@ -121,14 +121,14 @@
       "GUID": "{07B449EE-F428-4CFF-AF06-23F86E23C561}",
       "MaxAttenuation": "5000.000000",
       "DurationType": "OneShot",
-      "DurationMin": "0.866848",
-      "DurationMax": "0.866848",
+      "DurationMin": "1.353016",
+      "DurationMax": "1.353016",
       "IncludedMemoryFiles": [
        {
-        "Id": "390133582",
+        "Id": "52617786",
         "Language": "SFX",
-        "ShortName": "SE_SFX_Dungeon_Cell_Door_Close_Handle_1.wav",
-        "Path": "SFX\\SE_SFX_Dungeon_Cell_Door_Close_Handle_1_10C4C929.wem"
+        "ShortName": "SE_SFX_Dungeon_Cell_Door_Close_Impact.wav",
+        "Path": "SFX\\SE_SFX_Dungeon_Cell_Door_Close_Impact_10C4C929.wem"
        }
       ],
       "AuxBusSends": [
@@ -409,8 +409,8 @@
       "GUID": "{1336BE68-73FA-47C3-9352-275C3C131BC3}",
       "MaxAttenuation": "7000.000000",
       "DurationType": "OneShot",
-      "DurationMin": "1.716990",
-      "DurationMax": "5.922120",
+      "DurationMin": "9.549141",
+      "DurationMax": "12.031164",
       "IncludedMemoryFiles": [
        {
         "Id": "239628023",

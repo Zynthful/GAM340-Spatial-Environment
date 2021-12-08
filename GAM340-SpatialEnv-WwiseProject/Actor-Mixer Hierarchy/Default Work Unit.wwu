@@ -721,7 +721,7 @@
 													</ChildrenList>
 													<ObjectLists/>
 												</RandomSequenceContainer>
-												<RandomSequenceContainer Name="Cell_Door_Close_Handle" ID="{E44C51B2-8BA6-4581-BA82-1527497C032F}" ShortID="111473215">
+												<RandomSequenceContainer Name="Cell_Door_Close_Impact" ID="{E44C51B2-8BA6-4581-BA82-1527497C032F}" ShortID="111473215">
 													<PropertyList>
 														<Property Name="3DSpatialization" Type="int16" Value="1"/>
 														<Property Name="EnableDiffraction" Type="bool" Value="True"/>
@@ -754,7 +754,7 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<Sound Name="SE_SFX_Dungeon_Cell_Door_Close_Handle_1" ID="{3D53F349-37C0-4283-9BFE-970AFDFF70D6}" ShortID="502536314">
+														<Sound Name="SE_SFX_Dungeon_Cell_Door_Close_Impact" ID="{CFF2DDA2-FE3E-42B1-A933-849A5950C4BE}" ShortID="460776235">
 															<ReferenceList>
 																<Reference Name="Conversion">
 																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{62267F72-14C7-4DA9-898E-CD1568645172}"/>
@@ -764,17 +764,17 @@
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
-																<AudioFileSource Name="SE_SFX_Dungeon_Cell_Door_Close_Handle_1" ID="{9B17334E-0897-46F0-A939-C067166EB0FA}">
+																<AudioFileSource Name="SE_SFX_Dungeon_Cell_Door_Close_Impact" ID="{09656768-1C4A-4242-B50B-6B502D52681D}">
 																	<Language>SFX</Language>
-																	<AudioFile>SE_SFX_Dungeon_Cell_Door_Close_Handle_1.wav</AudioFile>
+																	<AudioFile>SE_SFX_Dungeon_Cell_Door_Close_Impact.wav</AudioFile>
 																	<MediaIDList>
-																		<MediaID ID="390133582"/>
+																		<MediaID ID="52617786"/>
 																	</MediaIDList>
 																</AudioFileSource>
 															</ChildrenList>
 															<ObjectLists/>
 															<ActiveSourceList>
-																<ActiveSource Name="SE_SFX_Dungeon_Cell_Door_Close_Handle_1" ID="{9B17334E-0897-46F0-A939-C067166EB0FA}" Platform="Linked"/>
+																<ActiveSource Name="SE_SFX_Dungeon_Cell_Door_Close_Impact" ID="{09656768-1C4A-4242-B50B-6B502D52681D}" Platform="Linked"/>
 															</ActiveSourceList>
 														</Sound>
 													</ChildrenList>

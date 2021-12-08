@@ -129,18 +129,7 @@
 										<Action Name="" ID="{BD37D06D-92C4-4BBE-9EBB-1670527C8315}" ShortID="197314348">
 											<ReferenceList>
 												<Reference Name="Target">
-													<ObjectRef Name="Cell_Door_Close_Handle" ID="{E44C51B2-8BA6-4581-BA82-1527497C032F}" WorkUnitID="{2E2CE7FA-02C6-4C71-AABE-F8140864C57E}"/>
-												</Reference>
-											</ReferenceList>
-										</Action>
-										<Action Name="" ID="{D6CAAE68-DBAC-4DDA-91D5-D8776C3326CA}" ShortID="62797952">
-											<PropertyList>
-												<Property Name="ActionType" Type="int16" Value="36"/>
-												<Property Name="SeekPercent" Type="Real64" Value="60"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Target">
-													<ObjectRef Name="Cell_Door_Close_Handle" ID="{E44C51B2-8BA6-4581-BA82-1527497C032F}" WorkUnitID="{2E2CE7FA-02C6-4C71-AABE-F8140864C57E}"/>
+													<ObjectRef Name="Cell_Door_Close_Impact" ID="{E44C51B2-8BA6-4581-BA82-1527497C032F}" WorkUnitID="{2E2CE7FA-02C6-4C71-AABE-F8140864C57E}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
