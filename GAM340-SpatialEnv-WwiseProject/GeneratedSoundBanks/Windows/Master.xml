@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="12" SoundbankVersion="140">
 	<RootPaths>
-		<ProjectRoot>C:\Users\Jamie Carnell\Desktop\Projects etc\Projects\GAM340 Project\GAM340-Spatial-Environment\GAM340-SpatialEnv-WwiseProject\</ProjectRoot>
-		<SourceFilesRoot>C:\Users\Jamie Carnell\Desktop\Projects etc\Projects\GAM340 Project\GAM340-Spatial-Environment\GAM340-SpatialEnv-WwiseProject\.cache\Windows\</SourceFilesRoot>
-		<SoundBanksRoot>C:\Users\Jamie Carnell\Desktop\Projects etc\Projects\GAM340 Project\GAM340-Spatial-Environment\GAM340-SpatialEnv-WwiseProject\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ProjectRoot>C:\Users\Jamie Carnell\Documents\Projects\GAM340\GAM340-Spatial-Environment\GAM340-SpatialEnv-WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\Jamie Carnell\Documents\Projects\GAM340\GAM340-Spatial-Environment\GAM340-SpatialEnv-WwiseProject\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Users\Jamie Carnell\Documents\Projects\GAM340\GAM340-Spatial-Environment\GAM340-SpatialEnv-WwiseProject\GeneratedSoundBanks\Windows\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>C:\Users\Jamie Carnell\Desktop\Projects etc\Projects\GAM340 Project\GAM340-Spatial-Environment\GAM340-SpatialEnv-WwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>C:\Users\Jamie Carnell\Documents\Projects\GAM340\GAM340-Spatial-Environment\GAM340-SpatialEnv-WwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<SoundBanks>
-		<SoundBank Id="4056684167" GUID="{F180063F-4304-4E4E-863F-DCFB9544A68C}" Language="SFX" Hash="335019466">
+		<SoundBank Id="4056684167" GUID="{F180063F-4304-4E4E-863F-DCFB9544A68C}" Language="SFX" Hash="3159935391">
 			<ObjectPath>\SoundBanks\Default Work Unit\Master</ObjectPath>
 			<ShortName>Master</ShortName>
 			<Path>Master.bnk</Path>
@@ -168,7 +168,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="1866025847" Name="Footstep" ObjectPath="\Events\Default Work Unit\Movement\Footstep" GUID="{5DDB4280-0F39-46FC-8045-EEC7A97EDBCD}" MaxAttenuation="5000.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="2.218926">
+				<Event Id="1866025847" Name="Footstep" ObjectPath="\Events\Default Work Unit\Movement\Footstep" GUID="{5DDB4280-0F39-46FC-8045-EEC7A97EDBCD}" MaxAttenuation="5000.000000" DurationType="OneShot" DurationMin="0.000944" DurationMax="2.218926">
 					<IncludedMemoryFiles>
 						<File Id="9063177" Language="SFX">
 							<ShortName>SE_SFX_Footstep_Concrete_17.wav</ShortName>
@@ -567,7 +567,7 @@
 						<AuxBus Id="2212376974" Name="Early_Reflection_Aux_Bus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX\Early_Reflection_Aux_Bus" GUID="{8282F99E-D8F7-4B95-B1EA-B9978394AFAE}"/>
 					</AuxBusSends>
 				</Event>
-				<Event Id="3833651337" Name="Jump" ObjectPath="\Events\Default Work Unit\Movement\Jump" GUID="{BF192FBB-F72E-49C0-B0C5-3B302DC178E9}" MaxAttenuation="5000.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="1.633916">
+				<Event Id="3833651337" Name="Jump" ObjectPath="\Events\Default Work Unit\Movement\Jump" GUID="{BF192FBB-F72E-49C0-B0C5-3B302DC178E9}" MaxAttenuation="5000.000000" DurationType="OneShot" DurationMin="0.000944" DurationMax="1.633916">
 					<IncludedMemoryFiles>
 						<File Id="12844012" Language="SFX">
 							<ShortName>Chair_Creak_Quick_7.wav</ShortName>
@@ -761,7 +761,7 @@
 						<AuxBus Id="2212376974" Name="Early_Reflection_Aux_Bus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX\Early_Reflection_Aux_Bus" GUID="{8282F99E-D8F7-4B95-B1EA-B9978394AFAE}"/>
 					</AuxBusSends>
 				</Event>
-				<Event Id="674522502" Name="Land" ObjectPath="\Events\Default Work Unit\Movement\Land" GUID="{D1570720-FD08-4AA5-8DA7-A52FAACA54C4}" MaxAttenuation="5000.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.565940">
+				<Event Id="674522502" Name="Land" ObjectPath="\Events\Default Work Unit\Movement\Land" GUID="{D1570720-FD08-4AA5-8DA7-A52FAACA54C4}" MaxAttenuation="5000.000000" DurationType="OneShot" DurationMin="0.000944" DurationMax="0.565940">
 					<IncludedMemoryFiles>
 						<File Id="93058130" Language="SFX">
 							<ShortName>SE_SFX_Land_Brick_3.wav</ShortName>

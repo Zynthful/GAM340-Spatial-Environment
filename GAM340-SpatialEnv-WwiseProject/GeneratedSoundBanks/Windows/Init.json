@@ -5,11 +5,11 @@
   "SchemaVersion": "12",
   "SoundbankVersion": "140",
   "RootPaths": {
-   "ProjectRoot": "C:\\Users\\Jamie Carnell\\Desktop\\Projects etc\\Projects\\GAM340 Project\\GAM340-Spatial-Environment\\GAM340-SpatialEnv-WwiseProject\\",
-   "SourceFilesRoot": "C:\\Users\\Jamie Carnell\\Desktop\\Projects etc\\Projects\\GAM340 Project\\GAM340-Spatial-Environment\\GAM340-SpatialEnv-WwiseProject\\.cache\\Windows\\",
-   "SoundBanksRoot": "C:\\Users\\Jamie Carnell\\Desktop\\Projects etc\\Projects\\GAM340 Project\\GAM340-Spatial-Environment\\GAM340-SpatialEnv-WwiseProject\\GeneratedSoundBanks\\Windows\\",
+   "ProjectRoot": "C:\\Users\\Jamie Carnell\\Documents\\Projects\\GAM340\\GAM340-Spatial-Environment\\GAM340-SpatialEnv-WwiseProject\\",
+   "SourceFilesRoot": "C:\\Users\\Jamie Carnell\\Documents\\Projects\\GAM340\\GAM340-Spatial-Environment\\GAM340-SpatialEnv-WwiseProject\\.cache\\Windows\\",
+   "SoundBanksRoot": "C:\\Users\\Jamie Carnell\\Documents\\Projects\\GAM340\\GAM340-Spatial-Environment\\GAM340-SpatialEnv-WwiseProject\\GeneratedSoundBanks\\Windows\\",
    "ExternalSourcesInputFile": "",
-   "ExternalSourcesOutputRoot": "C:\\Users\\Jamie Carnell\\Desktop\\Projects etc\\Projects\\GAM340 Project\\GAM340-Spatial-Environment\\GAM340-SpatialEnv-WwiseProject\\GeneratedSoundBanks\\Windows"
+   "ExternalSourcesOutputRoot": "C:\\Users\\Jamie Carnell\\Documents\\Projects\\GAM340\\GAM340-Spatial-Environment\\GAM340-SpatialEnv-WwiseProject\\GeneratedSoundBanks\\Windows"
   },
   "SoundBanks": [
    {
