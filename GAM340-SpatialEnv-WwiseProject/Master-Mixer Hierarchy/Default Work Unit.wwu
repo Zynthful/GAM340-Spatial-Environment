@@ -533,6 +533,43 @@
 									</ReferenceList>
 									<ObjectLists/>
 								</AuxBus>
+								<AuxBus Name="Aux_Outdoor" ID="{91425612-3FED-48DE-A523-7001E6B634B8}">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+										<Property Name="ListenerRelativeRouting" Type="bool" Value="True"/>
+										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Effect0">
+											<Custom CreatedFrom="{FE29AE8D-FD86-4652-A95D-68D32F5760EC}">
+												<Effect Name="Have_U_Ever_Been_Outside (Custom)" ID="{03B83F91-3F1D-4C1A-B9A5-796F122EE1BB}" ShortID="730687824" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+													<PropertyList>
+														<Property Name="DecayTime" Type="Real32" Value="1"/>
+														<Property Name="Density" Type="Real32" Value="50"/>
+														<Property Name="ERLevel" Type="Real32" Value="-18"/>
+														<Property Name="ERPattern" Type="int32" Value="29"/>
+														<Property Name="EnableEarlyReflections" Type="bool" Value="False"/>
+														<Property Name="Filter1Freq" Type="Real32" Value="210"/>
+														<Property Name="Filter1Gain" Type="Real32" Value="1.5"/>
+														<Property Name="Filter2Freq" Type="Real32" Value="6830"/>
+														<Property Name="Filter2Gain" Type="Real32" Value="-7.5"/>
+														<Property Name="Filter2Q" Type="Real32" Value="0.65"/>
+														<Property Name="Filter3Freq" Type="Real32" Value="8440"/>
+														<Property Name="Filter3Gain" Type="Real32" Value="-4"/>
+														<Property Name="HFDamping" Type="Real32" Value="5.05"/>
+														<Property Name="PreDelay" Type="Real32" Value="139"/>
+														<Property Name="Quality" Type="int32" Value="12"/>
+														<Property Name="ReverbLevel" Type="Real32" Value="-16"/>
+														<Property Name="RoomSize" Type="Real32" Value="12"/>
+														<Property Name="StereoWidth" Type="Real32" Value="28"/>
+													</PropertyList>
+												</Effect>
+											</Custom>
+										</Reference>
+									</ReferenceList>
+									<ObjectLists/>
+								</AuxBus>
 							</ChildrenList>
 							<ObjectLists/>
 						</Bus>

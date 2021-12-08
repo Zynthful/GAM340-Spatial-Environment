@@ -42,9 +42,11 @@ Auxiliary Bus	ID	Name			Wwise Object Path	Notes
 	2212376974	Early_Reflection_Aux_Bus			\Default Work Unit\Master Audio Bus\SFX\Early_Reflection_Aux_Bus	
 	3065706299	Aux_Dynamic			\Default Work Unit\Master Audio Bus\SFX\Aux_Dynamic	
 	3408535089	Aux_Room_Large			\Default Work Unit\Master Audio Bus\SFX\Aux_Room_Large	
+	3599458820	Aux_Outdoor			\Default Work Unit\Master Audio Bus\SFX\Aux_Outdoor	
 
 Effect plug-ins	ID	Name	Type				Notes
 	101284989	Wwise_RoomVerb_(Custom)	Wwise RoomVerb			
+	730687824	Have_U_Ever_Been_Outside (Custom)	Wwise RoomVerb			
 	808992315	Hall_Large (Custom)	Wwise RoomVerb			
 	894395628	Medium (Custom)	Wwise RoomVerb			
 	939061740	Church_Small_Wood (Custom)	Wwise RoomVerb			

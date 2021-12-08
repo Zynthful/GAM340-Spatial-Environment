@@ -16,7 +16,7 @@
     "Id": "1355168291",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "2904340128",
+    "Hash": "3256866092",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
@@ -50,6 +50,12 @@
       "Name": "Aux_Room_Large",
       "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\SFX\\Aux_Room_Large",
       "GUID": "{4AA6DBFC-04A4-45E0-B095-173B7D30EBD7}"
+     },
+     {
+      "Id": "3599458820",
+      "Name": "Aux_Outdoor",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\SFX\\Aux_Outdoor",
+      "GUID": "{91425612-3FED-48DE-A523-7001E6B634B8}"
      }
     ],
     "GameParameters": [
