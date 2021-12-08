@@ -114,7 +114,7 @@
     "Id": "4056684167",
     "GUID": "{F180063F-4304-4E4E-863F-DCFB9544A68C}",
     "Language": "SFX",
-    "Hash": "1928904277",
+    "Hash": "2339173216",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Master",
     "ShortName": "Master",
     "Path": "Master.bnk",
@@ -297,7 +297,7 @@
       "Name": "Coffin_Close_Begin",
       "ObjectPath": "\\Events\\Default Work Unit\\Environment\\Crypt\\Coffin\\Coffin_Close_Begin",
       "GUID": "{08855823-D772-4453-AB77-E21224473A6C}",
-      "MaxAttenuation": "5000.000000",
+      "MaxAttenuation": "8500.000000",
       "DurationType": "OneShot",
       "DurationMin": "2.253515",
       "DurationMax": "2.253515",
@@ -323,7 +323,7 @@
       "Name": "Coffin_Close_End",
       "ObjectPath": "\\Events\\Default Work Unit\\Environment\\Crypt\\Coffin\\Coffin_Close_End",
       "GUID": "{C48EA195-F575-4A51-8AA5-E44EB26BD469}",
-      "MaxAttenuation": "5000.000000",
+      "MaxAttenuation": "8500.000000",
       "DurationType": "OneShot",
       "DurationMin": "0.301678",
       "DurationMax": "0.301678",
@@ -349,7 +349,7 @@
       "Name": "Coffin_Open_Begin",
       "ObjectPath": "\\Events\\Default Work Unit\\Environment\\Crypt\\Coffin\\Coffin_Open_Begin",
       "GUID": "{57E00CBB-7623-488B-8F47-E9E7A9ED8B30}",
-      "MaxAttenuation": "5000.000000",
+      "MaxAttenuation": "8500.000000",
       "DurationType": "OneShot",
       "DurationMin": "2.185896",
       "DurationMax": "2.185896",
@@ -391,7 +391,7 @@
       "Name": "Coffin_Shake",
       "ObjectPath": "\\Events\\Default Work Unit\\Environment\\Crypt\\Coffin\\Coffin_Shake",
       "GUID": "{4714F94F-306D-4AA2-AD80-D52A5B6B5F96}",
-      "MaxAttenuation": "5000.000000",
+      "MaxAttenuation": "8500.000000",
       "DurationType": "OneShot",
       "DurationMin": "1.425102",
       "DurationMax": "1.425102",
@@ -517,16 +517,34 @@
         "Path": "SFX\\Chair_Creak_Quick_8_10C4C929.wem"
        },
        {
+        "Id": "196552796",
+        "Language": "SFX",
+        "ShortName": "Footsteps_GravelConcrete_1.wav",
+        "Path": "SFX\\Footsteps_GravelConcrete_1_10C4C929.wem"
+       },
+       {
         "Id": "219021047",
         "Language": "SFX",
         "ShortName": "SE_SFX_Footstep_Wood_10.wav",
         "Path": "SFX\\SE_SFX_Footstep_Wood_10_10C4C929.wem"
        },
        {
+        "Id": "223676575",
+        "Language": "SFX",
+        "ShortName": "FEETHmn_InsJ_Footsteps_Dirt_Running_Trainers_01-01_Single-07.wav",
+        "Path": "SFX\\FEETHmn_InsJ_Footsteps_Dirt_Running_Trainers_01-01_Single-07_10C4C929.wem"
+       },
+       {
         "Id": "223819212",
         "Language": "SFX",
         "ShortName": "SE_SFX_Footstep_Concrete_25.wav",
         "Path": "SFX\\SE_SFX_Footstep_Concrete_25_10C4C929.wem"
+       },
+       {
+        "Id": "223971785",
+        "Language": "SFX",
+        "ShortName": "FEETHmn_InsJ_Footsteps_Dirt_Running_Trainers_01-01_Single-04.wav",
+        "Path": "SFX\\FEETHmn_InsJ_Footsteps_Dirt_Running_Trainers_01-01_Single-04_10C4C929.wem"
        },
        {
         "Id": "260755168",
@@ -601,6 +619,12 @@
         "Path": "SFX\\Chair_Creak_Quick_1_10C4C929.wem"
        },
        {
+        "Id": "400522888",
+        "Language": "SFX",
+        "ShortName": "FEETHmn_InsJ_Footsteps_Dirt_Running_Trainers_01-01_Single-09.wav",
+        "Path": "SFX\\FEETHmn_InsJ_Footsteps_Dirt_Running_Trainers_01-01_Single-09_10C4C929.wem"
+       },
+       {
         "Id": "444617621",
         "Language": "SFX",
         "ShortName": "SE_SFX_Footstep_Concrete_19.wav",
@@ -643,6 +667,12 @@
         "Path": "SFX\\SE_SFX_Footstep_Brick_15_10C4C929.wem"
        },
        {
+        "Id": "596834988",
+        "Language": "SFX",
+        "ShortName": "Footsteps_GravelConcrete_6.wav",
+        "Path": "SFX\\Footsteps_GravelConcrete_6_10C4C929.wem"
+       },
+       {
         "Id": "605330385",
         "Language": "SFX",
         "ShortName": "SE_SFX_Footstep_Wood_1.wav",
@@ -679,10 +709,22 @@
         "Path": "SFX\\SE_SFX_Footstep_Wood_4_10C4C929.wem"
        },
        {
+        "Id": "736110808",
+        "Language": "SFX",
+        "ShortName": "FEETHmn_InsJ_Footsteps_Dirt_Running_Trainers_01-01_Single-10.wav",
+        "Path": "SFX\\FEETHmn_InsJ_Footsteps_Dirt_Running_Trainers_01-01_Single-10_10C4C929.wem"
+       },
+       {
         "Id": "736644660",
         "Language": "SFX",
         "ShortName": "SE_SFX_Footstep_Brick_12.wav",
         "Path": "SFX\\SE_SFX_Footstep_Brick_12_10C4C929.wem"
+       },
+       {
+        "Id": "743488744",
+        "Language": "SFX",
+        "ShortName": "FEETHmn_InsJ_Footsteps_Dirt_Running_Trainers_01-01_Single-01.wav",
+        "Path": "SFX\\FEETHmn_InsJ_Footsteps_Dirt_Running_Trainers_01-01_Single-01_10C4C929.wem"
        },
        {
         "Id": "758008494",
@@ -695,6 +737,12 @@
         "Language": "SFX",
         "ShortName": "SE_SFX_Footstep_Concrete_26.wav",
         "Path": "SFX\\SE_SFX_Footstep_Concrete_26_10C4C929.wem"
+       },
+       {
+        "Id": "798414001",
+        "Language": "SFX",
+        "ShortName": "FEETHmn_InsJ_Footsteps_Dirt_Running_Trainers_01-01_Single-06.wav",
+        "Path": "SFX\\FEETHmn_InsJ_Footsteps_Dirt_Running_Trainers_01-01_Single-06_10C4C929.wem"
        },
        {
         "Id": "813709866",
@@ -739,10 +787,22 @@
         "Path": "SFX\\Chair_Creak_Quick_5_10C4C929.wem"
        },
        {
+        "Id": "885064633",
+        "Language": "SFX",
+        "ShortName": "FEETHmn_InsJ_Footsteps_Dirt_Running_Trainers_01-01_Single-03.wav",
+        "Path": "SFX\\FEETHmn_InsJ_Footsteps_Dirt_Running_Trainers_01-01_Single-03_10C4C929.wem"
+       },
+       {
         "Id": "889422069",
         "Language": "SFX",
         "ShortName": "SE_SFX_Footstep_Wood_5.wav",
         "Path": "SFX\\SE_SFX_Footstep_Wood_5_10C4C929.wem"
+       },
+       {
+        "Id": "914531305",
+        "Language": "SFX",
+        "ShortName": "Footsteps_GravelConcrete_4.wav",
+        "Path": "SFX\\Footsteps_GravelConcrete_4_10C4C929.wem"
        },
        {
         "Id": "937390778",
@@ -751,10 +811,22 @@
         "Path": "SFX\\SE_SFX_Footstep_Wood_19_10C4C929.wem"
        },
        {
+        "Id": "953673904",
+        "Language": "SFX",
+        "ShortName": "Footsteps_GravelConcrete_2.wav",
+        "Path": "SFX\\Footsteps_GravelConcrete_2_10C4C929.wem"
+       },
+       {
         "Id": "970784732",
         "Language": "SFX",
         "ShortName": "SE_SFX_Footstep_Concrete_23.wav",
         "Path": "SFX\\SE_SFX_Footstep_Concrete_23_10C4C929.wem"
+       },
+       {
+        "Id": "976865898",
+        "Language": "SFX",
+        "ShortName": "Footsteps_GravelConcrete_3.wav",
+        "Path": "SFX\\Footsteps_GravelConcrete_3_10C4C929.wem"
        },
        {
         "Id": "977924030",
@@ -763,10 +835,22 @@
         "Path": "SFX\\SE_SFX_Footstep_Wood_17_10C4C929.wem"
        },
        {
+        "Id": "979802029",
+        "Language": "SFX",
+        "ShortName": "FEETHmn_InsJ_Footsteps_Dirt_Running_Trainers_01-01_Single-05.wav",
+        "Path": "SFX\\FEETHmn_InsJ_Footsteps_Dirt_Running_Trainers_01-01_Single-05_10C4C929.wem"
+       },
+       {
         "Id": "980450782",
         "Language": "SFX",
         "ShortName": "SE_SFX_Footstep_Wood_13.wav",
         "Path": "SFX\\SE_SFX_Footstep_Wood_13_10C4C929.wem"
+       },
+       {
+        "Id": "994801548",
+        "Language": "SFX",
+        "ShortName": "FEETHmn_InsJ_Footsteps_Dirt_Running_Trainers_01-01_Single-02.wav",
+        "Path": "SFX\\FEETHmn_InsJ_Footsteps_Dirt_Running_Trainers_01-01_Single-02_10C4C929.wem"
        },
        {
         "Id": "996722593",
@@ -779,6 +863,18 @@
         "Language": "SFX",
         "ShortName": "SE_SFX_Footstep_Brick_1.wav",
         "Path": "SFX\\SE_SFX_Footstep_Brick_1_10C4C929.wem"
+       },
+       {
+        "Id": "1003010066",
+        "Language": "SFX",
+        "ShortName": "Footsteps_GravelConcrete_5.wav",
+        "Path": "SFX\\Footsteps_GravelConcrete_5_10C4C929.wem"
+       },
+       {
+        "Id": "1005954882",
+        "Language": "SFX",
+        "ShortName": "FEETHmn_InsJ_Footsteps_Dirt_Running_Trainers_01-01_Single-08.wav",
+        "Path": "SFX\\FEETHmn_InsJ_Footsteps_Dirt_Running_Trainers_01-01_Single-08_10C4C929.wem"
        },
        {
         "Id": "1010243084",
@@ -833,6 +929,41 @@
          },
          {
           "Id": "970784732"
+         }
+        ]
+       },
+       {
+        "SwitchValue": "{0B359D95-DC0B-4246-93E1-9FA71C02425D}",
+        "Media": [
+         {
+          "Id": "223676575"
+         },
+         {
+          "Id": "223971785"
+         },
+         {
+          "Id": "400522888"
+         },
+         {
+          "Id": "736110808"
+         },
+         {
+          "Id": "743488744"
+         },
+         {
+          "Id": "798414001"
+         },
+         {
+          "Id": "885064633"
+         },
+         {
+          "Id": "979802029"
+         },
+         {
+          "Id": "994801548"
+         },
+         {
+          "Id": "1005954882"
          }
         ]
        },
@@ -991,6 +1122,29 @@
           "Id": "867425961"
          }
         ]
+       },
+       {
+        "SwitchValue": "{0B359D95-DC0B-4246-93E1-9FA71C02425D}",
+        "Media": [
+         {
+          "Id": "196552796"
+         },
+         {
+          "Id": "596834988"
+         },
+         {
+          "Id": "914531305"
+         },
+         {
+          "Id": "953673904"
+         },
+         {
+          "Id": "976865898"
+         },
+         {
+          "Id": "1003010066"
+         }
+        ]
        }
       ],
       "AuxBusSends": [
@@ -1031,6 +1185,24 @@
         "Path": "SFX\\Chair_Creak_Quick_8_10C4C929.wem"
        },
        {
+        "Id": "196552796",
+        "Language": "SFX",
+        "ShortName": "Footsteps_GravelConcrete_1.wav",
+        "Path": "SFX\\Footsteps_GravelConcrete_1_10C4C929.wem"
+       },
+       {
+        "Id": "223676575",
+        "Language": "SFX",
+        "ShortName": "FEETHmn_InsJ_Footsteps_Dirt_Running_Trainers_01-01_Single-07.wav",
+        "Path": "SFX\\FEETHmn_InsJ_Footsteps_Dirt_Running_Trainers_01-01_Single-07_10C4C929.wem"
+       },
+       {
+        "Id": "223971785",
+        "Language": "SFX",
+        "ShortName": "FEETHmn_InsJ_Footsteps_Dirt_Running_Trainers_01-01_Single-04.wav",
+        "Path": "SFX\\FEETHmn_InsJ_Footsteps_Dirt_Running_Trainers_01-01_Single-04_10C4C929.wem"
+       },
+       {
         "Id": "268032443",
         "Language": "SFX",
         "ShortName": "Chair_Creak_Quick_4.wav",
@@ -1055,6 +1227,12 @@
         "Path": "SFX\\Chair_Creak_Quick_1_10C4C929.wem"
        },
        {
+        "Id": "400522888",
+        "Language": "SFX",
+        "ShortName": "FEETHmn_InsJ_Footsteps_Dirt_Running_Trainers_01-01_Single-09.wav",
+        "Path": "SFX\\FEETHmn_InsJ_Footsteps_Dirt_Running_Trainers_01-01_Single-09_10C4C929.wem"
+       },
+       {
         "Id": "488628065",
         "Language": "SFX",
         "ShortName": "SE_SFX_Jump_Wood_3.wav",
@@ -1073,6 +1251,12 @@
         "Path": "SFX\\SE_SFX_Land_Concrete_1_10C4C929.wem"
        },
        {
+        "Id": "596834988",
+        "Language": "SFX",
+        "ShortName": "Footsteps_GravelConcrete_6.wav",
+        "Path": "SFX\\Footsteps_GravelConcrete_6_10C4C929.wem"
+       },
+       {
         "Id": "624785403",
         "Language": "SFX",
         "ShortName": "Chair_Creak_Quick_3.wav",
@@ -1083,6 +1267,24 @@
         "Language": "SFX",
         "ShortName": "SE_SFX_Jump_Brick_2.wav",
         "Path": "SFX\\SE_SFX_Jump_Brick_2_10C4C929.wem"
+       },
+       {
+        "Id": "736110808",
+        "Language": "SFX",
+        "ShortName": "FEETHmn_InsJ_Footsteps_Dirt_Running_Trainers_01-01_Single-10.wav",
+        "Path": "SFX\\FEETHmn_InsJ_Footsteps_Dirt_Running_Trainers_01-01_Single-10_10C4C929.wem"
+       },
+       {
+        "Id": "743488744",
+        "Language": "SFX",
+        "ShortName": "FEETHmn_InsJ_Footsteps_Dirt_Running_Trainers_01-01_Single-01.wav",
+        "Path": "SFX\\FEETHmn_InsJ_Footsteps_Dirt_Running_Trainers_01-01_Single-01_10C4C929.wem"
+       },
+       {
+        "Id": "798414001",
+        "Language": "SFX",
+        "ShortName": "FEETHmn_InsJ_Footsteps_Dirt_Running_Trainers_01-01_Single-06.wav",
+        "Path": "SFX\\FEETHmn_InsJ_Footsteps_Dirt_Running_Trainers_01-01_Single-06_10C4C929.wem"
        },
        {
         "Id": "853936358",
@@ -1097,6 +1299,12 @@
         "Path": "SFX\\Chair_Creak_Quick_5_10C4C929.wem"
        },
        {
+        "Id": "885064633",
+        "Language": "SFX",
+        "ShortName": "FEETHmn_InsJ_Footsteps_Dirt_Running_Trainers_01-01_Single-03.wav",
+        "Path": "SFX\\FEETHmn_InsJ_Footsteps_Dirt_Running_Trainers_01-01_Single-03_10C4C929.wem"
+       },
+       {
         "Id": "904189933",
         "Language": "SFX",
         "ShortName": "SE_SFX_Jump_Brick_1.wav",
@@ -1107,6 +1315,48 @@
         "Language": "SFX",
         "ShortName": "SE_SFX_Land_Concrete_2.wav",
         "Path": "SFX\\SE_SFX_Land_Concrete_2_10C4C929.wem"
+       },
+       {
+        "Id": "914531305",
+        "Language": "SFX",
+        "ShortName": "Footsteps_GravelConcrete_4.wav",
+        "Path": "SFX\\Footsteps_GravelConcrete_4_10C4C929.wem"
+       },
+       {
+        "Id": "953673904",
+        "Language": "SFX",
+        "ShortName": "Footsteps_GravelConcrete_2.wav",
+        "Path": "SFX\\Footsteps_GravelConcrete_2_10C4C929.wem"
+       },
+       {
+        "Id": "976865898",
+        "Language": "SFX",
+        "ShortName": "Footsteps_GravelConcrete_3.wav",
+        "Path": "SFX\\Footsteps_GravelConcrete_3_10C4C929.wem"
+       },
+       {
+        "Id": "979802029",
+        "Language": "SFX",
+        "ShortName": "FEETHmn_InsJ_Footsteps_Dirt_Running_Trainers_01-01_Single-05.wav",
+        "Path": "SFX\\FEETHmn_InsJ_Footsteps_Dirt_Running_Trainers_01-01_Single-05_10C4C929.wem"
+       },
+       {
+        "Id": "994801548",
+        "Language": "SFX",
+        "ShortName": "FEETHmn_InsJ_Footsteps_Dirt_Running_Trainers_01-01_Single-02.wav",
+        "Path": "SFX\\FEETHmn_InsJ_Footsteps_Dirt_Running_Trainers_01-01_Single-02_10C4C929.wem"
+       },
+       {
+        "Id": "1003010066",
+        "Language": "SFX",
+        "ShortName": "Footsteps_GravelConcrete_5.wav",
+        "Path": "SFX\\Footsteps_GravelConcrete_5_10C4C929.wem"
+       },
+       {
+        "Id": "1005954882",
+        "Language": "SFX",
+        "ShortName": "FEETHmn_InsJ_Footsteps_Dirt_Running_Trainers_01-01_Single-08.wav",
+        "Path": "SFX\\FEETHmn_InsJ_Footsteps_Dirt_Running_Trainers_01-01_Single-08_10C4C929.wem"
        }
       ],
       "DefaultSwitchValue": "{DDF1D8AA-D5AB-4C83-9511-FB8309A8C953}",
@@ -1178,6 +1428,64 @@
           "Id": "867425961"
          }
         ]
+       },
+       {
+        "SwitchValue": "{0B359D95-DC0B-4246-93E1-9FA71C02425D}",
+        "Media": [
+         {
+          "Id": "223676575"
+         },
+         {
+          "Id": "223971785"
+         },
+         {
+          "Id": "400522888"
+         },
+         {
+          "Id": "736110808"
+         },
+         {
+          "Id": "743488744"
+         },
+         {
+          "Id": "798414001"
+         },
+         {
+          "Id": "885064633"
+         },
+         {
+          "Id": "979802029"
+         },
+         {
+          "Id": "994801548"
+         },
+         {
+          "Id": "1005954882"
+         }
+        ]
+       },
+       {
+        "SwitchValue": "{0B359D95-DC0B-4246-93E1-9FA71C02425D}",
+        "Media": [
+         {
+          "Id": "196552796"
+         },
+         {
+          "Id": "596834988"
+         },
+         {
+          "Id": "914531305"
+         },
+         {
+          "Id": "953673904"
+         },
+         {
+          "Id": "976865898"
+         },
+         {
+          "Id": "1003010066"
+         }
+        ]
        }
       ],
       "AuxBusSends": [
@@ -1197,7 +1505,7 @@
       "MaxAttenuation": "5000.000000",
       "DurationType": "OneShot",
       "DurationMin": "0.000000",
-      "DurationMax": "0.473768",
+      "DurationMax": "0.565940",
       "IncludedMemoryFiles": [
        {
         "Id": "93058130",
@@ -1212,6 +1520,12 @@
         "Path": "SFX\\SE_SFX_Land_Concrete_3_10C4C929.wem"
        },
        {
+        "Id": "196552796",
+        "Language": "SFX",
+        "ShortName": "Footsteps_GravelConcrete_1.wav",
+        "Path": "SFX\\Footsteps_GravelConcrete_1_10C4C929.wem"
+       },
+       {
         "Id": "220010548",
         "Language": "SFX",
         "ShortName": "SE_SFX_Land_Wood_11.wav",
@@ -1222,6 +1536,18 @@
         "Language": "SFX",
         "ShortName": "SE_SFX_Land_Wood_6.wav",
         "Path": "SFX\\SE_SFX_Land_Wood_6_10C4C929.wem"
+       },
+       {
+        "Id": "223676575",
+        "Language": "SFX",
+        "ShortName": "FEETHmn_InsJ_Footsteps_Dirt_Running_Trainers_01-01_Single-07.wav",
+        "Path": "SFX\\FEETHmn_InsJ_Footsteps_Dirt_Running_Trainers_01-01_Single-07_10C4C929.wem"
+       },
+       {
+        "Id": "223971785",
+        "Language": "SFX",
+        "ShortName": "FEETHmn_InsJ_Footsteps_Dirt_Running_Trainers_01-01_Single-04.wav",
+        "Path": "SFX\\FEETHmn_InsJ_Footsteps_Dirt_Running_Trainers_01-01_Single-04_10C4C929.wem"
        },
        {
         "Id": "228606426",
@@ -1260,10 +1586,22 @@
         "Path": "SFX\\SE_SFX_Land_Brick_4_10C4C929.wem"
        },
        {
+        "Id": "400522888",
+        "Language": "SFX",
+        "ShortName": "FEETHmn_InsJ_Footsteps_Dirt_Running_Trainers_01-01_Single-09.wav",
+        "Path": "SFX\\FEETHmn_InsJ_Footsteps_Dirt_Running_Trainers_01-01_Single-09_10C4C929.wem"
+       },
+       {
         "Id": "539018577",
         "Language": "SFX",
         "ShortName": "SE_SFX_Land_Concrete_1.wav",
         "Path": "SFX\\SE_SFX_Land_Concrete_1_10C4C929.wem"
+       },
+       {
+        "Id": "596834988",
+        "Language": "SFX",
+        "ShortName": "Footsteps_GravelConcrete_6.wav",
+        "Path": "SFX\\Footsteps_GravelConcrete_6_10C4C929.wem"
        },
        {
         "Id": "644623128",
@@ -1278,16 +1616,82 @@
         "Path": "SFX\\SE_SFX_Land_Wood_8_10C4C929.wem"
        },
        {
+        "Id": "736110808",
+        "Language": "SFX",
+        "ShortName": "FEETHmn_InsJ_Footsteps_Dirt_Running_Trainers_01-01_Single-10.wav",
+        "Path": "SFX\\FEETHmn_InsJ_Footsteps_Dirt_Running_Trainers_01-01_Single-10_10C4C929.wem"
+       },
+       {
+        "Id": "743488744",
+        "Language": "SFX",
+        "ShortName": "FEETHmn_InsJ_Footsteps_Dirt_Running_Trainers_01-01_Single-01.wav",
+        "Path": "SFX\\FEETHmn_InsJ_Footsteps_Dirt_Running_Trainers_01-01_Single-01_10C4C929.wem"
+       },
+       {
         "Id": "797002785",
         "Language": "SFX",
         "ShortName": "SE_SFX_Land_Brick_2.wav",
         "Path": "SFX\\SE_SFX_Land_Brick_2_10C4C929.wem"
        },
        {
+        "Id": "798414001",
+        "Language": "SFX",
+        "ShortName": "FEETHmn_InsJ_Footsteps_Dirt_Running_Trainers_01-01_Single-06.wav",
+        "Path": "SFX\\FEETHmn_InsJ_Footsteps_Dirt_Running_Trainers_01-01_Single-06_10C4C929.wem"
+       },
+       {
+        "Id": "885064633",
+        "Language": "SFX",
+        "ShortName": "FEETHmn_InsJ_Footsteps_Dirt_Running_Trainers_01-01_Single-03.wav",
+        "Path": "SFX\\FEETHmn_InsJ_Footsteps_Dirt_Running_Trainers_01-01_Single-03_10C4C929.wem"
+       },
+       {
         "Id": "909324958",
         "Language": "SFX",
         "ShortName": "SE_SFX_Land_Concrete_2.wav",
         "Path": "SFX\\SE_SFX_Land_Concrete_2_10C4C929.wem"
+       },
+       {
+        "Id": "914531305",
+        "Language": "SFX",
+        "ShortName": "Footsteps_GravelConcrete_4.wav",
+        "Path": "SFX\\Footsteps_GravelConcrete_4_10C4C929.wem"
+       },
+       {
+        "Id": "953673904",
+        "Language": "SFX",
+        "ShortName": "Footsteps_GravelConcrete_2.wav",
+        "Path": "SFX\\Footsteps_GravelConcrete_2_10C4C929.wem"
+       },
+       {
+        "Id": "976865898",
+        "Language": "SFX",
+        "ShortName": "Footsteps_GravelConcrete_3.wav",
+        "Path": "SFX\\Footsteps_GravelConcrete_3_10C4C929.wem"
+       },
+       {
+        "Id": "979802029",
+        "Language": "SFX",
+        "ShortName": "FEETHmn_InsJ_Footsteps_Dirt_Running_Trainers_01-01_Single-05.wav",
+        "Path": "SFX\\FEETHmn_InsJ_Footsteps_Dirt_Running_Trainers_01-01_Single-05_10C4C929.wem"
+       },
+       {
+        "Id": "994801548",
+        "Language": "SFX",
+        "ShortName": "FEETHmn_InsJ_Footsteps_Dirt_Running_Trainers_01-01_Single-02.wav",
+        "Path": "SFX\\FEETHmn_InsJ_Footsteps_Dirt_Running_Trainers_01-01_Single-02_10C4C929.wem"
+       },
+       {
+        "Id": "1003010066",
+        "Language": "SFX",
+        "ShortName": "Footsteps_GravelConcrete_5.wav",
+        "Path": "SFX\\Footsteps_GravelConcrete_5_10C4C929.wem"
+       },
+       {
+        "Id": "1005954882",
+        "Language": "SFX",
+        "ShortName": "FEETHmn_InsJ_Footsteps_Dirt_Running_Trainers_01-01_Single-08.wav",
+        "Path": "SFX\\FEETHmn_InsJ_Footsteps_Dirt_Running_Trainers_01-01_Single-08_10C4C929.wem"
        },
        {
         "Id": "1030246594",
@@ -1358,6 +1762,64 @@
          },
          {
           "Id": "1030246594"
+         }
+        ]
+       },
+       {
+        "SwitchValue": "{0B359D95-DC0B-4246-93E1-9FA71C02425D}",
+        "Media": [
+         {
+          "Id": "223676575"
+         },
+         {
+          "Id": "223971785"
+         },
+         {
+          "Id": "400522888"
+         },
+         {
+          "Id": "736110808"
+         },
+         {
+          "Id": "743488744"
+         },
+         {
+          "Id": "798414001"
+         },
+         {
+          "Id": "885064633"
+         },
+         {
+          "Id": "979802029"
+         },
+         {
+          "Id": "994801548"
+         },
+         {
+          "Id": "1005954882"
+         }
+        ]
+       },
+       {
+        "SwitchValue": "{0B359D95-DC0B-4246-93E1-9FA71C02425D}",
+        "Media": [
+         {
+          "Id": "196552796"
+         },
+         {
+          "Id": "596834988"
+         },
+         {
+          "Id": "914531305"
+         },
+         {
+          "Id": "953673904"
+         },
+         {
+          "Id": "976865898"
+         },
+         {
+          "Id": "1003010066"
          }
         ]
        }
@@ -1574,9 +2036,9 @@
         "GUID": "{89B7A936-CD9C-4D16-BE4E-402F5E3E273F}"
        },
        {
-        "Id": "2799564571",
-        "Name": "DirtRockAsh",
-        "ObjectPath": "\\Switches\\Default Work Unit\\Ground_Material\\DirtRockAsh",
+        "Id": "2195636714",
+        "Name": "Dirt",
+        "ObjectPath": "\\Switches\\Default Work Unit\\Ground_Material\\Dirt",
         "GUID": "{0B359D95-DC0B-4246-93E1-9FA71C02425D}"
        },
        {

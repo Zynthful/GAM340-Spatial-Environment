@@ -8,7 +8,7 @@
 		<ExternalSourcesOutputRoot>C:\Users\Jamie Carnell\Desktop\Projects etc\Projects\GAM340 Project\GAM340-Spatial-Environment\GAM340-SpatialEnv-WwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<SoundBanks>
-		<SoundBank Id="4056684167" GUID="{F180063F-4304-4E4E-863F-DCFB9544A68C}" Language="SFX" Hash="2825466432">
+		<SoundBank Id="4056684167" GUID="{F180063F-4304-4E4E-863F-DCFB9544A68C}" Language="SFX" Hash="997439996">
 			<ObjectPath>\SoundBanks\Default Work Unit\Master</ObjectPath>
 			<ShortName>Master</ShortName>
 			<Path>Master.bnk</Path>
@@ -122,7 +122,7 @@
 						<AuxBus Id="2212376974" Name="Early_Reflection_Aux_Bus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX\Early_Reflection_Aux_Bus" GUID="{8282F99E-D8F7-4B95-B1EA-B9978394AFAE}"/>
 					</AuxBusSends>
 				</Event>
-				<Event Id="2697518177" Name="Coffin_Close_Begin" ObjectPath="\Events\Default Work Unit\Environment\Crypt\Coffin\Coffin_Close_Begin" GUID="{08855823-D772-4453-AB77-E21224473A6C}" MaxAttenuation="5000.000000" DurationType="OneShot" DurationMin="2.253515" DurationMax="2.253515">
+				<Event Id="2697518177" Name="Coffin_Close_Begin" ObjectPath="\Events\Default Work Unit\Environment\Crypt\Coffin\Coffin_Close_Begin" GUID="{08855823-D772-4453-AB77-E21224473A6C}" MaxAttenuation="8500.000000" DurationType="OneShot" DurationMin="2.253515" DurationMax="2.253515">
 					<IncludedMemoryFiles>
 						<File Id="152626358" Language="SFX">
 							<ShortName>SE_SFX_Coffin_Close_Anim.wav</ShortName>
@@ -133,7 +133,7 @@
 						<AuxBus Id="2212376974" Name="Early_Reflection_Aux_Bus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX\Early_Reflection_Aux_Bus" GUID="{8282F99E-D8F7-4B95-B1EA-B9978394AFAE}"/>
 					</AuxBusSends>
 				</Event>
-				<Event Id="2584527849" Name="Coffin_Close_End" ObjectPath="\Events\Default Work Unit\Environment\Crypt\Coffin\Coffin_Close_End" GUID="{C48EA195-F575-4A51-8AA5-E44EB26BD469}" MaxAttenuation="5000.000000" DurationType="OneShot" DurationMin="0.301678" DurationMax="0.301678">
+				<Event Id="2584527849" Name="Coffin_Close_End" ObjectPath="\Events\Default Work Unit\Environment\Crypt\Coffin\Coffin_Close_End" GUID="{C48EA195-F575-4A51-8AA5-E44EB26BD469}" MaxAttenuation="8500.000000" DurationType="OneShot" DurationMin="0.301678" DurationMax="0.301678">
 					<IncludedMemoryFiles>
 						<File Id="388348968" Language="SFX">
 							<ShortName>SE_SFX_Coffin_Close_Lid.wav</ShortName>
@@ -144,7 +144,7 @@
 						<AuxBus Id="2212376974" Name="Early_Reflection_Aux_Bus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX\Early_Reflection_Aux_Bus" GUID="{8282F99E-D8F7-4B95-B1EA-B9978394AFAE}"/>
 					</AuxBusSends>
 				</Event>
-				<Event Id="714885747" Name="Coffin_Open_Begin" ObjectPath="\Events\Default Work Unit\Environment\Crypt\Coffin\Coffin_Open_Begin" GUID="{57E00CBB-7623-488B-8F47-E9E7A9ED8B30}" MaxAttenuation="5000.000000" DurationType="OneShot" DurationMin="2.185896" DurationMax="2.185896">
+				<Event Id="714885747" Name="Coffin_Open_Begin" ObjectPath="\Events\Default Work Unit\Environment\Crypt\Coffin\Coffin_Open_Begin" GUID="{57E00CBB-7623-488B-8F47-E9E7A9ED8B30}" MaxAttenuation="8500.000000" DurationType="OneShot" DurationMin="2.185896" DurationMax="2.185896">
 					<IncludedMemoryFiles>
 						<File Id="517712963" Language="SFX">
 							<ShortName>SE_SFX_Coffin_Open_Anim.wav</ShortName>
@@ -160,7 +160,7 @@
 					</AuxBusSends>
 				</Event>
 				<Event Id="1397875539" Name="Coffin_Open_End" ObjectPath="\Events\Default Work Unit\Environment\Crypt\Coffin\Coffin_Open_End" GUID="{6DC3F0D8-4C9F-4FA4-8639-E710EF4A1831}" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
-				<Event Id="3785983161" Name="Coffin_Shake" ObjectPath="\Events\Default Work Unit\Environment\Crypt\Coffin\Coffin_Shake" GUID="{4714F94F-306D-4AA2-AD80-D52A5B6B5F96}" MaxAttenuation="5000.000000" DurationType="OneShot" DurationMin="1.425102" DurationMax="1.425102">
+				<Event Id="3785983161" Name="Coffin_Shake" ObjectPath="\Events\Default Work Unit\Environment\Crypt\Coffin\Coffin_Shake" GUID="{4714F94F-306D-4AA2-AD80-D52A5B6B5F96}" MaxAttenuation="8500.000000" DurationType="OneShot" DurationMin="1.425102" DurationMax="1.425102">
 					<IncludedMemoryFiles>
 						<File Id="596079653" Language="SFX">
 							<ShortName>SE_SFX_Coffin_Shake_Rumble.wav</ShortName>
@@ -274,13 +274,25 @@
 							<ShortName>Chair_Creak_Quick_8.wav</ShortName>
 							<Path>SFX\Chair_Creak_Quick_8_10C4C929.wem</Path>
 						</File>
+						<File Id="196552796" Language="SFX">
+							<ShortName>Footsteps_GravelConcrete_1.wav</ShortName>
+							<Path>SFX\Footsteps_GravelConcrete_1_10C4C929.wem</Path>
+						</File>
 						<File Id="219021047" Language="SFX">
 							<ShortName>SE_SFX_Footstep_Wood_10.wav</ShortName>
 							<Path>SFX\SE_SFX_Footstep_Wood_10_10C4C929.wem</Path>
 						</File>
+						<File Id="223676575" Language="SFX">
+							<ShortName>FEETHmn_InsJ_Footsteps_Dirt_Running_Trainers_01-01_Single-07.wav</ShortName>
+							<Path>SFX\FEETHmn_InsJ_Footsteps_Dirt_Running_Trainers_01-01_Single-07_10C4C929.wem</Path>
+						</File>
 						<File Id="223819212" Language="SFX">
 							<ShortName>SE_SFX_Footstep_Concrete_25.wav</ShortName>
 							<Path>SFX\SE_SFX_Footstep_Concrete_25_10C4C929.wem</Path>
+						</File>
+						<File Id="223971785" Language="SFX">
+							<ShortName>FEETHmn_InsJ_Footsteps_Dirt_Running_Trainers_01-01_Single-04.wav</ShortName>
+							<Path>SFX\FEETHmn_InsJ_Footsteps_Dirt_Running_Trainers_01-01_Single-04_10C4C929.wem</Path>
 						</File>
 						<File Id="260755168" Language="SFX">
 							<ShortName>SE_SFX_Footstep_Wood_20.wav</ShortName>
@@ -330,6 +342,10 @@
 							<ShortName>Chair_Creak_Quick_1.wav</ShortName>
 							<Path>SFX\Chair_Creak_Quick_1_10C4C929.wem</Path>
 						</File>
+						<File Id="400522888" Language="SFX">
+							<ShortName>FEETHmn_InsJ_Footsteps_Dirt_Running_Trainers_01-01_Single-09.wav</ShortName>
+							<Path>SFX\FEETHmn_InsJ_Footsteps_Dirt_Running_Trainers_01-01_Single-09_10C4C929.wem</Path>
+						</File>
 						<File Id="444617621" Language="SFX">
 							<ShortName>SE_SFX_Footstep_Concrete_19.wav</ShortName>
 							<Path>SFX\SE_SFX_Footstep_Concrete_19_10C4C929.wem</Path>
@@ -358,6 +374,10 @@
 							<ShortName>SE_SFX_Footstep_Brick_15.wav</ShortName>
 							<Path>SFX\SE_SFX_Footstep_Brick_15_10C4C929.wem</Path>
 						</File>
+						<File Id="596834988" Language="SFX">
+							<ShortName>Footsteps_GravelConcrete_6.wav</ShortName>
+							<Path>SFX\Footsteps_GravelConcrete_6_10C4C929.wem</Path>
+						</File>
 						<File Id="605330385" Language="SFX">
 							<ShortName>SE_SFX_Footstep_Wood_1.wav</ShortName>
 							<Path>SFX\SE_SFX_Footstep_Wood_1_10C4C929.wem</Path>
@@ -382,9 +402,17 @@
 							<ShortName>SE_SFX_Footstep_Wood_4.wav</ShortName>
 							<Path>SFX\SE_SFX_Footstep_Wood_4_10C4C929.wem</Path>
 						</File>
+						<File Id="736110808" Language="SFX">
+							<ShortName>FEETHmn_InsJ_Footsteps_Dirt_Running_Trainers_01-01_Single-10.wav</ShortName>
+							<Path>SFX\FEETHmn_InsJ_Footsteps_Dirt_Running_Trainers_01-01_Single-10_10C4C929.wem</Path>
+						</File>
 						<File Id="736644660" Language="SFX">
 							<ShortName>SE_SFX_Footstep_Brick_12.wav</ShortName>
 							<Path>SFX\SE_SFX_Footstep_Brick_12_10C4C929.wem</Path>
+						</File>
+						<File Id="743488744" Language="SFX">
+							<ShortName>FEETHmn_InsJ_Footsteps_Dirt_Running_Trainers_01-01_Single-01.wav</ShortName>
+							<Path>SFX\FEETHmn_InsJ_Footsteps_Dirt_Running_Trainers_01-01_Single-01_10C4C929.wem</Path>
 						</File>
 						<File Id="758008494" Language="SFX">
 							<ShortName>SE_SFX_Footstep_Brick_18.wav</ShortName>
@@ -393,6 +421,10 @@
 						<File Id="759023593" Language="SFX">
 							<ShortName>SE_SFX_Footstep_Concrete_26.wav</ShortName>
 							<Path>SFX\SE_SFX_Footstep_Concrete_26_10C4C929.wem</Path>
+						</File>
+						<File Id="798414001" Language="SFX">
+							<ShortName>FEETHmn_InsJ_Footsteps_Dirt_Running_Trainers_01-01_Single-06.wav</ShortName>
+							<Path>SFX\FEETHmn_InsJ_Footsteps_Dirt_Running_Trainers_01-01_Single-06_10C4C929.wem</Path>
 						</File>
 						<File Id="813709866" Language="SFX">
 							<ShortName>SE_SFX_Footstep_Brick_7.wav</ShortName>
@@ -422,25 +454,49 @@
 							<ShortName>Chair_Creak_Quick_5.wav</ShortName>
 							<Path>SFX\Chair_Creak_Quick_5_10C4C929.wem</Path>
 						</File>
+						<File Id="885064633" Language="SFX">
+							<ShortName>FEETHmn_InsJ_Footsteps_Dirt_Running_Trainers_01-01_Single-03.wav</ShortName>
+							<Path>SFX\FEETHmn_InsJ_Footsteps_Dirt_Running_Trainers_01-01_Single-03_10C4C929.wem</Path>
+						</File>
 						<File Id="889422069" Language="SFX">
 							<ShortName>SE_SFX_Footstep_Wood_5.wav</ShortName>
 							<Path>SFX\SE_SFX_Footstep_Wood_5_10C4C929.wem</Path>
+						</File>
+						<File Id="914531305" Language="SFX">
+							<ShortName>Footsteps_GravelConcrete_4.wav</ShortName>
+							<Path>SFX\Footsteps_GravelConcrete_4_10C4C929.wem</Path>
 						</File>
 						<File Id="937390778" Language="SFX">
 							<ShortName>SE_SFX_Footstep_Wood_19.wav</ShortName>
 							<Path>SFX\SE_SFX_Footstep_Wood_19_10C4C929.wem</Path>
 						</File>
+						<File Id="953673904" Language="SFX">
+							<ShortName>Footsteps_GravelConcrete_2.wav</ShortName>
+							<Path>SFX\Footsteps_GravelConcrete_2_10C4C929.wem</Path>
+						</File>
 						<File Id="970784732" Language="SFX">
 							<ShortName>SE_SFX_Footstep_Concrete_23.wav</ShortName>
 							<Path>SFX\SE_SFX_Footstep_Concrete_23_10C4C929.wem</Path>
+						</File>
+						<File Id="976865898" Language="SFX">
+							<ShortName>Footsteps_GravelConcrete_3.wav</ShortName>
+							<Path>SFX\Footsteps_GravelConcrete_3_10C4C929.wem</Path>
 						</File>
 						<File Id="977924030" Language="SFX">
 							<ShortName>SE_SFX_Footstep_Wood_17.wav</ShortName>
 							<Path>SFX\SE_SFX_Footstep_Wood_17_10C4C929.wem</Path>
 						</File>
+						<File Id="979802029" Language="SFX">
+							<ShortName>FEETHmn_InsJ_Footsteps_Dirt_Running_Trainers_01-01_Single-05.wav</ShortName>
+							<Path>SFX\FEETHmn_InsJ_Footsteps_Dirt_Running_Trainers_01-01_Single-05_10C4C929.wem</Path>
+						</File>
 						<File Id="980450782" Language="SFX">
 							<ShortName>SE_SFX_Footstep_Wood_13.wav</ShortName>
 							<Path>SFX\SE_SFX_Footstep_Wood_13_10C4C929.wem</Path>
+						</File>
+						<File Id="994801548" Language="SFX">
+							<ShortName>FEETHmn_InsJ_Footsteps_Dirt_Running_Trainers_01-01_Single-02.wav</ShortName>
+							<Path>SFX\FEETHmn_InsJ_Footsteps_Dirt_Running_Trainers_01-01_Single-02_10C4C929.wem</Path>
 						</File>
 						<File Id="996722593" Language="SFX">
 							<ShortName>SE_SFX_Footstep_Wood_15.wav</ShortName>
@@ -449,6 +505,14 @@
 						<File Id="996894716" Language="SFX">
 							<ShortName>SE_SFX_Footstep_Brick_1.wav</ShortName>
 							<Path>SFX\SE_SFX_Footstep_Brick_1_10C4C929.wem</Path>
+						</File>
+						<File Id="1003010066" Language="SFX">
+							<ShortName>Footsteps_GravelConcrete_5.wav</ShortName>
+							<Path>SFX\Footsteps_GravelConcrete_5_10C4C929.wem</Path>
+						</File>
+						<File Id="1005954882" Language="SFX">
+							<ShortName>FEETHmn_InsJ_Footsteps_Dirt_Running_Trainers_01-01_Single-08.wav</ShortName>
+							<Path>SFX\FEETHmn_InsJ_Footsteps_Dirt_Running_Trainers_01-01_Single-08_10C4C929.wem</Path>
 						</File>
 						<File Id="1010243084" Language="SFX">
 							<ShortName>SE_SFX_Footstep_Wood_9.wav</ShortName>
@@ -477,6 +541,20 @@
 								<File Id="820499950"/>
 								<File Id="822925497"/>
 								<File Id="970784732"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{0B359D95-DC0B-4246-93E1-9FA71C02425D}">
+							<Media>
+								<File Id="223676575"/>
+								<File Id="223971785"/>
+								<File Id="400522888"/>
+								<File Id="736110808"/>
+								<File Id="743488744"/>
+								<File Id="798414001"/>
+								<File Id="885064633"/>
+								<File Id="979802029"/>
+								<File Id="994801548"/>
+								<File Id="1005954882"/>
 							</Media>
 						</SwitchContainer>
 						<SwitchContainer SwitchValue="{DDF1D8AA-D5AB-4C83-9511-FB8309A8C953}">
@@ -538,6 +616,16 @@
 								<File Id="867425961"/>
 							</Media>
 						</SwitchContainer>
+						<SwitchContainer SwitchValue="{0B359D95-DC0B-4246-93E1-9FA71C02425D}">
+							<Media>
+								<File Id="196552796"/>
+								<File Id="596834988"/>
+								<File Id="914531305"/>
+								<File Id="953673904"/>
+								<File Id="976865898"/>
+								<File Id="1003010066"/>
+							</Media>
+						</SwitchContainer>
 					</SwitchContainers>
 					<AuxBusSends>
 						<AuxBus Id="2212376974" Name="Early_Reflection_Aux_Bus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX\Early_Reflection_Aux_Bus" GUID="{8282F99E-D8F7-4B95-B1EA-B9978394AFAE}"/>
@@ -576,6 +664,18 @@
 							<ShortName>Chair_Creak_Quick_8.wav</ShortName>
 							<Path>SFX\Chair_Creak_Quick_8_10C4C929.wem</Path>
 						</File>
+						<File Id="196552796" Language="SFX">
+							<ShortName>Footsteps_GravelConcrete_1.wav</ShortName>
+							<Path>SFX\Footsteps_GravelConcrete_1_10C4C929.wem</Path>
+						</File>
+						<File Id="223676575" Language="SFX">
+							<ShortName>FEETHmn_InsJ_Footsteps_Dirt_Running_Trainers_01-01_Single-07.wav</ShortName>
+							<Path>SFX\FEETHmn_InsJ_Footsteps_Dirt_Running_Trainers_01-01_Single-07_10C4C929.wem</Path>
+						</File>
+						<File Id="223971785" Language="SFX">
+							<ShortName>FEETHmn_InsJ_Footsteps_Dirt_Running_Trainers_01-01_Single-04.wav</ShortName>
+							<Path>SFX\FEETHmn_InsJ_Footsteps_Dirt_Running_Trainers_01-01_Single-04_10C4C929.wem</Path>
+						</File>
 						<File Id="268032443" Language="SFX">
 							<ShortName>Chair_Creak_Quick_4.wav</ShortName>
 							<Path>SFX\Chair_Creak_Quick_4_10C4C929.wem</Path>
@@ -592,6 +692,10 @@
 							<ShortName>Chair_Creak_Quick_1.wav</ShortName>
 							<Path>SFX\Chair_Creak_Quick_1_10C4C929.wem</Path>
 						</File>
+						<File Id="400522888" Language="SFX">
+							<ShortName>FEETHmn_InsJ_Footsteps_Dirt_Running_Trainers_01-01_Single-09.wav</ShortName>
+							<Path>SFX\FEETHmn_InsJ_Footsteps_Dirt_Running_Trainers_01-01_Single-09_10C4C929.wem</Path>
+						</File>
 						<File Id="488628065" Language="SFX">
 							<ShortName>SE_SFX_Jump_Wood_3.wav</ShortName>
 							<Path>SFX\SE_SFX_Jump_Wood_3_10C4C929.wem</Path>
@@ -604,6 +708,10 @@
 							<ShortName>SE_SFX_Land_Concrete_1.wav</ShortName>
 							<Path>SFX\SE_SFX_Land_Concrete_1_10C4C929.wem</Path>
 						</File>
+						<File Id="596834988" Language="SFX">
+							<ShortName>Footsteps_GravelConcrete_6.wav</ShortName>
+							<Path>SFX\Footsteps_GravelConcrete_6_10C4C929.wem</Path>
+						</File>
 						<File Id="624785403" Language="SFX">
 							<ShortName>Chair_Creak_Quick_3.wav</ShortName>
 							<Path>SFX\Chair_Creak_Quick_3_10C4C929.wem</Path>
@@ -611,6 +719,18 @@
 						<File Id="626388223" Language="SFX">
 							<ShortName>SE_SFX_Jump_Brick_2.wav</ShortName>
 							<Path>SFX\SE_SFX_Jump_Brick_2_10C4C929.wem</Path>
+						</File>
+						<File Id="736110808" Language="SFX">
+							<ShortName>FEETHmn_InsJ_Footsteps_Dirt_Running_Trainers_01-01_Single-10.wav</ShortName>
+							<Path>SFX\FEETHmn_InsJ_Footsteps_Dirt_Running_Trainers_01-01_Single-10_10C4C929.wem</Path>
+						</File>
+						<File Id="743488744" Language="SFX">
+							<ShortName>FEETHmn_InsJ_Footsteps_Dirt_Running_Trainers_01-01_Single-01.wav</ShortName>
+							<Path>SFX\FEETHmn_InsJ_Footsteps_Dirt_Running_Trainers_01-01_Single-01_10C4C929.wem</Path>
+						</File>
+						<File Id="798414001" Language="SFX">
+							<ShortName>FEETHmn_InsJ_Footsteps_Dirt_Running_Trainers_01-01_Single-06.wav</ShortName>
+							<Path>SFX\FEETHmn_InsJ_Footsteps_Dirt_Running_Trainers_01-01_Single-06_10C4C929.wem</Path>
 						</File>
 						<File Id="853936358" Language="SFX">
 							<ShortName>Chair_Creak_Quick_2.wav</ShortName>
@@ -620,6 +740,10 @@
 							<ShortName>Chair_Creak_Quick_5.wav</ShortName>
 							<Path>SFX\Chair_Creak_Quick_5_10C4C929.wem</Path>
 						</File>
+						<File Id="885064633" Language="SFX">
+							<ShortName>FEETHmn_InsJ_Footsteps_Dirt_Running_Trainers_01-01_Single-03.wav</ShortName>
+							<Path>SFX\FEETHmn_InsJ_Footsteps_Dirt_Running_Trainers_01-01_Single-03_10C4C929.wem</Path>
+						</File>
 						<File Id="904189933" Language="SFX">
 							<ShortName>SE_SFX_Jump_Brick_1.wav</ShortName>
 							<Path>SFX\SE_SFX_Jump_Brick_1_10C4C929.wem</Path>
@@ -627,6 +751,34 @@
 						<File Id="909324958" Language="SFX">
 							<ShortName>SE_SFX_Land_Concrete_2.wav</ShortName>
 							<Path>SFX\SE_SFX_Land_Concrete_2_10C4C929.wem</Path>
+						</File>
+						<File Id="914531305" Language="SFX">
+							<ShortName>Footsteps_GravelConcrete_4.wav</ShortName>
+							<Path>SFX\Footsteps_GravelConcrete_4_10C4C929.wem</Path>
+						</File>
+						<File Id="953673904" Language="SFX">
+							<ShortName>Footsteps_GravelConcrete_2.wav</ShortName>
+							<Path>SFX\Footsteps_GravelConcrete_2_10C4C929.wem</Path>
+						</File>
+						<File Id="976865898" Language="SFX">
+							<ShortName>Footsteps_GravelConcrete_3.wav</ShortName>
+							<Path>SFX\Footsteps_GravelConcrete_3_10C4C929.wem</Path>
+						</File>
+						<File Id="979802029" Language="SFX">
+							<ShortName>FEETHmn_InsJ_Footsteps_Dirt_Running_Trainers_01-01_Single-05.wav</ShortName>
+							<Path>SFX\FEETHmn_InsJ_Footsteps_Dirt_Running_Trainers_01-01_Single-05_10C4C929.wem</Path>
+						</File>
+						<File Id="994801548" Language="SFX">
+							<ShortName>FEETHmn_InsJ_Footsteps_Dirt_Running_Trainers_01-01_Single-02.wav</ShortName>
+							<Path>SFX\FEETHmn_InsJ_Footsteps_Dirt_Running_Trainers_01-01_Single-02_10C4C929.wem</Path>
+						</File>
+						<File Id="1003010066" Language="SFX">
+							<ShortName>Footsteps_GravelConcrete_5.wav</ShortName>
+							<Path>SFX\Footsteps_GravelConcrete_5_10C4C929.wem</Path>
+						</File>
+						<File Id="1005954882" Language="SFX">
+							<ShortName>FEETHmn_InsJ_Footsteps_Dirt_Running_Trainers_01-01_Single-08.wav</ShortName>
+							<Path>SFX\FEETHmn_InsJ_Footsteps_Dirt_Running_Trainers_01-01_Single-08_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 					<DefaultSwitchValue>{DDF1D8AA-D5AB-4C83-9511-FB8309A8C953}</DefaultSwitchValue>
@@ -663,12 +815,36 @@
 								<File Id="867425961"/>
 							</Media>
 						</SwitchContainer>
+						<SwitchContainer SwitchValue="{0B359D95-DC0B-4246-93E1-9FA71C02425D}">
+							<Media>
+								<File Id="223676575"/>
+								<File Id="223971785"/>
+								<File Id="400522888"/>
+								<File Id="736110808"/>
+								<File Id="743488744"/>
+								<File Id="798414001"/>
+								<File Id="885064633"/>
+								<File Id="979802029"/>
+								<File Id="994801548"/>
+								<File Id="1005954882"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{0B359D95-DC0B-4246-93E1-9FA71C02425D}">
+							<Media>
+								<File Id="196552796"/>
+								<File Id="596834988"/>
+								<File Id="914531305"/>
+								<File Id="953673904"/>
+								<File Id="976865898"/>
+								<File Id="1003010066"/>
+							</Media>
+						</SwitchContainer>
 					</SwitchContainers>
 					<AuxBusSends>
 						<AuxBus Id="2212376974" Name="Early_Reflection_Aux_Bus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX\Early_Reflection_Aux_Bus" GUID="{8282F99E-D8F7-4B95-B1EA-B9978394AFAE}"/>
 					</AuxBusSends>
 				</Event>
-				<Event Id="674522502" Name="Land" ObjectPath="\Events\Default Work Unit\Movement\Land" GUID="{D1570720-FD08-4AA5-8DA7-A52FAACA54C4}" MaxAttenuation="5000.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.473768">
+				<Event Id="674522502" Name="Land" ObjectPath="\Events\Default Work Unit\Movement\Land" GUID="{D1570720-FD08-4AA5-8DA7-A52FAACA54C4}" MaxAttenuation="5000.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.565940">
 					<IncludedMemoryFiles>
 						<File Id="93058130" Language="SFX">
 							<ShortName>SE_SFX_Land_Brick_3.wav</ShortName>
@@ -678,6 +854,10 @@
 							<ShortName>SE_SFX_Land_Concrete_3.wav</ShortName>
 							<Path>SFX\SE_SFX_Land_Concrete_3_10C4C929.wem</Path>
 						</File>
+						<File Id="196552796" Language="SFX">
+							<ShortName>Footsteps_GravelConcrete_1.wav</ShortName>
+							<Path>SFX\Footsteps_GravelConcrete_1_10C4C929.wem</Path>
+						</File>
 						<File Id="220010548" Language="SFX">
 							<ShortName>SE_SFX_Land_Wood_11.wav</ShortName>
 							<Path>SFX\SE_SFX_Land_Wood_11_10C4C929.wem</Path>
@@ -685,6 +865,14 @@
 						<File Id="220601687" Language="SFX">
 							<ShortName>SE_SFX_Land_Wood_6.wav</ShortName>
 							<Path>SFX\SE_SFX_Land_Wood_6_10C4C929.wem</Path>
+						</File>
+						<File Id="223676575" Language="SFX">
+							<ShortName>FEETHmn_InsJ_Footsteps_Dirt_Running_Trainers_01-01_Single-07.wav</ShortName>
+							<Path>SFX\FEETHmn_InsJ_Footsteps_Dirt_Running_Trainers_01-01_Single-07_10C4C929.wem</Path>
+						</File>
+						<File Id="223971785" Language="SFX">
+							<ShortName>FEETHmn_InsJ_Footsteps_Dirt_Running_Trainers_01-01_Single-04.wav</ShortName>
+							<Path>SFX\FEETHmn_InsJ_Footsteps_Dirt_Running_Trainers_01-01_Single-04_10C4C929.wem</Path>
 						</File>
 						<File Id="228606426" Language="SFX">
 							<ShortName>SE_SFX_Land_Concrete_4.wav</ShortName>
@@ -710,9 +898,17 @@
 							<ShortName>SE_SFX_Land_Brick_4.wav</ShortName>
 							<Path>SFX\SE_SFX_Land_Brick_4_10C4C929.wem</Path>
 						</File>
+						<File Id="400522888" Language="SFX">
+							<ShortName>FEETHmn_InsJ_Footsteps_Dirt_Running_Trainers_01-01_Single-09.wav</ShortName>
+							<Path>SFX\FEETHmn_InsJ_Footsteps_Dirt_Running_Trainers_01-01_Single-09_10C4C929.wem</Path>
+						</File>
 						<File Id="539018577" Language="SFX">
 							<ShortName>SE_SFX_Land_Concrete_1.wav</ShortName>
 							<Path>SFX\SE_SFX_Land_Concrete_1_10C4C929.wem</Path>
+						</File>
+						<File Id="596834988" Language="SFX">
+							<ShortName>Footsteps_GravelConcrete_6.wav</ShortName>
+							<Path>SFX\Footsteps_GravelConcrete_6_10C4C929.wem</Path>
 						</File>
 						<File Id="644623128" Language="SFX">
 							<ShortName>SE_SFX_Land_Wood_5.wav</ShortName>
@@ -722,13 +918,57 @@
 							<ShortName>SE_SFX_Land_Wood_8.wav</ShortName>
 							<Path>SFX\SE_SFX_Land_Wood_8_10C4C929.wem</Path>
 						</File>
+						<File Id="736110808" Language="SFX">
+							<ShortName>FEETHmn_InsJ_Footsteps_Dirt_Running_Trainers_01-01_Single-10.wav</ShortName>
+							<Path>SFX\FEETHmn_InsJ_Footsteps_Dirt_Running_Trainers_01-01_Single-10_10C4C929.wem</Path>
+						</File>
+						<File Id="743488744" Language="SFX">
+							<ShortName>FEETHmn_InsJ_Footsteps_Dirt_Running_Trainers_01-01_Single-01.wav</ShortName>
+							<Path>SFX\FEETHmn_InsJ_Footsteps_Dirt_Running_Trainers_01-01_Single-01_10C4C929.wem</Path>
+						</File>
 						<File Id="797002785" Language="SFX">
 							<ShortName>SE_SFX_Land_Brick_2.wav</ShortName>
 							<Path>SFX\SE_SFX_Land_Brick_2_10C4C929.wem</Path>
 						</File>
+						<File Id="798414001" Language="SFX">
+							<ShortName>FEETHmn_InsJ_Footsteps_Dirt_Running_Trainers_01-01_Single-06.wav</ShortName>
+							<Path>SFX\FEETHmn_InsJ_Footsteps_Dirt_Running_Trainers_01-01_Single-06_10C4C929.wem</Path>
+						</File>
+						<File Id="885064633" Language="SFX">
+							<ShortName>FEETHmn_InsJ_Footsteps_Dirt_Running_Trainers_01-01_Single-03.wav</ShortName>
+							<Path>SFX\FEETHmn_InsJ_Footsteps_Dirt_Running_Trainers_01-01_Single-03_10C4C929.wem</Path>
+						</File>
 						<File Id="909324958" Language="SFX">
 							<ShortName>SE_SFX_Land_Concrete_2.wav</ShortName>
 							<Path>SFX\SE_SFX_Land_Concrete_2_10C4C929.wem</Path>
+						</File>
+						<File Id="914531305" Language="SFX">
+							<ShortName>Footsteps_GravelConcrete_4.wav</ShortName>
+							<Path>SFX\Footsteps_GravelConcrete_4_10C4C929.wem</Path>
+						</File>
+						<File Id="953673904" Language="SFX">
+							<ShortName>Footsteps_GravelConcrete_2.wav</ShortName>
+							<Path>SFX\Footsteps_GravelConcrete_2_10C4C929.wem</Path>
+						</File>
+						<File Id="976865898" Language="SFX">
+							<ShortName>Footsteps_GravelConcrete_3.wav</ShortName>
+							<Path>SFX\Footsteps_GravelConcrete_3_10C4C929.wem</Path>
+						</File>
+						<File Id="979802029" Language="SFX">
+							<ShortName>FEETHmn_InsJ_Footsteps_Dirt_Running_Trainers_01-01_Single-05.wav</ShortName>
+							<Path>SFX\FEETHmn_InsJ_Footsteps_Dirt_Running_Trainers_01-01_Single-05_10C4C929.wem</Path>
+						</File>
+						<File Id="994801548" Language="SFX">
+							<ShortName>FEETHmn_InsJ_Footsteps_Dirt_Running_Trainers_01-01_Single-02.wav</ShortName>
+							<Path>SFX\FEETHmn_InsJ_Footsteps_Dirt_Running_Trainers_01-01_Single-02_10C4C929.wem</Path>
+						</File>
+						<File Id="1003010066" Language="SFX">
+							<ShortName>Footsteps_GravelConcrete_5.wav</ShortName>
+							<Path>SFX\Footsteps_GravelConcrete_5_10C4C929.wem</Path>
+						</File>
+						<File Id="1005954882" Language="SFX">
+							<ShortName>FEETHmn_InsJ_Footsteps_Dirt_Running_Trainers_01-01_Single-08.wav</ShortName>
+							<Path>SFX\FEETHmn_InsJ_Footsteps_Dirt_Running_Trainers_01-01_Single-08_10C4C929.wem</Path>
 						</File>
 						<File Id="1030246594" Language="SFX">
 							<ShortName>SE_SFX_Land_Wood_10.wav</ShortName>
@@ -763,6 +1003,30 @@
 								<File Id="644623128"/>
 								<File Id="673249814"/>
 								<File Id="1030246594"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{0B359D95-DC0B-4246-93E1-9FA71C02425D}">
+							<Media>
+								<File Id="223676575"/>
+								<File Id="223971785"/>
+								<File Id="400522888"/>
+								<File Id="736110808"/>
+								<File Id="743488744"/>
+								<File Id="798414001"/>
+								<File Id="885064633"/>
+								<File Id="979802029"/>
+								<File Id="994801548"/>
+								<File Id="1005954882"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{0B359D95-DC0B-4246-93E1-9FA71C02425D}">
+							<Media>
+								<File Id="196552796"/>
+								<File Id="596834988"/>
+								<File Id="914531305"/>
+								<File Id="953673904"/>
+								<File Id="976865898"/>
+								<File Id="1003010066"/>
 							</Media>
 						</SwitchContainer>
 					</SwitchContainers>
@@ -898,7 +1162,7 @@
 					<Switches>
 						<Switch Id="504532776" Name="Brick" ObjectPath="\Switches\Default Work Unit\Ground_Material\Brick" GUID="{DDF1D8AA-D5AB-4C83-9511-FB8309A8C953}"/>
 						<Switch Id="3793643790" Name="WoodPlank" ObjectPath="\Switches\Default Work Unit\Ground_Material\WoodPlank" GUID="{89B7A936-CD9C-4D16-BE4E-402F5E3E273F}"/>
-						<Switch Id="2799564571" Name="DirtRockAsh" ObjectPath="\Switches\Default Work Unit\Ground_Material\DirtRockAsh" GUID="{0B359D95-DC0B-4246-93E1-9FA71C02425D}"/>
+						<Switch Id="2195636714" Name="Dirt" ObjectPath="\Switches\Default Work Unit\Ground_Material\Dirt" GUID="{0B359D95-DC0B-4246-93E1-9FA71C02425D}"/>
 						<Switch Id="841620460" Name="Concrete" ObjectPath="\Switches\Default Work Unit\Ground_Material\Concrete" GUID="{3ADE9F45-EDD5-4FBE-9AB2-1CFDFF2B12EF}"/>
 						<Switch Id="3400588079" Name="WoodMetal" ObjectPath="\Switches\Default Work Unit\Ground_Material\WoodMetal" GUID="{CFE4B7ED-75C1-44AB-B36B-1BBD6C72EEFB}"/>
 					</Switches>
