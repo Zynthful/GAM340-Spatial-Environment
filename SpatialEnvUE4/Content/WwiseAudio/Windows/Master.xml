@@ -8,7 +8,7 @@
 		<ExternalSourcesOutputRoot>C:\Users\Jamie Carnell\Desktop\Projects etc\Projects\GAM340 Project\GAM340-Spatial-Environment\GAM340-SpatialEnv-WwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<SoundBanks>
-		<SoundBank Id="4056684167" GUID="{F180063F-4304-4E4E-863F-DCFB9544A68C}" Language="SFX" Hash="3296794870">
+		<SoundBank Id="4056684167" GUID="{F180063F-4304-4E4E-863F-DCFB9544A68C}" Language="SFX" Hash="2825466432">
 			<ObjectPath>\SoundBanks\Default Work Unit\Master</ObjectPath>
 			<ShortName>Master</ShortName>
 			<Path>Master.bnk</Path>
@@ -99,7 +99,7 @@
 					</AuxBusSends>
 				</Event>
 				<Event Id="4233653001" Name="Cell_Door_Open_End" ObjectPath="\Events\Default Work Unit\Environment\Dungeon\Cell_Door_Open_End" GUID="{4CF631E5-4D0B-4E92-8581-23257D32E22F}" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
-				<Event Id="3640754177" Name="Chain_Rattle" ObjectPath="\Events\Default Work Unit\Environment\Ambience\Chain_Rattle" GUID="{2DFBD7D8-0D58-499C-ACCB-E92D78699842}" MaxAttenuation="5000.000000" DurationType="OneShot" DurationMin="1.325379" DurationMax="2.100455">
+				<Event Id="3640754177" Name="Chain_Rattle" ObjectPath="\Events\Default Work Unit\Environment\Ambience\Chain_Rattle" GUID="{2DFBD7D8-0D58-499C-ACCB-E92D78699842}" MaxAttenuation="7000.000000" DurationType="OneShot" DurationMin="1.325379" DurationMax="2.100455">
 					<IncludedMemoryFiles>
 						<File Id="371495" Language="SFX">
 							<ShortName>SE_SFX_Chains_Rattle_3.wav</ShortName>
@@ -183,7 +183,7 @@
 						<AuxBus Id="2212376974" Name="Early_Reflection_Aux_Bus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX\Early_Reflection_Aux_Bus" GUID="{8282F99E-D8F7-4B95-B1EA-B9978394AFAE}"/>
 					</AuxBusSends>
 				</Event>
-				<Event Id="3918292795" Name="Creature_Howl" ObjectPath="\Events\Default Work Unit\Environment\Ambience\Creature_Howl" GUID="{B2EABDC8-6B1D-4249-B323-945F1D10616A}" MaxAttenuation="5000.000000" DurationType="OneShot" DurationMin="14.953046" DurationMax="25.147924">
+				<Event Id="3918292795" Name="Creature_Howl" ObjectPath="\Events\Default Work Unit\Environment\Ambience\Creature_Howl" GUID="{B2EABDC8-6B1D-4249-B323-945F1D10616A}" MaxAttenuation="7000.000000" DurationType="OneShot" DurationMin="14.953046" DurationMax="25.147924">
 					<IncludedMemoryFiles>
 						<File Id="483096911" Language="SFX">
 							<ShortName>SE_SFX_Creature_Howl_1.wav</ShortName>
@@ -194,7 +194,7 @@
 						<AuxBus Id="2212376974" Name="Early_Reflection_Aux_Bus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX\Early_Reflection_Aux_Bus" GUID="{8282F99E-D8F7-4B95-B1EA-B9978394AFAE}"/>
 					</AuxBusSends>
 				</Event>
-				<Event Id="2893969227" Name="Crow_Whistle" ObjectPath="\Events\Default Work Unit\Environment\Ambience\Crow_Whistle" GUID="{1336BE68-73FA-47C3-9352-275C3C131BC3}" MaxAttenuation="5000.000000" DurationType="OneShot" DurationMin="1.716990" DurationMax="5.922120">
+				<Event Id="2893969227" Name="Crow_Whistle" ObjectPath="\Events\Default Work Unit\Environment\Ambience\Crow_Whistle" GUID="{1336BE68-73FA-47C3-9352-275C3C131BC3}" MaxAttenuation="7000.000000" DurationType="OneShot" DurationMin="1.716990" DurationMax="5.922120">
 					<IncludedMemoryFiles>
 						<File Id="239628023" Language="SFX">
 							<ShortName>SE_SFX_Crows_Whistle_1.wav</ShortName>
@@ -213,7 +213,7 @@
 						<AuxBus Id="2212376974" Name="Early_Reflection_Aux_Bus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX\Early_Reflection_Aux_Bus" GUID="{8282F99E-D8F7-4B95-B1EA-B9978394AFAE}"/>
 					</AuxBusSends>
 				</Event>
-				<Event Id="2065126100" Name="Door_Creak" ObjectPath="\Events\Default Work Unit\Environment\Ambience\Door_Creak" GUID="{844E2400-4BC4-4F6C-9E34-40B4E95889E0}" MaxAttenuation="5000.000000" DurationType="OneShot" DurationMin="4.311586" DurationMax="5.432258">
+				<Event Id="2065126100" Name="Door_Creak" ObjectPath="\Events\Default Work Unit\Environment\Ambience\Door_Creak" GUID="{844E2400-4BC4-4F6C-9E34-40B4E95889E0}" MaxAttenuation="7000.000000" DurationType="OneShot" DurationMin="4.311586" DurationMax="5.432258">
 					<IncludedMemoryFiles>
 						<File Id="57027797" Language="SFX">
 							<ShortName>SE_SFX_Metal_Creaks_1.wav</ShortName>
@@ -543,7 +543,7 @@
 						<AuxBus Id="2212376974" Name="Early_Reflection_Aux_Bus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX\Early_Reflection_Aux_Bus" GUID="{8282F99E-D8F7-4B95-B1EA-B9978394AFAE}"/>
 					</AuxBusSends>
 				</Event>
-				<Event Id="3960403933" Name="Fox_Cry" ObjectPath="\Events\Default Work Unit\Environment\Ambience\Fox_Cry" GUID="{DE6A775A-F829-427B-93DB-7AE2F54669AE}" MaxAttenuation="5000.000000" DurationType="OneShot" DurationMin="1.064008" DurationMax="2.808115">
+				<Event Id="3960403933" Name="Fox_Cry" ObjectPath="\Events\Default Work Unit\Environment\Ambience\Fox_Cry" GUID="{DE6A775A-F829-427B-93DB-7AE2F54669AE}" MaxAttenuation="2000.000000" DurationType="OneShot" DurationMin="1.064008" DurationMax="2.808115">
 					<IncludedMemoryFiles>
 						<File Id="223665498" Language="SFX">
 							<ShortName>SE_SFX_Fox_Cry_2.wav</ShortName>
@@ -770,7 +770,7 @@
 						<AuxBus Id="2212376974" Name="Early_Reflection_Aux_Bus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX\Early_Reflection_Aux_Bus" GUID="{8282F99E-D8F7-4B95-B1EA-B9978394AFAE}"/>
 					</AuxBusSends>
 				</Event>
-				<Event Id="2161752139" Name="Railcart" ObjectPath="\Events\Default Work Unit\Environment\Ambience\Railcart" GUID="{DAE7FE86-0CE4-4A82-85C7-72E0BC295F62}" MaxAttenuation="5000.000000" DurationType="OneShot" DurationMin="5.146890" DurationMax="6.484674">
+				<Event Id="2161752139" Name="Railcart" ObjectPath="\Events\Default Work Unit\Environment\Ambience\Railcart" GUID="{DAE7FE86-0CE4-4A82-85C7-72E0BC295F62}" MaxAttenuation="7000.000000" DurationType="OneShot" DurationMin="5.146890" DurationMax="6.484674">
 					<IncludedMemoryFiles>
 						<File Id="986390317" Language="SFX">
 							<ShortName>SE_SFX_RailcartDelay_1.wav</ShortName>
@@ -792,7 +792,7 @@
 						<AuxBus Id="2212376974" Name="Early_Reflection_Aux_Bus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX\Early_Reflection_Aux_Bus" GUID="{8282F99E-D8F7-4B95-B1EA-B9978394AFAE}"/>
 					</AuxBusSends>
 				</Event>
-				<Event Id="939659677" Name="ResonantNoise" ObjectPath="\Events\Default Work Unit\Environment\Ambience\ResonantNoise" GUID="{DC3929E0-3A2F-4866-9C96-1E0469563AC8}" MaxAttenuation="5000.000000" DurationType="OneShot" DurationMin="8.100572" DurationMax="10.206081">
+				<Event Id="939659677" Name="ResonantNoise" ObjectPath="\Events\Default Work Unit\Environment\Ambience\ResonantNoise" GUID="{DC3929E0-3A2F-4866-9C96-1E0469563AC8}" MaxAttenuation="7000.000000" DurationType="OneShot" DurationMin="8.100572" DurationMax="10.206081">
 					<IncludedMemoryFiles>
 						<File Id="810303216" Language="SFX">
 							<ShortName>SE_SFX_ResonantNoise_1.wav</ShortName>
@@ -811,7 +811,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="3297270897" Name="Water_Droplet" ObjectPath="\Events\Default Work Unit\Environment\Ambience\Water_Droplet" GUID="{04CA5452-3CEB-404B-8DB3-326519A2D94D}" MaxAttenuation="5000.000000" DurationType="OneShot" DurationMin="0.245538" DurationMax="1.274150">
+				<Event Id="3297270897" Name="Water_Droplet" ObjectPath="\Events\Default Work Unit\Environment\Ambience\Water_Droplet" GUID="{04CA5452-3CEB-404B-8DB3-326519A2D94D}" MaxAttenuation="7000.000000" DurationType="OneShot" DurationMin="0.245538" DurationMax="1.274150">
 					<IncludedMemoryFiles>
 						<File Id="27929397" Language="SFX">
 							<ShortName>SE_SFX_Water_Drip_11.wav</ShortName>

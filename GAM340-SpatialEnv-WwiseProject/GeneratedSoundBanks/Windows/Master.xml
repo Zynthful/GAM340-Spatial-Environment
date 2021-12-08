@@ -8,7 +8,7 @@
 		<ExternalSourcesOutputRoot>C:\Users\Jamie Carnell\Desktop\Projects etc\Projects\GAM340 Project\GAM340-Spatial-Environment\GAM340-SpatialEnv-WwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<SoundBanks>
-		<SoundBank Id="4056684167" GUID="{F180063F-4304-4E4E-863F-DCFB9544A68C}" Language="SFX" Hash="3421022111">
+		<SoundBank Id="4056684167" GUID="{F180063F-4304-4E4E-863F-DCFB9544A68C}" Language="SFX" Hash="1928904277">
 			<ObjectPath>\SoundBanks\Default Work Unit\Master</ObjectPath>
 			<ShortName>Master</ShortName>
 			<Path>Master.bnk</Path>
@@ -706,7 +706,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="3297270897" Name="Water_Droplet" ObjectPath="\Events\Default Work Unit\Environment\Ambience\Water_Droplet" GUID="{04CA5452-3CEB-404B-8DB3-326519A2D94D}" MaxAttenuation="5000.000000" DurationType="OneShot" DurationMin="0.245538" DurationMax="1.274150">
+				<Event Id="3297270897" Name="Water_Droplet" ObjectPath="\Events\Default Work Unit\Environment\Ambience\Water_Droplet" GUID="{04CA5452-3CEB-404B-8DB3-326519A2D94D}" MaxAttenuation="7000.000000" DurationType="OneShot" DurationMin="0.245538" DurationMax="1.274150">
 					<IncludedMemoryFiles>
 						<File Id="27929397" Language="SFX">
 							<ShortName>SE_SFX_Water_Drip_11.wav</ShortName>
