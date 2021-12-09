@@ -21,7 +21,7 @@ under the Apache License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES
 OR CONDITIONS OF ANY KIND, either express or implied. See the Apache License for
 the specific language governing permissions and limitations under the License.
 
-  Version: v2021.1.4  Build: 7707
+  Version: v2021.1.5  Build: 7749
   Copyright (c) 2006-2021 Audiokinetic Inc.
 *******************************************************************************/
 
@@ -91,7 +91,7 @@ struct AkDeviceSettings
 struct AkFileDesc
 {
     AkInt64				iFileSize;			///< File size in bytes
-    AkUInt32			uSector;			///< Start sector (the sector size is specified by the low-level I/O)
+    AkUInt64			uSector;			///< Start sector (the sector size is specified by the low-level I/O)
 											///< \sa
 											///< - AK::StreamMgr::IAkFileLocationResolver::Open()
 											///< - AK::StreamMgr::IAkLowLevelIOHook::GetBlockSize()
