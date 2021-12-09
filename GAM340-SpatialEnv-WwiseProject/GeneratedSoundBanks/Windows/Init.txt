@@ -15,6 +15,8 @@ Game Parameter	ID	Name			Wwise Object Path	Notes
 	504532776	Brick			\Factory Acoustic Textures\Textures\Brick	
 	513139656	Mountain			\Factory Acoustic Textures\Textures\Mountain	
 	841620460	Concrete			\Factory Acoustic Textures\Textures\Concrete	
+	988953028	SFXVolume			\Default Work Unit\Volume\SFXVolume	
+	1204480359	AmbienceVolume			\Default Work Unit\Volume\AmbienceVolume	
 	1299678381	Decay			\Default Work Unit\Reverb\Decay	
 	1755085759	Wood_Deep			\Factory Acoustic Textures\Textures\Wood_Deep	
 	1873957695	Anechoic			\Factory Acoustic Textures\Textures\Anechoic	
@@ -22,6 +24,7 @@ Game Parameter	ID	Name			Wwise Object Path	Notes
 	2058049674	Wood			\Factory Acoustic Textures\Textures\Wood	
 	2412606308	Carpet			\Factory Acoustic Textures\Textures\Carpet	
 	2637588553	Tile			\Factory Acoustic Textures\Textures\Tile	
+	2918011349	MasterVolume			\Default Work Unit\Volume\MasterVolume	
 	2928161104	Curtains			\Factory Acoustic Textures\Textures\Curtains	
 	2947715227	HFDamping			\Default Work Unit\Reverb\HFDamping	
 	3195498748	Cork_Tiles			\Factory Acoustic Textures\Textures\Cork_Tiles	
