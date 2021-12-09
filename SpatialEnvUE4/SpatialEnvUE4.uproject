@@ -23,5 +23,10 @@
 				"Linux"
 			]
 		}
+	],
+	"TargetPlatforms": [
+		"AllDesktop",
+		"MacNoEditor",
+		"WindowsNoEditor"
 	]
 }
