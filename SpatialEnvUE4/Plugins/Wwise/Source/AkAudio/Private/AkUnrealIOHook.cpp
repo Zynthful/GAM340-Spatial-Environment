@@ -57,9 +57,10 @@ struct AkFileCustomParam
 struct AkReadAssetCustomParam : public AkFileCustomParam
 {
 public:
-	AkReadAssetCustomParam(FByteBulkData* data)
-		: BulkData(data)
+	AkReadAssetCustomParam(TWeakObjectPtr<UAkMediaAsset> MediaAsset)
 	{
+		this->MediaAsset = TWeakObjectPtr<UAkMediaAsset>(MediaAsset.Get());
+		BulkData = const_cast<FByteBulkData*>(&(MediaAsset->GetStreamedChunk()->Data));
 	}
 
 	virtual ~AkReadAssetCustomParam()
@@ -97,17 +98,25 @@ public:
 				AkTransferInfo.pCallback(&AkTransferInfo, AK_Success);
 			}
 		};
-		BulkDataIORequest* PendingReadRequest = BulkData->CreateStreamingRequest(AkTransferInfo.uFilePosition, AkTransferInfo.uRequestedSize, AIOP_High, &AsyncFileCallBack, (uint8*)AkTransferInfo.pBuffer);
-		if (PendingReadRequest)
-		{
-			IORequests.Add(PendingReadRequest);
-		}
 
-		return AK_Success;
+		if (MediaAsset.IsValid())
+		{
+			BulkDataIORequest* PendingReadRequest = BulkData->CreateStreamingRequest(AkTransferInfo.uFilePosition, AkTransferInfo.uRequestedSize, AIOP_High, &AsyncFileCallBack, (uint8*)AkTransferInfo.pBuffer);
+			if (PendingReadRequest)
+			{
+				IORequests.Add(PendingReadRequest);
+			}
+			return AK_Success;
+		}
+		else
+		{
+			return AK_Fail;
+		}
 	}
 
 public:
 	FByteBulkData* BulkData = nullptr;
+	TWeakObjectPtr<UAkMediaAsset> MediaAsset;
 	TArray<BulkDataIORequest*, TInlineAllocator<8>> IORequests;
 };
 
@@ -337,36 +346,36 @@ TWeakObjectPtr<UAkExternalMediaAsset> FAkUnrealIOHook::GetExternalSourceAsset(co
 	return Media[0];
 }
 
-AKRESULT FAkUnrealIOHook::DoAssetOpen(TWeakObjectPtr<UAkMediaAsset> mediaAsset, AkFileDesc& out_fileDesc)
+AKRESULT FAkUnrealIOHook::DoAssetOpen(TWeakObjectPtr<UAkMediaAsset> MediaAsset, AkFileDesc& OutFileDesc)
 {
-	if (!mediaAsset.IsValid(true, true) || !mediaAsset->IsValidLowLevelFast())
+	if (!MediaAsset.IsValid(true, true) || !MediaAsset->IsValidLowLevelFast())
 	{
 		return AK_Fail;
 	}
 
-	auto streamedChunk = mediaAsset->GetStreamedChunk();
-	if (!streamedChunk)
+	auto StreamedChunk = MediaAsset->GetStreamedChunk();
+	if (!StreamedChunk)
 	{
 		return AK_Fail;
 	}
 
-	out_fileDesc.iFileSize = streamedChunk->Data.GetBulkDataSize();
+	OutFileDesc.iFileSize = StreamedChunk->Data.GetBulkDataSize();
 
 #if WITH_EDITOR
 #if UE_5_0_OR_LATER
-	if (streamedChunk->Data.GetBulkDataOffsetInFile() == -1 || streamedChunk->Data.GetPackagePath().IsEmpty())
+	if (StreamedChunk->Data.GetBulkDataOffsetInFile() == -1 || StreamedChunk->Data.GetPackagePath().IsEmpty())
 #else
-	if (streamedChunk->Data.GetBulkDataOffsetInFile() == -1 || streamedChunk->Data.GetFilename().Len() == 0)
+	if (StreamedChunk->Data.GetBulkDataOffsetInFile() == -1 || StreamedChunk->Data.GetFilename().Len() == 0)
 #endif
 	{
-		auto customParam = new AkEditorReadCustomParam(streamedChunk->Data);
-		AkFileCustomParam::SetupAkFileDesc(out_fileDesc, customParam);
+		auto customParam = new AkEditorReadCustomParam(StreamedChunk->Data);
+		AkFileCustomParam::SetupAkFileDesc(OutFileDesc, customParam);
 		return AK_Success;
 	}
 #endif
 
-	auto customParam = new AkReadAssetCustomParam(const_cast<FByteBulkData*>(&(streamedChunk->Data)));
-	AkFileCustomParam::SetupAkFileDesc(out_fileDesc, customParam);
+	auto CustomParam = new AkReadAssetCustomParam(MediaAsset);
+	AkFileCustomParam::SetupAkFileDesc(OutFileDesc, CustomParam);
 	return AK_Success;
 }
 

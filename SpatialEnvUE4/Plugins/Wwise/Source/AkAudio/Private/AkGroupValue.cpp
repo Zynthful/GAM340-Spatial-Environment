@@ -33,6 +33,11 @@ void UAkGroupValue::Serialize(FArchive& Ar)
 			media->Load(true);
 		}
 	}
+
+	if (FAkAudioDevice* AkAudioDevice = FAkAudioDevice::Get())
+	{
+		AkAudioDevice->BroadcastOnSwitchValueLoaded(this);
+	}
 }
 
 bool UAkGroupValue::IsReadyForAsyncPostLoad() const

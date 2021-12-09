@@ -107,6 +107,7 @@ TSet<UAkMediaAsset*> FAkAudioDevice::MediasWithDelayedLoad;
 TMap<uint32, TArray<uint32>> FAkAudioDevice::EventToPlayingIDMap;
 TMap<uint32, TSet<UAkAudioEvent*>> FAkAudioDevice::PlayingIDToPinnedAudioEventMap;
 TMap<uint32, TSet<UAkExternalMediaAsset*>> FAkAudioDevice::PlayingIDToPinnedExternalSourceMap;
+TMap<uint32, FOnSwitchValueLoaded> FAkAudioDevice::OnSwitchValueLoadedMap;
 
 FCriticalSection FAkAudioDevice::EventToPlayingIDMapCriticalSection;
 FCriticalSection FAkAudioDevice::PlayingIDToPinnedAudioEventMapCriticalSection;
@@ -4236,4 +4237,16 @@ void FAkAudioDevice::CleanPinnedObjects(uint32 PlayingID)
 	}
 }
 
+FOnSwitchValueLoaded& FAkAudioDevice::GetOnSwitchValueLoaded(uint32 SwitchID)
+{
+	return OnSwitchValueLoadedMap.FindOrAdd(SwitchID);
+}
 
+void FAkAudioDevice::BroadcastOnSwitchValueLoaded(UAkGroupValue* GroupValue)
+{
+	FOnSwitchValueLoaded* EventToBroadcast = OnSwitchValueLoadedMap.Find(GroupValue->ShortID);
+	if (EventToBroadcast)
+	{
+		EventToBroadcast->Broadcast(GroupValue);
+	}
+}

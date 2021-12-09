@@ -16,11 +16,17 @@
     "Id": "1355168291",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "3348388915",
+    "Hash": "255421217",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
     "IncludedAuxBusses": [
+     {
+      "Id": "235779981",
+      "Name": "Aux_ER",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\SFX\\Aux_ER",
+      "GUID": "{8282F99E-D8F7-4B95-B1EA-B9978394AFAE}"
+     },
      {
       "Id": "1557528409",
       "Name": "Aux_Room_Medium",
@@ -32,12 +38,6 @@
       "Name": "Aux_Corridor",
       "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\SFX\\Aux_Corridor",
       "GUID": "{0B646697-B542-468D-8ECD-67356B4A71F6}"
-     },
-     {
-      "Id": "2212376974",
-      "Name": "Early_Reflection_Aux_Bus",
-      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\SFX\\Early_Reflection_Aux_Bus",
-      "GUID": "{8282F99E-D8F7-4B95-B1EA-B9978394AFAE}"
      },
      {
       "Id": "3065706299",

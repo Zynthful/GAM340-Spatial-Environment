@@ -1077,20 +1077,34 @@ void UAkSurfaceReflectorSetComponent::SendSurfaceReflectorSet()
 		//
 		// For more insight on how all of these tie together, look at UModel::BuildVertexBuffers().
 
-		FTransform OwnerToWorld = GetOwner()->ActorToWorld();
+		// A mapping from the unreal vertex index to the wwise vertex index.
+		TArray<int32> UnrealToWwiseIndex;
+		UnrealToWwiseIndex.Init(-1, ParentBrush->Points.Num());
 
-		for (int32 pt = 0; pt < ParentBrush->Points.Num(); ++pt)
+		// A function to add unique vertices to the VertsToSend array.
+		// UnrealToWwiseIndex keeps track of added vertices to avoid duplicates.
+		// This function ensures that we only include vertices that are actually referenced by triangles.
+		auto AddVertex = [&UnrealToWwiseIndex,&VertsToSend,this](int32 UnrealIdx)
 		{
-			const FVector& VertexInActorSpace = ParentBrush->Points[pt];
-			FVector v = OwnerToWorld.TransformPosition(VertexInActorSpace);
-			AkVertex akvtx;
-			akvtx.X = v.X;
-			akvtx.Y = v.Y;
-			akvtx.Z = v.Z;
-			VertsToSend.Add(akvtx);
-		}
+			int32 wwiseIdx = UnrealToWwiseIndex[UnrealIdx];
+			if (wwiseIdx == -1)
+			{
+				wwiseIdx = VertsToSend.Num();
+				UnrealToWwiseIndex[UnrealIdx] = wwiseIdx;
 
-		
+				const FVector& VertexInActorSpace = ParentBrush->Points[UnrealIdx];
+				FVector v = GetOwner()->ActorToWorld().TransformPosition(VertexInActorSpace);
+				AkVertex akvtx;
+				akvtx.X = v.X;
+				akvtx.Y = v.Y;
+				akvtx.Z = v.Z;
+				VertsToSend.Add(akvtx);
+
+			}
+			check(wwiseIdx < (AkVertIdx)-1);
+			return (AkVertIdx)wwiseIdx;
+		};
+
 		for (int32 NodeIdx = 0; NodeIdx < ParentBrush->Nodes.Num(); ++NodeIdx)
 		{
 			if (AcousticPolys.Num() > NodeIdx)
@@ -1128,9 +1142,9 @@ void UAkSurfaceReflectorSetComponent::SendSurfaceReflectorSet()
 						const FVert* Vert2 = &ParentBrush->Verts[VertStartIndex + VertexIdx];
 
 						AkTriangle NewTriangle;
-						NewTriangle.point0 = (AkVertIdx)Vert0->pVertex;
-						NewTriangle.point1 = (AkVertIdx)Vert1->pVertex;
-						NewTriangle.point2 = (AkVertIdx)Vert2->pVertex;
+						NewTriangle.point0 = AddVertex(Vert0->pVertex);
+						NewTriangle.point1 = AddVertex(Vert1->pVertex);
+						NewTriangle.point2 = AddVertex(Vert2->pVertex);
 						NewTriangle.surface = (AkSurfIdx)(SurfacesToSend.Num()-1);
 						TrianglesToSend.Add(NewTriangle);
 

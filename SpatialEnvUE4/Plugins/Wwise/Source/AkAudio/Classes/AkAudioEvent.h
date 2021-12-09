@@ -77,20 +77,27 @@ public:
 public:
 	void Serialize(FArchive& Ar);
 	bool IsReadyForAsyncPostLoad() const override;
+	void BeginDestroy() override;
+	virtual void GetPreloadDependencies(TArray<UObject*>& OutDeps) override;
 
 #if WITH_EDITOR
 	void FillTempMediaList() override;
 	void FillFinalMediaList() override;
 
 	void GetMediaList(TArray<TSoftObjectPtr<UAkMediaAsset>>& mediaList) const override;
+
 #endif
 
 private:
-	void loadSwitchContainer(const TArray<UAkAssetDataSwitchContainerData*>& switchContainers);
-	void loadSwitchContainer(UAkAssetDataSwitchContainerData* switchContainer);
+	void LoadSwitchContainer(const TArray<UAkAssetDataSwitchContainerData*>& SwitchContainersToLoad);
+	void LoadSwitchContainer(UAkAssetDataSwitchContainerData* SwitchContainer);
 
 	void unloadSwitchContainerMedia(const TArray<UAkAssetDataSwitchContainerData*>& switchContainers);
 	void unloadSwitchContainerMedia(UAkAssetDataSwitchContainerData* switchContainer);
+
+	void OnSwitchValueLoaded(UAkGroupValue* NewGroupValue);
+
+	TMap<uint32, UAkAssetDataSwitchContainerData*> PendingSwitchLoads;
 };
 
 UCLASS()
