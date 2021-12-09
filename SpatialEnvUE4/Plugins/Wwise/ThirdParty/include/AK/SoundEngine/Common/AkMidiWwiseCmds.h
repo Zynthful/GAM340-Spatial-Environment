@@ -6,7 +6,7 @@
   subject to the terms and conditions outlined in the Source Code
   Addendum and the End User License Agreement for Wwise(R).
 
-  Version: v2021.1.4  Build: 7707
+  Version: v2021.1.5  Build: 7749
   Copyright (c) 2006-2021 Audiokinetic Inc.
  ***********************************************************************/
 

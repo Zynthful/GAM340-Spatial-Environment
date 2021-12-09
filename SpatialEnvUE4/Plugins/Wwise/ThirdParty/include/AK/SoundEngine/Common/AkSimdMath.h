@@ -6,7 +6,7 @@
   subject to the terms and conditions outlined in the Source Code
   Addendum and the End User License Agreement for Wwise(R).
 
-  Version: v2021.1.4  Build: 7707
+  Version: v2021.1.5  Build: 7749
   Copyright (c) 2006-2021 Audiokinetic Inc.
  ***********************************************************************/
 
@@ -199,6 +199,26 @@ namespace AkMath
 		//Apply computed offset.  
 		atan = AKSIMD_MADD_V4F32(offset, sign, atan);
 		return atan;
+	}
+
+	//Accepts any positive x.  Compare with FastSqrt() which accepts only between ]0,1]
+	AkForceInline AkReal32 FastSqrtLarge(AkReal32 x)
+	{
+		AKSIMD_V4F32 y = AKSIMD_SQRT_V4F32(AKSIMD_SET_V4F32(x));
+		return AKSIMD_GETELEMENT_V4F32(y, 0);
+	}
+
+	//Compute 1/sqrt(x)
+	AkForceInline AkReal32 FastRSqrt(AkReal32 x)
+	{
+		AKSIMD_V4F32 y = AKSIMD_RSQRT_V4F32(AKSIMD_SET_V4F32(x));
+		return AKSIMD_GETELEMENT_V4F32(y, 0);
+	}
+
+	AkForceInline AkReal32 FastRcp(AkReal32 x)
+	{
+		AKSIMD_V4F32 y = AKSIMD_RECIP_V4F32(AKSIMD_SET_V4F32(x));
+		return AKSIMD_GETELEMENT_V4F32(y, 0);
 	}
 }
 

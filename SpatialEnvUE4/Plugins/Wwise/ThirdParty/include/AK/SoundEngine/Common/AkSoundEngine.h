@@ -21,7 +21,7 @@ under the Apache License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES
 OR CONDITIONS OF ANY KIND, either express or implied. See the Apache License for
 the specific language governing permissions and limitations under the License.
 
-  Version: v2021.1.4  Build: 7707
+  Version: v2021.1.5  Build: 7749
   Copyright (c) 2006-2021 Audiokinetic Inc.
 *******************************************************************************/
 
@@ -3394,6 +3394,8 @@ namespace AK
 		/// - <tt>AK::IAkMixerPluginContext</tt>
 		/// \return 
 		/// - AK_Success if successful
+		/// - AK_IDNotFound if the bus is not found
+		/// - AK_InsufficientMemory if there is not enough memory to complete the operation
 		AK_EXTERNAPIFUNC( AKRESULT, RegisterBusVolumeCallback )( 
 			AkUniqueID in_busID,						///< Bus ID, as obtained by GetIDFromString( bus_name ).
 			AkBusCallbackFunc in_pfnCallback,			///< Callback function.
@@ -3411,6 +3413,8 @@ namespace AK
 		/// - <tt>AK::IAkMetering</tt>
 		/// \return 
 		/// - AK_Success if successful
+		/// - AK_IDNotFound if the bus is not found
+		/// - AK_InsufficientMemory if there is not enough memory to complete the operation
 		AK_EXTERNAPIFUNC( AKRESULT, RegisterBusMeteringCallback )( 
 			AkUniqueID in_busID,						///< Bus ID, as obtained by GetIDFromString( bus_name ).
 			AkBusMeteringCallbackFunc in_pfnCallback,	///< Callback function.
@@ -3428,6 +3432,8 @@ namespace AK
 		/// - <tt>AK::IAkMetering</tt>
 		/// \return 
 		/// - AK_Success if successful
+		/// - AK_DeviceNotFound if the device is not found
+		/// - AK_InsufficientMemory if there is not enough memory to complete the operation
 		AK_EXTERNAPIFUNC( AKRESULT, RegisterOutputDeviceMeteringCallback )( 
 			AkOutputDeviceID in_idOutput,				///< Output ID, as returned from AddOutput or GetOutputID.  You can pass 0 for the main (default) output
 			AkOutputDeviceMeteringCallbackFunc in_pfnCallback,	///< Callback function.

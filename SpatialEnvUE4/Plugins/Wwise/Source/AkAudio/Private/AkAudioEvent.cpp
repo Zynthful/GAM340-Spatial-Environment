@@ -109,7 +109,7 @@ void UAkAssetDataSwitchContainer::Serialize(FArchive& Ar)
 {
 	Super::Serialize(Ar);
 
-	loadSwitchContainer(SwitchContainers);
+	LoadSwitchContainer(SwitchContainers);
 }
 
 bool UAkAssetDataSwitchContainer::IsReadyForAsyncPostLoad() const
@@ -125,38 +125,88 @@ bool UAkAssetDataSwitchContainer::IsReadyForAsyncPostLoad() const
 	return true;
 }
 
-void UAkAssetDataSwitchContainer::loadSwitchContainer(const TArray<UAkAssetDataSwitchContainerData*>& switchContainers)
+void UAkAssetDataSwitchContainer::LoadSwitchContainer(const TArray<UAkAssetDataSwitchContainerData*>& SwitchContainersToLoad)
 {
-	for (auto* container : switchContainers)
+	for (auto* Container : SwitchContainersToLoad)
 	{
-		loadSwitchContainer(container);
+		LoadSwitchContainer(Container);
 	}
 }
 
-void UAkAssetDataSwitchContainer::loadSwitchContainer(UAkAssetDataSwitchContainerData* switchContainer)
+void UAkAssetDataSwitchContainer::LoadSwitchContainer(UAkAssetDataSwitchContainerData* SwitchContainer)
 {
-	if (switchContainer && IsValid(switchContainer->GroupValue.Get()))
+	if (SwitchContainer)
 	{
-		TArray<UAkMediaAsset*> InvalidMedia;
-		for (UAkMediaAsset* media : switchContainer->MediaList)
+		if (IsValid(SwitchContainer->GroupValue.Get()))
 		{
-			if (IsValid(media))
+			TArray<UAkMediaAsset*> InvalidMedia;
+			for (UAkMediaAsset* media : SwitchContainer->MediaList)
 			{
-				media->Load();
+				if (IsValid(media))
+				{
+					media->Load();
+				}
+				else
+				{
+					InvalidMedia.Add(media);
+				}
 			}
-			else 
+
+			for (UAkMediaAsset* media : InvalidMedia)
 			{
-				InvalidMedia.Add(media);
+				SwitchContainer->MediaList.Remove(media);
+			}
+
+			LoadSwitchContainer(SwitchContainer->Children);
+		}
+		else
+		{
+			if (FAkAudioDevice* AkAudioDevice = FAkAudioDevice::Get())
+			{
+				FString FullName = SwitchContainer->GroupValue.GetAssetName();
+
+				int32 Position;
+				if (FullName.FindLastChar('-', Position))
+				{
+					FString ValueName = FullName.RightChop(Position+1);
+					uint32 SwitchID = AkAudioDevice->GetIDFromString(ValueName);
+					AkAudioDevice->GetOnSwitchValueLoaded(SwitchID).AddUObject(this, &UAkAssetDataSwitchContainer::OnSwitchValueLoaded);
+					UAkAssetDataSwitchContainerData*& PendingSwitchAssetData = PendingSwitchLoads.Add(SwitchID, SwitchContainer);
+				}
 			}
 		}
-
-		for (UAkMediaAsset* media : InvalidMedia)
-		{
-			switchContainer->MediaList.Remove(media);
-		}
-
-		loadSwitchContainer(switchContainer->Children);
 	}
+}
+
+void UAkAssetDataSwitchContainer::OnSwitchValueLoaded(UAkGroupValue* NewGroupValue)
+{
+	if (NewGroupValue && NewGroupValue->IsValidLowLevelFast())
+	{
+		UAkAssetDataSwitchContainerData* PendingAssetData;
+		if(PendingSwitchLoads.RemoveAndCopyValue(NewGroupValue->ShortID, PendingAssetData))
+		{
+			LoadSwitchContainer(PendingAssetData);
+		}
+
+		if (FAkAudioDevice* AkAudioDevice = FAkAudioDevice::Get())
+		{
+			AkAudioDevice->GetOnSwitchValueLoaded(NewGroupValue->ShortID).RemoveAll(this);
+		}
+	}
+}
+
+void UAkAssetDataSwitchContainer::BeginDestroy()
+{
+	for (auto Pair : PendingSwitchLoads)
+	{
+		uint32 SwitchValueID = Pair.Key;
+		if (FAkAudioDevice* AkAudioDevice = FAkAudioDevice::Get())
+		{
+			AkAudioDevice->GetOnSwitchValueLoaded(SwitchValueID).RemoveAll(this);
+		}
+	}
+	PendingSwitchLoads.Reset();
+	Super::BeginDestroy();
 }
 
 void UAkAssetDataSwitchContainer::unloadSwitchContainerMedia(const TArray<UAkAssetDataSwitchContainerData*>& switchContainers)
@@ -180,6 +230,19 @@ void UAkAssetDataSwitchContainer::unloadSwitchContainerMedia(UAkAssetDataSwitchC
 		}
 
 		unloadSwitchContainerMedia(switchContainer->Children);
+	}
+}
+
+void UAkAssetDataSwitchContainer::GetPreloadDependencies(TArray<UObject*>& OutDeps)
+{
+	Super::GetPreloadDependencies(OutDeps);
+
+	for (auto* container : SwitchContainers)
+	{
+		if (container != nullptr)
+		{
+			OutDeps.Add(container);
+		}
 	}
 }
 

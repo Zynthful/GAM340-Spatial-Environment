@@ -32,6 +32,7 @@ Copyright (c) 2021 Audiokinetic Inc.
 #include "Engine/EngineTypes.h"
 #include "Engine/StreamableManager.h"
 #include "AkEnvironmentIndex.h"
+#include "AkGroupValue.h"
 
 #if WITH_EDITORONLY_DATA
 #include "EditorViewportClient.h"
@@ -43,6 +44,7 @@ AKAUDIO_API DECLARE_LOG_CATEGORY_EXTERN(LogAkAudio, Log, All);
 
 DECLARE_EVENT(FAkAudioDevice, SoundbanksLoaded);
 DECLARE_EVENT(FAkAudioDevice, FOnWwiseProjectModification);
+DECLARE_EVENT_OneParam(FAkAudioDevice, FOnSwitchValueLoaded, UAkGroupValue*);
 DECLARE_DELEGATE_OneParam(FOnSetCurrentAudioCultureCompleted, bool);
 
 constexpr auto AkInitBankName = TEXT("Init");
@@ -1770,6 +1772,9 @@ public:
 	void AddToPinnedMediasMap(uint32 PlayingID, UAkExternalMediaAsset* MediaToPin);
 	void CleanPinnedObjects(uint32 PlayingID);
 
+	FOnSwitchValueLoaded& GetOnSwitchValueLoaded(uint32 SwitchID);
+	void BroadcastOnSwitchValueLoaded(UAkGroupValue* GroupValue);
+
 private:
 	bool EnsureInitialized();
 	
@@ -1888,4 +1893,6 @@ private:
 	static TMap<uint32, TSet<UAkExternalMediaAsset*>> PlayingIDToPinnedExternalSourceMap;
 
 	static void PostEventAtLocationEndOfEventCallback(AkCallbackType in_eType, AkCallbackInfo* in_pCallbackInfo);
+
+	static TMap<uint32, FOnSwitchValueLoaded> OnSwitchValueLoadedMap;
 };

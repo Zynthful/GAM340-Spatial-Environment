@@ -285,3 +285,9 @@ void UAkAssetBase::Reset()
 	Super::Reset();
 }
 #endif
+
+void UAkAssetBase::GetPreloadDependencies(TArray<UObject*>& OutDeps)
+{
+	Super::GetPreloadDependencies(OutDeps);
+	OutDeps.Add(PlatformAssetData);
+}

@@ -146,6 +146,7 @@ public:
         return foundObjectSet;
     }
 
+
 #if WITH_EDITOR
 	template<typename T>
 	T* FindOrAddAssetDataTyped(const FString& Platform, const FString& Language)
@@ -162,6 +163,8 @@ public:
 
 	FCriticalSection BulkDataWriteLock;
 #endif
+
+	void GetPreloadDependencies(TArray<UObject*>& OutDeps);
 
 protected:
 	virtual UAkAssetData* createAssetData(UObject* Parent) const;

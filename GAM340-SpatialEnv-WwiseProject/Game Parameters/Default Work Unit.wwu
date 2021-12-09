@@ -13,6 +13,29 @@
 						</GameParameter>
 					</ChildrenList>
 				</Folder>
+				<Folder Name="Reverb" ID="{18BF945D-97B8-416E-9203-31901FF6C30D}" ShortID="625007816">
+					<ChildrenList>
+						<GameParameter Name="Decay" ID="{C13DC209-797B-4D9C-8B32-620C9CF3D9F2}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="0"/>
+								<Property Name="Max" Type="Real64" Value="10"/>
+							</PropertyList>
+						</GameParameter>
+						<GameParameter Name="Predelay" ID="{5C066FCE-91E4-4B86-B23F-248514A4D3DE}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="0"/>
+								<Property Name="Max" Type="Real64" Value="1"/>
+							</PropertyList>
+						</GameParameter>
+						<GameParameter Name="HFDamping" ID="{EFACB379-4D0B-440D-B878-6950C616821D}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="0"/>
+								<Property Name="Max" Type="Real64" Value="1"/>
+								<Property Name="Min" Type="Real64" Value="-1"/>
+							</PropertyList>
+						</GameParameter>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</GameParameters>

@@ -5,22 +5,28 @@
   "SchemaVersion": "12",
   "SoundbankVersion": "140",
   "RootPaths": {
-   "ProjectRoot": "C:\\Users\\Jamie Carnell\\Desktop\\Projects etc\\Projects\\GAM340 Project\\GAM340-Spatial-Environment\\GAM340-SpatialEnv-WwiseProject\\",
-   "SourceFilesRoot": "C:\\Users\\Jamie Carnell\\Desktop\\Projects etc\\Projects\\GAM340 Project\\GAM340-Spatial-Environment\\GAM340-SpatialEnv-WwiseProject\\.cache\\Windows\\",
-   "SoundBanksRoot": "C:\\Users\\Jamie Carnell\\Desktop\\Projects etc\\Projects\\GAM340 Project\\GAM340-Spatial-Environment\\GAM340-SpatialEnv-WwiseProject\\GeneratedSoundBanks\\Windows\\",
+   "ProjectRoot": "C:\\Users\\Jamie Carnell\\Documents\\Projects\\GAM340\\GAM340-Spatial-Environment\\GAM340-SpatialEnv-WwiseProject\\",
+   "SourceFilesRoot": "C:\\Users\\Jamie Carnell\\Documents\\Projects\\GAM340\\GAM340-Spatial-Environment\\GAM340-SpatialEnv-WwiseProject\\.cache\\Windows\\",
+   "SoundBanksRoot": "C:\\Users\\Jamie Carnell\\Documents\\Projects\\GAM340\\GAM340-Spatial-Environment\\GAM340-SpatialEnv-WwiseProject\\GeneratedSoundBanks\\Windows\\",
    "ExternalSourcesInputFile": "",
-   "ExternalSourcesOutputRoot": "C:\\Users\\Jamie Carnell\\Desktop\\Projects etc\\Projects\\GAM340 Project\\GAM340-Spatial-Environment\\GAM340-SpatialEnv-WwiseProject\\GeneratedSoundBanks\\Windows"
+   "ExternalSourcesOutputRoot": "C:\\Users\\Jamie Carnell\\Documents\\Projects\\GAM340\\GAM340-Spatial-Environment\\GAM340-SpatialEnv-WwiseProject\\GeneratedSoundBanks\\Windows"
   },
   "SoundBanks": [
    {
     "Id": "1355168291",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "1237223872",
+    "Hash": "255421217",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
     "IncludedAuxBusses": [
+     {
+      "Id": "235779981",
+      "Name": "Aux_ER",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\SFX\\Aux_ER",
+      "GUID": "{8282F99E-D8F7-4B95-B1EA-B9978394AFAE}"
+     },
      {
       "Id": "1557528409",
       "Name": "Aux_Room_Medium",
@@ -34,16 +40,76 @@
       "GUID": "{0B646697-B542-468D-8ECD-67356B4A71F6}"
      },
      {
-      "Id": "2212376974",
-      "Name": "Early_Reflection_Aux_Bus",
-      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Early_Reflection_Aux_Bus",
-      "GUID": "{8282F99E-D8F7-4B95-B1EA-B9978394AFAE}"
+      "Id": "3065706299",
+      "Name": "Aux_Dynamic",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\SFX\\Aux_Dynamic",
+      "GUID": "{7541B877-1F05-46FE-A538-82E14F995B03}"
      },
      {
       "Id": "3408535089",
       "Name": "Aux_Room_Large",
       "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\SFX\\Aux_Room_Large",
       "GUID": "{4AA6DBFC-04A4-45E0-B095-173B7D30EBD7}"
+     },
+     {
+      "Id": "3599458820",
+      "Name": "Aux_Outdoor",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\SFX\\Aux_Outdoor",
+      "GUID": "{91425612-3FED-48DE-A523-7001E6B634B8}"
+     }
+    ],
+    "GameParameters": [
+     {
+      "Id": "194404061",
+      "Name": "Predelay",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\Reverb\\Predelay",
+      "GUID": "{5C066FCE-91E4-4B86-B23F-248514A4D3DE}"
+     },
+     {
+      "Id": "1299678381",
+      "Name": "Decay",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\Reverb\\Decay",
+      "GUID": "{C13DC209-797B-4D9C-8B32-620C9CF3D9F2}"
+     },
+     {
+      "Id": "2947715227",
+      "Name": "HFDamping",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\Reverb\\HFDamping",
+      "GUID": "{EFACB379-4D0B-440D-B878-6950C616821D}"
+     }
+    ],
+    "StateGroups": [
+     {
+      "Id": "3238956108",
+      "Name": "Player_Location",
+      "ObjectPath": "\\States\\Default Work Unit\\Player_Location",
+      "GUID": "{7C0CB3F3-D512-4215-A667-7043B531E8FB}",
+      "States": [
+       {
+        "Id": "748895195",
+        "Name": "None",
+        "ObjectPath": "\\States\\Default Work Unit\\Player_Location\\None",
+        "GUID": "{4CE9CCDB-73B1-4524-82F5-F5FE62BC32EA}"
+       },
+       {
+        "Id": "608898761",
+        "Name": "Dungeon",
+        "ObjectPath": "\\States\\Default Work Unit\\Player_Location\\Dungeon",
+        "GUID": "{ED62CB76-3183-4DD8-A659-B6285EB4D628}"
+       },
+       {
+        "Id": "2761606855",
+        "Name": "Crypt",
+        "ObjectPath": "\\States\\Default Work Unit\\Player_Location\\Crypt",
+        "GUID": "{5770EA5F-1A52-48FB-B438-59657A13B8FF}"
+       },
+       {
+        "Id": "1755593458",
+        "Name": "Crypt_Coffin_Chamber",
+        "ObjectPath": "\\States\\Default Work Unit\\Player_Location\\Crypt_Coffin_Chamber",
+        "GUID": "{B2F9A9E7-70C8-405F-9C4B-9F3B99181D6D}"
+       }
+      ]
      }
     ]
    }

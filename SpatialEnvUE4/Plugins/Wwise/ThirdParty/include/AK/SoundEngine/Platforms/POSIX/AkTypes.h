@@ -21,7 +21,7 @@ under the Apache License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES
 OR CONDITIONS OF ANY KIND, either express or implied. See the Apache License for
 the specific language governing permissions and limitations under the License.
 
-  Version: v2021.1.4  Build: 7707
+  Version: v2021.1.5  Build: 7749
   Copyright (c) 2006-2021 Audiokinetic Inc.
 *******************************************************************************/
 
@@ -42,7 +42,9 @@ the specific language governing permissions and limitations under the License.
 
 #define AK_RESTRICT		__restrict				///< Refers to the __restrict compilation flag available on some platforms
 #define AK_EXPECT_FALSE( _x )	(_x)
+#ifndef AkForceInline
 #define AkForceInline	inline					///< Force inlining
+#endif
 #define AkNoInline		__attribute__ ((noinline))			///< Disable inlining
 
 #define AK_SIMD_ALIGNMENT	16					///< Platform-specific alignment requirement for SIMD data

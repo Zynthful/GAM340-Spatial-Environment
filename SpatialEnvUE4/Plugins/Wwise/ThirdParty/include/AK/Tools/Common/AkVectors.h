@@ -21,7 +21,7 @@ under the Apache License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES
 OR CONDITIONS OF ANY KIND, either express or implied. See the Apache License for
 the specific language governing permissions and limitations under the License.
 
-  Version: v2021.1.4  Build: 7707
+  Version: v2021.1.5  Build: 7749
   Copyright (c) 2006-2021 Audiokinetic Inc.
 *******************************************************************************/
 
@@ -386,12 +386,12 @@ public:
 		X = cosf(azimuth) *	cosElevation;
 		Y = sinf(azimuth) *	cosElevation;
 		Z = sinf(elevation);
-
+		
 		return *this;
 	}
 
 	// Determinant of 3 column vectors.
-	static AkReal32 Determinant(
+	static AkForceInline AkReal32 Determinant(
 		const Ak3DVector &			a,
 		const Ak3DVector &			b,
 		const Ak3DVector &			c)
@@ -650,14 +650,12 @@ public:
 
 		if (X > AKVECTORS_PI)
 			v.X = X - AKVECTORS_TWOPI;
-
-		if (X < -AKVECTORS_PI)
+		else if (X < -AKVECTORS_PI)
 			v.X = X + AKVECTORS_TWOPI;
 
 		if (Y > AKVECTORS_PIOVERTWO)
 			v.Y = Y - AKVECTORS_PI;
-
-		if (Y < -AKVECTORS_PIOVERTWO)
+		else if (Y < -AKVECTORS_PIOVERTWO)
 			v.Y = Y + AKVECTORS_PI;
 
 		AKASSERT(X<AKVECTORS_PI);
@@ -673,17 +671,15 @@ public:
 				X (azimuthal)	-> [-PI, PI],		circle lies on xy plan,		0 is on X axix
 				Y (elevation)	-> [-PI/2, PI/2],	half circle on Z axis,		0 on XY plan, PI/2 straigt up on Z axis.
 		*/
-
+		
 		if (X > AKVECTORS_PI)
 			X = X - AKVECTORS_TWOPI;
-
-		if (X < -AKVECTORS_PI)
+		else if (X < -AKVECTORS_PI)
 			X = X + AKVECTORS_TWOPI;
 
 		if (Y > AKVECTORS_PIOVERTWO)
 			Y = Y - AKVECTORS_PI;
-
-		if (Y < -AKVECTORS_PIOVERTWO)
+		else if (Y < -AKVECTORS_PIOVERTWO)
 			Y = Y + AKVECTORS_PI;
 	}
 
