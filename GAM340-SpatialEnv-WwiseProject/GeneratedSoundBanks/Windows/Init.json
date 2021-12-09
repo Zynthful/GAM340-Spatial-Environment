@@ -16,7 +16,7 @@
     "Id": "1355168291",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "255421217",
+    "Hash": "3982186320",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
@@ -66,10 +66,28 @@
       "GUID": "{5C066FCE-91E4-4B86-B23F-248514A4D3DE}"
      },
      {
+      "Id": "988953028",
+      "Name": "SFXVolume",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\Volume\\SFXVolume",
+      "GUID": "{F0506F94-EEEA-4061-AE41-E32C5F18F319}"
+     },
+     {
+      "Id": "1204480359",
+      "Name": "AmbienceVolume",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\Volume\\AmbienceVolume",
+      "GUID": "{007E1F13-80A6-42A7-83D4-777550D7D537}"
+     },
+     {
       "Id": "1299678381",
       "Name": "Decay",
       "ObjectPath": "\\Game Parameters\\Default Work Unit\\Reverb\\Decay",
       "GUID": "{C13DC209-797B-4D9C-8B32-620C9CF3D9F2}"
+     },
+     {
+      "Id": "2918011349",
+      "Name": "MasterVolume",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\Volume\\MasterVolume",
+      "GUID": "{85EB47E0-FA7F-4375-843E-5896DE27F96B}"
      },
      {
       "Id": "2947715227",

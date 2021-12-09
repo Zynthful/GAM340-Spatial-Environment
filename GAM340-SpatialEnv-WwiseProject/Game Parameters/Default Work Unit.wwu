@@ -36,6 +36,31 @@
 						</GameParameter>
 					</ChildrenList>
 				</Folder>
+				<Folder Name="Volume" ID="{44B27A27-05BE-455A-9CE3-FD7752192ED5}" ShortID="736904299">
+					<ChildrenList>
+						<GameParameter Name="MasterVolume" ID="{85EB47E0-FA7F-4375-843E-5896DE27F96B}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="7"/>
+								<Property Name="Max" Type="Real64" Value="10"/>
+								<Property Name="Min" Type="Real64" Value="1"/>
+							</PropertyList>
+						</GameParameter>
+						<GameParameter Name="SFXVolume" ID="{F0506F94-EEEA-4061-AE41-E32C5F18F319}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="7"/>
+								<Property Name="Max" Type="Real64" Value="10"/>
+								<Property Name="Min" Type="Real64" Value="1"/>
+							</PropertyList>
+						</GameParameter>
+						<GameParameter Name="AmbienceVolume" ID="{007E1F13-80A6-42A7-83D4-777550D7D537}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="7"/>
+								<Property Name="Max" Type="Real64" Value="10"/>
+								<Property Name="Min" Type="Real64" Value="1"/>
+							</PropertyList>
+						</GameParameter>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</GameParameters>
