@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{A8FE91FC-4673-44AE-929D-D03CB1F3282A}" SchemaVersion="103">
+	<GameParameters>
+		<WorkUnit Name="Default Work Unit" ID="{A8FE91FC-4673-44AE-929D-D03CB1F3282A}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="Environment" ID="{D5124E8C-8B93-4639-90A4-46C88A3119F4}" ShortID="158703411">
+					<ChildrenList>
+						<GameParameter Name="NumOfCandles" ID="{40B57E9E-FB9C-46E1-B399-8C3A6270DEFD}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="0"/>
+								<Property Name="Max" Type="Real64" Value="8"/>
+							</PropertyList>
+						</GameParameter>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Reverb" ID="{18BF945D-97B8-416E-9203-31901FF6C30D}" ShortID="625007816">
+					<ChildrenList>
+						<GameParameter Name="Decay" ID="{C13DC209-797B-4D9C-8B32-620C9CF3D9F2}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="0"/>
+								<Property Name="Max" Type="Real64" Value="10"/>
+							</PropertyList>
+						</GameParameter>
+						<GameParameter Name="Predelay" ID="{5C066FCE-91E4-4B86-B23F-248514A4D3DE}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="0"/>
+								<Property Name="Max" Type="Real64" Value="1"/>
+							</PropertyList>
+						</GameParameter>
+						<GameParameter Name="HFDamping" ID="{EFACB379-4D0B-440D-B878-6950C616821D}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="0"/>
+								<Property Name="Max" Type="Real64" Value="1"/>
+								<Property Name="Min" Type="Real64" Value="-1"/>
+							</PropertyList>
+						</GameParameter>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Volume" ID="{44B27A27-05BE-455A-9CE3-FD7752192ED5}" ShortID="736904299">
+					<ChildrenList>
+						<GameParameter Name="MasterVolume" ID="{85EB47E0-FA7F-4375-843E-5896DE27F96B}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="7"/>
+								<Property Name="Max" Type="Real64" Value="10"/>
+								<Property Name="Min" Type="Real64" Value="1"/>
+							</PropertyList>
+						</GameParameter>
+						<GameParameter Name="SFXVolume" ID="{F0506F94-EEEA-4061-AE41-E32C5F18F319}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="7"/>
+								<Property Name="Max" Type="Real64" Value="10"/>
+								<Property Name="Min" Type="Real64" Value="1"/>
+							</PropertyList>
+						</GameParameter>
+						<GameParameter Name="AmbienceVolume" ID="{007E1F13-80A6-42A7-83D4-777550D7D537}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="7"/>
+								<Property Name="Max" Type="Real64" Value="10"/>
+								<Property Name="Min" Type="Real64" Value="1"/>
+							</PropertyList>
+						</GameParameter>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
+	</GameParameters>
+</WwiseDocument>
